@@ -1,0 +1,38 @@
+{{- /*
+  /llms.txt — site index for LLMs, per https://llmstxt.org/
+  Markdown format. Sections in this strict order:
+    1. H1 (site name)
+    2. Blockquote (one-line summary)
+    3. Optional prose body
+    4. H2 sections of links
+*/ -}}
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+A free, locally curated business directory covering Mangawhai, Mangawhai Heads, Te Arai, Kaiwaka and surrounds in Northland, New Zealand. Listings are organised by category. Every business gets a free organic listing; we also sell a small number of paid display-ad slots.
+
+## Categories
+
+{{- $categoriesPage := site.GetPage "/categories" -}}
+{{- $businessesPage := site.GetPage "/businesses" -}}
+{{- $allBusinesses := slice -}}
+{{- with $businessesPage }}{{ $allBusinesses = .Pages }}{{ end -}}
+{{- $terms := slice -}}
+{{- range $categoriesPage.Pages }}{{ $terms = $terms | append . }}{{ end }}
+{{ range sort $terms "Title" "asc" -}}
+{{- $slug := path.Base .RelPermalink -}}
+{{- $count := 0 -}}
+{{- range $allBusinesses -}}{{- if in (.Params.categories | default slice) $slug -}}{{ $count = add $count 1 }}{{- end -}}{{- end -}}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Params.description | default (printf "%s in Mangawhai" .Title) }} ({{ $count }} {{ if eq $count 1 }}listing{{ else }}listings{{ end }})
+{{ end }}
+## Pages
+
+- [Advertise]({{ "/advertise/" | absURL }}): Ad packages, sizes and pricing for the homepage tile and category-page banners.
+- [Contact]({{ "/contact/" | absURL }}): How to reach us — listing changes, ad bookings, general enquiries.
+- [Privacy]({{ "/privacy/" | absURL }}): How we handle personal information under the New Zealand Privacy Act 2020.
+- [Terms]({{ "/terms/" | absURL }}): Terms of use for site visitors and advertisers.
+
+## Optional
+
+- [Sitemap]({{ "/sitemap.xml" | absURL }}): Machine-readable sitemap of every page on the site.

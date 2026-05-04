@@ -1,0 +1,32 @@
+name: Validate businesses
+
+on:
+  pull_request:
+    paths:
+      - 'content/businesses/**'
+      - 'content/categories/**'
+      - 'schemas/**'
+      - 'scripts/**'
+  push:
+    branches: [main]
+    paths:
+      - 'content/businesses/**'
+      - 'content/categories/**'
+      - 'schemas/**'
+      - 'scripts/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: scripts/package-lock.json
+      - name: Install validator deps
+        working-directory: scripts
+        run: npm ci
+      - name: Validate business front matter
+        run: node scripts/validate-businesses.mjs

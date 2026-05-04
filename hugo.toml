@@ -1,0 +1,52 @@
+baseURL = "https://mangawhaidirectory.co.nz/"
+title = "Mangawhai Directory"
+locale = "en-nz"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+pluralizelisttitles = false
+
+[params]
+  description = "A community directory for Mangawhai - local businesses and services"
+  defaultKeywords = ["mangawhai", "mangawhai heads", "northland", "directory", "local business"]
+  contactEmail = ""
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = ["html", "rss", "llms"]
+  taxonomy = ["html"]
+  term = ["html"]
+
+[outputFormats]
+  [outputFormats.llms]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Advertise"
+  url = "/advertise/"
+  weight = 2
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 3
+
+[[menu.footer]]
+  name = "Privacy"
+  url = "/privacy/"
+  weight = 1
+
+[[menu.footer]]
+  name = "Terms"
+  url = "/terms/"
+  weight = 2

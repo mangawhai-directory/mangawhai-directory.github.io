@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="mx-auto max-w-2xl px-4 py-24 text-center">
+  <p class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">404</p>
+  <h1 class="mt-2 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">Page not found</h1>
+  <p class="mt-4 text-lg text-muted-foreground">We couldn't find that page.</p>
+  <div class="mt-8 flex flex-wrap justify-center gap-3">
+    <a class="inline-flex h-10 items-center rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90" href="{{ "/" | relURL }}">Go home</a>
+    <a class="inline-flex h-10 items-center rounded-md border border-input bg-background px-5 text-sm font-medium text-foreground no-underline transition-colors hover:bg-accent hover:text-accent-foreground" href="{{ "/categories/" | relURL }}">Browse categories</a>
+  </div>
+</article>
+{{ end }}

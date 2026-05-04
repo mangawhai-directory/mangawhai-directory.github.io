@@ -1,0 +1,14 @@
+{
+  "name": "mangawhai-directory",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Build assets for the Mangawhai Directory Hugo site (Tailwind CSS v4).",
+  "scripts": {
+    "build": "hugo --gc --minify",
+    "dev": "hugo server"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

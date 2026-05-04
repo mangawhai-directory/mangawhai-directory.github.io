@@ -1,0 +1,82 @@
+{{ define "json-ld" }}
+{{- $base := site.BaseURL -}}
+{{- $org := dict
+    "@context" "https://schema.org"
+    "@type" "Organization"
+    "name" site.Title
+    "url" $base
+    "description" site.Params.description
+-}}
+{{- $website := dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "name" site.Title
+    "url" $base
+    "inLanguage" "en-NZ"
+    "potentialAction" (dict
+      "@type" "SearchAction"
+      "target" (dict
+        "@type" "EntryPoint"
+        "urlTemplate" (printf "%s?q={search_term_string}" $base))
+      "query-input" "required name=search_term_string")
+-}}
+<script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>
+<script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ define "main" }}
+<section class="relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat" style="background-image: url('{{ "managwhai.jpg" | relURL }}');">
+  <div class="absolute inset-0 bg-black/40" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:py-24">
+    <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-5xl">{{ site.Title }}</h1>
+    <p class="mx-auto mt-4 max-w-prose text-lg text-white/90">{{ site.Params.description }}</p>
+  </div>
+</section>
+
+<div class="mx-auto max-w-6xl px-4 pt-10 sm:pt-12">
+  {{ partial "ad-slot.html" (dict
+    "slot" "home"
+    "w" 1152
+    "h" 400
+    "wm" 500
+    "hm" 500
+    "label" "Homepage tile"
+    "price" "$400+gst / month"
+    "class" "mx-auto w-full max-w-[500px] aspect-square lg:max-w-none lg:aspect-auto lg:h-[400px]") }}
+</div>
+
+<section class="mx-auto max-w-6xl px-4 py-12">
+  <h2 class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Browse categories</h2>
+  {{- $categoriesPage := site.GetPage "/categories" -}}
+  {{- $businessesPage := site.GetPage "/businesses" -}}
+  {{- $allBusinesses := slice -}}
+  {{- with $businessesPage }}{{ $allBusinesses = .Pages }}{{ end -}}
+  {{- if $categoriesPage -}}
+  {{- /* CSS multi-column layout fills top-to-bottom within each column,
+         giving alphabetical down-then-across order. break-inside-avoid +
+         mb-3 on each card replaces grid gap (column-gap handles the
+         horizontal gutter only). */ -}}
+  <ul class="mt-6 list-none p-0 columns-1 gap-3 sm:columns-2 lg:columns-3">
+    {{- $terms := slice -}}
+    {{- range $categoriesPage.Pages -}}
+      {{- $terms = $terms | append . -}}
+    {{- end -}}
+    {{- range sort $terms "Title" "asc" }}
+    {{- $slug := path.Base .RelPermalink -}}
+    {{- $count := 0 -}}
+    {{- range $allBusinesses -}}
+      {{- if in (.Params.categories | default slice) $slug -}}{{ $count = add $count 1 }}{{- end -}}
+    {{- end }}
+    <li class="mb-3 break-inside-avoid">
+      <a class="group flex items-center justify-between gap-3 rounded-lg border border-border bg-card p-4 text-card-foreground no-underline shadow-sm transition-all hover:-translate-y-px hover:border-foreground/20 hover:shadow-md" href="{{ .RelPermalink }}">
+        <span class="text-base font-medium">{{ .Title }}</span>
+        <span class="inline-flex items-center justify-center rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium tabular-nums text-muted-foreground transition-colors group-hover:bg-accent" aria-label="{{ $count }} businesses">{{ $count }}</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  <p class="mt-6 italic text-center text-muted-foreground">No categories yet.</p>
+  {{- end }}
+</section>
+{{ end }}

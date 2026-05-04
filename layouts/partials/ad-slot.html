@@ -1,0 +1,66 @@
+{{- /*
+  ad-slot partial — renders an advertising slot. If config has an image, shows
+  the ad as a click-through (with optional mobile companion). Otherwise renders
+  a subtle placeholder that displays the slot's package, size and price.
+
+  Args (dict):
+    slot   — config path under site.Data.ads (e.g. "home", "category.cafes-restaurants")
+    w      — desktop intrinsic width  in px (e.g. 1152, 540)
+    h      — desktop intrinsic height in px (e.g. 300,  350)
+    wm     — mobile intrinsic width   in px (default = w)
+    hm     — mobile intrinsic height  in px (default = h)
+    label  — package name shown in placeholder (e.g. "Homepage tile")
+    price  — monthly price shown in placeholder (e.g. "$250 / month")
+    class  — optional extra Tailwind classes for the wrapper
+
+  Aspect ratio is applied responsively: aspect-[wm/hm] below `lg`,
+  aspect-[w/h] from `lg` and up. If the wrapper has explicit lg:h-[Hpx], that
+  height takes precedence over the aspect-ratio at desktop.
+*/ -}}
+{{- $slot := .slot -}}
+{{- $w := .w -}}
+{{- $h := .h -}}
+{{- $wm := .wm | default $w -}}
+{{- $hm := .hm | default $h -}}
+{{- $label := .label | default "" -}}
+{{- $price := .price | default "" -}}
+{{- $extra := .class | default "" -}}
+
+{{- /* Walk dotted slot path through site.Data.ads */ -}}
+{{- $cfg := site.Data.ads -}}
+{{- range split $slot "." -}}
+  {{- if $cfg }}{{ $cfg = index $cfg . }}{{ end -}}
+{{- end -}}
+
+{{- $hasAd := and $cfg (and (isset $cfg "image") $cfg.image) -}}
+{{- $hasMobileAd := and $hasAd (and (isset $cfg "imageMobile") $cfg.imageMobile) -}}
+{{- $aspect := printf "aspect-[%d/%d] lg:aspect-[%d/%d]" $wm $hm $w $h -}}
+
+<aside class="ad-slot {{ $extra }}" aria-label="Advertisement" data-print-hide>
+  {{- if $hasAd }}
+  <a href="{{ $cfg.href | default "#" }}" class="block h-full w-full overflow-hidden rounded-lg border border-border" {{ if hasPrefix ($cfg.href | default "") "http" }}rel="sponsored noopener" target="_blank"{{ end }}>
+    <picture>
+      {{- if $hasMobileAd }}
+      <source media="(min-width: 1024px)" srcset="{{ $cfg.image }}" width="{{ $w }}" height="{{ $h }}">
+      <img src="{{ $cfg.imageMobile }}" alt="{{ $cfg.alt | default "" }}" width="{{ $wm }}" height="{{ $hm }}" loading="lazy" decoding="async" class="block h-full w-full {{ $aspect }} object-cover">
+      {{- else }}
+      <img src="{{ $cfg.image }}" alt="{{ $cfg.alt | default "" }}" width="{{ $w }}" height="{{ $h }}" loading="lazy" decoding="async" class="block h-full w-full {{ $aspect }} object-cover">
+      {{- end }}
+    </picture>
+  </a>
+  {{- else }}
+  <a href="{{ "/advertise/" | relURL }}" class="group flex h-full w-full {{ $aspect }} flex-col items-center justify-center gap-2 rounded-lg border border-dashed border-border bg-muted/30 px-4 py-6 text-center no-underline transition-colors hover:border-foreground/30 hover:bg-muted/60 sm:px-6 sm:py-8">
+    <span class="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">Advertisement</span>
+    <span class="text-base font-semibold text-foreground">Your ad here</span>
+    <span class="text-xs text-muted-foreground">
+      {{- if $label }}{{ $label }} · {{ end -}}
+      <span class="lg:hidden">{{ $wm }} × {{ $hm }} px</span><span class="hidden lg:inline">{{ $w }} × {{ $h }} px</span>
+      {{- if $price }} · {{ $price }}{{ end -}}
+    </span>
+    <span class="mt-1 inline-flex items-center gap-1 text-xs font-medium text-foreground/70 group-hover:text-foreground">
+      View ad packages
+      <svg class="h-3 w-3 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </span>
+  </a>
+  {{- end }}
+</aside>

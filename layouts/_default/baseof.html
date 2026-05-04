@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}{{ end }}</title>
+
+  {{ block "meta-description" . -}}
+    <meta name="description" content="{{ or .Params.description site.Params.description }}">
+  {{- end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="en-NZ" href="{{ .Permalink }}">
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+  {{ block "og" . -}}
+    {{- $ogTitle := cond .IsHome (string site.Title) (printf "%s | %s" .Title site.Title) -}}
+    {{- $ogDesc := or .Params.description site.Params.description -}}
+    {{- $ogType := cond (eq .Kind "term") "article" "website" -}}
+    {{- $ogImage := "" -}}
+    {{- with resources.Get "img/og-default.png" }}{{ $ogImage = .Permalink }}{{ end -}}
+    <meta property="og:type" content="{{ $ogType }}">
+    <meta property="og:title" content="{{ $ogTitle }}">
+    <meta property="og:description" content="{{ $ogDesc }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:locale" content="en_NZ">
+    <meta property="og:site_name" content="{{ site.Title }}">
+    {{- if $ogImage }}
+    <meta property="og:image" content="{{ $ogImage }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ $ogImage }}">
+    {{- else }}
+    <meta name="twitter:card" content="summary">
+    {{- end }}
+    <meta name="twitter:title" content="{{ $ogTitle }}">
+    <meta name="twitter:description" content="{{ $ogDesc }}">
+  {{- end }}
+  {{- with resources.Get "css/main.css" }}
+    {{- $css := . | css.TailwindCSS (dict "minify" hugo.IsProduction) -}}
+    {{- if hugo.IsProduction }}{{ $css = $css | fingerprint }}{{ end }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}"{{ with $css.Data.Integrity }} integrity="{{ . }}"{{ end }}>
+  {{- end }}
+  {{ block "json-ld" . }}{{ end }}
+</head>
+<body class="min-h-screen flex flex-col bg-background text-foreground">
+  {{ partial "header.html" . }}
+  <main class="flex-1">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  <script>
+    (function () {
+      var toggle = document.getElementById('menu-toggle');
+      var overlay = document.getElementById('mobile-menu-overlay');
+      var panel = document.getElementById('mobile-menu');
+      var backdrop = document.getElementById('mobile-menu-backdrop');
+      if (!toggle || !overlay || !panel) return;
+
+      function setOpen(open) {
+        var state = open ? 'open' : 'closed';
+        toggle.setAttribute('data-state', state);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        overlay.setAttribute('data-state', state);
+        overlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+        document.body.classList.toggle('overflow-hidden', open);
+        if (open) {
+          var firstLink = panel.querySelector('a, button');
+          if (firstLink) firstLink.focus();
+        } else {
+          toggle.focus();
+        }
+      }
+
+      toggle.addEventListener('click', function () {
+        setOpen(toggle.getAttribute('data-state') !== 'open');
+      });
+      if (backdrop) backdrop.addEventListener('click', function () { setOpen(false); });
+      panel.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { setOpen(false); });
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && overlay.getAttribute('data-state') === 'open') {
+          setOpen(false);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

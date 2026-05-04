@@ -1,0 +1,85 @@
+cafes-restaurants:
+  - bakeries
+  - takeaways-food-trucks
+  - bars-pubs-breweries
+takeaways-food-trucks:
+  - cafes-restaurants
+  - bakeries
+bakeries:
+  - cafes-restaurants
+  - takeaways-food-trucks
+bars-pubs-breweries:
+  - cafes-restaurants
+  - wineries-vineyards
+wineries-vineyards:
+  - bars-pubs-breweries
+  - cafes-restaurants
+accommodation:
+  - holiday-homes
+  - things-to-do-tours
+holiday-homes:
+  - accommodation
+  - cleaning-services
+  - property-management
+things-to-do-tours:
+  - surf-beach-watersports
+  - accommodation
+  - cafes-restaurants
+surf-beach-watersports:
+  - things-to-do-tours
+  - shops-boutiques
+builders-renovations:
+  - electricians
+  - plumbers
+  - painters-decorators
+  - landscaping-gardening
+plumbers:
+  - builders-renovations
+  - electricians
+electricians:
+  - builders-renovations
+  - plumbers
+painters-decorators:
+  - builders-renovations
+  - landscaping-gardening
+landscaping-gardening:
+  - garden-hardware
+  - builders-renovations
+  - cleaning-services
+cleaning-services:
+  - holiday-homes
+  - landscaping-gardening
+real-estate:
+  - property-management
+  - builders-renovations
+property-management:
+  - real-estate
+  - cleaning-services
+  - holiday-homes
+medical-dental:
+  - fitness-yoga-pilates
+  - beauty-hair-spa
+beauty-hair-spa:
+  - fitness-yoga-pilates
+  - medical-dental
+fitness-yoga-pilates:
+  - beauty-hair-spa
+  - medical-dental
+shops-boutiques:
+  - garden-hardware
+  - cafes-restaurants
+garden-hardware:
+  - landscaping-gardening
+  - shops-boutiques
+  - builders-renovations
+professional-services:
+  - real-estate
+  - technology-it-services
+technology-it-services:
+  - professional-services
+automotive-marine:
+  - professional-services
+schools-childcare:
+  - community-clubs-churches
+community-clubs-churches:
+  - schools-childcare

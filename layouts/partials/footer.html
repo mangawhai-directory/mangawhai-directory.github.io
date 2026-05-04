@@ -1,0 +1,14 @@
+<footer data-print-hide class="mt-16 border-t border-border bg-muted/40">
+  <div class="mx-auto flex max-w-6xl flex-col-reverse items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between">
+    <p class="text-sm text-muted-foreground m-0">© {{ now.Year }} {{ site.Title }}</p>
+    <nav aria-label="Footer">
+      <ul class="flex flex-wrap items-center gap-1 list-none m-0 p-0">
+        {{ range site.Menus.footer }}
+        <li>
+          <a class="inline-flex h-9 items-center rounded-md px-3 text-sm font-medium text-muted-foreground no-underline transition-colors hover:bg-accent hover:text-accent-foreground" href="{{ .URL | relURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</footer>

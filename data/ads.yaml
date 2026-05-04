@@ -1,0 +1,27 @@
+# Mangawhai Directory — ad slot config
+#
+# Slot keys:
+#   home             → Homepage tile,        1152×400 desktop / 500×500 mobile
+#   category.<slug>  → Category page header, 540×350 desktop / 500×500 mobile
+#
+# Each slot accepts:
+#   image        — site-rooted path or full https URL (desktop creative)
+#   imageMobile  — optional mobile creative (used below the lg breakpoint).
+#                  If omitted, the desktop creative scales to fit.
+#   alt          — descriptive alt text
+#   href         — click-through URL
+#
+# Leave `image` empty (or omit the slot) to show the "Your ad here" placeholder.
+
+home:
+  image: ""
+  imageMobile: ""
+  alt: ""
+  href: ""
+
+category:
+  # cafes-restaurants:
+  #   image: "/img/ads/example-cafes-540x350.jpg"
+  #   imageMobile: "/img/ads/example-cafes-500x500.jpg"
+  #   alt: "Allpress Espresso — now open"
+  #   href: "https://example.com"

@@ -1,0 +1,89 @@
+<header data-print-hide class="sticky top-0 z-40 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/75">
+  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
+    <a class="inline-flex items-center gap-2.5 text-base font-semibold tracking-tight no-underline text-foreground hover:text-foreground/80" href="{{ "/" | relURL }}" aria-label="{{ site.Title }} — home">
+      {{- /*
+        Dolphin mark — cute, funky leaping dolphin in profile. The body
+        traces a smooth arc from tail (lower-left) up over a peak and
+        down to a stubby beak (upper-right). A small dorsal fin sits on
+        the back, an eye dot + smile add personality, and a wavy water
+        splash sits beneath. Everything inherits the theme foreground via
+        currentColor; eye/smile knock out using --color-background so
+        they read against any theme.
+      */ -}}
+      <svg class="h-8 w-auto shrink-0" viewBox="0 0 80 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        {{- /* Body — leaping arc from tail (lower-left) to beak (upper-right) */ -}}
+        <path fill="currentColor" d="M14 46
+          C 14 30, 28 16, 48 14
+          C 58 13, 68 16, 73 22
+          Q 76 26, 73 28
+          L 70 28
+          Q 67 27, 64 27
+          Q 60 28, 56 29
+          C 42 31, 28 36, 22 46
+          Q 20 50, 16 50
+          Q 12 50, 14 46 Z"/>
+        {{- /* Dorsal fin */ -}}
+        <path fill="currentColor" d="M36 20 Q 42 8 50 18 Q 44 22 36 22 Z"/>
+        {{- /* Tail flukes */ -}}
+        <path fill="currentColor" d="M14 48 Q 4 42 4 50 Q 6 56 14 54 Q 18 52 16 48 Z"/>
+        {{- /* Eye */ -}}
+        <circle cx="62" cy="22" r="1.7" fill="var(--color-background, #fff)"/>
+        {{- /* Cheeky smile */ -}}
+        <path fill="none" stroke="var(--color-background, #fff)" stroke-width="1.4" stroke-linecap="round" d="M66 26 Q 69 28 72 26"/>
+        {{- /* Splash droplets */ -}}
+        <circle cx="6" cy="34" r="1.4" fill="currentColor"/>
+        <circle cx="76" cy="40" r="1.4" fill="currentColor"/>
+        {{- /* Water wave under the dolphin */ -}}
+        <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M2 58 Q 10 54 18 58 T 34 58 T 50 58 T 66 58 T 78 58"/>
+      </svg>
+      <span>{{ site.Title }}</span>
+    </a>
+
+    {{- /* Desktop nav — hidden on mobile */ -}}
+    <nav class="hidden md:block" aria-label="Primary">
+      <ul class="flex flex-wrap items-center gap-1 list-none m-0 p-0">
+        {{ range site.Menus.main }}
+        <li>
+          <a class="inline-flex h-9 items-center rounded-md px-3 text-sm font-medium text-foreground/70 no-underline transition-colors hover:bg-accent hover:text-accent-foreground" href="{{ .URL | relURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    {{- /* Spacer so the logo doesn't shift on mobile — the real burger is
+           rendered as a fixed sibling of the overlay below to escape the
+           sticky header's stacking context. */ -}}
+    <span class="h-10 w-10 md:hidden" aria-hidden="true"></span>
+  </div>
+</header>
+
+{{- /* Mobile burger — fixed top-right, z-60 so it sits above the overlay
+       (z-50) and the panel beneath it. Same button toggles open/close;
+       three lines collapse into an X via CSS transforms when open. */ -}}
+<button id="menu-toggle" type="button" data-state="closed" aria-controls="mobile-menu" aria-expanded="false"
+  class="group fixed right-3 top-3 z-[60] inline-flex h-10 w-10 items-center justify-center rounded-md text-foreground transition-colors hover:bg-accent md:hidden"
+  data-print-hide>
+  <span class="sr-only">Toggle menu</span>
+  <span aria-hidden="true" class="absolute h-0.5 w-5 rounded-full bg-current transition-transform duration-200 -translate-y-1.5 group-data-[state=open]:translate-y-0 group-data-[state=open]:rotate-45"></span>
+  <span aria-hidden="true" class="absolute h-0.5 w-5 rounded-full bg-current transition-opacity duration-200 group-data-[state=open]:opacity-0"></span>
+  <span aria-hidden="true" class="absolute h-0.5 w-5 rounded-full bg-current transition-transform duration-200 translate-y-1.5 group-data-[state=open]:translate-y-0 group-data-[state=open]:-rotate-45"></span>
+</button>
+
+{{- /* Slide-in mobile menu overlay. Backdrop + panel are siblings driven by
+       group-data-[state=...] from the wrapper. Wrapper toggles its
+       pointer-events on/off so it's completely inert when closed. */ -}}
+<div id="mobile-menu-overlay" data-state="closed" aria-hidden="true"
+  class="group/menu fixed inset-0 z-50 md:hidden pointer-events-none data-[state=open]:pointer-events-auto"
+  data-print-hide>
+  <div id="mobile-menu-backdrop" class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-200 group-data-[state=open]/menu:opacity-100"></div>
+  <nav id="mobile-menu" aria-label="Primary mobile"
+    class="absolute inset-y-0 right-0 flex w-72 max-w-[85vw] flex-col border-l border-border bg-background shadow-xl translate-x-full transition-transform duration-300 ease-out group-data-[state=open]/menu:translate-x-0">
+    <ul class="m-0 list-none p-2 pt-20">
+      {{ range site.Menus.main }}
+      <li>
+        <a class="flex h-12 items-center rounded-md px-3 text-base font-medium text-foreground no-underline transition-colors hover:bg-accent hover:text-accent-foreground" href="{{ .URL | relURL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,12 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "24.15.0"
+    },
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "extended": true
+    }
+  },
+  "postCreateCommand": "npm install"
+}

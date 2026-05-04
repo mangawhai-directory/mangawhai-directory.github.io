@@ -1,0 +1,15 @@
+{
+  "name": "mangawhai-directory-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Validation and tooling scripts for the Mangawhai Directory.",
+  "scripts": {
+    "validate": "node validate-businesses.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "js-yaml": "^4.1.0"
+  }
+}

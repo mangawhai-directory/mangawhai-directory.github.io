@@ -1,0 +1,80 @@
+/* Mangawhai Directory — main.css
+   Tailwind v4 entry. Design tokens follow the shadcn/ui neutral theme.
+   Hugo processes this file via `css.TailwindCSS`. */
+
+@import "tailwindcss";
+
+@source "../../layouts/**/*.html";
+@source "../../content/**/*.md";
+
+/* shadcn/ui design tokens — neutral palette, light theme. */
+@theme {
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(240 10% 3.9%);
+
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(240 10% 3.9%);
+
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(240 10% 3.9%);
+
+  --color-primary: hsl(240 5.9% 10%);
+  --color-primary-foreground: hsl(0 0% 98%);
+
+  --color-secondary: hsl(240 4.8% 95.9%);
+  --color-secondary-foreground: hsl(240 5.9% 10%);
+
+  --color-muted: hsl(240 4.8% 95.9%);
+  --color-muted-foreground: hsl(240 3.8% 46.1%);
+
+  --color-accent: hsl(240 4.8% 95.9%);
+  --color-accent-foreground: hsl(240 5.9% 10%);
+
+  --color-destructive: hsl(0 72.2% 50.6%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+
+  --color-border: hsl(240 5.9% 90%);
+  --color-input: hsl(240 5.9% 90%);
+  --color-ring: hsl(240 5.9% 10%);
+
+  --radius-sm: calc(0.5rem - 4px);
+  --radius-md: calc(0.5rem - 2px);
+  --radius-lg: 0.5rem;
+  --radius-xl: calc(0.5rem + 4px);
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  /* Discontinued state — relies on cascade so it stays in CSS rather than
+     duplicating opacity utilities across every child class. */
+  .is-discontinued [data-fade] {
+    opacity: 0.55;
+  }
+
+  /* Hours <details> uses a definition-list grid that's awkward to express
+     purely with utilities (the dt/dd pairing). */
+  .hours-list {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 2px 1rem;
+  }
+}
+
+/* Print */
+@media print {
+  [data-print-hide] { display: none; }
+  body { font-size: 12pt; color: #000; background: #fff; }
+  .business-card { page-break-inside: avoid; border: 0; box-shadow: none; padding: 0.5rem 0; }
+  a { color: #000; text-decoration: underline; }
+}

@@ -1,0 +1,22 @@
+{{- /*
+  related-categories partial — renders an aside with hand-curated sibling
+  category links. Reads from data/related_categories.yaml keyed by current term slug.
+  No-op if the slug has no entry.
+*/ -}}
+{{- $slug := path.Base .RelPermalink -}}
+{{- $related := index site.Data.related_categories $slug -}}
+{{- if $related }}
+<aside class="mt-12 rounded-lg border border-border bg-muted/40 p-6" aria-labelledby="related-categories-heading">
+  <h2 id="related-categories-heading" class="m-0 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Related categories</h2>
+  <ul class="mt-3 flex flex-wrap gap-2 list-none p-0 m-0">
+    {{- range $related }}
+    {{- $page := site.GetPage (printf "/categories/%s" .) -}}
+    {{- with $page }}
+    <li>
+      <a class="inline-flex h-8 items-center rounded-md border border-border bg-background px-3 text-sm font-medium text-foreground no-underline transition-colors hover:bg-accent hover:text-accent-foreground" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{- end }}
+    {{- end }}
+  </ul>
+</aside>
+{{- end }}

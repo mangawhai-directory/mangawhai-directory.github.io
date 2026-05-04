@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article class="mx-auto max-w-3xl px-4 py-8 sm:py-12">
+  <h1 class="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">{{ .Title }}</h1>
+  <div class="prose mt-6 max-w-none text-foreground [&_p]:mb-4 [&_p]:text-base [&_p]:leading-7 [&_p]:text-muted-foreground [&_a]:font-medium [&_a]:text-foreground [&_a:hover]:underline [&_h2]:mt-8 [&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:tracking-tight [&_h3]:mt-6 [&_h3]:text-lg [&_h3]:font-semibold [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:mb-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:text-muted-foreground">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

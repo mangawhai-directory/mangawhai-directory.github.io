@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="mx-auto max-w-3xl px-4 py-8 sm:py-12">
+  <h1 class="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">{{ .Title }}</h1>
+  {{ with .Content }}
+  <div class="mt-4 text-base leading-7 text-muted-foreground [&_p]:mb-4 [&_a]:font-medium [&_a]:text-foreground [&_a:hover]:underline">
+    {{ . }}
+  </div>
+  {{ end }}
+  {{ with .Pages }}
+  <ul class="mt-6 list-none space-y-2 p-0 m-0">
+    {{ range . }}
+    <li>
+      <a class="inline-flex items-center font-medium text-foreground underline-offset-4 hover:underline" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</article>
+{{ end }}
