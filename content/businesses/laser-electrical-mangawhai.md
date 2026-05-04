@@ -1,15 +1,17 @@
 ---
 title: "Laser Electrical Mangawhai"
 slug: "laser-electrical-mangawhai"
-blurb: ""
+blurb: "Experienced electricians delivering residential, commercial and industrial services in Mangawhai and surrounding areas."
 address:
-  street: "Mangawhai Heads"
+  street: "2a Seabreeze Road"
   suburb: "Mangawhai Heads"
   postcode: "0505"
   country: "NZ"
+phone: "+6421372506"
+email: "Mangawhai@laserelectrical.co.nz"
 website: "https://www.lasergroup.co.nz/m/laser-electrical-mangawhai"
 socials:
-  facebook: ""
+  facebook: "https://www.facebook.com/laserelectricalmangawhai/"
   instagram: ""
   x: ""
   linkedin: ""
