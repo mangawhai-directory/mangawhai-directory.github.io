@@ -1,0 +1,203 @@
+backend:
+  name: github
+  repo: mangawhai-directory/mangawhai-directory.github.io
+  branch: main
+  # PAT auth — sign in via "Use a Personal Access Token" on the login screen.
+  # No OAuth proxy / Cloudflare Worker required for a single-owner setup.
+
+# Where new media uploads land in the repo, and how URLs are rewritten in
+# front-matter. Hugo serves /static/* at the site root, so an image saved to
+# static/uploads/foo.jpg is referenced as /uploads/foo.jpg in content.
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+# Show CMS-edited entries in the public site only after the editor explicitly
+# publishes; until then they live in PRs. Sveltia inherits Decap's editorial
+# workflow semantics — drafts stay in a feature branch via the GitHub backend.
+publish_mode: editorial_workflow
+
+site_url: https://mangawhai-directory.github.io
+display_url: https://mangawhai-directory.github.io
+logo_url: /uploads/admin-logo.png
+
+collections:
+  # ──────────────────────────────────────────────────────────────────────
+  # Businesses — the primary collection. One markdown file per listing.
+  # Field order here is the order they appear in the editor.
+  # ──────────────────────────────────────────────────────────────────────
+  - name: businesses
+    label: Businesses
+    label_singular: Business
+    folder: content/businesses
+    create: true
+    delete: true
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}{{#if status}} — {{status}}{{/if}}"
+    sortable_fields: [title, last_verified, status]
+    view_filters:
+      - { label: Active, field: status, pattern: active }
+      - { label: Closed, field: status, pattern: closed }
+    fields:
+      - { name: title, label: Business name, widget: string }
+      - { name: slug, label: URL slug, widget: string, hint: "Lowercase, hyphens only. Used as the filename. Don't change after creation — breaks deep links." }
+      - { name: blurb, label: Blurb, widget: text, required: false, hint: "One-sentence description shown under the name on the category page." }
+
+      - name: address
+        label: Address
+        widget: object
+        collapsed: false
+        fields:
+          - { name: street, label: Street, widget: string }
+          - { name: suburb, label: Suburb, widget: string, hint: "e.g. Mangawhai, Mangawhai Heads, Te Arai" }
+          - { name: postcode, label: Postcode, widget: string, pattern: ['^\d{4}$', 'Must be 4 digits'] }
+          - { name: country, label: Country code, widget: string, default: "NZ" }
+
+      - { name: phone, label: Phone, widget: string, required: false, hint: "E.164 format, e.g. +6494314505" }
+      - { name: email, label: Email, widget: string, required: false }
+      - { name: website, label: Website, widget: string, required: false, hint: "Full URL including https://" }
+
+      - name: socials
+        label: Social profiles
+        widget: object
+        collapsed: true
+        fields:
+          - { name: facebook, label: Facebook URL, widget: string, required: false }
+          - { name: instagram, label: Instagram URL, widget: string, required: false }
+          - { name: x, label: X (Twitter) URL, widget: string, required: false }
+          - { name: linkedin, label: LinkedIn URL, widget: string, required: false }
+          - { name: tiktok, label: TikTok URL, widget: string, required: false }
+          - { name: youtube, label: YouTube URL, widget: string, required: false }
+
+      # Hardcoded select rather than a relation against /content/categories/ —
+      # avoids the editor lag that hits relation widgets at scale, and the list
+      # changes rarely enough that a manual sync is cheap.
+      - name: categories
+        label: Categories
+        widget: select
+        multiple: true
+        min: 1
+        max: 3
+        options:
+          - { label: "Accommodation", value: "accommodation" }
+          - { label: "Automotive & Marine", value: "automotive-marine" }
+          - { label: "Bakeries", value: "bakeries" }
+          - { label: "Bars, Pubs & Breweries", value: "bars-pubs-breweries" }
+          - { label: "Beauty, Hair & Spa", value: "beauty-hair-spa" }
+          - { label: "Builders & Renovations", value: "builders-renovations" }
+          - { label: "Cafés & Restaurants", value: "cafes-restaurants" }
+          - { label: "Civil & Coastal Engineering", value: "civil-engineering" }
+          - { label: "Cleaning Services", value: "cleaning-services" }
+          - { label: "Community, Clubs & Churches", value: "community-clubs-churches" }
+          - { label: "Electricians", value: "electricians" }
+          - { label: "Fitness, Yoga & Pilates", value: "fitness-yoga-pilates" }
+          - { label: "Garden & Hardware", value: "garden-hardware" }
+          - { label: "Holiday Homes & Short-Term Rentals", value: "holiday-homes" }
+          - { label: "Landscaping & Gardening", value: "landscaping-gardening" }
+          - { label: "Medical & Dental", value: "medical-dental" }
+          - { label: "Painters & Decorators", value: "painters-decorators" }
+          - { label: "Plumbers", value: "plumbers" }
+          - { label: "Professional Services", value: "professional-services" }
+          - { label: "Property Management", value: "property-management" }
+          - { label: "Real Estate Agents", value: "real-estate" }
+          - { label: "Schools & Childcare", value: "schools-childcare" }
+          - { label: "Shops & Boutiques", value: "shops-boutiques" }
+          - { label: "Surf, Beach & Watersports", value: "surf-beach-watersports" }
+          - { label: "Takeaways & Food Trucks", value: "takeaways-food-trucks" }
+          - { label: "Technology & IT Services", value: "technology-it-services" }
+          - { label: "Things to Do & Tours", value: "things-to-do-tours" }
+          - { label: "Wineries & Vineyards", value: "wineries-vineyards" }
+
+      - name: tags
+        label: Tags
+        widget: list
+        required: false
+        hint: "Free-form labels. Common ones: family-friendly, dog-friendly, waterfront, takeaway, licensed, mangawhai-heads"
+
+      - name: hours
+        label: Opening hours
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.dayOfWeek}}: {{fields.opens}}–{{fields.closes}}"
+        fields:
+          - { name: dayOfWeek, label: Day(s), widget: list, hint: "One or more day names, e.g. Monday, Tuesday. Multiple days share an opens/closes pair." }
+          - { name: opens, label: Opens, widget: string, hint: 'HH:MM (24h), or "closed"' }
+          - { name: closes, label: Closes, widget: string, required: false, hint: "HH:MM (24h). Leave blank if 'closed' is set in opens." }
+
+      - { name: nzbn, label: NZBN, widget: string, required: false, hint: "13-digit NZ Business Number. Optional." }
+      - name: tier
+        label: Listing tier
+        widget: select
+        default: free
+        options:
+          - { label: Free, value: free }
+          - { label: Paid, value: paid }
+      - name: last_verified
+        label: Last verified
+        widget: datetime
+        type: date
+        format: "YYYY-MM-DD"
+        default: ""
+      - name: status
+        label: Status
+        widget: select
+        default: active
+        options:
+          - { label: Active, value: active }
+          - { label: Closed / Discontinued, value: closed }
+
+  # ──────────────────────────────────────────────────────────────────────
+  # Categories — folder collection over content/categories/<slug>/_index.md.
+  # `path` ensures new entries land at <slug>/_index.md (Hugo branch bundle).
+  # ──────────────────────────────────────────────────────────────────────
+  - name: categories
+    label: Categories
+    label_singular: Category
+    folder: content/categories
+    path: "{{slug}}/_index"
+    create: true
+    delete: false
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { name: title, label: Display name, widget: string, hint: "e.g. Cafés & Restaurants" }
+      - { name: description, label: SEO description, widget: text, hint: "1–2 sentences. Used as the meta description and the category-page intro." }
+      - { name: keywords, label: SEO keywords, widget: list, required: false }
+      - { name: body, label: Intro copy, widget: markdown, required: false }
+
+  # ──────────────────────────────────────────────────────────────────────
+  # Pages — fixed top-level content files (advertise, contact, privacy, terms).
+  # ──────────────────────────────────────────────────────────────────────
+  - name: pages
+    label: Pages
+    files:
+      - name: advertise
+        label: Advertise
+        file: content/advertise.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Meta description, widget: text }
+          - { name: body, label: Body, widget: markdown }
+      - name: contact
+        label: Contact
+        file: content/contact.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Meta description, widget: text }
+          - { name: body, label: Body, widget: markdown }
+      - name: privacy
+        label: Privacy Policy
+        file: content/privacy.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Meta description, widget: text }
+          - { name: body, label: Body, widget: markdown }
+      - name: terms
+        label: Terms & Conditions
+        file: content/terms.md
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Meta description, widget: text }
+          - { name: body, label: Body, widget: markdown }

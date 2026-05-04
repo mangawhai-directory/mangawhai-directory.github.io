@@ -2,39 +2,12 @@
   <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
     <a class="inline-flex items-center gap-2.5 text-base font-semibold tracking-tight no-underline text-foreground hover:text-foreground/80" href="{{ "/" | relURL }}" aria-label="{{ site.Title }} — home">
       {{- /*
-        Dolphin mark — cute, funky leaping dolphin in profile. The body
-        traces a smooth arc from tail (lower-left) up over a peak and
-        down to a stubby beak (upper-right). A small dorsal fin sits on
-        the back, an eye dot + smile add personality, and a wavy water
-        splash sits beneath. Everything inherits the theme foreground via
-        currentColor; eye/smile knock out using --color-background so
-        they read against any theme.
+        Dolphin mark — leaping dolphin and stylised wave, inlined from
+        static/logo.svg. Fill switched from the source #808080 to
+        currentColor so it inherits the theme foreground.
       */ -}}
-      <svg class="h-8 w-auto shrink-0" viewBox="0 0 80 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-        {{- /* Body — leaping arc from tail (lower-left) to beak (upper-right) */ -}}
-        <path fill="currentColor" d="M14 46
-          C 14 30, 28 16, 48 14
-          C 58 13, 68 16, 73 22
-          Q 76 26, 73 28
-          L 70 28
-          Q 67 27, 64 27
-          Q 60 28, 56 29
-          C 42 31, 28 36, 22 46
-          Q 20 50, 16 50
-          Q 12 50, 14 46 Z"/>
-        {{- /* Dorsal fin */ -}}
-        <path fill="currentColor" d="M36 20 Q 42 8 50 18 Q 44 22 36 22 Z"/>
-        {{- /* Tail flukes */ -}}
-        <path fill="currentColor" d="M14 48 Q 4 42 4 50 Q 6 56 14 54 Q 18 52 16 48 Z"/>
-        {{- /* Eye */ -}}
-        <circle cx="62" cy="22" r="1.7" fill="var(--color-background, #fff)"/>
-        {{- /* Cheeky smile */ -}}
-        <path fill="none" stroke="var(--color-background, #fff)" stroke-width="1.4" stroke-linecap="round" d="M66 26 Q 69 28 72 26"/>
-        {{- /* Splash droplets */ -}}
-        <circle cx="6" cy="34" r="1.4" fill="currentColor"/>
-        <circle cx="76" cy="40" r="1.4" fill="currentColor"/>
-        {{- /* Water wave under the dolphin */ -}}
-        <path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M2 58 Q 10 54 18 58 T 34 58 T 50 58 T 66 58 T 78 58"/>
+      <svg class="h-8 w-auto shrink-0" viewBox="0 0 307.965 197.979" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <path fill="currentColor" fill-rule="evenodd" d="M299.175 143.531C298.896 144.019 298.622 144.5 298.354 144.974C311.607 165.262 312.536 189.986 292.355 165.975C272.175 141.965 227.433 119.763 218.355 117.969C212.842 116.88 198.965 124.475 187.535 130.73C180.143 134.776 173.774 138.261 171.355 138.474C165.196 139.016 152.316 132.39 155.855 127.204C170.506 125.289 171.312 118.741 178.854 106.471C129.834 90.6561 89.1396 121.769 80.8544 129.972C80.7439 130.082 80.6335 130.191 80.5233 130.3C72.3698 138.368 65.1054 145.556 74.8545 164.039C84.7353 182.771 79.9346 198.105 74.8545 197.978C69.7743 197.85 74.8174 181.277 47.8544 176.976C20.8916 172.675 0.854908 191.977 0.854908 191.977C0.854908 191.977 -3.20075 184.942 6.3549 165.975C15.9106 147.009 40.9066 148.3 47.8549 138.474C54.8031 128.648 63.2505 97.0474 92.3549 70.4689C121.459 43.8903 139.249 41.2126 141.854 28.9657C143.327 22.0435 137.037 15.6459 132.118 10.642C128.334 6.79276 125.36 3.76825 127.354 1.96405C136.041 -5.15323 168.822 7.80896 200.854 28.9658C208.326 33.4008 202.38 33.2759 194.288 33.1059C189.015 32.9951 182.829 32.8651 178.854 33.9662C240.11 36.2983 283.943 64.1326 298.354 93.2316C312.078 120.943 304.744 133.781 299.175 143.531ZM155.856 74.964C202.464 71.5743 280.856 124.964 280.856 124.964C280.856 124.964 287.996 117.566 272.355 104.964C256.715 92.3613 225.734 68.1574 171.855 62.4636C117.977 56.7698 70.3555 117.464 70.3555 117.464C70.3555 117.464 109.247 78.3536 155.856 74.964Z"/>
       </svg>
       <span>{{ site.Title }}</span>
     </a>
