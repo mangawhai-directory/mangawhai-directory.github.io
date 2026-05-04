@@ -134,7 +134,12 @@ collections:
         options:
           - { label: Free, value: free }
           - { label: Paid, value: paid }
-      - { name: last_verified, label: Last verified, widget: date, format: "YYYY-MM-DD", default: "" }
+      - name: last_verified
+        label: Last verified
+        widget: datetime
+        type: date
+        format: "YYYY-MM-DD"
+        default: ""
       - name: status
         label: Status
         widget: select
