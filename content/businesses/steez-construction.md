@@ -1,0 +1,26 @@
+---
+title: "Steez Construction"
+slug: "steez-construction"
+blurb: "Mangawhai builders delivering skilled construction with creativity and attention to detail."
+address:
+  street: "Mangawhai"
+  suburb: "Mangawhai"
+  postcode: "0505"
+  country: "NZ"
+phone: "+64211387627"
+email: "steezconstruction@gmail.com"
+website: "https://www.steezconstruction.co.nz/"
+socials:
+  facebook: "https://www.facebook.com/SteezConstructionLTD/"
+  instagram: ""
+  x: ""
+  linkedin: ""
+  tiktok: ""
+  youtube: ""
+categories: ["builders-renovations"]
+tags: []
+hours: []
+tier: "free"
+last_verified: "2026-05-04"
+status: "active"
+---
