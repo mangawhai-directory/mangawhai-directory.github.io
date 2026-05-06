@@ -1,23 +1,28 @@
 ---
-title: "Mangawhai Mechanic Ltd"
-slug: "mangawhai-mechanic"
-blurb: ""
+title: Mangawhai Mechanic Ltd
+slug: mangawhai-mechanic
+blurb: ''
 address:
-  street: "2188 Cove Road"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
+  street: 2188 Cove Road
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: 09 553 3020
+email: zane@mangawhaimechanic.co.nz
+website: ''
 socials:
-  facebook: "https://www.facebook.com/mangawhaimechanic/"
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["automotive-marine"]
+  facebook: https://www.facebook.com/mangawhaimechanic/
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - automotive-marine
 tags: []
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+tier: free
+last_verified: 2026-05-04
+status: active
 ---
