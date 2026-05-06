@@ -14,7 +14,7 @@ email: jen@jenspastries.co.nz
 website: https://www.jenspastries.co.nz/
 socials:
   facebook: ''
-  instagram: ''
+  instagram: https://www.instagram.com/jens_pastries/
   x: ''
   linkedin: ''
   tiktok: ''
