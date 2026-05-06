@@ -1,6 +1,6 @@
 ---
 title: AJ's Bakery and Cafe
-slug: https://localista.co.nz/listing/ajs-bakery-and-cafe?place=mangawhai%2C+nz
+slug: ajs-bakery-and-cafe
 blurb: ''
 address:
   street: 43 Moir Street
@@ -9,7 +9,7 @@ address:
   country: NZ
 phone: 021 111 4641
 email: ''
-website: ''
+website: https://localista.co.nz/listing/ajs-bakery-and-cafe?place=mangawhai%2C+nz
 socials:
   facebook: ''
   instagram: ''
