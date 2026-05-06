@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: ''
+phone: 09 431 4814
 email: info@mangawhaimarine.co.nz
 website: https://www.jacksonbrown.co.nz
 socials:
