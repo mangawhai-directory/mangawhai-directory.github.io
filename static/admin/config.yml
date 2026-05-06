@@ -18,7 +18,6 @@ publish_mode: editorial_workflow
 
 site_url: https://mangawhai-directory.github.io
 display_url: https://mangawhai-directory.github.io
-logo_url: /uploads/admin-logo.png
 
 collections:
   # ──────────────────────────────────────────────────────────────────────
