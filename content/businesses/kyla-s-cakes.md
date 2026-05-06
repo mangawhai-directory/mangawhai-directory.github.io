@@ -1,7 +1,7 @@
 ---
 title: Kyla's Cakes
 slug: kylas-cakes
-blurb: ''
+blurb: Online Cake Shop
 address:
   street: Mangawhai
   suburb: Mangawhai
