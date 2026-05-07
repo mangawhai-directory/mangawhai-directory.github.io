@@ -4,7 +4,7 @@ slug: bunker-sports-bar
 blurb: ''
 address:
   street: 3 Main Street
-  suburb: Mangawhai
+  suburb: Mangawhai Central
   postcode: '0505'
   country: NZ
 phone: 09 370 0231
