@@ -4,7 +4,7 @@ slug: mangawhai-tavern
 blurb: ''
 address:
   street: 2 Moir Street
-  suburb: Mangawhai
+  suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
 phone: 09 431 4505
