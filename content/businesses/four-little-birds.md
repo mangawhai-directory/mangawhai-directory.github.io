@@ -1,7 +1,7 @@
 ---
 title: Four Little Birds
 slug: four-little-birds
-blurb: ''
+blurb: Patisserie and custom cakes
 address:
   street: Mangawhai Central
   suburb: Mangawhai
