@@ -38,6 +38,11 @@ collections:
     view_filters:
       - { label: Active, field: status, pattern: active }
       - { label: Closed, field: status, pattern: closed }
+    view_groups:
+      - { label: Category, field: categories }
+      - { label: Status, field: status }
+      - { label: Tier, field: tier }
+      - { label: Suburb, field: address.suburb }
     fields:
       - { name: title, label: Business name, widget: string }
       - { name: slug, label: URL slug, widget: string, hint: "Lowercase, hyphens only. Used as the filename. Don't change after creation — breaks deep links." }
