@@ -1,28 +1,28 @@
 ---
-title: HEAD ROCK Bakery
-slug: head-rock-bakery
+title: The Beauty Lab Mangawhai
+slug: the-beauty-lab-mangawhai
 blurb: ''
 address:
   street: 7 Wood Street
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 4041
-email: headrock@countrybake.co.nz
+phone: 021 134 9349
+email: ''
 website: ''
 socials:
-  facebook: https://www.facebook.com/countrybakeheadrock/
+  facebook: https://www.facebook.com/AlanaMennellMakeUp/
   instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
-  - bakeries
+  - beauty-hair-spa
 tags: []
 hours: []
 nzbn: ''
 tier: free
-last_verified: 2026-05-04
+last_verified: 2026-05-07
 status: active
 ---

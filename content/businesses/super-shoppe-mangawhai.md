@@ -1,25 +1,28 @@
 ---
-title: "Super Shoppe Mangawhai"
-slug: "super-shoppe-mangawhai"
-blurb: ""
+title: Super Shoppe Mangawhai
+slug: super-shoppe-mangawhai
+blurb: Formerly Jackson Brown
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-phone: "+6494314814"
-website: "https://supershoppemangawhai.co.nz"
+  street: 194 Molesworth Drive
+  suburb: Mangawhai Heads
+  postcode: '0505'
+  country: NZ
+phone: 09 431 4814
+email: info@supershoppemangawhai.co.nz
+website: https://supershoppemangawhai.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["automotive-marine"]
+  facebook: ''
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - automotive-marine
 tags: []
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+tier: free
+last_verified: 2026-05-04
+status: active
 ---

@@ -1,15 +1,15 @@
 ---
-title: Mangawhai Tavern
-slug: mangawhai-tavern
+title: AJ's Bakery and Cafe
+slug: ajs-bakery-and-cafe
 blurb: ''
 address:
-  street: 2 Moir Street
+  street: 43 Moir Street
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 431 4505
+phone: 021 111 4641
 email: ''
-website: https://themangawhaitavern.co.nz
+website: https://localista.co.nz/listing/ajs-bakery-and-cafe?place=mangawhai%2C+nz
 socials:
   facebook: ''
   instagram: ''
@@ -18,12 +18,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - bars-pubs-breweries
-  - cafes-restaurants
+  - bakeries
 tags: []
 hours: []
 nzbn: ''
 tier: free
-last_verified: 2026-05-04
+last_verified: 2026-05-07
 status: active
 ---

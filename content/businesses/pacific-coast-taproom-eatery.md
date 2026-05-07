@@ -1,15 +1,15 @@
 ---
-title: Bunker Sports Bar
-slug: bunker-sports-bar
+title: Pacific Coast Taproom & Eatery
+slug: pacific-coast-taproom-and-eatery
 blurb: ''
 address:
-  street: 3 Main Street
-  suburb: Mangawhai Central
+  street: 40 Moir Street
+  suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 370 0231
-email: admin@thebunkersportsbar.co.nz
-website: https://thebunkersportsbar.co.nz
+phone: 09 945 3838
+email: ''
+website: https://taproom.nz/
 socials:
   facebook: ''
   instagram: ''
@@ -23,6 +23,6 @@ tags: []
 hours: []
 nzbn: ''
 tier: free
-last_verified: 2026-05-04
+last_verified: 2026-05-07
 status: active
 ---
