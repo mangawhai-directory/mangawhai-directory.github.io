@@ -1,6 +1,6 @@
 ---
-title: Hairdressers & Barbers
+title: Hair
 description: Hairdressers and barbers in Mangawhai
 keywords:
-  - Hairdressers, barbers
+  - Hairdressers, barbers, barbershop
 ---
