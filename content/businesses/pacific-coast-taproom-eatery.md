@@ -1,15 +1,15 @@
 ---
-title: Pacific Coast Taproom & Eatery
-slug: pacific-coast-taproom-and-eatery
+title: The Local
+slug: the-local
 blurb: ''
 address:
-  street: 40 Moir Street
+  street: 1 Molesworth Drive
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 945 3838
+phone: ''
 email: ''
-website: https://taproom.nz/
+website: ''
 socials:
   facebook: ''
   instagram: ''
