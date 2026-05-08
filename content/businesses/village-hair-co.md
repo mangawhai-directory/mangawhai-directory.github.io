@@ -1,23 +1,28 @@
 ---
-title: "The Village Hair Co"
-slug: "village-hair-co"
-blurb: ""
+title: The Village Hair Co
+slug: the-village-hair-co
+blurb: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: ''
+email: ''
+website: ''
 socials:
-  facebook: "https://www.facebook.com/thevillagehairco/"
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["beauty-hair-spa"]
+  facebook: https://www.facebook.com/thevillagehairco/
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - beauty-hair-spa
 tags: []
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+tier: free
+last_verified: 2026-05-04
+status: active
 ---
