@@ -1,23 +1,28 @@
 ---
-title: "Mangawhai Piercing"
-slug: "mangawhai-piercing"
-blurb: ""
+title: Mangawhai Piercing
+slug: mangawhai-piercing
+blurb: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
+  street: Mangawhai
+  suburb: Mangawhai Village
+  postcode: '0505'
+  country: NZ
+phone: 021 149 3185
+email: mangawhaipiercing@gmail.com
+website: ''
 socials:
-  facebook: "https://www.facebook.com/people/Mangawhai-Piercing/61577332770382/"
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["beauty-hair-spa"]
+  facebook: https://www.facebook.com/people/Mangawhai-Piercing/61577332770382/
+  instagram: https://www.instagram.com/mangawhaipiercing/
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - beauty-hair-spa
 tags: []
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+tier: free
+last_verified: 2026-05-04
+status: active
 ---
