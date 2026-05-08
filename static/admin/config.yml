@@ -74,44 +74,18 @@ collections:
           - { name: tiktok, label: TikTok URL, widget: string, required: false }
           - { name: youtube, label: YouTube URL, widget: string, required: false }
 
-      # Hardcoded select rather than a relation against /content/categories/ —
-      # avoids the editor lag that hits relation widgets at scale, and the list
-      # changes rarely enough that a manual sync is cheap.
+      # Pulled dynamically from the categories collection so newly-created
+      # categories show up in the dropdown without needing to edit this file.
       - name: categories
         label: Categories
-        widget: select
+        widget: relation
+        collection: categories
+        value_field: "{{slug}}"
+        display_fields: [title]
+        search_fields: [title]
         multiple: true
         min: 1
         max: 3
-        options:
-          - { label: "Accommodation", value: "accommodation" }
-          - { label: "Automotive & Marine", value: "automotive-marine" }
-          - { label: "Bakeries", value: "bakeries" }
-          - { label: "Bars, Pubs & Breweries", value: "bars-pubs-breweries" }
-          - { label: "Beauty, Hair & Spa", value: "beauty-hair-spa" }
-          - { label: "Builders & Renovations", value: "builders-renovations" }
-          - { label: "Cafés & Restaurants", value: "cafes-restaurants" }
-          - { label: "Civil & Coastal Engineering", value: "civil-engineering" }
-          - { label: "Cleaning Services", value: "cleaning-services" }
-          - { label: "Community, Clubs & Churches", value: "community-clubs-churches" }
-          - { label: "Electricians", value: "electricians" }
-          - { label: "Fitness, Yoga & Pilates", value: "fitness-yoga-pilates" }
-          - { label: "Garden & Hardware", value: "garden-hardware" }
-          - { label: "Holiday Homes & Short-Term Rentals", value: "holiday-homes" }
-          - { label: "Landscaping & Gardening", value: "landscaping-gardening" }
-          - { label: "Medical & Dental", value: "medical-dental" }
-          - { label: "Painters & Decorators", value: "painters-decorators" }
-          - { label: "Plumbers", value: "plumbers" }
-          - { label: "Professional Services", value: "professional-services" }
-          - { label: "Property Management", value: "property-management" }
-          - { label: "Real Estate Agents", value: "real-estate" }
-          - { label: "Schools & Childcare", value: "schools-childcare" }
-          - { label: "Shops & Boutiques", value: "shops-boutiques" }
-          - { label: "Surf, Beach & Watersports", value: "surf-beach-watersports" }
-          - { label: "Takeaways & Food Trucks", value: "takeaways-food-trucks" }
-          - { label: "Technology & IT Services", value: "technology-it-services" }
-          - { label: "Things to Do & Tours", value: "things-to-do-tours" }
-          - { label: "Wineries & Vineyards", value: "wineries-vineyards" }
 
       - name: tags
         label: Tags
