@@ -1,7 +1,7 @@
 ---
 title: Shine Aesthetics
 slug: shine-aethetics
-blurb: Specialises in Injectables & Fillers
+blurb: Injectables & Fillers
 address:
   street: Shop 6,  2 Leslie Street
   suburb: Mangawhai Village
