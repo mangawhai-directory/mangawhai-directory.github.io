@@ -47,6 +47,18 @@
       {{- end -}}
       {{- end }}
 
+      {{- with .Params.tags }}
+      {{- if . }}
+      <ul data-fade class="mt-2 flex flex-wrap gap-1.5 list-none p-0 m-0" aria-label="Services">
+        {{- range . }}
+        <li>
+          <span class="inline-flex items-center rounded-full border border-border bg-muted/50 px-2 py-0.5 text-xs font-medium text-muted-foreground">{{ . }}</span>
+        </li>
+        {{- end }}
+      </ul>
+      {{- end }}
+      {{- end }}
+
       {{- with .Params.hours }}
       {{- if . }}
       {{- /* Group hours entries that share the exact same dayOfWeek so split-shift
