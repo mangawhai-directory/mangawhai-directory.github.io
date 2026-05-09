@@ -1,5 +1,5 @@
 ---
-title: Schools, kindergartens & Childcare
+title: Schools, Kindergartens & Childcare
 description: Find schools, kindergartens, early childhood centres and out-of-school care in Mangawhai and Mangawhai Heads.
 keywords:
   - schools mangawhai
