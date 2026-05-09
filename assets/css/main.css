@@ -63,11 +63,29 @@
   }
 
   /* Hours <details> uses a definition-list grid that's awkward to express
-     purely with utilities (the dt/dd pairing). */
+     purely with utilities (the dt/dd pairing). On mobile the day list can
+     be a long string ("Monday, Tuesday, ..., Sunday") that overflows a
+     two-column grid, so stack dt/dd then switch to two columns at sm. */
   .hours-list {
     display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 2px 1rem;
+    grid-template-columns: 1fr;
+    gap: 0.125rem 1rem;
+  }
+  .hours-list dt { min-width: 0; }
+  .hours-list dd {
+    padding-left: 1rem;
+    margin-bottom: 0.375rem;
+  }
+  .hours-list dd:last-of-type { margin-bottom: 0; }
+  @media (min-width: 640px) {
+    .hours-list {
+      grid-template-columns: max-content 1fr;
+      gap: 2px 1rem;
+    }
+    .hours-list dd {
+      padding-left: 0;
+      margin-bottom: 0;
+    }
   }
 }
 
