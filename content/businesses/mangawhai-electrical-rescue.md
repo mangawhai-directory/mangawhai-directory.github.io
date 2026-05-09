@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - electricians
-tags: []
+tags:
+  - Electrical
+  - After Hours
+
 hours: []
 nzbn: ''
 tier: free

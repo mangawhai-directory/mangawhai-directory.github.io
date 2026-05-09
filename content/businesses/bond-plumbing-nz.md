@@ -19,7 +19,12 @@ socials:
   youtube: ''
 categories:
   - plumbers
-tags: []
+tags:
+  - Plumbing
+  - Gas Fitting
+  - Drainage
+  - Bathroom Renovations
+
 hours: []
 nzbn: ''
 tier: free

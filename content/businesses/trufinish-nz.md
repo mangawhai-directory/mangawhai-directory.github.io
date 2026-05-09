@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - painters-decorators
-tags: []
+tags:
+  - Painting
+  - Decorating
+
 hours: []
 nzbn: ''
 tier: free

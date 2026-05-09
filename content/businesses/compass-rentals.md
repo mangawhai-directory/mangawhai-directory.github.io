@@ -15,7 +15,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["property-management"]
-tags: []
+tags:
+  - Rentals
+  - Property Management
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

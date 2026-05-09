@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - automotive-marine
-tags: []
+tags:
+  - Panel Beating
+  - Body Shop
+
 hours: []
 nzbn: ''
 tier: free

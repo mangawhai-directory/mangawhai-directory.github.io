@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - accommodation
-tags: []
+tags:
+  - Boutique Lodge
+  - Luxury
+
 hours: []
 nzbn: ''
 tier: free

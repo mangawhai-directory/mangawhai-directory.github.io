@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - hairdressers-barbers
-tags: []
+tags:
+  - Barber
+
 hours: []
 nzbn: ''
 tier: free

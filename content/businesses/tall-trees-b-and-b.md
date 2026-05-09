@@ -16,7 +16,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["accommodation"]
-tags: []
+tags:
+  - Bed & Breakfast
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

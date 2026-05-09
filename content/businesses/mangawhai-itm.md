@@ -20,7 +20,10 @@ socials:
 categories:
   - garden-hardware
   - builders-renovations
-tags: []
+tags:
+  - Building Supplies
+  - Hardware
+
 hours: []
 nzbn: ''
 tier: free

@@ -20,7 +20,11 @@ socials:
 categories:
   - garden-hardware
   - landscaping-gardening
-tags: []
+tags:
+  - Mowers
+  - Small Engines
+  - Repairs
+
 hours: []
 nzbn: ''
 tier: free

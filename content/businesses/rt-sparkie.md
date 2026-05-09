@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - electricians
-tags: []
+tags:
+  - Electrical
+
 hours: []
 nzbn: ''
 tier: free

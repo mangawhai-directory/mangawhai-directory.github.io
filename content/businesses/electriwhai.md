@@ -18,7 +18,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["electricians"]
-tags: []
+tags:
+  - Electrical
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

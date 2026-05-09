@@ -17,7 +17,9 @@ socials:
   youtube: ''
 categories:
   - fitness-yoga-pilates
-tags: []
+tags:
+  - Gym
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

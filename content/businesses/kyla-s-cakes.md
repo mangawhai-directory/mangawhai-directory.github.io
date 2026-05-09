@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - bakeries
-tags: []
+tags:
+  - Cakes
+  - Online
+
 hours: []
 nzbn: ''
 tier: free

@@ -17,7 +17,9 @@ socials:
   youtube: ''
 categories:
   - surf-beach-watersports
-tags: []
+tags:
+  - Surf Lessons
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

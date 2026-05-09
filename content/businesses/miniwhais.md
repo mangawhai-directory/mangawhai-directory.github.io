@@ -19,6 +19,7 @@ categories:
   - schools-childcare
 tags:
   - licensed
+  - Early Childhood
 hours: []
 tier: free
 last_verified: '2026-05-09'

@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - bars-pubs-breweries
-tags: []
+tags:
+  - Sports Bar
+
 hours: []
 nzbn: ''
 tier: free

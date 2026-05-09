@@ -16,7 +16,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["accommodation"]
-tags: []
+tags:
+  - Lodge
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

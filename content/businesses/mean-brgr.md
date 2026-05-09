@@ -22,6 +22,7 @@ categories:
   - cafes-restaurants
 tags:
   - takeaway
+  - Burgers
 hours:
   - dayOfWeek: ["Monday", "Tuesday", "Wednesday"]
     opens: "17:00"

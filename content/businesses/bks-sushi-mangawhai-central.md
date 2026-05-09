@@ -20,7 +20,10 @@ socials:
 categories:
   - takeaways-food-trucks
   - cafes-restaurants
-tags: []
+tags:
+  - Sushi
+  - Japanese
+
 hours: []
 nzbn: ''
 tier: free

@@ -16,7 +16,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["accommodation"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Chalets
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

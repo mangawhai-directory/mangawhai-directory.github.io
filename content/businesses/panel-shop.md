@@ -18,7 +18,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["automotive-marine"]
-tags: []
+tags:
+  - Panel Beating
+
 hours:
   - dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     opens: "08:00"

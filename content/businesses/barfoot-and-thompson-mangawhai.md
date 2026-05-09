@@ -17,7 +17,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["real-estate"]
-tags: []
+tags:
+  - Real Estate
+
 hours:
   - dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     opens: "08:30"

@@ -20,7 +20,10 @@ socials:
 categories:
   - holiday-homes
   - property-management
-tags: []
+tags:
+  - Holiday Rental Management
+  - Bach
+
 hours: []
 nzbn: ''
 tier: free

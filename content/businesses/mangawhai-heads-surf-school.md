@@ -19,6 +19,7 @@ categories:
   - surf-beach-watersports
 tags:
   - mangawhai-heads
+  - Surf Lessons
 hours: []
 tier: free
 last_verified: '2026-05-09'

@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - plumbers
-tags: []
+tags:
+  - Plumbing
+  - Gas Fitting
+  - Drainlaying
+
 hours: []
 nzbn: ''
 tier: free

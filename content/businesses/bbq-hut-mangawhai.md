@@ -17,7 +17,11 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["takeaways-food-trucks", "cafes-restaurants"]
-tags: ["takeaway"]
+tags:
+  - takeaway
+  - Burgers
+  - BBQ
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

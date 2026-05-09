@@ -16,7 +16,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["painters-decorators"]
-tags: []
+tags:
+  - Painting
+  - Property Maintenance
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

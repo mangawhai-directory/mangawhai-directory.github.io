@@ -20,7 +20,11 @@ socials:
 categories:
   - bars-pubs-breweries
   - community-clubs-churches
-tags: []
+tags:
+  - Sports Club
+  - Bar
+  - Restaurant
+
 hours: []
 nzbn: ''
 tier: free

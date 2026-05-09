@@ -21,7 +21,9 @@ socials:
   youtube: ''
 categories:
   - bakeries
-tags: []
+tags:
+  - Pastries
+
 hours: []
 nzbn: ''
 tier: free

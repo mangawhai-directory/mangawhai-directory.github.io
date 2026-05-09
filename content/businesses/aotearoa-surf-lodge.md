@@ -18,7 +18,10 @@ socials:
 categories:
   - accommodation
   - surf-beach-watersports
-tags: []
+tags:
+  - Lodge
+  - Surf
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

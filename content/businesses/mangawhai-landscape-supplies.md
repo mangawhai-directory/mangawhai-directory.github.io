@@ -17,7 +17,9 @@ socials:
   youtube: ''
 categories:
   - garden-hardware
-tags: []
+tags:
+  - Landscape Supplies
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

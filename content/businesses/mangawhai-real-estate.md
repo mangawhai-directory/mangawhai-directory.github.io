@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - real-estate
-tags: []
+tags:
+  - Real Estate
+  - Waterfront
+  - Architectural Homes
+
 hours: []
 nzbn: ''
 tier: free

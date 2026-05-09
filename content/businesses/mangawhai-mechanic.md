@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - automotive-marine
-tags: []
+tags:
+  - Mechanic
+
 hours: []
 nzbn: ''
 tier: free

@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - electricians
-tags: []
+tags:
+  - Electrical
+  - Solar
+  - Heat Pumps
+
 hours: []
 nzbn: ''
 tier: free

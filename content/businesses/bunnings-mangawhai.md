@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - garden-hardware
-tags: []
+tags:
+  - Hardware
+  - Garden
+
 hours: []
 nzbn: ''
 tier: free

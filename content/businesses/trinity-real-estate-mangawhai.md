@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - real-estate
-tags: []
+tags:
+  - Real Estate
+
 hours: []
 nzbn: ''
 tier: free

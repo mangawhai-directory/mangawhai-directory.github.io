@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - takeaways-food-trucks
-tags: []
+tags:
+  - Fish & Chips
+
 hours: []
 nzbn: ''
 tier: free

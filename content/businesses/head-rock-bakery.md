@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - bakeries
-tags: []
+tags:
+  - Bakery
+
 hours: []
 nzbn: ''
 tier: free

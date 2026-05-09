@@ -16,7 +16,11 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["surf-beach-watersports", "shops-boutiques"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Surf Shop
+  - Skate Shop
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

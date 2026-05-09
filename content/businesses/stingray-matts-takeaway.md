@@ -17,7 +17,11 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["takeaways-food-trucks"]
-tags: ["takeaway", "mangawhai-heads"]
+tags:
+  - takeaway
+  - mangawhai-heads
+  - Fish & Chips
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

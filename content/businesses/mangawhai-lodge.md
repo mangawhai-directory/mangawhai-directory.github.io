@@ -20,6 +20,7 @@ categories:
   - accommodation
 tags:
   - mangawhai-heads
+  - Lodge
 hours: []
 tier: free
 last_verified: '2026-05-09'

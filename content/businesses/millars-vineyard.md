@@ -17,7 +17,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["wineries-vineyards"]
-tags: []
+tags:
+  - Vineyard
+  - Winery
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

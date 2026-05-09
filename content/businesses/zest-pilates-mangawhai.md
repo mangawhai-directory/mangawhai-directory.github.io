@@ -16,7 +16,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["fitness-yoga-pilates"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Pilates
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

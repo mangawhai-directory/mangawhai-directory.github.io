@@ -17,7 +17,9 @@ socials:
   youtube: ''
 categories:
   - schools-childcare
-tags: []
+tags:
+  - Primary School
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

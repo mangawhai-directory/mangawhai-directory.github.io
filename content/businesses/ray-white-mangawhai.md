@@ -16,7 +16,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["real-estate"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Real Estate
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

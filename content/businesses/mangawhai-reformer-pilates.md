@@ -16,7 +16,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["fitness-yoga-pilates"]
-tags: []
+tags:
+  - Pilates
+  - Reformer
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

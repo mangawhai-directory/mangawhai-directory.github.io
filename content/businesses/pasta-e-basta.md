@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - takeaways-food-trucks
-tags: []
+tags:
+  - Italian
+  - Pasta
+
 hours: []
 nzbn: ''
 tier: free

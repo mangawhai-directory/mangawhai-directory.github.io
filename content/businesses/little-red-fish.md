@@ -20,7 +20,9 @@ socials:
 categories:
   - takeaways-food-trucks
   - cafes-restaurants
-tags: []
+tags:
+  - Fish & Chips
+
 hours: []
 nzbn: ''
 tier: free

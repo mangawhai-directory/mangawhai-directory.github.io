@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - accommodation
-tags: []
+tags:
+  - Apartments
+  - Villas
+
 hours: []
 nzbn: ''
 tier: free

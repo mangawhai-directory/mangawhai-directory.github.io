@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - bakeries
-tags: []
+tags:
+  - Patisserie
+  - Custom Cakes
+
 hours: []
 nzbn: ''
 tier: free

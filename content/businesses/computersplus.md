@@ -17,7 +17,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["technology-it-services"]
-tags: []
+tags:
+  - Computer Repairs
+  - IT Support
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

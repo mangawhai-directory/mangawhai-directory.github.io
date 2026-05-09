@@ -20,7 +20,11 @@ socials:
 categories:
   - bars-pubs-breweries
   - cafes-restaurants
-tags: []
+tags:
+  - Bar
+  - Eatery
+  - Dog Friendly
+
 hours: []
 nzbn: ''
 tier: free

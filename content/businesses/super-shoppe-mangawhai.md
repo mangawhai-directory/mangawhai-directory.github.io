@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - automotive-marine
-tags: []
+tags:
+  - Petrol Station
+  - Convenience
+
 hours: []
 nzbn: ''
 tier: free

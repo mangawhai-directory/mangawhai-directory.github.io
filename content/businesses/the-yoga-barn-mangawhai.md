@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - fitness-yoga-pilates
-tags: []
+tags:
+  - Yoga
+  - Sound Healing
+  - Breathwork
+
 hours: []
 nzbn: ''
 tier: free

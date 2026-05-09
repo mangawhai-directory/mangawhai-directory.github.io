@@ -17,7 +17,10 @@ socials:
   youtube: ''
 categories:
   - garden-hardware
-tags: []
+tags:
+  - Plant Nursery
+  - Garden
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

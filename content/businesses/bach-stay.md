@@ -19,6 +19,8 @@ categories:
   - holiday-homes
 tags:
   - mangawhai-heads
+  - Holiday Rental
+  - Bach
 hours: []
 tier: free
 last_verified: '2026-05-09'

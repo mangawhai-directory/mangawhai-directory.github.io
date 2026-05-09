@@ -20,7 +20,10 @@ socials:
 categories:
   - bars-pubs-breweries
   - cafes-restaurants
-tags: []
+tags:
+  - Taproom
+  - Eatery
+
 hours: []
 nzbn: ''
 tier: free

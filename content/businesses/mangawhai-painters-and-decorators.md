@@ -16,7 +16,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["painters-decorators"]
-tags: []
+tags:
+  - Painting
+  - Decorating
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

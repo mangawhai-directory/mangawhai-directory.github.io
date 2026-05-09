@@ -20,7 +20,10 @@ socials:
 categories:
   - holiday-homes
   - accommodation
-tags: []
+tags:
+  - Holiday Rental
+  - Bach
+
 hours: []
 nzbn: ''
 tier: free

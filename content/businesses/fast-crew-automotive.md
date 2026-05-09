@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - automotive-marine
-tags: []
+tags:
+  - Mobile Mechanic
+
 hours: []
 nzbn: ''
 tier: free

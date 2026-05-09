@@ -19,6 +19,8 @@ categories:
   - accommodation
 tags:
   - mangawhai-heads
+  - Holiday Park
+  - Camping
 hours: []
 tier: free
 last_verified: '2026-05-09'

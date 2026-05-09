@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - electricians
-tags: []
+tags:
+  - Electrical
+  - Heat Pumps
+  - Air Conditioning
+
 hours: []
 nzbn: ''
 tier: free

@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - fitness-yoga-pilates
-tags: []
+tags:
+  - Gym
+  - Personal Training
+
 hours: []
 nzbn: ''
 tier: free

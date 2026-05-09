@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - real-estate
-tags: []
+tags:
+  - Real Estate
+  - Rentals
+  - Property Management
+
 hours: []
 nzbn: ''
 tier: free

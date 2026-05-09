@@ -20,7 +20,10 @@ socials:
 categories:
   - bars-pubs-breweries
   - cafes-restaurants
-tags: []
+tags:
+  - Tavern
+  - Live Music
+
 hours: []
 nzbn: ''
 tier: free

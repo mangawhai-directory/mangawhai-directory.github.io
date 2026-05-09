@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - fitness-yoga-pilates
-tags: []
+tags:
+  - Gym
+  - 24/7
+
 hours: []
 nzbn: ''
 tier: free
