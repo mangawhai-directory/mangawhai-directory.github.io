@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - cleaning-services
-tags: []
+tags:
+  - Eco Cleaning
+  - Bach Management
+  - Home Staging
+
 hours: []
 nzbn: ''
 tier: free

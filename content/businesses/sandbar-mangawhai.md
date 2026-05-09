@@ -16,7 +16,11 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["cafes-restaurants"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Bar
+  - Restaurant
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - landscaping-gardening
-tags: []
+tags:
+  - Arborist
+  - Tree Removal
+  - Land Clearing
+
 hours: []
 nzbn: ''
 tier: free

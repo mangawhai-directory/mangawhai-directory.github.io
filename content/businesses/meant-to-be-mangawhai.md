@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - shops-boutiques
-tags: []
+tags:
+  - Gifts
+  - Homeware
+  - Boutique
+
 hours: []
 nzbn: ''
 tier: free

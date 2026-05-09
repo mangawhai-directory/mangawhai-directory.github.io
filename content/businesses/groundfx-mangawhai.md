@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - landscaping-gardening
-tags: []
+tags:
+  - Landscaping
+
 hours: []
 nzbn: ''
 tier: free

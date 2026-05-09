@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - shops-boutiques
-tags: []
+tags:
+  - Art Gallery
+
 hours: []
 nzbn: ''
 tier: free

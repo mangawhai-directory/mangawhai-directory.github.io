@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - shops-boutiques
-tags: []
+tags:
+  - Art Gallery
+  - Gifts
+  - Florist
+
 hours: []
 nzbn: ''
 tier: free

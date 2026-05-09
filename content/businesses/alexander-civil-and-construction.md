@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - civil-engineering
-tags: []
+tags:
+  - Civil Construction
+  - Drilling
+
 hours: []
 nzbn: ''
 tier: free

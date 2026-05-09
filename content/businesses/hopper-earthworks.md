@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - civil-engineering
-tags: []
+tags:
+  - Earthworks
+  - Excavation
+
 hours: []
 nzbn: ''
 tier: free

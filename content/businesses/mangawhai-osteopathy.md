@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - medical-dental
-tags: []
+tags:
+  - Osteopath
+
 hours: []
 nzbn: ''
 tier: free

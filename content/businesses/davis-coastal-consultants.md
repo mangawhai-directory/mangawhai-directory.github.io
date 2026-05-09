@@ -18,7 +18,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["civil-engineering"]
-tags: []
+tags:
+  - Coastal Engineering
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

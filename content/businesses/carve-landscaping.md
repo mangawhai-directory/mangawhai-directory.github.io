@@ -20,7 +20,9 @@ socials:
 categories:
   - landscaping-gardening
   - builders-renovations
-tags: []
+tags:
+  - Landscaping
+
 hours: []
 nzbn: ''
 tier: free

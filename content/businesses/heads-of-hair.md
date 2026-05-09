@@ -20,6 +20,7 @@ categories:
   - hairdressers-barbers
 tags:
   - mangawhai-heads
+  - Hairdressing
 hours: []
 tier: free
 last_verified: '2026-05-09'

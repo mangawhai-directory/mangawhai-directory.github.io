@@ -18,7 +18,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["professional-services"]
-tags: []
+tags:
+  - Marketing
+
 hours:
   - dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     opens: "09:00"

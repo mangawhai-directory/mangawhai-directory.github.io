@@ -17,7 +17,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["cafes-restaurants", "takeaways-food-trucks"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Indian
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

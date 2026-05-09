@@ -16,7 +16,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["things-to-do-tours"]
-tags: []
+tags:
+  - Fishing Charter
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

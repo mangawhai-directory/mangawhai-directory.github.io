@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
-tags: []
+tags:
+  - Day Spa
+
 hours: []
 nzbn: ''
 tier: free

@@ -17,7 +17,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["community-clubs-churches", "professional-services"]
-tags: []
+tags:
+  - Business Association
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

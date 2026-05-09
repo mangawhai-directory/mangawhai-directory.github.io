@@ -18,7 +18,9 @@ socials:
 categories:
   - community-clubs-churches
   - shops-boutiques
-tags: []
+tags:
+  - Op Shop
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

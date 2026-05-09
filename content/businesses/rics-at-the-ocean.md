@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - cafes-restaurants
-tags: []
+tags:
+  - Pizza
+  - Restaurant
+
 hours: []
 nzbn: ''
 tier: free

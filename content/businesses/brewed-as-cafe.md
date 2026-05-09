@@ -18,7 +18,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["cafes-restaurants"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Cafe
+
 hours:
   - dayOfWeek: ["Sunday", "Monday", "Tuesday"]
     opens: "07:30"

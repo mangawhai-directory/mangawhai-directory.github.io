@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - medical-dental
-tags: []
+tags:
+  - Optometrist
+
 hours: []
 nzbn: ''
 tier: free

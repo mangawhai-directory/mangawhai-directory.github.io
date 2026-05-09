@@ -20,7 +20,9 @@ socials:
 categories:
   - beauty-hair-spa
   - hairdressers-barbers
-tags: []
+tags:
+  - Hairdressing
+
 hours: []
 nzbn: ''
 tier: free

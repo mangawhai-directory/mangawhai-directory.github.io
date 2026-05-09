@@ -16,7 +16,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["landscaping-gardening"]
-tags: []
+tags:
+  - Landscaping
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

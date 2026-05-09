@@ -16,7 +16,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["shops-boutiques"]
-tags: []
+tags:
+  - Children's Boutique
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

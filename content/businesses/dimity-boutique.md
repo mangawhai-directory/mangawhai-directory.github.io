@@ -16,7 +16,10 @@ socials:
   youtube: ''
 categories:
   - shops-boutiques
-tags: []
+tags:
+  - Boutique
+  - Clothing
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

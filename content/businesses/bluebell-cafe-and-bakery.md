@@ -20,7 +20,12 @@ socials:
 categories:
   - cafes-restaurants
   - bakeries
-tags: []
+tags:
+  - Cafe
+  - Bakery
+  - Breakfast
+  - Lunch
+
 hours: []
 nzbn: ''
 tier: free

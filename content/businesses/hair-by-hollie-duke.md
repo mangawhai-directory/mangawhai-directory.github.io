@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
-tags: []
+tags:
+  - Hairdressing
+  - Colour
+
 hours: []
 nzbn: ''
 tier: free

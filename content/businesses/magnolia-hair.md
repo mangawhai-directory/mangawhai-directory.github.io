@@ -18,7 +18,9 @@ socials:
 categories:
   - beauty-hair-spa
   - hairdressers-barbers
-tags: []
+tags:
+  - Hairdressing
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

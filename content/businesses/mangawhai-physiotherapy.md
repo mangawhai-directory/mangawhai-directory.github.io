@@ -16,7 +16,9 @@ socials:
   youtube: ''
 categories:
   - medical-dental
-tags: []
+tags:
+  - Physiotherapy
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

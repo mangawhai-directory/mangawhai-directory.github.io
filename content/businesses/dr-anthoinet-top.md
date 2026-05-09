@@ -17,7 +17,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["medical-dental"]
-tags: []
+tags:
+  - GP
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

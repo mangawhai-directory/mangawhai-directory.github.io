@@ -16,7 +16,9 @@ socials:
   youtube: ''
 categories:
   - community-clubs-churches
-tags: []
+tags:
+  - Service Club
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

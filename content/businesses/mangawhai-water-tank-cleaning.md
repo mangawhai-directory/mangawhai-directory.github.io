@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - cleaning-services
-tags: []
+tags:
+  - Water Tank Cleaning
+  - Pool Cleaning
+
 hours: []
 nzbn: ''
 tier: free

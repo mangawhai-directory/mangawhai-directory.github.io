@@ -18,7 +18,9 @@ socials:
 categories:
   - community-clubs-churches
   - things-to-do-tours
-tags: []
+tags:
+  - Cinema
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

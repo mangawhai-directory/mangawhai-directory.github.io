@@ -22,6 +22,7 @@ categories:
   - bars-pubs-breweries
 tags:
   - mangawhai-heads
+  - Pizza
 hours: []
 nzbn: ''
 tier: free

@@ -15,7 +15,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["community-clubs-churches"]
-tags: []
+tags:
+  - Service Club
+  - Womens
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

@@ -16,7 +16,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["landscaping-gardening", "builders-renovations"]
-tags: []
+tags:
+  - Fencing
+  - Landscaping
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

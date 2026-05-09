@@ -19,7 +19,12 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
-tags: []
+tags:
+  - Massage
+  - Acupuncture
+  - Nails
+  - Lashes & Brows
+
 hours: []
 nzbn: ''
 tier: free

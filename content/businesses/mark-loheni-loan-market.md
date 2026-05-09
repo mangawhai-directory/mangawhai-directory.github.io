@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - professional-services
-tags: []
+tags:
+  - Mortgage Adviser
+
 hours: []
 nzbn: ''
 tier: free

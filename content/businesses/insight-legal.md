@@ -19,7 +19,11 @@ socials:
   youtube: ''
 categories:
   - professional-services
-tags: []
+tags:
+  - Legal
+  - Property Law
+  - Wills & Trusts
+
 hours: []
 nzbn: ''
 tier: free

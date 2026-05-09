@@ -16,7 +16,9 @@ socials:
   youtube: ''
 categories:
   - cafes-restaurants
-tags: []
+tags:
+  - Cafe
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

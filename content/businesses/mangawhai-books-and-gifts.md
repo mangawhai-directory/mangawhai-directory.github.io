@@ -18,7 +18,11 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["shops-boutiques"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Books
+  - Gifts
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

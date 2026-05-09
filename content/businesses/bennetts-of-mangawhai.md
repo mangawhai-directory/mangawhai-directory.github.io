@@ -20,7 +20,10 @@ socials:
 categories:
   - cafes-restaurants
   - bakeries
-tags: []
+tags:
+  - Bakery
+  - Pastries
+
 hours: []
 nzbn: ''
 tier: free

@@ -16,7 +16,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["builders-renovations"]
-tags: []
+tags:
+  - Builder
+  - New Builds
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

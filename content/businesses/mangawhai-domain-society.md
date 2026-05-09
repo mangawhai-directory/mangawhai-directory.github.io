@@ -17,7 +17,10 @@ socials:
   youtube: ''
 categories:
   - community-clubs-churches
-tags: []
+tags:
+  - Community Group
+  - Domain
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

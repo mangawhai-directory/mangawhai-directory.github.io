@@ -17,7 +17,11 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["community-clubs-churches"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Information Centre
+  - Visitor Info
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

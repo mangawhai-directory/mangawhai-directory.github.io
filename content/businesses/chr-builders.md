@@ -19,7 +19,12 @@ socials:
   youtube: ''
 categories:
   - builders-renovations
-tags: []
+tags:
+  - Builder
+  - New Builds
+  - Renovations
+  - Commercial
+
 hours: []
 nzbn: ''
 tier: free

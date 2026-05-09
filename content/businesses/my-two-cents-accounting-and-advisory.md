@@ -17,7 +17,12 @@ socials:
   youtube: ''
 categories:
   - professional-services
-tags: []
+tags:
+  - Accounting
+  - Bookkeeping
+  - Tax
+  - Payroll
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

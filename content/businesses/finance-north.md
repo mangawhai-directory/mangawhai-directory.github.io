@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - professional-services
-tags: []
+tags:
+  - Mortgage Broker
+  - Insurance
+
 hours: []
 nzbn: ''
 tier: free

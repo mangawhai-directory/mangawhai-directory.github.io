@@ -16,7 +16,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["cafes-restaurants", "shops-boutiques"]
-tags: []
+tags:
+  - Cafe
+  - Shop
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

@@ -15,7 +15,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["things-to-do-tours"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Mini Golf
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

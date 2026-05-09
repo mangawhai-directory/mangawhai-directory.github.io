@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - civil-engineering
-tags: []
+tags:
+  - Earthmoving
+
 hours: []
 nzbn: ''
 tier: free

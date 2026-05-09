@@ -20,7 +20,11 @@ socials:
 categories:
   - cafes-restaurants
   - bakeries
-tags: []
+tags:
+  - Cakery
+  - Coffee
+  - Gluten-Free
+
 hours: []
 nzbn: ''
 tier: free

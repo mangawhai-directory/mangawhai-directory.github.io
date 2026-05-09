@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
-tags: []
+tags:
+  - Injectables
+  - Fillers
+
 hours: []
 nzbn: ''
 tier: free

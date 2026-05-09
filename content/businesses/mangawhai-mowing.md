@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - landscaping-gardening
-tags: []
+tags:
+  - Lawnmowing
+
 hours: []
 nzbn: ''
 tier: free

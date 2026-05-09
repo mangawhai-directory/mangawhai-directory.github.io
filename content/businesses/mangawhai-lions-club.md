@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - community-clubs-churches
-tags: []
+tags:
+  - Service Club
+
 hours: []
 nzbn: ''
 tier: free

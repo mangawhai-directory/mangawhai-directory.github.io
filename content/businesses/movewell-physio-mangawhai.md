@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - medical-dental
-tags: []
+tags:
+  - Physiotherapy
+
 hours: []
 nzbn: ''
 tier: free

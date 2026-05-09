@@ -17,7 +17,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["cafes-restaurants", "takeaways-food-trucks"]
-tags: ["takeaway"]
+tags:
+  - takeaway
+  - Indian
+
 hours:
   - dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     opens: "11:00"

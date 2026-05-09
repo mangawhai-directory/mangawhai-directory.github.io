@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - builders-renovations
-tags: []
+tags:
+  - Builder
+  - Architectural Homes
+
 hours: []
 nzbn: ''
 tier: free

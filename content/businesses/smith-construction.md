@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - builders-renovations
-tags: []
+tags:
+  - Builder
+
 hours: []
 nzbn: ''
 tier: free

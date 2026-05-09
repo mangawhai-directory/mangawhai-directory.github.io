@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - things-to-do-tours
-tags: []
+tags:
+  - Golf
+
 hours: []
 nzbn: ''
 tier: free

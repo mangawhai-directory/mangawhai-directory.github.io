@@ -16,7 +16,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["community-clubs-churches", "things-to-do-tours"]
-tags: []
+tags:
+  - Walking Event
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

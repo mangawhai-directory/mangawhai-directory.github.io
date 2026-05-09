@@ -16,7 +16,10 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["community-clubs-churches", "surf-beach-watersports"]
-tags: ["mangawhai-heads"]
+tags:
+  - mangawhai-heads
+  - Surf Life Saving
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
-tags: []
+tags:
+  - Skin Clinic
+  - Facials
+
 hours: []
 nzbn: ''
 tier: free

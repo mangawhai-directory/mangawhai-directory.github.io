@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
-tags: []
+tags:
+  - Piercing
+
 hours: []
 nzbn: ''
 tier: free

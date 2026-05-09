@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - things-to-do-tours
-tags: []
+tags:
+  - Fishing Charter
+
 hours: []
 nzbn: ''
 tier: free

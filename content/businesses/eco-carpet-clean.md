@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - cleaning-services
-tags: []
+tags:
+  - Carpet Cleaning
+
 hours: []
 nzbn: ''
 tier: free

@@ -18,7 +18,9 @@ socials:
   tiktok: ""
   youtube: ""
 categories: ["shops-boutiques"]
-tags: []
+tags:
+  - Florist
+
 hours: []
 tier: "free"
 last_verified: "2026-05-04"

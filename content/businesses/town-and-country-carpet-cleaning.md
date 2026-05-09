@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - cleaning-services
-tags: []
+tags:
+  - Carpet Cleaning
+  - Upholstery Cleaning
+
 hours: []
 nzbn: ''
 tier: free

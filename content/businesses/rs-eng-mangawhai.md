@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - civil-engineering
-tags: []
+tags:
+  - Structural Engineering
+  - Geotechnical
+
 hours: []
 nzbn: ''
 tier: free

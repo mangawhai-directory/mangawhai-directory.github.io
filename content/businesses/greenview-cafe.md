@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - cafes-restaurants
-tags: []
+tags:
+  - Cafe
+  - Thai
+
 hours: []
 nzbn: ''
 tier: free

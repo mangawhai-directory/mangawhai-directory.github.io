@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - medical-dental
-tags: []
+tags:
+  - Pharmacy
+
 hours: []
 nzbn: ''
 tier: free

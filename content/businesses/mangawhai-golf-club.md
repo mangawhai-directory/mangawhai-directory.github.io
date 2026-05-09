@@ -18,7 +18,9 @@ socials:
 categories:
   - things-to-do-tours
   - community-clubs-churches
-tags: []
+tags:
+  - Golf
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

@@ -17,7 +17,9 @@ socials:
   youtube: ''
 categories:
   - community-clubs-churches
-tags: []
+tags:
+  - Mens Shed
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

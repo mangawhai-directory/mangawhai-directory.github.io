@@ -19,7 +19,9 @@ socials:
   youtube: ''
 categories:
   - community-clubs-churches
-tags: []
+tags:
+  - Tennis
+
 hours: []
 nzbn: ''
 tier: free

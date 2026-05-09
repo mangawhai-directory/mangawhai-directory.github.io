@@ -17,7 +17,10 @@ socials:
   youtube: ''
 categories:
   - landscaping-gardening
-tags: []
+tags:
+  - Property Maintenance
+  - Lawnmowing
+
 hours: []
 tier: free
 last_verified: '2026-05-09'
