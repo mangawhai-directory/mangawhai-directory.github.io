@@ -3,7 +3,7 @@ title: Mangawhai Physiotherapy
 slug: mangawhai-physiotherapy
 blurb: ''
 address:
-  street: Mangawhai
+  street: 13 Eagle Ray Road
   suburb: Mangawhai
   postcode: '0505'
   country: NZ

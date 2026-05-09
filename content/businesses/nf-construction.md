@@ -3,9 +3,9 @@ title: NF Construction
 slug: nf-construction
 blurb: Award-winning custom home builders specialising in architecturally designed homes that balance function, detail and aesthetics across Mangawhai and coastal regions.
 address:
-  street: Mangawhai
+  street: 130 Robert Hastie Drive
   suburb: Mangawhai
-  postcode: '0505'
+  postcode: '0573'
   country: NZ
 phone: ''
 email: info@nfconstruction.co.nz

@@ -3,7 +3,7 @@ title: Magnolia Hair
 slug: magnolia-hair
 blurb: ''
 address:
-  street: Mangawhai
+  street: 110 Moir Street
   suburb: Mangawhai
   postcode: '0505'
   country: NZ

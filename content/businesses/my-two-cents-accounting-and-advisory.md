@@ -3,9 +3,9 @@ title: My Two Cents Accounting & Advisory
 slug: my-two-cents-accounting-and-advisory
 blurb: Mangawhai-based bookkeeping and accounting firm offering payroll, business advisory, software training and tax planning to over 550 clients across Northland and Auckland.
 address:
-  street: Mangawhai
+  street: 52 De Boer Road
   suburb: Mangawhai
-  postcode: '0505'
+  postcode: '0573'
   country: NZ
 website: https://www.mytwocents.nz
 socials:

@@ -3,8 +3,8 @@ title: Aotearoa Surf Lodge
 slug: aotearoa-surf-lodge
 blurb: ''
 address:
-  street: Mangawhai
-  suburb: Mangawhai
+  street: 299 Molesworth Drive
+  suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
 website: https://www.aotearoasurf.co.nz

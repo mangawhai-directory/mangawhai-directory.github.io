@@ -3,8 +3,8 @@ title: Younger Builders
 slug: younger-builders
 blurb: Custom home builder in Mangawhai and Langs Beach creating bespoke residences with collaborative design and meticulous craftsmanship.
 address:
-  street: Mangawhai
-  suburb: Mangawhai
+  street: 4 Northcoast Place
+  suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
 phone: 021 022 69895

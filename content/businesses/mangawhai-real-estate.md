@@ -3,8 +3,8 @@ title: Mangawhai Real Estate
 slug: mangawhai-real-estate
 blurb: One of the most successful real estate teams in the Mangawhai area, specialising in development sales, architectural homes and waterfront and rural properties.
 address:
-  street: Mangawhai
-  suburb: Mangawhai
+  street: 65D Jack Boyd Drive
+  suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
 phone: 021 0858 8269

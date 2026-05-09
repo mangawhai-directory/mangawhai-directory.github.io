@@ -3,7 +3,7 @@ title: Kaipara Dog Training Club
 slug: kaipara-dog-training-club
 blurb: Dog obedience and agility training at Mangawhai Domain offering Beginner Obedience, Beginner Agility and Rally-O classes for all breeds.
 address:
-  street: Mangawhai
+  street: Mangawhai Domain, 73 Moir Street
   suburb: Mangawhai
   postcode: '0505'
   country: NZ

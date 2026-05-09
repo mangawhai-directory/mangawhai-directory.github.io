@@ -3,8 +3,8 @@ title: Mangawhai Water Tank Cleaning Company
 slug: mangawhai-water-tank-cleaning
 blurb: Mangawhai water tank cleaning and pool vacuuming services with free inspections.
 address:
-  street: Mangawhai
-  suburb: Mangawhai
+  street: 9/2 Kawau Lane
+  suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
 phone: 022 470 7631

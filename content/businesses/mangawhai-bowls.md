@@ -3,8 +3,8 @@ title: Mangawhai Bowls
 slug: mangawhai-bowls
 blurb: Mangawhai lawn bowls club formed in 2018 from amalgamation of the local mens and womens clubs.
 address:
-  street: Mangawhai
-  suburb: Mangawhai
+  street: 219 Molesworth Drive
+  suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
 phone: ''

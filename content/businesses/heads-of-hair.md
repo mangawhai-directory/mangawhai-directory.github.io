@@ -2,9 +2,6 @@
 title: Heads of Hair
 slug: heads-of-hair
 blurb: ''
-title: Heads of Hair
-slug: heads-of-hair
-blurb: ''
 address:
   street: Shop 8/7 Wood Street
   suburb: Mangawhai Heads

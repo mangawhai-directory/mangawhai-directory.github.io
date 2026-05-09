@@ -3,7 +3,7 @@ title: FIT365 Mangawhai
 slug: fit365-mangawhai
 blurb: ''
 address:
-  street: Mangawhai
+  street: 107 Mangawhai Heads Road
   suburb: Mangawhai
   postcode: '0505'
   country: NZ

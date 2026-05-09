@@ -3,7 +3,7 @@ title: Mangawhai Lions Club
 slug: mangawhai-lions-club
 blurb: Volunteer service club championing diabetes awareness, vision care, hunger relief, environmental protection and childhood cancer support.
 address:
-  street: Mangawhai
+  street: 45 Moir Street
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
