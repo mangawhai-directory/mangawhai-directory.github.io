@@ -33,6 +33,17 @@
     <meta name="twitter:title" content="{{ $ogTitle }}">
     <meta name="twitter:description" content="{{ $ogDesc }}">
   {{- end }}
+  {{- if hugo.IsProduction }}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6WD32QF2FX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6WD32QF2FX');
+  </script>
+  {{- end }}
   {{- with resources.Get "css/main.css" }}
     {{- $css := . | css.TailwindCSS (dict "minify" hugo.IsProduction) -}}
     {{- if hugo.IsProduction }}{{ $css = $css | fingerprint }}{{ end }}
