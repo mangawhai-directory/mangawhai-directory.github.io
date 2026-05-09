@@ -10,6 +10,9 @@ pluralizelisttitles = false
   defaultKeywords = ["mangawhai", "mangawhai heads", "northland", "directory", "local business"]
   contactEmail = ""
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [taxonomies]
   category = "categories"
   tag = "tags"
