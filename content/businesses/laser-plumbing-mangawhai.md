@@ -1,0 +1,28 @@
+---
+title: Laser Plumbing Mangawhai
+slug: laser-plumbing-mangawhai
+blurb: Plumbing, gas fitting and drainlaying services with over 17 years in business serving the Mangawhai and Rodney regions.
+address:
+  street: 961 Kaiwaka-Mangawhai Road
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: 0800 438 527
+email: ''
+website: https://www.lasergroup.co.nz/m/laser-plumbing-mangawhai
+socials:
+  facebook: https://www.facebook.com/Laser-Plumbing-Mangawhai-108057048029462/
+  instagram: https://www.instagram.com/laserplumbingmangawhai/
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - plumbers
+tags: []
+hours: []
+nzbn: ''
+tier: free
+last_verified: '2026-05-09'
+status: active
+---
