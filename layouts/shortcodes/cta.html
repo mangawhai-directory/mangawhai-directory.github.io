@@ -1,0 +1,18 @@
+{{- /*
+  cta — styled call-to-action used inline in long-form markdown pages.
+  Args: href (action URL), label (button text). Inner content is rendered
+  through markdownify so it can include bold/italic/inline links.
+
+  The `!` overrides defeat the prose container's child-element styles in
+  layouts/_default/single.html (e.g. [&_p]:text-muted-foreground).
+*/ -}}
+<aside class="my-8 flex flex-col gap-4 rounded-lg border border-border bg-muted/40 p-5 sm:flex-row sm:items-center sm:justify-between">
+  <div class="text-base leading-7 text-foreground! [&_p]:m-0! [&_p]:text-foreground!">
+    {{ .Inner | markdownify }}
+  </div>
+  {{- with .Get "href" }}
+  <a href="{{ . }}" class="inline-flex h-10 shrink-0 items-center whitespace-nowrap rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground! no-underline! transition-colors hover:bg-primary/90 hover:no-underline! hover:text-primary-foreground!">
+    {{ $.Get "label" | default "Get in touch" }}
+  </a>
+  {{- end }}
+</aside>

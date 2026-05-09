@@ -38,9 +38,12 @@ A wide tile placed below the hero on the homepage.
 - **Responsive scaling.** Listed dimensions are the intrinsic creative size — your ad scales proportionally to the visitor's viewport. On most desktops the homepage tile renders at roughly its full 1152 × 400, but it may scale down a little on narrower screens. Design for the listed size and the scaling will look clean.
 - Keep the most important text away from the edges (a 12 px safe area inside each ad).
 
+{{< cta href="/contact/" label="Request a quote" >}}
+**Don't have artwork ready?** We can design one for you for a one-off cost — quote on request.
+{{< /cta >}}
+
 ## What's included
 
-- Don't have artwork ready? We can design one for you for a one-off cost — quote on request.
 - 1 month run from the first to the last day of your selected month.
 - Book any month you like, subject to availability — get in early for peak periods (summer, school holidays). We'll confirm what's available when you enquire.
 - One free swap during the month if you want to refresh creative.
@@ -48,4 +51,4 @@ A wide tile placed below the hero on the homepage.
 
 ## How to book
 
-[Contact us](/contact/) with the package you want, the category (for category-page ads), and the dates you'd like to run. We'll confirm availability, send an invoice, and put you live the same week.
+[Contact us](/contact/) with the package you want, the category (for category-page ads), and the dates you'd like to run. We'll confirm availability, send an invoice, and put you live on the first of the month you have booked.
