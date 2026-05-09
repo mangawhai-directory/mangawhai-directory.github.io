@@ -1,28 +1,28 @@
 ---
-title: The Local
-slug: the-local
+title: Rosie Face
+slug: rosie-face
 blurb: ''
 address:
-  street: 1 Molesworth Drive
+  street: Mangawhai
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
 phone: ''
-email: ''
-website: ''
+email: rosieface@mail.com
+website: https://www.rosieface.com/
 socials:
   facebook: ''
-  instagram: ''
+  instagram: https://www.instagram.com/rosieface_skinandbeauty/
   x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
-  - bars-pubs-breweries
+  - beauty-hair-spa
 tags: []
 hours: []
 nzbn: ''
 tier: free
-last_verified: 2026-05-07
+last_verified: 2026-05-08
 status: active
 ---
