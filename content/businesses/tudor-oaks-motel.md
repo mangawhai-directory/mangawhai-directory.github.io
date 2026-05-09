@@ -17,7 +17,9 @@ socials:
   youtube: ''
 categories:
   - accommodation
-tags: []
+tags:
+  - Motel
+
 hours: []
 tier: free
 last_verified: '2026-05-09'

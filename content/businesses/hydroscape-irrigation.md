@@ -19,7 +19,10 @@ socials:
   youtube: ''
 categories:
   - landscaping-gardening
-tags: []
+tags:
+  - Irrigation
+  - Water Features
+
 hours: []
 nzbn: ''
 tier: free
