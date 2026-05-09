@@ -8,11 +8,11 @@ address:
   postcode: '0975'
   country: NZ
 phone: 09 883 4600
-email: ''
+email: reservations@tearai.com
 website: https://tearai.com/spa-fitness/
 socials:
-  facebook: ''
-  instagram: ''
+  facebook: https://www.facebook.com/tearailinks
+  instagram: https://www.instagram.com/tearailinks/
   x: ''
   linkedin: ''
   tiktok: ''
@@ -23,6 +23,6 @@ tags: []
 hours: []
 nzbn: ''
 tier: free
-last_verified: 2026-05-08
+last_verified: '2026-05-09'
 status: active
 ---

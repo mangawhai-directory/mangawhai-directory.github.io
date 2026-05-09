@@ -19,10 +19,11 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
+  - hairdressers-barbers
 tags: []
 hours: []
 nzbn: ''
 tier: free
-last_verified: 2026-05-04
+last_verified: '2026-05-09'
 status: active
 ---

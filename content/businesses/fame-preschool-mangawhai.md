@@ -1,24 +1,25 @@
 ---
-title: "Fame Preschool Mangawhai"
-slug: "fame-preschool-mangawhai"
-blurb: ""
+title: Fame Preschool Mangawhai
+slug: fame-preschool-mangawhai
+blurb: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-website: "https://www.myece.org.nz/service/mangawhai/fame-preschool-mangawhai/"
+  street: 1D Molesworth Drive
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+website: https://www.myece.org.nz/service/mangawhai/fame-preschool-mangawhai/
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["schools-childcare"]
+  facebook: ''
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - schools-childcare
 tags: []
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+tier: free
+last_verified: '2026-05-09'
+status: active
 ---

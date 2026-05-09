@@ -7,22 +7,23 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: ''
+phone: 09 945 3838
 email: ''
-website: ''
+website: https://taproom.nz/
 socials:
-  facebook: ''
-  instagram: ''
+  facebook: https://www.facebook.com/p/Pacific-Coast-Taproom-Eatery-61559162670176/
+  instagram: https://www.instagram.com/pacificcoasttaproom/
   x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
   - bars-pubs-breweries
+  - cafes-restaurants
 tags: []
 hours: []
 nzbn: ''
 tier: free
-last_verified: 2026-05-07
+last_verified: '2026-05-09'
 status: active
 ---
