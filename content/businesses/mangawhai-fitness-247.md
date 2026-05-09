@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 027 96652
+phone: 021 0279 6652
 email: info@mangawhaifitness.com
 website: https://jgurlfitness.co.nz/
 socials:

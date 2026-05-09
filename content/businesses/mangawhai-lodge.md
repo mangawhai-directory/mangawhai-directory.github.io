@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: '+6494315311'
+phone: 09 431 5311
 website: https://seaviewlodge.co.nz
 socials:
   facebook: ''

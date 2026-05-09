@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai Heads"
   postcode: "0505"
   country: "NZ"
-phone: "+6494315887"
+phone: 09 431 5887
 socials:
   facebook: "https://www.facebook.com/shop3sevenwoodstmangawhaiheads"
   instagram: ""

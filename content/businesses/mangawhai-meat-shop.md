@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+6494314564"
+phone: 09 431 4564
 website: "https://mangawhaimeats.co.nz"
 socials:
   facebook: ""

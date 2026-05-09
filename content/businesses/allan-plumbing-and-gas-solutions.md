@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+64272781120"
+phone: 027 278 1120
 email: "admin@allanpgs.co.nz"
 website: "https://www.allanpgs.co.nz/"
 socials:

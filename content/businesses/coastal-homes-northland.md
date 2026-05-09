@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+64212224833"
+phone: 021 222 4833
 email: "lance@coastalhomesnz.com"
 website: "https://www.coastalhomes.co.nz"
 socials:

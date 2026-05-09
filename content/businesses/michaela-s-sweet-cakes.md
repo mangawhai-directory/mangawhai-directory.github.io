@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0210 900 0975
+phone: 021 0900 0975
 email: michaelas.sweetcakes@gmail.com
 website: ''
 socials:

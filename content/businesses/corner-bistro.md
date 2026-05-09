@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+6494314439"
+phone: 09 431 4439
 website: "https://cornerbistro.co.nz"
 socials:
   facebook: ""

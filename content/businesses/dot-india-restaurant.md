@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+6493930064"
+phone: 09 393 0064
 website: "https://www.dotindiatakeaway.co.nz/"
 socials:
   facebook: ""

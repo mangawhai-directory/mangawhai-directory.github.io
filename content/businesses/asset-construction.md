@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+6494207482"
+phone: 09 420 7482
 email: "info@assetconstruction.co.nz"
 website: "https://assetconstruction.co.nz"
 socials:

@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 1518 588
+phone: 021 151 8588
 email: charlotte@blissbeautytherapy.co.nz
 website: https://www.blissbeautytherapy.co.nz/
 socials:

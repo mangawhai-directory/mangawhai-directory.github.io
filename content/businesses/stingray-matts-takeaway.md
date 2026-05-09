@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai Heads"
   postcode: "0505"
   country: "NZ"
-phone: "+6494314279"
+phone: 09 431 4279
 website: "https://onlineordering.nz/api/fb/_nk_z_q6"
 socials:
   facebook: "https://www.facebook.com/stingraymattstakeway/"

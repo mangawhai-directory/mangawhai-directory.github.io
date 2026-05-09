@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+64212455431"
+phone: 021 245 5431
 email: "info@gogasandplumbing.co.nz"
 website: "https://www.gogasandplumbing.co.nz/"
 socials:

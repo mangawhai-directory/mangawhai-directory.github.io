@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+6494313383"
+phone: 09 431 3383
 socials:
   facebook: ""
   instagram: ""

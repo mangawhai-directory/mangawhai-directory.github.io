@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai Heads"
   postcode: "0505"
   country: "NZ"
-phone: "+64226348834"
+phone: 022 634 8834
 email: "brewed.intentions@gmail.com"
 website: "https://www.brewedas.com"
 socials:

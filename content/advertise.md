@@ -39,7 +39,7 @@ A wide tile placed below the hero on the homepage.
 - Keep the most important text away from the edges (a 12 px safe area inside each ad).
 
 {{< cta href="/contact/" label="Request a quote" >}}
-**Don't have artwork ready?** We can design one for you for a one-off cost — quote on request.
+**Don't have artwork ready?** We can design one for you for a one-off cost.
 {{< /cta >}}
 
 ## What's included

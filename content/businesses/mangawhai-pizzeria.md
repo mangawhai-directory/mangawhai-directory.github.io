@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+6494315226"
+phone: 09 431 5226
 socials:
   facebook: "https://www.facebook.com/MangawhaiPizzeria"
   instagram: ""

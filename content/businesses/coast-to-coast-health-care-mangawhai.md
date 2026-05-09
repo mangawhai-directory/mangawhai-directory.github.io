@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+6494314511"
+phone: 09 431 4511
 website: "https://comprehensivecare.co.nz"
 socials:
   facebook: ""

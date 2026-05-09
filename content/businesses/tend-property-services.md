@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+642102414148"
+phone: 021 0241 4148
 email: "owen@tendproperty.com"
 website: "https://tendproperty.com/"
 socials:

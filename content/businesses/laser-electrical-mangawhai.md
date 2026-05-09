@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai Heads"
   postcode: "0505"
   country: "NZ"
-phone: "+6421372506"
+phone: 021 372 506
 email: "Mangawhai@laserelectrical.co.nz"
 website: "https://www.lasergroup.co.nz/m/laser-electrical-mangawhai"
 socials:

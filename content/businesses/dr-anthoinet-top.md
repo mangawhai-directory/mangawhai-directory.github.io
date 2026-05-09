@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+6494314128"
+phone: 09 431 4128
 website: "https://healthpages.co.nz/directory/listing/general-practitioners-anthoinet-top"
 socials:
   facebook: ""

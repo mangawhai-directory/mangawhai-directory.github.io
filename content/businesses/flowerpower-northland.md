@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0573"
   country: "NZ"
-phone: "+64274490464"
+phone: 027 449 0464
 email: "flowerpowernorthland@gmail.com"
 website: "https://www.flowerpowernorthland.co.nz"
 socials:

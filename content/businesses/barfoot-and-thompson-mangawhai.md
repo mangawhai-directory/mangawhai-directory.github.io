@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+6494315960"
+phone: 09 431 5960
 website: "https://www.barfoot.co.nz/branches/mangawhai"
 socials:
   facebook: ""

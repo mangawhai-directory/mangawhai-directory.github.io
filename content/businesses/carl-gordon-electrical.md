@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+64220710245"
+phone: 022 071 0245
 email: "info@cge.co.nz"
 website: "https://www.cge.co.nz/"
 socials:

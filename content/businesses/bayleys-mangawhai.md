@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai Heads"
   postcode: "0505"
   country: "NZ"
-phone: "+6494315415"
+phone: 09 431 5415
 website: "https://www.bayleys.co.nz/mangawhai"
 socials:
   facebook: "https://www.facebook.com/BayleysMangawhai/"

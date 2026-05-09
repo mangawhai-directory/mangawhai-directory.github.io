@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+6494315884"
+phone: 09 431 5884
 email: "info@mangawhaidental.co.nz"
 website: "https://www.mangawhaidental.co.nz"
 socials:

@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+64225486897"
+phone: 022 548 6897
 email: "info@electriwhai.nz"
 website: "https://electriwhai.nz"
 socials:

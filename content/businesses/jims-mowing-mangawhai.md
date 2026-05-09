@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+64800454654"
+phone: 0800 454 654
 website: "https://www.jimsmowing.co.nz/lawn-mowing/northland/mangawhai/"
 socials:
   facebook: ""

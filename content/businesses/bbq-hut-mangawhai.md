@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: "+64274794442"
+phone: 027 479 4442
 website: "https://thebbqhut.co.nz"
 socials:
   facebook: ""
