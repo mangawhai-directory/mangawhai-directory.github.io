@@ -18,8 +18,10 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
-tags: []
+  - massage
+tags:
+  - Reiki
+  - Massage
 hours: []
 nzbn: ''
 tier: free
