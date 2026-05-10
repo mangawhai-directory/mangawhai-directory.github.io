@@ -19,6 +19,7 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
+  - massage
 tags:
   - Massage
   - Facial
