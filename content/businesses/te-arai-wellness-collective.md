@@ -1,7 +1,7 @@
 ---
 title: Te Arai Wellness Collective
 slug: te-arai-wellness-collective
-blurb: We specialize in a curated blend of therapeutic massage, acupuncture, and luxury spa treatments. We are a mobile businesss based at Te Arai, servicing the wider Mangawhai region, including Omaha. We come to your home or accommodation.
+blurb: ''
 address:
   street: Te Arai
   suburb: Te Arai
@@ -19,6 +19,7 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
+  - massage
 tags: []
 hours: []
 nzbn: ''
