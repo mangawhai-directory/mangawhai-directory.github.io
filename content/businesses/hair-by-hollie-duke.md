@@ -1,9 +1,9 @@
 ---
 title: Hair by Hollie Duke
 slug: hair-by-hollie-duke
-blurb: Mangawhai-based hairstylist and specialised colour technician. Bookings only, Tuesday to Friday.
+blurb: ''
 address:
-  street: Mangawhai
+  street: Tara Road
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
@@ -18,14 +18,13 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
+  - hairdressers-barbers
 tags:
   - Hairdressing
   - Colour
-
 hours: []
 nzbn: ''
 tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
