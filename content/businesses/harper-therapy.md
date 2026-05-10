@@ -20,7 +20,7 @@ socials:
 categories:
   - beauty-hair-spa
 tags:
-  - massage
+  - Massage
 hours: []
 nzbn: ''
 tier: free
