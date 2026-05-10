@@ -10,17 +10,27 @@ address:
 phone: 09 431 4564
 website: "https://mangawhaimeats.co.nz"
 socials:
-  facebook: ""
-  instagram: ""
+  facebook: "https://www.facebook.com/Mangawhaimeats/"
+  instagram: "https://www.instagram.com/mangawhai_meats/"
   x: ""
   linkedin: ""
   tiktok: ""
   youtube: ""
-categories: ["shops-boutiques", "cafes-restaurants"]
+categories: ["shops-boutiques", "cafes-restaurants", "grocery"]
 tags:
   - Butcher
+  - Deli
 
-hours: []
+hours:
+  - dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    opens: "07:00"
+    closes: "17:30"
+  - dayOfWeek: ["Saturday"]
+    opens: "07:30"
+    closes: "14:00"
+  - dayOfWeek: ["Sunday"]
+    opens: "closed"
+    closes: ""
 tier: "free"
 last_verified: "2026-05-04"
 status: "active"
