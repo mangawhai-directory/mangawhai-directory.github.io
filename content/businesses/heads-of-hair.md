@@ -7,7 +7,9 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-website: https://www.fresha.com/lvp/heads-of-hair-wood-street-mangawhai-eXnAQK
+phone: 09 431 4981
+email: headsofhairmangawhai@gmail.com
+website: https://www.headsofhair.co.nz/
 socials:
   facebook: https://www.facebook.com/HeadsofHairMangawhai/
   instagram: https://www.instagram.com/headsofhairmangawhai/
@@ -16,15 +18,12 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
   - hairdressers-barbers
 tags:
-  - mangawhai-heads
   - Hairdressing
 hours: []
+nzbn: ''
 tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
-phone: 09 431 4981
-email: headsofhairmangawhai@gmail.com
 ---
