@@ -24,10 +24,9 @@ categories:
   - bakeries
 tags:
   - Pastries
-
 hours: []
 nzbn: ''
-tier: free
+tier: paid
 last_verified: 2026-05-07
 status: active
 ---
