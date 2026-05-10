@@ -1,7 +1,7 @@
 ---
 title: Woven Ink
 slug: woven-ink
-blurb: Cosmetic Tattooing & Beauty
+blurb: ''
 address:
   street: The Stables, 2 Leslie Street
   suburb: Mangawhai Village
@@ -22,7 +22,6 @@ categories:
 tags:
   - Cosmetic Tattooing
   - Beauty
-
 hours: []
 nzbn: ''
 tier: free
