@@ -25,10 +25,9 @@ tags:
   - Acupuncture
   - Nails
   - Lashes & Brows
-
 hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-09
-status: active
+status: closed
 ---
