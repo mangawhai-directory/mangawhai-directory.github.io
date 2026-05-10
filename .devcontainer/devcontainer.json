@@ -18,5 +18,6 @@
     }
   },
   "postCreateCommand": "npm install",
+  "postStartCommand": "pgrep -f 'hugo server' >/dev/null || (nohup npm run dev -- --bind 0.0.0.0 >/tmp/hugo.log 2>&1 &)",
   "remoteUser": "vscode"
 }
