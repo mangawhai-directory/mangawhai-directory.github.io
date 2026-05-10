@@ -1,0 +1,33 @@
+---
+title: Rana Health
+slug: rana-health
+blurb: Locally based natural health clinic offering naturopathy, acupuncture, herbal medicine and massage therapy for the whole family.
+address:
+  street: 393 Tara Road
+  suburb: Mangawhai
+  postcode: '0573'
+  country: NZ
+phone: 021 854 158
+email: ''
+website: https://www.ranahealth.co.nz
+socials:
+  facebook: https://www.facebook.com/p/Rana-Health-Mangawhai-100064903569638/
+  instagram: https://www.instagram.com/ranahealthmangawhai
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - health-care-practitioners
+tags:
+  - Naturopath
+  - Acupuncture
+  - Herbal Medicine
+  - Massage
+
+hours: []
+nzbn: ''
+tier: free
+last_verified: '2026-05-10'
+status: active
+---

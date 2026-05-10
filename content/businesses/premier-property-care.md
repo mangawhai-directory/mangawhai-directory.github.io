@@ -17,6 +17,7 @@ socials:
   youtube: ''
 categories:
   - landscaping-gardening
+  - property-maintenance
 tags:
   - Property Maintenance
   - Lawnmowing

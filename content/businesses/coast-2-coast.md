@@ -15,9 +15,11 @@ socials:
   linkedin: ""
   tiktok: ""
   youtube: ""
-categories: ["takeaways-food-trucks"]
+categories: ["takeaways-food-trucks", "weddings"]
 tags:
   - Catering
+  - Wedding Catering
+  - Event Hire
 
 hours: []
 tier: "free"

@@ -19,6 +19,7 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
+  - health-care-practitioners
 tags:
   - Massage
   - Acupuncture

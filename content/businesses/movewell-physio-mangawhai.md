@@ -19,6 +19,7 @@ socials:
   youtube: ''
 categories:
   - medical-dental
+  - health-care-practitioners
 tags:
   - Physiotherapy
 
