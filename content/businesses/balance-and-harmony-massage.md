@@ -19,7 +19,8 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
-tags: []
+tags:
+  - Massage
 hours: []
 nzbn: ''
 tier: free
