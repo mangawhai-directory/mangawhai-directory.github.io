@@ -1,7 +1,7 @@
 ---
 title: Rana Health
 slug: rana-health
-blurb: Locally based natural health clinic offering naturopathy, acupuncture, herbal medicine and massage therapy for the whole family.
+blurb: ''
 address:
   street: 393 Tara Road
   suburb: Mangawhai
@@ -19,15 +19,15 @@ socials:
   youtube: ''
 categories:
   - health-care-practitioners
+  - massage
 tags:
   - Naturopath
   - Acupuncture
   - Herbal Medicine
   - Massage
-
 hours: []
 nzbn: ''
 tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---
