@@ -1,7 +1,7 @@
 ---
 title: Ora Aroha Mangawhai
 slug: ora-aroha-mangawhai
-blurb: Wellness sanctuary in Mangawhai Village offering facials, massage and naturopathy alongside a curated shop of supplements, herbal teas and natural skincare.
+blurb: ''
 address:
   street: 13 Moir Street
   suburb: Mangawhai
@@ -21,13 +21,12 @@ categories:
   - health-care-practitioners
   - beauty-hair-spa
 tags:
-  - Naturopath
+  - Maori Healing
+  - Guidance
   - Massage
-  - Facials
-
 hours: []
 nzbn: ''
 tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---
