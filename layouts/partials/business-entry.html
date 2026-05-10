@@ -18,8 +18,8 @@
   <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
     <div class="min-w-0 flex-1">
       {{- if $showImage }}
-      <div class="flex items-center gap-4">
-        <img data-fade class="h-20 w-20 shrink-0 rounded-md object-cover sm:h-24 sm:w-24" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="96" height="96" />
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-5">
+        <img data-fade class="block w-full aspect-square shrink-0 rounded-md object-cover sm:h-32 sm:w-32 sm:aspect-auto" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
         <div class="min-w-0 flex-1">
       {{- end }}
           <h2 data-fade class="m-0 text-xl font-semibold tracking-tight text-foreground">
@@ -32,10 +32,6 @@
           {{- with .Params.blurb }}
           <p data-fade class="mt-1.5 text-base text-muted-foreground m-0">{{ . }}</p>
           {{- end }}
-      {{- if $showImage }}
-        </div>
-      </div>
-      {{- end }}
 
       {{- with .Params.address }}
       {{- $parts := slice -}}
@@ -67,6 +63,10 @@
         {{- end }}
       </ul>
       {{- end }}
+      {{- end }}
+      {{- if $showImage }}
+        </div>
+      </div>
       {{- end }}
 
       {{- with .Params.hours }}
