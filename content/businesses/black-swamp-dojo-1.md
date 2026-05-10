@@ -1,15 +1,15 @@
 ---
-title: Tara Sanctuary
-slug: tara-sanctuary
-blurb: ''
+title: Black Swamp Dojo
+slug: black-swamp-dojo
+blurb: Sauna & Ice
 address:
-  street: Tara Road
+  street: 168 Blackswamp Road
   suburb: Mangawhai
-  postcode: '0573'
+  postcode: '0505'
   country: NZ
-phone: 022 071 8851
-email: ''
-website: https://www.tarasanctuary.co.nz/
+phone: 021 029 16071
+email: hello@blackswampdojo.co.nz
+website: https://www.blackswampdojo.co.nz/
 socials:
   facebook: ''
   instagram: ''
@@ -19,10 +19,8 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
-  - massage
 tags:
-  - Massage
-  - Facial
+  - Sauna
 hours: []
 nzbn: ''
 tier: free

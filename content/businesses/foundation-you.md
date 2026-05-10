@@ -1,14 +1,14 @@
 ---
 title: Foundation You
 slug: foundation-you
-blurb: Massage and physical therapy practice in Mangawhai offering myofascial release, trigger point therapy, deep tissue and manual therapy.
+blurb: ''
 address:
-  street: 58 Bagnal Road
-  suburb: Mangawhai
-  postcode: '0573'
+  street: 1 Pearson Street
+  suburb: Mangawhai Village
+  postcode: '0505'
   country: NZ
-phone: ''
-email: ''
+phone: 021 0223 6554
+email: martin@foundationyou.co.nz
 website: https://foundationyou.co.nz
 socials:
   facebook: ''
@@ -19,13 +19,13 @@ socials:
   youtube: ''
 categories:
   - health-care-practitioners
+  - massage
 tags:
   - Massage
   - Physical Therapy
-
 hours: []
 nzbn: ''
 tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---

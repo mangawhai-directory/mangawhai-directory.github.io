@@ -19,7 +19,7 @@ socials:
   youtube: ''
 categories:
   - health-care-practitioners
-  - beauty-hair-spa
+  - massage
 tags:
   - Maori Healing
   - Guidance

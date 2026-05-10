@@ -1,7 +1,7 @@
 ---
 title: TT Thai Massage
 slug: tt-thai-massage
-blurb: Traditional Thai Massage
+blurb: ''
 address:
   street: 5 Insley Street
   suburb: Mangawhai Heads
@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
+  - massage
 tags:
   - massage
 hours: []
