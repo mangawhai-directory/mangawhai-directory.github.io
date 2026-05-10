@@ -18,7 +18,15 @@
   "properties": {
     "title": { "type": "string", "minLength": 1, "maxLength": 120 },
     "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
-    "blurb": { "type": "string", "maxLength": 200 },
+    "blurb": { "type": "string", "maxLength": 320 },
+    "image": {
+      "type": "string",
+      "anyOf": [
+        { "const": "" },
+        { "pattern": "^/uploads/" },
+        { "format": "uri", "pattern": "^https?://" }
+      ]
+    },
     "address": {
       "type": "object",
       "additionalProperties": false,

@@ -8,5 +8,7 @@
       "extended": true
     }
   },
-  "postCreateCommand": "npm install"
+  "postCreateCommand": "npm install",
+  "postStartCommand": "pgrep -f 'hugo server' >/dev/null || nohup hugo server --bind 0.0.0.0 --port 1313 --baseURL http://localhost:1313 --appendPort=false > /tmp/hugo.log 2>&1 &",
+  "forwardPorts": [1313]
 }

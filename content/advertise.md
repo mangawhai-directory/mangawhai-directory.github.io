@@ -11,6 +11,16 @@ Every business gets a **free organic listing**. Paid ads simply put your brand i
 
 ## Packages
 
+### Premium listing — $60+gst / month
+
+Make your free listing stand out without changing where it sits in the category list.
+
+- A square **image or logo** displayed to the left of your name and blurb.
+- Same listing position as the free version — no reordering, no badges.
+- One-off setup; bring your own image or we can crop one from your existing branding.
+- **Image spec:** square (e.g. 400 × 400 px), JPG or PNG under 200 KB.
+- **Blurb:** keep it under 50 words.
+
 ### Category page header — $150+gst / month
 
 A banner placed at the top of one category page (e.g. *Builders & Renovations*, *Cafes & Restaurants*, *Plumbers*).

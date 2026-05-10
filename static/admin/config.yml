@@ -46,7 +46,8 @@ collections:
     fields:
       - { name: title, label: Business name, widget: string }
       - { name: slug, label: URL slug, widget: string, hint: "Lowercase, hyphens only. Used as the filename. Don't change after creation — breaks deep links." }
-      - { name: blurb, label: Blurb, widget: text, required: false, hint: "One-sentence description shown under the name on the category page." }
+      - { name: blurb, label: Blurb, widget: text, required: false, pattern: ['^(\s*\S+\s*){0,50}$', 'Keep it under 50 words'], hint: "Short description shown under the name on the category page. Aim for 1–2 sentences (max 50 words)." }
+      - { name: image, label: Image / logo (premium), widget: image, required: false, hint: "Square image shown to the left of your listing. Premium add-on — see the Advertise page. Square crop works best (e.g. 400×400)." }
 
       - name: address
         label: Address
