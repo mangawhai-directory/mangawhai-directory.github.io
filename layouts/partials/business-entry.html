@@ -5,7 +5,8 @@
 */ -}}
 {{- $id := .File.BaseFileName -}}
 {{- $closed := eq (.Params.status | default "active") "closed" -}}
-{{- $showImage := and .Params.image (eq (.Params.tier | default "free") "paid") -}}
+{{- $isPaid := eq (.Params.tier | default "free") "paid" -}}
+{{- $showImage := and .Params.image $isPaid -}}
 {{- $hasContact := or .Params.phone .Params.email .Params.website -}}
 {{- $hasSocials := false -}}
 {{- with .Params.socials -}}
@@ -17,20 +18,22 @@
 <article id="{{ $id }}" class="business-card py-6 {{ if $closed }}is-discontinued{{ end }}">
   <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
     <div class="min-w-0 flex-1">
+      <h2 data-fade class="m-0 text-xl font-semibold tracking-tight text-foreground">
+        {{ .Title }}
+        {{- if $closed }}
+        <span class="ml-2 inline-flex items-center rounded-full bg-destructive px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-destructive-foreground align-middle" aria-label="No longer trading">Discontinued</span>
+        {{- end }}
+      </h2>
       {{- if $showImage }}
       <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-5">
         <img data-fade class="block w-full aspect-square shrink-0 rounded-md object-cover sm:h-32 sm:w-32 sm:aspect-auto" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
         <div class="min-w-0 flex-1">
       {{- end }}
-          <h2 data-fade class="m-0 text-xl font-semibold tracking-tight text-foreground">
-            {{ .Title }}
-            {{- if $closed }}
-            <span class="ml-2 inline-flex items-center rounded-full bg-destructive px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-destructive-foreground align-middle" aria-label="No longer trading">Discontinued</span>
-            {{- end }}
-          </h2>
 
+          {{- if $isPaid }}
           {{- with .Params.blurb }}
           <p data-fade class="mt-1.5 text-base text-muted-foreground m-0">{{ . }}</p>
+          {{- end }}
           {{- end }}
 
       {{- with .Params.address }}

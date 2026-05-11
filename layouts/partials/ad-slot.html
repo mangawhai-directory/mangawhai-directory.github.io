@@ -41,7 +41,7 @@
   <a href="{{ $cfg.href | default "#" }}" class="block h-full w-full overflow-hidden rounded-lg border border-border" {{ if hasPrefix ($cfg.href | default "") "http" }}rel="sponsored noopener" target="_blank"{{ end }}>
     <picture>
       {{- if $hasMobileAd }}
-      <source media="(min-width: 1024px)" srcset="{{ $cfg.image }}" width="{{ $w }}" height="{{ $h }}">
+      <source media="(min-width: 744px)" srcset="{{ $cfg.image }}" width="{{ $w }}" height="{{ $h }}">
       <img src="{{ $cfg.imageMobile }}" alt="{{ $cfg.alt | default "" }}" width="{{ $wm }}" height="{{ $hm }}" loading="lazy" decoding="async" class="block h-full w-full {{ $aspect }} object-cover">
       {{- else }}
       <img src="{{ $cfg.image }}" alt="{{ $cfg.alt | default "" }}" width="{{ $w }}" height="{{ $h }}" loading="lazy" decoding="async" class="block h-full w-full {{ $aspect }} object-cover">

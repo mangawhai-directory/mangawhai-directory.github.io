@@ -25,7 +25,7 @@ Make your free listing stand out without changing where it sits in the category 
 
 A banner placed at the top of one category page (e.g. *Builders & Renovations*, *Cafes & Restaurants*, *Plumbers*).
 
-- **Desktop creative:** 540 × 350 px
+- **Desktop creative:** 500 × 250 px
 - **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
 - Highest-intent placement — people on a category page are actively choosing who to call.
 - Static image plus a click-through to your website, phone or booking link.

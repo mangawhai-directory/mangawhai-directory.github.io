@@ -33,7 +33,7 @@
   </div>
 </section>
 
-<div class="mx-auto max-w-6xl px-4 pt-10 sm:pt-12">
+<div class="mx-auto max-w-6xl px-4 pt-10 sm:pt-12 min-[1184px]:px-0">
   {{ partial "ad-slot.html" (dict
     "slot" "home"
     "w" 1152
@@ -42,7 +42,7 @@
     "hm" 500
     "label" "Homepage tile"
     "price" "$400+gst / month"
-    "class" "mx-auto w-full max-w-[500px] aspect-square lg:max-w-none lg:aspect-auto lg:h-[400px]") }}
+    "class" "mx-auto w-full max-w-[500px] aspect-square lg:max-w-none lg:aspect-[1152/400]") }}
 </div>
 
 <section class="mx-auto max-w-6xl px-4 py-12">
@@ -56,7 +56,7 @@
          giving alphabetical down-then-across order. break-inside-avoid +
          mb-3 on each card replaces grid gap (column-gap handles the
          horizontal gutter only). */ -}}
-  <ul class="mt-6 list-none p-0 columns-1 gap-3 sm:columns-2 lg:columns-3">
+  <ul class="mt-6 list-none p-0 columns-1 gap-3 min-[640px]:columns-2 min-[744px]:columns-3">
     {{- $terms := slice -}}
     {{- range $categoriesPage.Pages -}}
       {{- $terms = $terms | append . -}}

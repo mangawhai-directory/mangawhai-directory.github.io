@@ -44,6 +44,10 @@
 
   --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Switch to the desktop layout from tablet portrait up (>743px).
+     Overrides Tailwind v4's default lg breakpoint of 1024px. */
+  --breakpoint-lg: 744px;
 }
 
 @layer base {
