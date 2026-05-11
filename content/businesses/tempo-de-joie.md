@@ -7,6 +7,8 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
+phone: ''
+email: ''
 website: https://nataliecavepilates.offeringtree.com/
 socials:
   facebook: ''
@@ -20,9 +22,9 @@ categories:
 tags:
   - Dance
   - Fitness
-
 hours: []
+nzbn: ''
 tier: free
-last_verified: '2026-05-09'
-status: active
+last_verified: 2026-05-09
+status: closed
 ---
