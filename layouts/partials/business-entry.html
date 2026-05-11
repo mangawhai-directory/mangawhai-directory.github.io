@@ -24,7 +24,7 @@
 {{- $tags := .Params.tags | default slice -}}
 {{- $hasTags := gt (len $tags) 0 -}}
 <article id="{{ $id }}" class="business-card py-6 {{ if $closed }}is-discontinued{{ end }}">
-  <div class="grid{{ if $showImage }} sm:grid-cols-[1fr_8rem] sm:gap-x-5{{ end }}">
+  <div class="grid{{ if $showImage }} min-[640px]:grid-cols-[3fr_1fr] min-[640px]:gap-x-5 min-[744px]:grid-cols-[4fr_1fr]{{ end }}">
     {{- if $hasTags }}
     <ul data-fade class="flex flex-wrap gap-1.5 list-none p-0 m-0" aria-label="Services">
       {{- range $tags }}
@@ -43,7 +43,7 @@
     </h2>
 
     {{- if $showImage }}
-    <img data-fade class="mt-4 block w-full aspect-square rounded-md object-cover sm:mt-0 sm:col-start-2 sm:row-start-1 {{ if $hasTags }}sm:row-span-3{{ else }}sm:row-span-2{{ end }} sm:self-start sm:w-full" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
+    <img data-fade class="mt-4 block w-full aspect-square rounded-md object-cover sm:mt-0 sm:col-start-2 sm:row-start-1 {{ if $hasTags }}sm:row-span-3{{ else }}sm:row-span-2{{ end }} sm:self-start sm:w-full min-[640px]:max-w-[300px] min-[744px]:max-w-[400px]" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
     {{- end }}
 
     <div class="min-w-0{{ if $showImage }} mt-4 sm:mt-0{{ end }}">
@@ -75,8 +75,13 @@
 
       {{- if $hasActions }}
       <div data-fade class="mt-3 flex flex-wrap items-center gap-2">
-        {{- with .Params.socials -}}
-          {{ partial "social-icons.html" (dict "socials" . "name" $.Title) }}
+        {{- with .Params.website }}
+          <li>
+            <a class="inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90" href="{{ . }}" rel="noopener noreferrer" target="_blank">
+              Visit website
+              <svg class="ml-1.5 h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </li>
         {{- end }}
 
         {{- if $hasContact }}
@@ -97,13 +102,9 @@
             </a>
           </li>
           {{- end }}
-          {{- with .Params.website }}
-          <li>
-            <a class="inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90" href="{{ . }}" rel="noopener noreferrer" target="_blank">
-              Visit website
-              <svg class="ml-1.5 h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </li>
+
+          {{- with .Params.socials -}}
+            {{ partial "social-icons.html" (dict "socials" . "name" $.Title) }}
           {{- end }}
         </ul>
         {{- end }}
@@ -119,10 +120,17 @@
              collapses single-element slices inside dict values. */ -}}
       {{- $labels := slice -}}
       {{- $ranges := slice -}}
+      {{- $dayAbbr := dict "Monday" "Mon" "Tuesday" "Tue" "Wednesday" "Wed" "Thursday" "Thu" "Friday" "Fri" "Saturday" "Sat" "Sunday" "Sun" -}}
       {{- range . -}}
         {{- $days := .dayOfWeek -}}
         {{- $label := "" -}}
-        {{- if reflect.IsSlice $days }}{{ $label = delimit $days ", " }}{{ else }}{{ $label = $days }}{{ end -}}
+        {{- if reflect.IsSlice $days -}}
+          {{- $abbr := slice -}}
+          {{- range $days -}}{{ $abbr = $abbr | append (index $dayAbbr . | default .) }}{{- end -}}
+          {{- $label = delimit $abbr ", " -}}
+        {{- else -}}
+          {{- $label = index $dayAbbr $days | default $days -}}
+        {{- end -}}
         {{- $range := "" -}}
         {{- if eq .opens "closed" -}}
           {{- $range = "Closed" -}}
@@ -152,7 +160,7 @@
           {{- $ranges = $ranges | append $range -}}
         {{- end -}}
       {{- end -}}
-      <div data-fade class="mt-3 text-sm">
+      <div data-fade class="mt-6 text-sm">
         <p class="m-0 inline-flex items-center gap-1.5 font-medium text-foreground">
           <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           Opening hours
