@@ -1,15 +1,15 @@
 ---
 title: No Limits Health and Fitness
 slug: no-limits-health-and-fitness
-blurb: Mangawhai gym offering health and fitness training.
+blurb: ''
 address:
-  street: Mangawhai
+  street: 194a Molesworth Drive
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
 phone: ''
-email: ''
-website: ''
+email: fitness@nolimitsholdings.com
+website: https://www.nolimitshealthandfitness.co.nz/
 socials:
   facebook: https://www.facebook.com/p/No-Limits-Health-and-Fitness-61567841353349/
   instagram: https://www.instagram.com/nolimitsgym_mangawhai/
@@ -22,10 +22,9 @@ categories:
 tags:
   - Gym
   - Personal Training
-
 hours: []
 nzbn: ''
 tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
