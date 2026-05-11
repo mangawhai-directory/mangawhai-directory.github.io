@@ -3,10 +3,11 @@
   Context: a Page (the business). Uses .Params for fields.
   Stable fragment id from filename for /<category>/#<slug> deep links and JSON-LD @id.
 
-  Desktop layout uses CSS Grid: title spans row 1 col 1, image fills col 2
-  across both rows (so it stretches to the full card height), all other
-  content lives in row 2 col 1. Mobile collapses to a single-column stack
-  in DOM order: title, image, content.
+  Desktop layout uses CSS Grid. When tags are present they sit in row 1 col 1
+  above the title; otherwise the title takes row 1. The square image is pinned
+  to the top of col 2 (sm:self-start) and spans the rows in col 1 so col 2
+  reserves space without forcing inflation. Mobile collapses to a single-
+  column stack in DOM order.
 */ -}}
 {{- $id := .File.BaseFileName -}}
 {{- $closed := eq (.Params.status | default "active") "closed" -}}
@@ -20,9 +21,21 @@
   {{- end -}}
 {{- end -}}
 {{- $hasActions := or $hasContact $hasSocials -}}
+{{- $tags := .Params.tags | default slice -}}
+{{- $hasTags := gt (len $tags) 0 -}}
 <article id="{{ $id }}" class="business-card py-6 {{ if $closed }}is-discontinued{{ end }}">
   <div class="grid{{ if $showImage }} sm:grid-cols-[1fr_8rem] sm:gap-x-5{{ end }}">
-    <h2 data-fade class="m-0 text-xl font-semibold tracking-tight text-foreground">
+    {{- if $hasTags }}
+    <ul data-fade class="flex flex-wrap gap-1.5 list-none p-0 m-0" aria-label="Services">
+      {{- range $tags }}
+      <li>
+        <span class="inline-flex items-center rounded-full border border-border bg-muted/50 px-2 py-0.5 text-xs font-medium text-muted-foreground">{{ . }}</span>
+      </li>
+      {{- end }}
+    </ul>
+    {{- end }}
+
+    <h2 data-fade class="m-0 {{ if $hasTags }}mt-2 {{ end }}text-[1.30rem] font-semibold tracking-tight text-foreground">
       {{ .Title }}
       {{- if $closed }}
       <span class="ml-2 inline-flex items-center rounded-full bg-destructive px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-destructive-foreground align-middle" aria-label="No longer trading">Discontinued</span>
@@ -30,16 +43,10 @@
     </h2>
 
     {{- if $showImage }}
-    <img data-fade class="mt-4 block w-full aspect-square rounded-md object-cover sm:mt-0 sm:col-start-2 sm:row-start-1 sm:row-span-2 sm:self-start sm:w-full" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
+    <img data-fade class="mt-4 block w-full aspect-square rounded-md object-cover sm:mt-0 sm:col-start-2 sm:row-start-1 {{ if $hasTags }}sm:row-span-3{{ else }}sm:row-span-2{{ end }} sm:self-start sm:w-full" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
     {{- end }}
 
     <div class="min-w-0{{ if $showImage }} mt-4 sm:mt-0{{ end }}">
-      {{- if $isPaid }}
-      {{- with .Params.blurb }}
-      <p data-fade class="mt-1.5 text-base text-muted-foreground m-0">{{ . }}</p>
-      {{- end }}
-      {{- end }}
-
       {{- with .Params.address }}
       {{- $parts := slice -}}
       {{- with .street }}{{ $parts = $parts | append . }}{{ end -}}
@@ -60,15 +67,9 @@
       {{- end -}}
       {{- end }}
 
-      {{- with .Params.tags }}
-      {{- if . }}
-      <ul data-fade class="mt-2 flex flex-wrap gap-1.5 list-none p-0 m-0" aria-label="Services">
-        {{- range . }}
-        <li>
-          <span class="inline-flex items-center rounded-full border border-border bg-muted/50 px-2 py-0.5 text-xs font-medium text-muted-foreground">{{ . }}</span>
-        </li>
-        {{- end }}
-      </ul>
+      {{- if $isPaid }}
+      {{- with .Params.blurb }}
+      <p data-fade class="py-6 text-base text-muted-foreground m-0">{{ . }}</p>
       {{- end }}
       {{- end }}
 
