@@ -30,7 +30,7 @@
     </h2>
 
     {{- if $showImage }}
-    <img data-fade class="mt-4 block w-full aspect-square rounded-md object-cover sm:mt-0 sm:col-start-2 sm:row-start-1 sm:row-span-2 sm:aspect-auto sm:h-full sm:w-full" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
+    <img data-fade class="mt-4 block w-full aspect-square rounded-md object-cover sm:mt-0 sm:col-start-2 sm:row-start-1 sm:row-span-2 sm:self-start sm:w-full" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
     {{- end }}
 
     <div class="min-w-0{{ if $showImage }} mt-4 sm:mt-0{{ end }}">
