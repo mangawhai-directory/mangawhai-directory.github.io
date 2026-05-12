@@ -7,6 +7,9 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
+phone: 09 431 4476
+email: admin@mangawhaiphysiotherapy.co.nz
+website: https://mangawhaiphysiotherapy.co.nz
 socials:
   facebook: https://www.facebook.com/MangawhaiPhysio/
   instagram: ''
@@ -17,14 +20,13 @@ socials:
 categories:
   - medical-dental
   - health-care-practitioners
+  - fitness-yoga-pilates
 tags:
   - Physiotherapy
-
+  - Reformer Pilates
 hours: []
+nzbn: ''
 tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
-phone: 09 431 4476
-email: admin@mangawhaiphysiotherapy.co.nz
-website: https://mangawhaiphysiotherapy.co.nz
 ---
