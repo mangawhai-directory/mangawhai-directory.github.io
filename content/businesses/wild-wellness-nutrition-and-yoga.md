@@ -12,7 +12,7 @@ phone: 021 122 4724
 email: francesca@wildwellness.nz
 website: https://www.wildwellness.nz/
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/wildwellnessnz/
   instagram: https://www.instagram.com/wildwellness_nz/
   x: ''
   linkedin: ''
