@@ -20,6 +20,7 @@ socials:
 categories:
   - fitness-yoga-pilates
 tags:
+  - Group Fitness
   - Strength Training
 hours: []
 nzbn: ''
