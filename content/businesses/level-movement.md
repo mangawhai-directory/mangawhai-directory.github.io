@@ -20,7 +20,7 @@ socials:
 categories:
   - fitness-yoga-pilates
 tags:
-  - CrossFit
+  - Strength Training
 hours: []
 nzbn: ''
 tier: free
