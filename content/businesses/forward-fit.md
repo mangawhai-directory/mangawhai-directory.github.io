@@ -21,7 +21,7 @@ categories:
   - fitness-yoga-pilates
 tags:
   - Woman Specific Fitness
-  - Pilates
+  - Reformer Pilates
   - Personal Training
   - Pelvic Floor
 hours: []
