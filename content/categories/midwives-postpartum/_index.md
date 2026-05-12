@@ -1,5 +1,5 @@
 ---
-title: Pregnancy, Birth & Postpartum
+title: Pregnancy, Birth & Postpartum Care
 description: |-
   Midwives in Mangawhai
   Prenatal classes in Mangawhai
