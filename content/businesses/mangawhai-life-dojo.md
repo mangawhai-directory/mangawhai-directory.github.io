@@ -1,14 +1,14 @@
 ---
 title: The Mangawhai Life Dojo
 slug: mangawhai-life-dojo
-blurb: Family-centric Mangawhai martial arts and wellness centre with self-defence-focused BJJ, dynamic movement and holistic coaching.
+blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: ''
-email: ''
+phone: 021 678 309
+email: heroes@lifedojo.me
 website: https://lifedojo.me
 socials:
   facebook: ''
@@ -20,13 +20,11 @@ socials:
 categories:
   - fitness-yoga-pilates
 tags:
-  - BJJ
-  - Martial Arts
-  - Wellness
-
+  - Workshops
+  - Coaching
 hours: []
 nzbn: ''
 tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---
