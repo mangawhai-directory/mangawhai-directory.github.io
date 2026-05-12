@@ -1,27 +1,29 @@
 ---
-title: "Zest Pilates Mangawhai"
-slug: "zest-pilates-mangawhai"
-blurb: ""
+title: Zest Pilates Mangawhai
+slug: zest-pilates-mangawhai
+blurb: ''
 address:
-  street: "Mangawhai Heads"
-  suburb: "Mangawhai Heads"
-  postcode: "0505"
-  country: "NZ"
-website: "https://www.thepilateschoice.com/pilates-studio-directory-1/zest-pilates"
+  street: 14 Sandpiper Lane
+  suburb: Mangawhai Heads
+  postcode: '0505'
+  country: NZ
+phone: ''
+email: hello@zestpilates.co.nz
+website: https://zestpilates.co.nz/
 socials:
-  facebook: "https://www.facebook.com/p/Zest-Pilates-Mangawhai-61558444207601/"
-  instagram: "https://www.instagram.com/zestpilates_mangawhai/"
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["fitness-yoga-pilates"]
+  facebook: https://www.facebook.com/profile.php?id=61558444207601
+  instagram: https://www.instagram.com/zestpilates_mangawhai/
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - fitness-yoga-pilates
 tags:
-  - mangawhai-heads
-  - Pilates
-
+  - Reformer Pilates
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+tier: free
+last_verified: 2026-05-04
+status: active
 ---
