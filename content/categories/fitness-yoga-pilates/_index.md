@@ -1,5 +1,5 @@
 ---
-title: Fitness, Yoga & Pilates
+title: Fitness, Pilates & Yoga
 description: Find gyms, yoga studios, pilates classes and personal trainers in Mangawhai and Mangawhai Heads.
 keywords:
   - gym mangawhai
