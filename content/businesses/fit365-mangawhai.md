@@ -3,11 +3,13 @@ title: FIT365 Mangawhai
 slug: fit365-mangawhai
 blurb: ''
 address:
-  street: 107 Mangawhai Heads Road
-  suburb: Mangawhai
+  street: Mangawhai
+  suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-website: https://www.fit365mangawhai.co.nz
+phone: 021 662 655
+email: aaron@fit365.co.nz
+website: ''
 socials:
   facebook: ''
   instagram: ''
@@ -18,12 +20,10 @@ socials:
 categories:
   - fitness-yoga-pilates
 tags:
-  - Gym
-
+  - Strength Training
 hours: []
+nzbn: ''
 tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
-phone: 021 662 655
-email: aaron@fit365.co.nz
 ---
