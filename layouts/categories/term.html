@@ -5,7 +5,7 @@
   {{- $businesses := slice -}}
   {{- with site.GetPage "/businesses" -}}
     {{- range .Pages -}}
-      {{- if in (.Params.categories | default slice) $slug -}}
+      {{- if and (in (.Params.categories | default slice) $slug) (ne (.Params.status | default "active") "closed") -}}
         {{- $businesses = $businesses | append . -}}
       {{- end -}}
     {{- end -}}
@@ -23,7 +23,7 @@
 {{- $businesses := slice -}}
 {{- with site.GetPage "/businesses" -}}
   {{- range .Pages -}}
-    {{- if in (.Params.categories | default slice) $slug -}}
+    {{- if and (in (.Params.categories | default slice) $slug) (ne (.Params.status | default "active") "closed") -}}
       {{- $businesses = $businesses | append . -}}
     {{- end -}}
   {{- end -}}
@@ -125,7 +125,7 @@
 {{- $businesses := slice -}}
 {{- with site.GetPage "/businesses" -}}
   {{- range .Pages -}}
-    {{- if in (.Params.categories | default slice) $slug -}}
+    {{- if and (in (.Params.categories | default slice) $slug) (ne (.Params.status | default "active") "closed") -}}
       {{- $businesses = $businesses | append . -}}
     {{- end -}}
   {{- end -}}

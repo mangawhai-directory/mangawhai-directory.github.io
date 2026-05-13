@@ -111,6 +111,7 @@
       </div>
       {{- end }}
 
+      {{- if $isPaid }}
       {{- with .Params.hours }}
       {{- if . }}
       {{- /* Group hours entries that share the exact same dayOfWeek so split-shift
@@ -172,6 +173,7 @@
           {{- end }}
         </dl>
       </div>
+      {{- end }}
       {{- end }}
       {{- end }}
     </div>

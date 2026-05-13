@@ -17,7 +17,13 @@ A free, locally curated business directory covering Mangawhai, Mangawhai Heads, 
 {{- $categoriesPage := site.GetPage "/categories" -}}
 {{- $businessesPage := site.GetPage "/businesses" -}}
 {{- $allBusinesses := slice -}}
-{{- with $businessesPage }}{{ $allBusinesses = .Pages }}{{ end -}}
+{{- with $businessesPage -}}
+  {{- range .Pages -}}
+    {{- if ne (.Params.status | default "active") "closed" -}}
+      {{- $allBusinesses = $allBusinesses | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- $terms := slice -}}
 {{- range $categoriesPage.Pages }}{{ $terms = $terms | append . }}{{ end }}
 {{ range sort $terms "Title" "asc" -}}

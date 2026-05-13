@@ -44,6 +44,13 @@ collections:
       - { label: Tier, field: tier }
       - { label: Suburb, field: address.suburb }
     fields:
+      - name: tier
+        label: Listing tier
+        widget: select
+        default: free
+        options:
+          - { label: Free, value: free }
+          - { label: Paid, value: paid }
       - { name: title, label: Business name, widget: string }
       - { name: slug, label: URL slug, widget: string, hint: "Lowercase, hyphens only. Used as the filename. Don't change after creation — breaks deep links." }
       - { name: blurb, label: Blurb, widget: text, required: false, pattern: ['^(\s*\S+\s*){0,50}$', 'Keep it under 50 words'], hint: "Short description shown under the name on the category page. Aim for 1–2 sentences (max 50 words)." }
@@ -106,13 +113,6 @@ collections:
           - { name: closes, label: Closes, widget: string, required: false, hint: "HH:MM (24h). Leave blank if 'closed' is set in opens." }
 
       - { name: nzbn, label: NZBN, widget: string, required: false, hint: "13-digit NZ Business Number. Optional." }
-      - name: tier
-        label: Listing tier
-        widget: select
-        default: free
-        options:
-          - { label: Free, value: free }
-          - { label: Paid, value: paid }
       - name: last_verified
         label: Last verified
         widget: datetime

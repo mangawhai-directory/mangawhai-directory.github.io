@@ -50,7 +50,13 @@
   {{- $categoriesPage := site.GetPage "/categories" -}}
   {{- $businessesPage := site.GetPage "/businesses" -}}
   {{- $allBusinesses := slice -}}
-  {{- with $businessesPage }}{{ $allBusinesses = .Pages }}{{ end -}}
+  {{- with $businessesPage -}}
+    {{- range .Pages -}}
+      {{- if ne (.Params.status | default "active") "closed" -}}
+        {{- $allBusinesses = $allBusinesses | append . -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
   {{- if $categoriesPage -}}
   {{- /* CSS multi-column layout fills top-to-bottom within each column,
          giving alphabetical down-then-across order. break-inside-avoid +

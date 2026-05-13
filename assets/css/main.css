@@ -60,12 +60,6 @@
 }
 
 @layer components {
-  /* Discontinued state — relies on cascade so it stays in CSS rather than
-     duplicating opacity utilities across every child class. */
-  .is-discontinued [data-fade] {
-    opacity: 0.55;
-  }
-
   /* Hours <details> uses a definition-list grid that's awkward to express
      purely with utilities (the dt/dd pairing). On mobile the day list can
      be a long string ("Monday, Tuesday, ..., Sunday") that overflows a

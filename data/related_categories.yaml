@@ -1,18 +1,13 @@
 cafes-restaurants:
   - bakeries
   - takeaways-food-trucks
-  - bars-pubs-breweries
 takeaways-food-trucks:
   - cafes-restaurants
   - bakeries
 bakeries:
   - cafes-restaurants
   - takeaways-food-trucks
-bars-pubs-breweries:
-  - cafes-restaurants
-  - wineries-vineyards
 wineries-vineyards:
-  - bars-pubs-breweries
   - cafes-restaurants
 accommodation:
   - holiday-homes
