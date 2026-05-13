@@ -1,7 +1,7 @@
 ---
 title: MEAN BRGR
 slug: mean-brgr
-blurb: Burger joint sourcing the best ingredients and treating them with the care and respect they deserve.
+blurb: ''
 address:
   street: 6 Wood Street
   suburb: Mangawhai Heads
@@ -19,28 +19,36 @@ socials:
   youtube: ''
 categories:
   - takeaways-food-trucks
-  - cafes-restaurants
 tags:
-  - takeaway
   - Burgers
+  - Takeaways
 hours:
-  - dayOfWeek: ["Monday", "Tuesday", "Wednesday"]
-    opens: "17:00"
-    closes: "20:00"
-  - dayOfWeek: ["Thursday", "Friday"]
-    opens: "12:00"
-    closes: "14:00"
-  - dayOfWeek: ["Thursday", "Friday"]
-    opens: "17:00"
-    closes: "20:00"
-  - dayOfWeek: ["Saturday"]
-    opens: "16:00"
-    closes: "20:00"
-  - dayOfWeek: ["Sunday"]
-    opens: "16:00"
-    closes: "19:30"
+  - dayOfWeek:
+      - Monday
+      - Tuesday
+      - Wednesday
+    opens: 17:00
+    closes: 20:00
+  - dayOfWeek:
+      - Thursday
+      - Friday
+    opens: 12:00
+    closes: 14:00
+  - dayOfWeek:
+      - Thursday
+      - Friday
+    opens: 17:00
+    closes: 20:00
+  - dayOfWeek:
+      - Saturday
+    opens: 16:00
+    closes: 20:00
+  - dayOfWeek:
+      - Sunday
+    opens: 16:00
+    closes: 19:30
 nzbn: ''
 tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
