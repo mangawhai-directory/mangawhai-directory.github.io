@@ -19,11 +19,9 @@ socials:
   youtube: ''
 categories:
   - cafes-restaurants
-  - bars-pubs-breweries
 tags:
   - Restaurant
   - Bar
-
 hours: []
 nzbn: ''
 tier: free
