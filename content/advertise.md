@@ -11,7 +11,7 @@ Every business gets a **free organic listing**. Paid ads simply put your brand i
 
 ## Packages
 
-### Premium listing — $60+gst / month
+### Premium listing — $30+gst / month
 
 Make your free listing stand out without changing where it sits in the category list.
 
