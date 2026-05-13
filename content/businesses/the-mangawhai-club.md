@@ -18,13 +18,12 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - bars-pubs-breweries
   - community-clubs-churches
+  - cafes-restaurants
 tags:
   - Sports Club
   - Bar
   - Restaurant
-
 hours: []
 nzbn: ''
 tier: free
