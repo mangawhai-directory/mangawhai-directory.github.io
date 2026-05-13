@@ -1,6 +1,6 @@
 ---
-title: Bunker Sports Bar
-slug: bunker-sports-bar
+title: The Bunker
+slug: the-bunker
 blurb: ''
 address:
   street: 3 Main Street
@@ -18,7 +18,6 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - bars-pubs-breweries
   - cafes-restaurants
 tags:
   - Sports Bar
