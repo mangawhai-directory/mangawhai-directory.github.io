@@ -19,7 +19,6 @@ socials:
   youtube: ''
 categories:
   - cafes-restaurants
-  - bars-pubs-breweries
 tags:
   - Pizza
 hours: []
