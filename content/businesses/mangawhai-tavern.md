@@ -20,7 +20,8 @@ socials:
 categories:
   - cafes-restaurants
 tags:
-  - Tavern
+  - Restaurant
+  - Bar
   - Live Music
 hours: []
 nzbn: ''
