@@ -1,7 +1,7 @@
 ---
 title: Tau Lin Chinese Takeaways
 slug: tau-lin-chinese-takeaways
-blurb: Chinese restaurant and takeaway on Molesworth Drive offering classic Chinese dishes alongside fish and chips and burgers.
+blurb: ''
 address:
   street: 6 Molesworth Drive
   suburb: Mangawhai
@@ -18,12 +18,10 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - cafes-restaurants
   - takeaways-food-trucks
 tags:
   - Chinese
   - Fish & Chips
-
 hours: []
 nzbn: ''
 tier: free
