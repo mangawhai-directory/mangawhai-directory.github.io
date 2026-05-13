@@ -1,7 +1,7 @@
 ---
 title: Bennetts Bakery
 slug: bennetts-of-mangawhai
-blurb: Come and experience the finest breads and pastries, lovingly crafted with Milmore Downs organic flour.
+blurb: ''
 address:
   street: 52 Moir Street
   suburb: Mangawhai
@@ -18,12 +18,10 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - cafes-restaurants
   - bakeries
 tags:
   - Bakery
   - Pastries
-
 hours: []
 nzbn: ''
 tier: free
