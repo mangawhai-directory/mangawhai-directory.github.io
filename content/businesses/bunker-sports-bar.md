@@ -20,7 +20,9 @@ socials:
 categories:
   - cafes-restaurants
 tags:
+  - Restaurant
   - Sports Bar
+  - Golf Simulators
 hours: []
 nzbn: ''
 tier: free
