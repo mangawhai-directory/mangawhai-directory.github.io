@@ -1,31 +1,31 @@
 ---
-title: Mangawhai Pizzeria
-slug: mangawhai-pizzeria
+title: Kebabs2Go
+slug: kebabs2go
 blurb: ''
+image: ''
 address:
-  street: 41 Moir Street
-  suburb: Mangawhai Village
+  street: 7 Wood Street
+  suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 5226
+phone: 09 945 0155
 email: ''
 website: ''
 socials:
-  facebook: https://www.facebook.com/MangawhaiPizzeria
+  facebook: ''
   instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
-  - cafes-restaurants
   - takeaways-food-trucks
 tags:
-  - Pizza
-  - Pasta
+  - Kebabs
+  - Takeaways
 hours: []
 nzbn: ''
 tier: free
-last_verified: 2026-05-04
+last_verified: 2026-05-13
 status: active
 ---

@@ -1,29 +1,31 @@
 ---
-title: "The BBQ Hut Mangawhai"
-slug: "bbq-hut-mangawhai"
-blurb: ""
+title: The BBQ Hut Mangawhai
+slug: bbq-hut-mangawhai
+blurb: ''
 address:
-  street: "1a Molesworth Drive"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
+  street: 1a Molesworth Drive
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
 phone: 027 479 4442
-website: "https://thebbqhut.co.nz"
+email: ''
+website: https://thebbqhut.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["takeaways-food-trucks", "cafes-restaurants"]
+  facebook: ''
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - takeaways-food-trucks
 tags:
-  - takeaway
   - Burgers
   - BBQ
-
+  - Takeaways
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+tier: free
+last_verified: 2026-05-04
+status: active
 ---

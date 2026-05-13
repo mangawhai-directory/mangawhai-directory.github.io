@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Sovereign Departures
 slug: sovereign-departures
 blurb: ''
@@ -20,12 +21,12 @@ socials:
   youtube: ''
 categories:
   - funerals-end-of-life-care
+  - alternative-therapy-guidance
 tags:
   - End of Life Doula
   - Death Coach
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-12
 status: active
 ---
