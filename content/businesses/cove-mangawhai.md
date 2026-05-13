@@ -1,25 +1,29 @@
 ---
-title: "The Cove Mangawhai"
-slug: "cove-mangawhai"
-blurb: ""
+title: The Cove Mangawhai
+slug: cove-mangawhai
+blurb: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: ''
+email: ''
+website: ''
 socials:
-  facebook: "https://www.facebook.com/search/top/?q=The+Cove+Mangawhai"
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["cafes-restaurants"]
+  facebook: https://www.facebook.com/search/top/?q=The+Cove+Mangawhai
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - cafes-restaurants
 tags:
   - Restaurant
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+tier: free
+last_verified: 2026-05-04
+status: closed
 ---
