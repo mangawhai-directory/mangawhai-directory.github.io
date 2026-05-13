@@ -1,7 +1,7 @@
 ---
 title: TOAST on Wood Street
 slug: toast-on-wood-street
-blurb: Cosy cafe in Mangawhai Heads serving Havana coffee and gourmet toasties, with curated art books, plants and home decor.
+blurb: ''
 address:
   street: 7 Wood Street
   suburb: Mangawhai Heads
@@ -18,11 +18,10 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - cafes-restaurants
+  - takeaways-food-trucks
 tags:
-  - Cafe
+  - Gourmet Toasties
   - Coffee
-
 hours: []
 nzbn: ''
 tier: free
