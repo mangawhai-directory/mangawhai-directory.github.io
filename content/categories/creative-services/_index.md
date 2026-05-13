@@ -1,6 +1,6 @@
 ---
-title: Creative Services
-description: Photographers in Mangawhai
+title: Architects
+description: Architects in Mangawhai
 keywords:
-  - photography, graphic designers
+  - architects
 ---
