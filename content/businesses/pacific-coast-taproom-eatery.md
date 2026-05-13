@@ -1,6 +1,6 @@
 ---
-title: The Local
-slug: the-local
+title: Pacific Coast Taproom & Eatery
+slug: pacific-coast-taproom-and-eatery
 blurb: ''
 address:
   street: 1 Molesworth Drive
@@ -8,7 +8,7 @@ address:
   postcode: '0505'
   country: NZ
 phone: 09 945 3838
-email: ''
+email: reservations@thelocalmangawhai.co.nz
 website: https://taproom.nz/
 socials:
   facebook: https://www.facebook.com/p/Pacific-Coast-Taproom-Eatery-61559162670176/
@@ -18,15 +18,13 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - bars-pubs-breweries
   - cafes-restaurants
 tags:
-  - Taproom
-  - Eatery
-
+  - Restaurant
+  - Bar
 hours: []
 nzbn: ''
 tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
