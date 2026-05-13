@@ -1,7 +1,7 @@
 ---
 title: Greenview Cafe
 slug: greenview-cafe
-blurb: Cafe and Thai restaurant at Mangawhai Golf Club serving breakfast, lunch and evening Thai dining.
+blurb: ''
 address:
   street: 221 Molesworth Drive
   suburb: Mangawhai
@@ -22,7 +22,6 @@ categories:
 tags:
   - Cafe
   - Thai
-
 hours: []
 nzbn: ''
 tier: free

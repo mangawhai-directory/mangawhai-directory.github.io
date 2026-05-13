@@ -3,8 +3,8 @@ title: Little Red Fish
 slug: little-red-fish
 blurb: ''
 address:
-  street: 45 Moir Street
-  suburb: Mangawhai Village
+  street: Mangawhai Fishing & Boating Club, 2 Alamar Crescent
+  suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
 phone: 021 172 1320
@@ -21,8 +21,8 @@ categories:
   - takeaways-food-trucks
   - cafes-restaurants
 tags:
-  - Fish & Chips
-
+  - Seafood Deli
+  - Takeaways
 hours: []
 nzbn: ''
 tier: free
