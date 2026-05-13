@@ -21,7 +21,6 @@ categories:
   - cafes-restaurants
   - bars-pubs-breweries
 tags:
-  - mangawhai-heads
   - Pizza
 hours: []
 nzbn: ''
