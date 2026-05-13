@@ -21,6 +21,7 @@ categories:
   - cafes-restaurants
 tags:
   - Pizza
+  - Bar
 hours: []
 nzbn: ''
 tier: free
