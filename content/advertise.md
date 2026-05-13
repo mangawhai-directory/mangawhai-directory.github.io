@@ -23,7 +23,7 @@ Make your free listing stand out without changing where it sits in the category 
 
 ### Category page header — $150+gst / month
 
-A banner placed at the top of one category page (e.g. *Builders & Renovations*, *Cafes & Restaurants*, *Plumbers*).
+A banner placed at the top of one category page (e.g. *Builders & Renovations*, *Cafes & Restaurants*, *Plumbers*). **Note**: This can be any category you like, it doesn't have to be the one you are in.
 
 - **Desktop creative:** 500 × 250 px
 - **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
