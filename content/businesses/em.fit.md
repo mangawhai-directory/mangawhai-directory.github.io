@@ -1,6 +1,7 @@
 ---
-title: Em.Fit
-slug: em-fit
+tier: free
+title: Club.Fit
+slug: club-fit
 blurb: ''
 address:
   street: 453 King Road
@@ -8,10 +9,10 @@ address:
   postcode: '0573'
   country: NZ
 phone: 022 427 0637
-email: em.fit94@gmail.com
+email: admin@clubfitmangawhai.com
 website: ''
 socials:
-  facebook: https://www.facebook.com/em.fit94/
+  facebook: https://www.facebook.com/p/ClubFit-Mangawhai-61554418291126/
   instagram: https://www.instagram.com/clubfitmangawhai
   x: ''
   linkedin: ''
@@ -22,9 +23,9 @@ categories:
 tags:
   - Gym
   - Personal Training
+  - Group Fitness
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-12
 status: active
 ---
