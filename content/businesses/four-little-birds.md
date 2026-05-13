@@ -20,9 +20,8 @@ socials:
 categories:
   - bakeries
 tags:
-  - Patisserie
+  - Cafe
   - Custom Cakes
-
 hours: []
 nzbn: ''
 tier: free
