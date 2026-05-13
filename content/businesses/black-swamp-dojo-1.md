@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Black Swamp Dojo
 slug: black-swamp-dojo
 blurb: Sauna & Ice
@@ -23,7 +24,6 @@ tags:
   - Sauna
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-10
-status: active
+status: closed
 ---
