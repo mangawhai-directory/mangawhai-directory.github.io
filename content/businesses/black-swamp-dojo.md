@@ -1,7 +1,8 @@
 ---
+tier: free
 title: Black Swamp Dojo
 slug: black-swamp-dojo
-blurb: Rural Mangawhai dojo for martial arts, yoga, pilates and wellness, with a large sauna and ice bath for contrast therapy.
+blurb: ''
 address:
   street: 168 Black Swamp Road
   suburb: Mangawhai
@@ -19,16 +20,15 @@ socials:
   youtube: ''
 categories:
   - fitness-yoga-pilates
+  - beauty-hair-spa
 tags:
-  - Martial Arts
-  - Yoga
-  - Pilates
   - Sauna
   - Ice Bath
-
+  - Martial Arts
+  - Group Fitness
+  - Workshops
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---
