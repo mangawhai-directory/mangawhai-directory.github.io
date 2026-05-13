@@ -17,9 +17,9 @@ Make your free listing stand out without changing where it sits in the category 
 
 - A square **image or logo** displayed to the left of your name and blurb.
 - Same listing position as the free version — no reordering, no badges.
-- One-off setup; bring your own image or we can crop one from your existing branding.
+- Bring your own image or we can crop one from your existing branding.
 - **Image spec:** square (e.g. 400 × 400 px), JPG or PNG under 200 KB.
-- **Blurb:** keep it under 50 words.
+- **Blurb:** keep it under 20-25 words.
 
 ### Category page header — $150+gst / month
 
