@@ -18,12 +18,10 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - bars-pubs-breweries
   - cafes-restaurants
 tags:
   - Tavern
   - Live Music
-
 hours: []
 nzbn: ''
 tier: free
