@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Shed
 slug: mangawhai-shed
 blurb: ''
@@ -7,6 +8,8 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
+phone: ''
+email: ''
 website: https://mangawhaished.org
 socials:
   facebook: ''
@@ -18,10 +21,11 @@ socials:
 categories:
   - community-clubs-churches
 tags:
-  - Mens Shed
-
+  - Men's Shed
+  - Community Projects
+  - Repairs
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
 ---
