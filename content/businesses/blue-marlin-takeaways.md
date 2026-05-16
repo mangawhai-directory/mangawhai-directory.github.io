@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Blue Marlin Takeaways
 slug: blue-marlin-takeaways
 blurb: ''
@@ -21,10 +22,8 @@ categories:
   - takeaways-food-trucks
 tags:
   - Fish & Chips
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
-status: active
+last_verified: 2026-05-09
+status: closed
 ---
