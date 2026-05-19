@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Retreat
 slug: mangawhai-retreat
 blurb: Lifestyle Accommodation & Boutique Events
@@ -25,7 +26,6 @@ tags:
   - Boutique Events
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-10
-status: active
+status: closed
 ---
