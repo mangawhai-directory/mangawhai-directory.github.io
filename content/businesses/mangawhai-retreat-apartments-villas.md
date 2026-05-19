@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Retreat Apartments & Villas
 slug: mangawhai-retreat-apartments-villas
 blurb: Uncomplicated holiday accommodation nestled between native bush and Kaipara coastline, with one-bedroom apartments and two-bedroom villas.
@@ -22,10 +23,8 @@ categories:
 tags:
   - Apartments
   - Villas
-
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
-status: active
+status: closed
 ---
