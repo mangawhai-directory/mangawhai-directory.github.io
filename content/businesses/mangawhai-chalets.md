@@ -1,27 +1,30 @@
 ---
-title: "Mangawhai Chalets"
-slug: "mangawhai-chalets"
-blurb: ""
+tier: free
+title: Mangawhai Chalets
+slug: mangawhai-chalets
+blurb: ''
 address:
-  street: "Mangawhai Heads"
-  suburb: "Mangawhai Heads"
-  postcode: "0505"
-  country: "NZ"
-website: "https://www.mangawhaichalets.co.nz"
+  street: Mangawhai Heads
+  suburb: Mangawhai Heads
+  postcode: '0505'
+  country: NZ
+phone: ''
+email: ''
+website: https://www.mangawhaichalets.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["accommodation"]
+  facebook: ''
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - accommodation
 tags:
   - mangawhai-heads
   - Chalets
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: closed
 ---
