@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Tudor Oaks Motel
 slug: tudor-oaks-motel
 blurb: ''
@@ -7,6 +8,8 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
+phone: 09 431 5393
+email: ''
 website: https://www.expedia.co.nz/Mangawhai-Heads-Mangawhai-Hotels.0-n6344037-0.Travel-Guide-Filter-Hotels
 socials:
   facebook: https://www.facebook.com/mangawhaimotel/
@@ -19,10 +22,8 @@ categories:
   - accommodation
 tags:
   - Motel
-
 hours: []
-tier: free
-last_verified: '2026-05-09'
-status: active
-phone: 09 431 5393
+nzbn: ''
+last_verified: 2026-05-09
+status: closed
 ---
