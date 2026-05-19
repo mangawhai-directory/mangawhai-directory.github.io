@@ -1,4 +1,5 @@
 ---
+tier: free
 title: The Bach in Mangawhai
 slug: the-bach-in-mangawhai
 blurb: ''
@@ -23,10 +24,8 @@ categories:
 tags:
   - Holiday Rental
   - Bach
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
-status: active
+last_verified: 2026-05-09
+status: closed
 ---
