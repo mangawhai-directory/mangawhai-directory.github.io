@@ -1,27 +1,29 @@
 ---
-title: "VIP Home Services Mangawhai"
-slug: "vip-home-services-mangawhai"
-blurb: ""
+tier: free
+title: VIP Lawn Mowing Mangawhai
+slug: vip-lawn-mowing-mangawhai
+blurb: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-website: "https://www.viphomeservices.co.nz/service/lawn-mowing/mangawhai/"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: ''
+email: ''
+website: https://www.viphomeservices.co.nz/service/lawn-mowing/mangawhai/
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["landscaping-gardening", "cleaning-services"]
+  facebook: ''
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - property-maintenance
 tags:
-  - Home Services
-  - Cleaning
-
+  - Lawn Mowing
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
