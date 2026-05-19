@@ -1,6 +1,6 @@
 ---
 title: "Advertise on Mangawhai Directory"
-description: "Reach locals and visitors actively searching for Mangawhai businesses. Simple monthly ad packages — no contracts, no commission, no fluff."
+description: "Reach locals and visitors actively searching for Mangawhai businesses. Simple ad packages — no contracts, no commission, no fluff."
 ---
 
 ## Why advertise here
@@ -11,17 +11,21 @@ Every business gets a **free organic listing**. Paid ads simply put your brand i
 
 ## Packages
 
-### Premium listing — $30+gst / month
+### Premium listing — $30+gst per update
 
-Make your free listing stand out without changing where it sits in the category list. Free listings show your name, address, and contact buttons — the premium tier unlocks the visual and editorial extras below.
+A one-off fee, **not** a monthly subscription. You pay $30+gst each time you ask us to set up or change your premium content — initial setup, swapping the image, refreshing the blurb, or updating opening hours. Once we've made the change, the premium content stays live on your listing indefinitely at no further cost.
+
+Free listings show your name, address, and contact buttons. The premium tier unlocks:
 
 - A square **image or logo** displayed alongside your name (right of the text on desktop, stacked on mobile).
 - A short **blurb** describing what you do, shown under your name.
 - Your **opening hours**, listed by day.
 - Same listing position as the free version — no reordering, no badges.
 - Bring your own image or we can crop one from your existing branding.
-- **Image spec:** square, ideally 800 px x 800 px (renders sharp on retina screens), JPG or PNG under 200 KB.
+- **Image spec:** square, ideally 800 × 800 px (renders sharp on retina screens), JPG or PNG under 200 KB.
 - **Blurb:** up to 25-30 words — shorter usually reads better.
+
+Want to update something later? Just [contact us](/contact/) with the new content — another $30+gst per update.
 
 ### Category page header — $150+gst / month
 
@@ -54,7 +58,9 @@ A wide tile placed below the hero on the homepage.
 **Don't have artwork ready?** We can design one for you for a one-off cost.
 {{< /cta >}}
 
-## What's included
+## What's included (monthly placements)
+
+Applies to the **Homepage tile** and **Category page header** — both billed per whole calendar month.
 
 - 1 month run from the first to the last day of your selected month.
 - Book any month you like, subject to availability — get in early for peak periods (summer, school holidays). We'll confirm what's available when you enquire.
@@ -63,11 +69,17 @@ A wide tile placed below the hero on the homepage.
 
 ## Cancellations
 
+### Monthly placements (Homepage tile, Category page header)
+
 Plans change — here's how refunds work, measured from your **go-live date** (the first day of the first month you've booked):
 
 - **More than 14 days before** go-live — full refund.
 - **14 days or less before** go-live — 50% refund.
 - **On or after** go-live — no refund.
+
+### Premium listing
+
+Because the Premium listing fee covers our work updating your listing, it is **non-refundable once we've started**. If you change your mind before we've begun, we'll cancel the invoice in full.
 
 Full details are in our [terms & conditions](/terms/#part-b--advertising-terms-paid-advertisers).
 
