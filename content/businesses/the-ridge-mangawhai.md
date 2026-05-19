@@ -1,4 +1,5 @@
 ---
+tier: free
 title: The Ridge Mangawhai
 slug: the-ridge-mangawhai
 blurb: Luxury accommodation across 12 acres of native bush featuring private villas with infrared saunas and artesian water spas.
@@ -22,10 +23,8 @@ categories:
 tags:
   - Luxury
   - Villas
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
-status: active
+last_verified: 2026-05-09
+status: closed
 ---
