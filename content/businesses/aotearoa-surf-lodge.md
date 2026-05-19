@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Aotearoa Surf Lodge
 slug: aotearoa-surf-lodge
 blurb: ''
@@ -7,6 +8,8 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
+phone: 09 431 5760
+email: ''
 website: https://www.aotearoasurf.co.nz
 socials:
   facebook: ''
@@ -16,15 +19,13 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - accommodation
   - surf-beach-watersports
+  - accommodation
 tags:
-  - Lodge
-  - Surf
-
+  - Accommodation
+  - Surf Camps
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
-phone: 09 431 5760
 ---
