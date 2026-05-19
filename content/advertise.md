@@ -86,3 +86,5 @@ Full details are in our [terms & conditions](/terms/#part-b--advertising-terms-p
 ## How to book
 
 [Contact us](/contact/) with the package you want, the category (for category-page ads), and the dates you'd like to run. We'll confirm availability, send an invoice, and put you live on the first of the month you have booked.
+
+Mangawhai Directory is owned and operated by **Sanderson Howe Limited** (NZ company number 8196168). All invoices for advertising and Premium Listing Updates are issued by, and payable to, Sanderson Howe Limited.

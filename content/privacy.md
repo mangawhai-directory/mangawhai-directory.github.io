@@ -3,15 +3,15 @@ title: "Privacy Policy"
 description: "How Mangawhai Directory collects, uses and protects your personal information under the New Zealand Privacy Act 2020."
 ---
 
-_Last updated: 3 May 2026._
+_Last updated: 19 May 2026._
 
-Mangawhai Directory ("we", "us", "our") operates [mangawhaidirectory.co.nz](https://mangawhaidirectory.co.nz/). This policy explains what personal information we collect when you use the site, why, and the rights you have under the [Privacy Act 2020](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html).
+**Sanderson Howe Limited** (NZ company number 8196168), trading as **Mangawhai Directory** ("we", "us", "our"), operates [mangawhaidirectory.co.nz](https://mangawhaidirectory.co.nz/). This policy explains what personal information we collect when you use the site, why, and the rights you have under the [Privacy Act 2020](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html).
 
 We comply with the 13 [Information Privacy Principles (IPPs)](https://www.privacy.org.nz/privacy-principles/). If something here is unclear, contact us — details at the bottom of the page.
 
 ## Who we are
 
-Mangawhai Directory is a small, locally-operated business directory based in Mangawhai, Northland, New Zealand. The site lists local businesses for community discovery; we do not run user accounts, forums, or behavioural advertising.
+Mangawhai Directory is a small, locally-operated business directory based in Mangawhai, Northland, New Zealand, owned and operated by Sanderson Howe Limited. The site lists local businesses for community discovery; we do not run user accounts, forums, or behavioural advertising.
 
 ## What we collect, and why
 

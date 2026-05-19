@@ -5,7 +5,7 @@ description: "Terms of use for visitors to Mangawhai Directory and terms governi
 
 _Last updated: 19 May 2026._
 
-These Terms govern your use of [mangawhaidirectory.co.nz](https://mangawhaidirectory.co.nz/) ("the **Site**", operated by us, "**Mangawhai Directory**"), and any paid advertising you book with us. By using the Site or booking advertising, you agree to these Terms.
+These Terms govern your use of [mangawhaidirectory.co.nz](https://mangawhaidirectory.co.nz/) (the "**Site**") and any paid advertising or Premium Listing Update you book with us. The Site and all related advertising services are owned, operated, and invoiced by **Sanderson Howe Limited** (NZ company number 8196168), trading as "**Mangawhai Directory**" — in these Terms, "we", "us" and "our" refer to Sanderson Howe Limited. By using the Site or placing a booking, you agree to these Terms.
 
 These Terms are split into two parts:
 
