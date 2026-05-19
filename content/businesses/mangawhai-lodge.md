@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Lodge
 slug: mangawhai-lodge
 blurb: ''
@@ -8,6 +9,7 @@ address:
   postcode: '0505'
   country: NZ
 phone: 09 431 5311
+email: info@seaviewlodge.co.nz
 website: https://seaviewlodge.co.nz
 socials:
   facebook: ''
@@ -22,8 +24,7 @@ tags:
   - mangawhai-heads
   - Lodge
 hours: []
-tier: free
-last_verified: '2026-05-09'
-status: active
-email: info@seaviewlodge.co.nz
+nzbn: ''
+last_verified: 2026-05-09
+status: closed
 ---
