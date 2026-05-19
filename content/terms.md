@@ -3,7 +3,7 @@ title: "Terms & Conditions"
 description: "Terms of use for visitors to Mangawhai Directory and terms governing paid advertising on the site."
 ---
 
-_Last updated: 3 May 2026._
+_Last updated: 19 May 2026._
 
 These Terms govern your use of [mangawhaidirectory.co.nz](https://mangawhaidirectory.co.nz/) ("the **Site**", operated by us, "**Mangawhai Directory**"), and any paid advertising you book with us. By using the Site or booking advertising, you agree to these Terms.
 
@@ -64,15 +64,20 @@ This Part applies if you book a paid display-advertising slot with us. By placin
 
 - **"Advertiser"** means you, the business or person booking ad placement.
 - **"Material"** means the creative artwork, copy, click-through URL, and any other content supplied for an advertisement.
-- **"Slot"** means an advertising position on the Site (currently: Homepage tile or Category page header).
-- **"Subscription"** means a monthly, prepaid placement of an advertisement in a Slot.
+- **"Slot"** means an advertising position on the Site (currently: Homepage tile, Category page header, or Premium listing).
+- **"Booking"** means a placement of an advertisement in a Slot for one or more specific whole calendar months agreed in writing (e.g. January, or January–March).
 
 ### Booking, payment, and term
 
-- Subscriptions are **monthly and prepaid**. Prices are listed on the [advertise page](/advertise/) and are exclusive of GST unless stated otherwise.
-- We will issue an invoice on confirmation of your booking. The advertisement goes live once payment has cleared and Material has been approved.
-- A Subscription continues month-to-month until either party gives written notice (email is fine) before the next billing cycle. Cancellation takes effect at the end of the paid month.
-- Subscriptions are **non-refundable** for the current paid month except where required by law, or where we remove your advertisement for reasons outside your control (e.g. site restructure or technical failure on our side), in which case we may issue a pro-rata refund at our discretion.
+- Bookings are for **one or more whole calendar months** that you nominate at the time of booking (e.g. just March, or March–May). We do **not** offer rolling subscriptions or auto-renewal — once your booked period ends, the advertisement comes down unless you place a new Booking.
+- Prices are listed on the [advertise page](/advertise/) and are exclusive of GST unless stated otherwise. We will issue an **invoice** for the full booked period on confirmation of your Booking. Payment is due by the date stated on the invoice (and, in any case, before the first day of the booked period).
+- Your advertisement goes live on the **first day of the first booked month**, provided that by then we have (a) received cleared payment and (b) approved your Material. If Material is approved after the start of a booked month, the advertisement will go live as soon as practicable after approval, and the booked period is not extended to make up for the delayed start.
+- **Cancellation refunds** (calculated from your go-live date — the first day of your first booked month):
+  - **More than 14 days before** go-live: full refund of the invoice.
+  - **14 days or less before** go-live: 50% refund of the invoice.
+  - **On or after** go-live: no refund.
+- The above is subject to your rights at law. If we remove your advertisement for reasons outside your control (e.g. site restructure or technical failure on our side), we may issue a pro-rata refund at our discretion.
+- To extend or repeat a placement, simply contact us before your current period ends — we will issue a fresh invoice for the new months.
 
 ### Creative specifications and approval
 
@@ -103,24 +108,24 @@ We do not guarantee continuous, uninterrupted, or error-free display. Planned an
 
 ### Email communications
 
-By becoming an Advertiser, you consent to us sending you operational, billing, renewal, and reasonable service-related emails (these are not "commercial electronic messages" requiring further consent under the [Unsolicited Electronic Messages Act 2007](https://www.legislation.govt.nz/act/public/2007/0007/latest/dlm405134.html)). You can unsubscribe from any non-essential marketing email at any time.
+By becoming an Advertiser, you consent to us sending you operational, billing, and reasonable service-related emails (including a courtesy note near the end of your booked period in case you wish to book again) (these are not "commercial electronic messages" requiring further consent under the [Unsolicited Electronic Messages Act 2007](https://www.legislation.govt.nz/act/public/2007/0007/latest/dlm405134.html)). You can unsubscribe from any non-essential marketing email at any time.
 
 ### Intellectual property — Material
 
-You retain ownership of your Material. You grant us a non-exclusive, royalty-free, worldwide licence to host, store, reproduce, resize, format, and display the Material on the Site (and in reasonable archival copies) for the duration of your Subscription, plus a short tail for record-keeping.
+You retain ownership of your Material. You grant us a non-exclusive, royalty-free, worldwide licence to host, store, reproduce, resize, format, and display the Material on the Site (and in reasonable archival copies) for the duration of your Booking, plus a short tail for record-keeping.
 
 ### Limitation of liability (advertisers)
 
 To the maximum extent permitted by law:
 
-- our total aggregate liability to you for all claims under or in connection with your Subscription, in any 12-month period, is limited to the total fees you have paid us in the 12 months immediately preceding the event giving rise to the claim;
+- our total aggregate liability to you for all claims under or in connection with your Booking, in any 12-month period, is limited to the total fees you have paid us in the 12 months immediately preceding the event giving rise to the claim;
 - we are not liable for any indirect, consequential, or special loss, including loss of profits, revenue, business, goodwill, anticipated savings, opportunity, or data.
 
 These limits do not apply to liability that cannot be excluded or limited by law (such as liability for fraud, wilful default, or personal injury caused by negligence).
 
 ### Contracting out (B2B)
 
-The parties acknowledge that advertising under these Terms is supplied and acquired in trade, that both parties are in trade, that the Subscription has a written record (these Terms together with our invoice and email confirmations), and that it is fair and reasonable that:
+The parties acknowledge that advertising under these Terms is supplied and acquired in trade, that both parties are in trade, that the Booking has a written record (these Terms together with our invoice and email confirmations), and that it is fair and reasonable that:
 
 - sections 9, 12A, 13 and 14(1) of the Fair Trading Act 1986 do not apply between us, in accordance with section 5D of that Act; and
 - the [Consumer Guarantees Act 1993](https://www.legislation.govt.nz/act/public/1993/0091/latest/DLM311053.html) does not apply between us, in accordance with section 43 of that Act.
@@ -129,13 +134,13 @@ This contracting-out applies only to the relationship between us and an Advertis
 
 ### Termination by us
 
-We may suspend or terminate your Subscription with immediate effect by notice to you if:
+We may suspend or terminate your Booking with immediate effect by notice to you if:
 
 - you materially breach these Terms (including your warranties above) and do not remedy the breach within 7 days of being asked;
 - you become insolvent, enter liquidation, or are unable to pay your debts as they fall due; or
-- continuing the Subscription would, in our reasonable view, expose us to legal, regulatory, or reputational risk.
+- continuing the Booking would, in our reasonable view, expose us to legal, regulatory, or reputational risk.
 
-Where we terminate for one of these reasons, fees paid for the current month are non-refundable.
+Where we terminate for one of these reasons, fees paid for the current and any already-commenced months of the Booking are non-refundable. Fees prepaid for months that have not yet started will be refunded.
 
 ---
 
@@ -147,7 +152,7 @@ How we handle personal information is set out in our [Privacy Policy](/privacy/)
 
 ### Changes to these Terms
 
-We may update these Terms from time to time. The "Last updated" date above shows the current version. For Advertisers, we will give reasonable advance notice (by email) of any change that materially affects your rights or obligations before the next billing cycle.
+We may update these Terms from time to time. The "Last updated" date above shows the current version. The Terms that apply to a Booking are those in force on the date we issue the invoice for that Booking — later changes will not retrospectively alter the terms of a Booking already paid for. For any new Booking, the then-current Terms apply.
 
 ### Governing law and jurisdiction
 

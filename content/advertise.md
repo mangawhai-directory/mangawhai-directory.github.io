@@ -61,6 +61,16 @@ A wide tile placed below the hero on the homepage.
 - One free swap during the month if you want to refresh creative.
 - Plain invoice. No contracts. No auto-renewal — we'll ask before continuing.
 
+## Cancellations
+
+Plans change — here's how refunds work, measured from your **go-live date** (the first day of the first month you've booked):
+
+- **More than 14 days before** go-live — full refund.
+- **14 days or less before** go-live — 50% refund.
+- **On or after** go-live — no refund.
+
+Full details are in our [terms & conditions](/terms/#part-b--advertising-terms-paid-advertisers).
+
 ## How to book
 
 [Contact us](/contact/) with the package you want, the category (for category-page ads), and the dates you'd like to run. We'll confirm availability, send an invoice, and put you live on the first of the month you have booked.
