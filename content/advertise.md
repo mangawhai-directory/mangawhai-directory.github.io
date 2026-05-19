@@ -13,17 +13,19 @@ Every business gets a **free organic listing**. Paid ads simply put your brand i
 
 ### Premium listing — $30+gst / month
 
-Make your free listing stand out without changing where it sits in the category list.
+Make your free listing stand out without changing where it sits in the category list. Free listings show your name, address, and contact buttons — the premium tier unlocks the visual and editorial extras below.
 
-- A square **image or logo** displayed to the left of your name and blurb.
+- A square **image or logo** displayed alongside your name (right of the text on desktop, stacked on mobile).
+- A short **blurb** describing what you do, shown under your name.
+- Your **opening hours**, listed by day.
 - Same listing position as the free version — no reordering, no badges.
 - Bring your own image or we can crop one from your existing branding.
-- **Image spec:** square (e.g. 400 × 400 px), JPG or PNG under 200 KB.
-- **Blurb:** keep it under 20-25 words.
+- **Image spec:** square, ideally 800 px x 800 px (renders sharp on retina screens), JPG or PNG under 200 KB.
+- **Blurb:** up to 25-30 words — shorter usually reads better.
 
 ### Category page header — $150+gst / month
 
-A banner placed at the top of one category page (e.g. *Builders & Renovations*, *Cafes & Restaurants*, *Plumbers*). **Note**: This can be any category you like, it doesn't have to be the one you are in.
+A banner placed at the top of one category page (e.g. *Construction*, *Cafes & Restaurants*, *Plumbers*). **Note**: This can be any category you like, it doesn't have to be the one you are in.
 
 - **Desktop creative:** 500 × 250 px
 - **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
@@ -36,7 +38,7 @@ A banner placed at the top of one category page (e.g. *Builders & Renovations*, 
 A wide tile placed below the hero on the homepage.
 
 - **Desktop creative:** 1152 × 400 px
-- **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
+- **Mobile creative:** 800 px x 800 px (recommended) — scales to fit the viewport
 - Brand-builder placement — every visitor to the directory passes through here.
 - Static image plus a click-through.
 - Limited slots; rotates evenly with other homepage advertisers.
