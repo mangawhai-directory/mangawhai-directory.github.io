@@ -1,26 +1,29 @@
 ---
-title: "Central Building Tony Farley"
-slug: "central-building-tony-farley"
-blurb: ""
+tier: free
+title: Central Building
+slug: central-building
+blurb: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-website: "https://www.centralbuilding.co.nz"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: 022 016 7080
+email: centralbuilding@outlook.co.nz
+website: https://www.centralbuilding.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["builders-renovations"]
+  facebook: ''
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - builders-renovations
 tags:
   - Builder
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
