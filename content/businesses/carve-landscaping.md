@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Carve Landscaping
 slug: carve-landscaping
 blurb: ''
@@ -19,13 +20,10 @@ socials:
   youtube: ''
 categories:
   - landscaping-gardening
-  - builders-renovations
 tags:
   - Landscaping
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
