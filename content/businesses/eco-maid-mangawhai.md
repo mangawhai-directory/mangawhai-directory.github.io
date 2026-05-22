@@ -1,25 +1,31 @@
 ---
-title: "ECO MAID Mangawhai"
-slug: "eco-maid-mangawhai"
-blurb: ""
+tier: free
+title: ECO MAID Mangawhai
+slug: eco-maid-mangawhai
+blurb: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: 027 300 4120
+email: helloecomaid@gmail.com
+website: ''
 socials:
-  facebook: "https://www.facebook.com/ecomaid.nz/"
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["cleaning-services"]
+  facebook: https://www.facebook.com/ecomaid.nz/
+  instagram: https://www.instagram.com/ecomaidmangawhai/
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - cleaning-services
 tags:
-  - Cleaning
-
+  - Housekeeping
+  - Concierge
+  - Airbnb Specialists
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
