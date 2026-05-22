@@ -1,7 +1,8 @@
 ---
+tier: free
 title: Centre Peace
 slug: centre-peace
-blurb: Mangawhai-based holistic wellbeing practice run by Anita Clelland, offering yoga, personal growth and women's wellness experiences.
+blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
@@ -21,13 +22,12 @@ categories:
   - health-care-practitioners
   - fitness-yoga-pilates
 tags:
-  - Wellbeing
   - Yoga
+  - Chair Yoga
   - Life Coach
-
+  - Workshops
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---
