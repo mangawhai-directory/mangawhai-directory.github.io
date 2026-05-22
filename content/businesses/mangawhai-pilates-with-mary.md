@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Pilates with Mary
 slug: mangawhai-pilates-with-mary
 blurb: ''
@@ -22,9 +23,9 @@ categories:
   - fitness-yoga-pilates
 tags:
   - Pilates
+  - Senior Fitness
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-12
 status: active
 ---
