@@ -1,17 +1,18 @@
 ---
+tier: free
 title: FDR Construction
 slug: fdr-construction
-blurb: Local handyman and construction outfit covering decking, fencing, retaining walls and metal fabrication across Mangawhai and surrounds.
+blurb: ''
 address:
-  street: 24 Mangawhai Heads Road
+  street: Mangawhai
   suburb: Mangawhai
-  postcode: '0573'
+  postcode: '0505'
   country: NZ
-phone: ''
-email: ''
-website: https://fdrconstruction.co.nz
+phone: 027 267 1117
+email: sam@fdrconstruction.co.nz
+website: https://about.me/fdrconstruction
 socials:
-  facebook: https://www.facebook.com/fdrconstructionnz/
+  facebook: ''
   instagram: ''
   x: ''
   linkedin: ''
@@ -21,14 +22,11 @@ categories:
   - property-maintenance
   - builders-renovations
 tags:
-  - Handyman
   - Decking
   - Fencing
   - Retaining Walls
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---
