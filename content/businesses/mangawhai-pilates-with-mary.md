@@ -23,7 +23,7 @@ categories:
   - fitness-yoga-pilates
 tags:
   - Pilates
-  - Senior Fitness
+  - Beginner Pilates
 hours: []
 nzbn: ''
 last_verified: 2026-05-12
