@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Eco Carpet Clean
 slug: eco-carpet-clean
 blurb: Mangawhai-based carpet cleaning service using eco-friendly products.
@@ -21,10 +22,8 @@ categories:
   - cleaning-services
 tags:
   - Carpet Cleaning
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
-status: active
+last_verified: 2026-05-09
+status: closed
 ---
