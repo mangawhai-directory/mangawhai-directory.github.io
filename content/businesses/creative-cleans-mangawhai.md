@@ -1,14 +1,15 @@
 ---
+tier: free
 title: Creative Cleans Mangawhai
 slug: creative-cleans-mangawhai
-blurb: Mangawhai eco cleaning, bach management, home staging and organisation services.
+blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: ''
-email: ''
+phone: 021 0279 0053
+email: mariabegley@gmail.com
 website: ''
 socials:
   facebook: https://www.facebook.com/p/Creative-Cleans-Mangawhai-100085624102479/
@@ -20,13 +21,9 @@ socials:
 categories:
   - cleaning-services
 tags:
-  - Eco Cleaning
-  - Bach Management
-  - Home Staging
-
+  - Airbnb Turnovers
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
