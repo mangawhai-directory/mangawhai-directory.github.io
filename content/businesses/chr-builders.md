@@ -1,7 +1,8 @@
 ---
+tier: free
 title: CHR Builders
 slug: chr-builders
-blurb: Licensed builder based in Mangawhai specialising in residential and commercial new builds and renovations across the Northland region.
+blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
@@ -21,13 +22,8 @@ categories:
   - builders-renovations
 tags:
   - Builder
-  - New Builds
-  - Renovations
-  - Commercial
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
