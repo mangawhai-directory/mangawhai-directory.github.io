@@ -1,7 +1,8 @@
 ---
+tier: free
 title: NF Construction
 slug: nf-construction
-blurb: Award-winning custom home builders specialising in architecturally designed homes that balance function, detail and aesthetics across Mangawhai and coastal regions.
+blurb: ''
 address:
   street: 130 Robert Hastie Drive
   suburb: Mangawhai
@@ -21,11 +22,8 @@ categories:
   - builders-renovations
 tags:
   - Builder
-  - Architectural Homes
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
