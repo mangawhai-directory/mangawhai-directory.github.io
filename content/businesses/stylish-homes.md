@@ -1,7 +1,8 @@
 ---
+tier: free
 title: Stylish Homes
 slug: stylish-homes
-blurb: Mangawhai home builder offering stylish, affordable houses and holiday homes since 2004, with 40+ years combined experience.
+blurb: ''
 address:
   street: Cnr Molesworth & Estuary Drive
   suburb: Mangawhai
@@ -21,11 +22,8 @@ categories:
   - builders-renovations
 tags:
   - Builder
-  - Holiday Homes
-
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
