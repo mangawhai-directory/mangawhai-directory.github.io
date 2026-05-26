@@ -1,26 +1,29 @@
 ---
-title: "Te Arai Builders"
-slug: "te-arai-builders"
-blurb: ""
+tier: free
+title: Te Arai Builders
+slug: te-arai-builders
+blurb: ''
 address:
-  street: "Te Arai"
-  suburb: "Te Arai"
-  postcode: "0975"
-  country: "NZ"
-website: "https://www.tearaibuilders.co.nz"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: 021 039 6203
+email: tearaibuilders@gmail.com
+website: https://www.tearaibuilders.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["builders-renovations"]
+  facebook: ''
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - builders-renovations
 tags:
   - Builder
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
