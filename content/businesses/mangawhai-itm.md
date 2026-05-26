@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai ITM
 slug: mangawhai-itm
 blurb: ''
@@ -18,15 +19,10 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - garden-hardware
   - builders-renovations
-tags:
-  - Building Supplies
-  - Hardware
-
+  - shops-boutiques
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
