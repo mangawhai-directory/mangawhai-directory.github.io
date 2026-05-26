@@ -1,13 +1,16 @@
 ---
-title: Fame Preschool Mangawhai
-slug: fame-preschool-mangawhai
+tier: free
+title: Mangawhai Village Preschool
+slug: mangawhai-village-preschool
 blurb: ''
 address:
   street: 1D Molesworth Drive
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-website: https://www.myece.org.nz/service/mangawhai/fame-preschool-mangawhai/
+phone: 09 945 3976
+email: admin@mvpreschool.co.nz
+website: https://mvpreschool.co.nz/
 socials:
   facebook: ''
   instagram: ''
@@ -19,9 +22,8 @@ categories:
   - schools-childcare
 tags:
   - Preschool
-
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
 ---
