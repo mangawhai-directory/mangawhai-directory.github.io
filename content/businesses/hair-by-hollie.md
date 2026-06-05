@@ -1,18 +1,19 @@
 ---
-title: Hair by Hollie
-slug: hair-by-hollie
+tier: free
+title: Hair by Hollie Duke
+slug: hair-by-hollie-duke
 blurb: ''
 address:
-  street: Mangawhai
+  street: Tara Road
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: ''
-email: ''
+phone: 022 042 6059
+email: grayhollie@googlemail.com
 website: ''
 socials:
   facebook: https://facebook.com/hairbyholliegray
-  instagram: ''
+  instagram: https://www.instagram.com/hairbyhollieduke/
   x: ''
   linkedin: ''
   tiktok: ''
@@ -21,10 +22,8 @@ categories:
   - hairdressers-barbers
 tags:
   - Hairdressing
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
