@@ -1,13 +1,14 @@
 ---
+tier: free
 title: The Village Hair Co
 slug: the-village-hair-co
 blurb: ''
 address:
-  street: Mangawhai
-  suburb: Mangawhai
+  street: 34A Insley Street
+  suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: ''
+phone: 021 425 030
 email: ''
 website: ''
 socials:
@@ -23,7 +24,6 @@ tags:
   - Hairdressing
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
