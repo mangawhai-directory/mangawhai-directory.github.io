@@ -22,8 +22,6 @@ categories:
   - medical-dental
 tags:
   - Medical Centre
-  - GPs
-  - Blood Tests
 hours: []
 nzbn: ''
 last_verified: 2026-05-04
