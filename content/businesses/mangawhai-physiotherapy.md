@@ -1,10 +1,11 @@
 ---
+tier: free
 title: Mangawhai Physiotherapy
 slug: mangawhai-physiotherapy
 blurb: ''
 address:
   street: 13 Eagle Ray Road
-  suburb: Mangawhai
+  suburb: Mangawhai Central
   postcode: '0505'
   country: NZ
 phone: 09 431 4476
@@ -18,15 +19,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - medical-dental
   - health-care-practitioners
-  - fitness-yoga-pilates
 tags:
   - Physiotherapy
-  - Reformer Pilates
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
