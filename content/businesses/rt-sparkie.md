@@ -1,4 +1,5 @@
 ---
+tier: free
 title: RT Sparkie
 slug: rt-sparkie
 blurb: Owner-operated Mangawhai electrician with 45 years industry experience servicing Mangawhai, Wellsford, Kaiwaka and Waipu.
@@ -21,10 +22,8 @@ categories:
   - electricians
 tags:
   - Electrical
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
-status: active
+last_verified: 2026-05-09
+status: closed
 ---
