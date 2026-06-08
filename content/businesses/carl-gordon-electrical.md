@@ -1,28 +1,29 @@
 ---
-title: "Carl Gordon Electrical"
-slug: "carl-gordon-electrical"
-blurb: ""
+tier: free
+title: Carl Gordon Electrical
+slug: carl-gordon-electrical
+blurb: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
 phone: 022 071 0245
-email: "info@cge.co.nz"
-website: "https://www.cge.co.nz/"
+email: info@cge.co.nz
+website: https://www.cge.co.nz/
 socials:
-  facebook: "https://www.facebook.com/cgemangawhai"
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["electricians"]
+  facebook: https://www.facebook.com/cgemangawhai
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - electricians
 tags:
-  - Electrical
-
+  - Electrician
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
