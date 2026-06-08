@@ -1,18 +1,19 @@
 ---
-title: MACE Electrician
-slug: mace-electrician
-blurb: Local Mangawhai electrician offering residential and light commercial electrical, air conditioning, heat pumps and ventilation systems.
+tier: free
+title: MACE Air Con & Electrical
+slug: mace-air-con-and-electrical
+blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
 phone: 09 945 0267
-email: ''
+email: info@mace.nz
 website: https://www.mace.nz/
 socials:
-  facebook: https://www.facebook.com/Mahurangiaircon
-  instagram: https://www.instagram.com/mace_warkworth/
+  facebook: ''
+  instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
@@ -21,12 +22,10 @@ categories:
   - electricians
 tags:
   - Electrical
-  - Heat Pumps
   - Air Conditioning
-
+  - Heat Pumps
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
