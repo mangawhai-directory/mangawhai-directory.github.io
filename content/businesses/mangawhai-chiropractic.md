@@ -1,10 +1,11 @@
 ---
+tier: free
 title: Mangawhai Chiropractic
 slug: mangawhai-chiropractic
 blurb: ''
 address:
   street: 1 Molesworth Drive
-  suburb: Mangawhai
+  suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
 phone: 09 431 5282
@@ -18,14 +19,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - medical-dental
   - health-care-practitioners
 tags:
   - Chiropractor
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
