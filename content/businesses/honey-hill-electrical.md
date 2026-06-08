@@ -22,7 +22,7 @@ socials:
 categories:
   - electricians
 tags:
-  - Electrician
+  - Electrical
 hours: []
 nzbn: ''
 last_verified: 2026-06-08
