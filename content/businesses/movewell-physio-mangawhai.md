@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Movewell Physio
 slug: movewell-physio-mangawhai
 blurb: ''
@@ -11,21 +12,18 @@ phone: 09 423 7449
 email: ''
 website: https://movewell.nz
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/movewellphysionz/
   instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
-  - medical-dental
   - health-care-practitioners
 tags:
   - Physiotherapy
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
