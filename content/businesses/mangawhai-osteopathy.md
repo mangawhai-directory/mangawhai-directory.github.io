@@ -1,10 +1,11 @@
 ---
+tier: free
 title: Mangawhai Osteopathy
 slug: mangawhai-osteopathy
 blurb: ''
 address:
   street: 1 Pearson Street
-  suburb: Mangawhai
+  suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
 phone: 09 431 3155
@@ -18,14 +19,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - medical-dental
   - health-care-practitioners
 tags:
   - Osteopath
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
