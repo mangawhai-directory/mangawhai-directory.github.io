@@ -9,7 +9,7 @@ address:
   postcode: '0505'
   country: NZ
 phone: 09 777 4343
-email: ''
+email: care@dentaldomain.co.nz
 website: https://dentaldomain.co.nz
 socials:
   facebook: ''
