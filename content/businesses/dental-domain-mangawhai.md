@@ -1,10 +1,11 @@
 ---
+tier: free
 title: Dental Domain Mangawhai
 slug: dental-domain-mangawhai
 blurb: ''
 address:
   street: 1 Kagan Avenue
-  suburb: Mangawhai
+  suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
 phone: 09 777 4343
@@ -12,7 +13,7 @@ email: ''
 website: https://dentaldomain.co.nz
 socials:
   facebook: ''
-  instagram: https://instagram.com/dentaldomain_nz
+  instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
@@ -21,10 +22,8 @@ categories:
   - medical-dental
 tags:
   - Dentist
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
