@@ -1,10 +1,11 @@
 ---
+tier: free
 title: Mangawhai Optometrists
 slug: mangawhai-optometrists
 blurb: ''
 address:
   street: 1/62 Moir Street
-  suburb: Mangawhai
+  suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
 phone: 09 431 4861
@@ -21,10 +22,8 @@ categories:
   - medical-dental
 tags:
   - Optometrist
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
