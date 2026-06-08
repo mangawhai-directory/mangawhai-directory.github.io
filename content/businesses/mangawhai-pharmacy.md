@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Pharmacy
 slug: mangawhai-pharmacy
 blurb: ''
@@ -21,10 +22,10 @@ categories:
   - medical-dental
 tags:
   - Pharmacy
-
+  - Vaccinations
+  - Skin Cancer Checks
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
