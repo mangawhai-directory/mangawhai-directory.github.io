@@ -1,17 +1,18 @@
 ---
+tier: free
 title: Integrated Electrical & Solar
 slug: integrated-electrical-and-solar
-blurb: Master Electricians serving Mangawhai and surrounds with electrical, solar and heat pump services from a King Road base.
+blurb: ''
 address:
-  street: 80 King Road
+  street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
 phone: 09 430 0280
-email: ''
+email: admin@integratedes.co.nz
 website: https://integratedes.co.nz/mangawhai/
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/Integratedelectricalsolar#
   instagram: https://www.instagram.com/integratedelectricalsolar/
   x: ''
   linkedin: ''
@@ -23,10 +24,8 @@ tags:
   - Electrical
   - Solar
   - Heat Pumps
-
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
