@@ -1,5 +1,5 @@
 ---
-title: Electricians
+title: Electrical
 description: Find electricians in Mangawhai and Mangawhai Heads. Contact details for residential and commercial electrical work, solar installs and EV charger fitting.
 keywords:
   - electrician mangawhai
