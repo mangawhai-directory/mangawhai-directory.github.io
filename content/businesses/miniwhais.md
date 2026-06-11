@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Miniwhais
 slug: miniwhais
 blurb: ''
@@ -7,9 +8,11 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
+phone: 09431 4747
+email: hello@miniwhais.co.nz
 website: https://www.miniwhais.co.nz
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/miniwhais/
   instagram: ''
   x: ''
   linkedin: ''
@@ -18,10 +21,9 @@ socials:
 categories:
   - schools-childcare
 tags:
-  - licensed
   - Early Childhood
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
 ---
