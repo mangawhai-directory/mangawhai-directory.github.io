@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Super Shoppe Mangawhai
 slug: super-shoppe-mangawhai
 blurb: Formerly Jackson Brown
@@ -20,12 +21,9 @@ socials:
 categories:
   - automotive-marine
 tags:
-  - Petrol Station
-  - Convenience
-
+  - Mechanic
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-04
 status: active
 ---
