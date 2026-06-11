@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Village Preschool
 slug: mangawhai-village-preschool
 blurb: ''
@@ -7,6 +8,8 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
+phone: ''
+email: ''
 website: https://mvpreschool.co.nz
 socials:
   facebook: ''
@@ -18,10 +21,9 @@ socials:
 categories:
   - schools-childcare
 tags:
-  - Preschool
-
+  - Early Childhood
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
 ---
