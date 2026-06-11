@@ -23,17 +23,7 @@ categories:
 tags:
   - Supermarket
   - Lotto
-hours:
-  - dayOfWeek:
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-      - Saturday
-      - Sunday
-    opens: 07:00
-    closes: 20:00
+hours: []
 nzbn: ''
 last_verified: 2026-05-10
 status: active
