@@ -22,8 +22,7 @@ socials:
 categories:
   - schools-childcare
 tags:
-  - Music
-  - Art
+  - Music & Art Program
 hours: []
 nzbn: ''
 last_verified: 2026-06-11
