@@ -1,4 +1,5 @@
 ---
+tier: paid
 title: Jen's Pastries
 slug: jens-pastries
 blurb: |-
@@ -22,13 +23,13 @@ socials:
   youtube: ''
 categories:
   - bakeries
+  - food-producers
 tags:
   - Pastries
   - Cakes
   - Bakery
 hours: []
 nzbn: ''
-tier: paid
 last_verified: 2026-05-07
 status: active
 ---
