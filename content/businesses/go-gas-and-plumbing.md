@@ -1,29 +1,30 @@
 ---
-title: "Go Gas and Plumbing"
-slug: "go-gas-and-plumbing"
-blurb: ""
+tier: free
+title: Go Gas & Plumbing
+slug: go-gas-and-plumbing
+blurb: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
 phone: 021 245 5431
-email: "info@gogasandplumbing.co.nz"
-website: "https://www.gogasandplumbing.co.nz/"
+email: info@gogasandplumbing.co.nz
+website: https://www.gogasandplumbing.co.nz/
 socials:
-  facebook: "https://www.facebook.com/gogasandplumbing/"
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["plumbers"]
+  facebook: https://www.facebook.com/gogasandplumbing/
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - plumbers
 tags:
-  - Plumbing
   - Gas Fitting
-
+  - Plumbing
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
