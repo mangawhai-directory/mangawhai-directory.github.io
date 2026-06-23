@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Plumbuilt Plumbing Northland
 slug: plumbuilt-plumbing-northland
 blurb: ''
@@ -7,6 +8,9 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
+phone: ''
+email: ''
+website: ''
 socials:
   facebook: https://www.facebook.com/PlumbuiltNorthland/
   instagram: ''
@@ -18,9 +22,8 @@ categories:
   - plumbers
 tags:
   - Plumbing
-
 hours: []
-tier: free
-last_verified: '2026-05-09'
-status: active
+nzbn: ''
+last_verified: 2026-05-09
+status: closed
 ---
