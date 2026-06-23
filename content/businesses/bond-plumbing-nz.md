@@ -13,7 +13,7 @@ email: ryan@bondplumbing.com.au
 website: https://bondplumbing.co.nz
 socials:
   facebook: https://www.facebook.com/BondPlumbingNZ/
-  instagram: https://www.instagram.com/bondplumbing/
+  instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
