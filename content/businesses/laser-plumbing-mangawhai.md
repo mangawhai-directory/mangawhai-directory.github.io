@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Laser Plumbing Mangawhai
 slug: laser-plumbing-mangawhai
 blurb: Plumbing, gas fitting and drainlaying services with over 17 years in business serving the Mangawhai and Rodney regions.
@@ -23,10 +24,8 @@ tags:
   - Plumbing
   - Gas Fitting
   - Drainlaying
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
-status: active
+last_verified: 2026-05-09
+status: closed
 ---
