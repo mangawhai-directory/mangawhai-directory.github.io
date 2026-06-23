@@ -1,14 +1,15 @@
 ---
+tier: free
 title: MC Plumbing and Gasfitting
 slug: mc-plumbing-and-gasfitting
-blurb: Certified plumber and gasfitter based in Mangawhai/Kaiwaka servicing from Bream Bay to Whangaparaoa, handling new builds, renovations and maintenance.
+blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: ''
-email: ''
+phone: 021 0325 199
+email: mcplumbingnz@gmail.com
 website: ''
 socials:
   facebook: https://www.facebook.com/mcplumbingnz
@@ -22,10 +23,8 @@ categories:
 tags:
   - Plumbing
   - Gas Fitting
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
