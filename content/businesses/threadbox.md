@@ -1,27 +1,33 @@
 ---
-title: "Threadbox"
-slug: "threadbox"
-blurb: ""
+tier: free
+title: Threadbox
+slug: threadbox
+blurb: ''
 address:
-  street: "Bennetts Mangawhai (52 Moir Street)"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-website: "https://www.threadbox.co.nz"
+  street: Upstairs at Bennetts, 52 Moir Street
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: 029 770 8502
+email: al@threadbox.co.nz
+website: https://www.threadbox.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["shops-boutiques"]
+  facebook: https://www.facebook.com/Threadbox/?ref=bookmarks
+  instagram: https://www.instagram.com/threadbox
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - shops-boutiques
+  - creative-services-1
 tags:
-  - Boutique
-  - Clothing
-
+  - Apparel
+  - Design & Marketing
+  - Web Design
+  - Signage & Printing
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-06-24
+status: active
 ---
