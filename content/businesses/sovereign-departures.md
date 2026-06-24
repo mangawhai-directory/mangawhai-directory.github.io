@@ -21,7 +21,6 @@ socials:
   youtube: ''
 categories:
   - funerals-end-of-life-care
-  - alternative-therapy-guidance
 tags:
   - End of Life Doula
   - Death Coach
