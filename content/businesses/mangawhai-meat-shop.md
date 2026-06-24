@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Meat Shop
 slug: mangawhai-meat-shop
 blurb: ''
@@ -20,6 +21,7 @@ socials:
 categories:
   - shops-boutiques
   - grocery
+  - food-producers
 tags:
   - Butcher
   - Deli
@@ -41,7 +43,6 @@ hours:
     opens: closed
     closes: ''
 nzbn: ''
-tier: free
 last_verified: 2026-05-04
 status: active
 ---
