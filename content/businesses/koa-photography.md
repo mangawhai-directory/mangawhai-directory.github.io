@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Koa Photography
 slug: koa-photography
 blurb: ''
@@ -18,14 +19,13 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - creative-services
   - weddings
+  - creative-services-1
 tags:
   - Photography
   - Wedding Photography
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-10
 status: active
 ---
