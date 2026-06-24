@@ -21,6 +21,7 @@ socials:
   youtube: ''
 categories:
   - takeaways-food-trucks
+  - food-producers
 tags:
   - Gyoza
 hours: []
