@@ -1,4 +1,5 @@
 ---
+tier: free
 title: CFI Signs & Advertising
 slug: cfi-signs-and-advertising
 blurb: ''
@@ -19,15 +20,14 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - creative-services
   - digital-services
+  - creative-services-1
 tags:
   - Design
   - Signage
   - Advertising
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-12
 status: active
 ---
