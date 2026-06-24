@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - alternative-therapy-guidance
+  - health-care-practitioners
 tags:
   - Hypnotherapy
 hours: []
