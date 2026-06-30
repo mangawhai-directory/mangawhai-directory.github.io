@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Caro With Love
 slug: caro-with-love
 blurb: ''
@@ -7,10 +8,12 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
+phone: 0210 858 8266
+email: carowithlove@gmail.com
 website: https://carowithlove.com
 socials:
-  facebook: ''
-  instagram: ''
+  facebook: https://www.facebook.com/carowithlove/
+  instagram: https://www.instagram.com/carowithlove/
   x: ''
   linkedin: ''
   tiktok: ''
@@ -18,10 +21,9 @@ socials:
 categories:
   - shops-boutiques
 tags:
-  - Boutique
-
+  - Lifestyle Boutique
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
 ---
