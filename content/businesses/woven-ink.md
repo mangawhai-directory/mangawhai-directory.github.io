@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Woven Ink
 slug: woven-ink
 blurb: ''
@@ -19,12 +20,12 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
+  - tattoo-piercing
 tags:
   - Cosmetic Tattooing
   - Beauty
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-08
 status: active
 ---
