@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Piercing
 slug: mangawhai-piercing
 blurb: ''
@@ -18,13 +19,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
+  - tattoo-piercing
 tags:
   - Piercing
-
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-04
 status: active
 ---
