@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: ''
+phone: 027 247 2921
 email: ''
 website: https://stjohn.org.nz/shop/retail-stores/mangawhai
 socials:
