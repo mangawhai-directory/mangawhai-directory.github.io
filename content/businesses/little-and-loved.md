@@ -1,26 +1,30 @@
 ---
-title: "Little & Loved"
-slug: "little-and-loved"
-blurb: ""
+tier: free
+title: Little & Loved
+slug: little-and-loved
+blurb: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-website: "https://littleandloved.co.nz/"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: ''
+email: ''
+website: https://littleandloved.co.nz/
 socials:
-  facebook: "https://www.facebook.com/littleandloved"
-  instagram: "https://www.instagram.com/littleandloved"
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["shops-boutiques"]
+  facebook: https://www.facebook.com/littleandloved
+  instagram: https://www.instagram.com/littleandloved
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - shops-boutiques
 tags:
   - Children's Boutique
-
+  - Online Retailer
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
