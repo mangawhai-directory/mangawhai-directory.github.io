@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Community Op Shop
 slug: mangawhai-community-op-shop
 blurb: ''
@@ -7,22 +8,22 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
+phone: 09 431 3098
+email: mangawhaicommunityopshop@gmail.com
 website: https://mangawhaicommunityopshop.com
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/mangawhaicommunityopshop/
   instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
-  - community-clubs-churches
   - shops-boutiques
 tags:
   - Op Shop
-
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
 ---
