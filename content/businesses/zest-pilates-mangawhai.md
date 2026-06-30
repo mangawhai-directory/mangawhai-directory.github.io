@@ -1,7 +1,7 @@
 ---
 tier: free
-title: Zest Pilates Mangawhai
-slug: zest-pilates-mangawhai
+title: Zest Pilates
+slug: zest-pilates
 blurb: ''
 address:
   street: 168 Black Swamp Road
