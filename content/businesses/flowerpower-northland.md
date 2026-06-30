@@ -1,28 +1,29 @@
 ---
-title: "Flowerpower Northland"
-slug: "flowerpower-northland"
-blurb: ""
+tier: free
+title: Flowerpower Northland
+slug: flowerpower-northland
+blurb: ''
 address:
-  street: "17 Kapawiti Road"
-  suburb: "Mangawhai"
-  postcode: "0573"
-  country: "NZ"
+  street: 17 Kapawiti Road
+  suburb: Mangawhai
+  postcode: '0573'
+  country: NZ
 phone: 027 449 0464
-email: "flowerpowernorthland@gmail.com"
-website: "https://www.flowerpowernorthland.co.nz"
+email: flowerpowernorthland@gmail.com
+website: https://www.flowerpowernorthland.co.nz
 socials:
-  facebook: "https://www.facebook.com/flowerpowernorthland/"
-  instagram: "https://www.instagram.com/flowerpowernorthland_"
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["shops-boutiques"]
+  facebook: https://www.facebook.com/flowerpowernorthland/
+  instagram: https://www.instagram.com/flowerpowernorthland_
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - creative-services-1
 tags:
   - Florist
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
