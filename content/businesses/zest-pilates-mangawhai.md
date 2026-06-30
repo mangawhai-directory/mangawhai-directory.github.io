@@ -1,11 +1,12 @@
 ---
+tier: free
 title: Zest Pilates Mangawhai
 slug: zest-pilates-mangawhai
 blurb: ''
 address:
-  street: 14 Sandpiper Lane
-  suburb: Mangawhai Heads
-  postcode: '0505'
+  street: 168 Black Swamp Road
+  suburb: Mangawhai
+  postcode: '0975'
   country: NZ
 phone: ''
 email: hello@zestpilates.co.nz
@@ -23,7 +24,6 @@ tags:
   - Reformer Pilates
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-04
 status: active
 ---
