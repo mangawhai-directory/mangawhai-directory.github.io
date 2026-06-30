@@ -1,4 +1,5 @@
 ---
+tier: free
 title: The Cow Shed
 slug: the-cow-shed
 blurb: ''
@@ -19,14 +20,12 @@ socials:
   youtube: ''
 categories:
   - takeaways-food-trucks
-  - shops-boutiques
 tags:
   - Pies
   - Coffee
   - Food Caravan
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-04
 status: active
 ---
