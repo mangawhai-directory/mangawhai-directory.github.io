@@ -1,4 +1,5 @@
 ---
+tier: free
 title: The Spa at Te Arai Links
 slug: the-spa-at-te-arai-links
 blurb: ''
@@ -18,13 +19,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
+  - sauna-spa
 tags:
   - Day Spa
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
