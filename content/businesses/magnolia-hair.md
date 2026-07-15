@@ -1,4 +1,5 @@
 ---
+tier: free
 title: HER Hair Studio
 slug: her-hair-studio
 blurb: ''
@@ -20,10 +21,9 @@ socials:
 categories:
   - hairdressers-barbers
 tags:
-  - Hairdressing
+  - Hairdresser
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
