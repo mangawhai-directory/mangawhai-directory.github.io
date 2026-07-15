@@ -1,7 +1,8 @@
 ---
+tier: free
 title: Tiki Beach Mangawhai
 slug: tiki-beach-mangawhai
-blurb: Day Spa
+blurb: ''
 address:
   street: 193B Cames Road
   suburb: Mangawhai
@@ -18,13 +19,12 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
+  - sauna-spa
 tags:
   - Day Spa
-
+  - Sauna
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-08
 status: active
 ---
