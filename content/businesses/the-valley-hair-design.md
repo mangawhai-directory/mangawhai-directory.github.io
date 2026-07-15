@@ -22,7 +22,7 @@ socials:
 categories:
   - hairdressers-barbers
 tags:
-  - Hairdressing
+  - Hairdresser
 hours: []
 nzbn: ''
 last_verified: 2026-06-05
