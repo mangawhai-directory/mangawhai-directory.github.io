@@ -21,7 +21,7 @@ socials:
 categories:
   - tattoo-piercing
 tags:
-  - Piercing
+  - Piercing Studio
 hours: []
 nzbn: ''
 last_verified: 2026-05-04
