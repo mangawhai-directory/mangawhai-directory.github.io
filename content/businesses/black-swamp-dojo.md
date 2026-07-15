@@ -20,11 +20,10 @@ socials:
   youtube: ''
 categories:
   - fitness-yoga-pilates
-  - beauty-hair-spa
+  - sauna-spa
 tags:
   - Sauna
-  - Ice Bath
-  - Martial Arts
+  - Ice Shower
   - Group Fitness
   - Workshops
 hours: []
