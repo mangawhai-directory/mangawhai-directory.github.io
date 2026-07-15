@@ -21,6 +21,7 @@ socials:
   youtube: ''
 categories:
   - beauty-hair-spa
+  - sauna-spa
 tags:
   - Red Light Therapy
 hours: []
