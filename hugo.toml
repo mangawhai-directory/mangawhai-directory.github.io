@@ -6,7 +6,7 @@ enableRobotsTXT = true
 pluralizelisttitles = false
 
 [params]
-  description = "A community directory for Mangawhai - local businesses and services"
+  description = "Free local business directory for Mangawhai, Mangawhai Heads, Te Arai and Kaiwaka — find cafés, trades, shops, services and things to do in the area."
   defaultKeywords = ["mangawhai", "mangawhai heads", "northland", "directory", "local business"]
   contactEmail = ""
 

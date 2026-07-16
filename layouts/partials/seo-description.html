@@ -1,0 +1,30 @@
+{{- /*
+  seo-description.html — single source of truth for a page's meta/OG description.
+  Precedence:
+    1. Category (taxonomy term) pages: an auto-generated line with a live
+       business count, so category SEO stays consistent without hand-editing.
+    2. Any page with an explicit front-matter `description` (e.g. static pages).
+    3. Business listings: fall back to the `blurb`.
+    4. Everything else: the site-wide default from hugo.toml.
+  Returns a clean single-line string.
+*/ -}}
+{{- $desc := "" -}}
+{{- if eq .Kind "term" -}}
+  {{- $slug := path.Base .RelPermalink -}}
+  {{- $count := 0 -}}
+  {{- with site.GetPage "/businesses" -}}
+    {{- range .Pages -}}
+      {{- if and (in (.Params.categories | default slice) $slug) (ne (.Params.status | default "active") "closed") -}}
+        {{- $count = add $count 1 -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $desc = printf "Find %s in Mangawhai and Mangawhai Heads. Contact details, locations and services for %d local %s." .Title $count (cond (eq $count 1) "business" "businesses") -}}
+{{- else if .Params.description -}}
+  {{- $desc = .Params.description -}}
+{{- else if .Params.blurb -}}
+  {{- $desc = .Params.blurb -}}
+{{- else -}}
+  {{- $desc = site.Params.description -}}
+{{- end -}}
+{{- $desc | plainify | replaceRE "\\s+" " " | strings.TrimSpace -}}

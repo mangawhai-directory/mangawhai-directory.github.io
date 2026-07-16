@@ -7,15 +7,14 @@
   <link rel="apple-touch-icon" href="{{ "/favicon.svg" | relURL }}">
   <title>{{ block "title" . }}{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}{{ end }}</title>
 
-  {{ block "meta-description" . -}}
-    <meta name="description" content="{{ or .Params.description site.Params.description }}">
-  {{- end }}
+  <meta name="description" content="{{ partial "seo-description.html" . }}">
+
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="alternate" hreflang="en-NZ" href="{{ .Permalink }}">
   <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
   {{ block "og" . -}}
     {{- $ogTitle := cond .IsHome (string site.Title) (printf "%s | %s" .Title site.Title) -}}
-    {{- $ogDesc := or .Params.description site.Params.description -}}
+    {{- $ogDesc := partial "seo-description.html" . -}}
     {{- $ogType := cond (eq .Kind "term") "article" "website" -}}
     {{- $ogImage := "" -}}
     {{- with resources.Get "img/og-default.png" }}{{ $ogImage = .Permalink }}{{ end -}}

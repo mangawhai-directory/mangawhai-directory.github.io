@@ -1,19 +1,5 @@
 {{ define "title" }}{{ .Title }} in Mangawhai | Local Directory{{ end }}
 
-{{ define "meta-description" -}}
-  {{- $slug := path.Base .RelPermalink -}}
-  {{- $businesses := slice -}}
-  {{- with site.GetPage "/businesses" -}}
-    {{- range .Pages -}}
-      {{- if and (in (.Params.categories | default slice) $slug) (ne (.Params.status | default "active") "closed") -}}
-        {{- $businesses = $businesses | append . -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-  {{- $count := len $businesses -}}
-  <meta name="description" content="Find {{ .Title }} in Mangawhai and Mangawhai Heads. Contact details, locations and services for {{ $count }} local {{ if eq $count 1 }}business{{ else }}businesses{{ end }}.">
-{{- end }}
-
 {{ define "json-ld" }}
 {{- $page := . -}}
 {{- $slug := path.Base .RelPermalink -}}
