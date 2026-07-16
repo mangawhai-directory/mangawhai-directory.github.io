@@ -19,7 +19,7 @@ socials:
   youtube: ''
 categories:
   - builders-renovations
-  - creative-services
+  - architects
 tags:
   - Architect
 hours: []

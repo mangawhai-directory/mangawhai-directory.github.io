@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - creative-services
+  - architects
   - builders-renovations
 tags:
   - Architect

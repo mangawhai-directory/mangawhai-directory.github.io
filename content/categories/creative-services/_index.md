@@ -1,6 +1,6 @@
 ---
-title: Architects
-description: Architects in Mangawhai
+title: Creative Services
+description: photographers, graphic designers, social media, content creators in mangawhai
 keywords:
-  - architects
+  - photographers, graphic designers, social media, content creators
 ---

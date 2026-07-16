@@ -25,7 +25,7 @@ A free, locally curated business directory covering Mangawhai, Mangawhai Heads, 
   {{- end -}}
 {{- end -}}
 {{- $terms := slice -}}
-{{- range $categoriesPage.Pages }}{{ $terms = $terms | append . }}{{ end }}
+{{- range $categoriesPage.Pages }}{{ if not .Params.hidden }}{{ $terms = $terms | append . }}{{ end }}{{ end }}
 {{ range sort $terms "Title" "asc" -}}
 {{- $slug := path.Base .RelPermalink -}}
 {{- $count := 0 -}}

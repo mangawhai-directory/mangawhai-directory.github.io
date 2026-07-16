@@ -65,7 +65,7 @@
   <ul class="mt-6 list-none p-0 columns-1 gap-3 min-[640px]:columns-2 min-[744px]:columns-3">
     {{- $terms := slice -}}
     {{- range $categoriesPage.Pages -}}
-      {{- $terms = $terms | append . -}}
+      {{- if not .Params.hidden -}}{{- $terms = $terms | append . -}}{{- end -}}
     {{- end -}}
     {{- range sort $terms "Title" "asc" }}
     {{- $slug := path.Base .RelPermalink -}}

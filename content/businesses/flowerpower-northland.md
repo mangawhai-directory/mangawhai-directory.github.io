@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - creative-services-1
+  - creative-services
 tags:
   - Florist
 hours: []

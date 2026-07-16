@@ -20,7 +20,7 @@ socials:
   youtube: ''
 categories:
   - weddings
-  - creative-services-1
+  - creative-services
 tags:
   - Photography
   - Wedding Photography

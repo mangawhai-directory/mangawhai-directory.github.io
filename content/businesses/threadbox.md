@@ -20,7 +20,7 @@ socials:
   youtube: ''
 categories:
   - shops-boutiques
-  - creative-services-1
+  - creative-services
 tags:
   - Apparel
   - Design & Marketing

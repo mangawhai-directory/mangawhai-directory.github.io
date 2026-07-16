@@ -21,7 +21,7 @@ socials:
   youtube: ''
 categories:
   - digital-services
-  - creative-services-1
+  - creative-services
 tags:
   - Design
   - Signage
