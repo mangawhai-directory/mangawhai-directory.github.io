@@ -1,6 +1,8 @@
 ---
 title: Architects
-description: Architects in Mangawhai
 keywords:
-  - architects
+  - architect mangawhai
+  - residential architect mangawhai heads
+  - architectural design northland
+  - building design mangawhai
 ---

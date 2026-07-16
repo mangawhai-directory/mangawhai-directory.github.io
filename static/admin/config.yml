@@ -143,9 +143,8 @@ collections:
     fields:
       - { name: title, label: Display name, widget: string, hint: "e.g. Cafés & Restaurants" }
       - { name: hidden, label: Hide from site, widget: boolean, default: false, required: false, hint: "When on, this category is removed from the homepage, the LLMs index, related-category links and the category list page. Its own page URL still resolves." }
-      - { name: description, label: SEO description, widget: text, hint: "1–2 sentences. Used as the meta description and the category-page intro." }
       - { name: keywords, label: SEO keywords, widget: list, required: false }
-      - { name: body, label: Intro copy, widget: markdown, required: false }
+      - { name: body, label: Intro copy, widget: markdown, required: false, hint: "Optional intro paragraph shown under the category heading. The page's meta description is generated automatically from the category name and business count." }
 
   # ──────────────────────────────────────────────────────────────────────
   # Pages — fixed top-level content files (advertise, contact, privacy, terms).

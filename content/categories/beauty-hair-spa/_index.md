@@ -1,6 +1,8 @@
 ---
 title: Beauty Therapy
-description: Find beauty therapists in Mangawhai
 keywords:
-  - beauty mangawhai
+  - beauty therapy mangawhai
+  - beautician mangawhai heads
+  - facials mangawhai
+  - waxing mangawhai
 ---

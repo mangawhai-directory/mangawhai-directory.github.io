@@ -1,6 +1,8 @@
 ---
 title: Tattoo & Piercing
-description: tattoo and piercing in mangawhai
 keywords:
-  - tattoo, piercing
+  - tattoo mangawhai
+  - tattoo studio mangawhai heads
+  - piercing mangawhai
+  - tattoo artist mangawhai
 ---

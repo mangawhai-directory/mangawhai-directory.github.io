@@ -1,6 +1,8 @@
 ---
 title: Health Practitioners
-description: Health care practitioners in Mangawhai
 keywords:
-  - Health care practitioners
+  - health practitioner mangawhai
+  - physiotherapist mangawhai heads
+  - naturopath mangawhai
+  - chiropractor mangawhai
 ---

@@ -1,9 +1,8 @@
 ---
 title: Pregnancy, Birth & Postpartum Care
-description: |-
-  Midwives in Mangawhai
-  Prenatal classes in Mangawhai
-  Birthing pool in Mangawhai
 keywords:
-  - midwives, doulas, prenatal classes, birthing pool
+  - midwife mangawhai
+  - doula mangawhai heads
+  - prenatal classes mangawhai
+  - postpartum care mangawhai
 ---

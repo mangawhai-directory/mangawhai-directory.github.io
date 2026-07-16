@@ -1,6 +1,8 @@
 ---
 title: Massage
-description: Massage therapists in Mangawhai
 keywords:
-  - massage, mangawhai
+  - massage mangawhai
+  - massage therapist mangawhai heads
+  - remedial massage mangawhai
+  - relaxation massage mangawhai
 ---

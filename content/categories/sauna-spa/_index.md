@@ -1,7 +1,8 @@
 ---
 title: Sauna & Spa
-description: Saunas and day spas in Mangawhai
 keywords:
-  - Sauna in Mangawhai
-  - Day spa in Mangawhai
+  - sauna mangawhai
+  - day spa mangawhai heads
+  - spa mangawhai
+  - wellness mangawhai
 ---

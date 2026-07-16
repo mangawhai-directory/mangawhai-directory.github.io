@@ -1,6 +1,8 @@
 ---
 title: Surveyors and Planners
-description: Surveyors and Planners
 keywords:
-  - Surveyors, Planners
+  - surveyor mangawhai
+  - land surveyor mangawhai heads
+  - town planner mangawhai
+  - resource consent mangawhai
 ---

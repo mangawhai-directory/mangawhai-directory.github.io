@@ -1,6 +1,8 @@
 ---
 title: Food Producers
-description: food producers in Mangawhai
 keywords:
-  - food producers
+  - food producer mangawhai
+  - local produce mangawhai heads
+  - honey mangawhai
+  - artisan food mangawhai
 ---

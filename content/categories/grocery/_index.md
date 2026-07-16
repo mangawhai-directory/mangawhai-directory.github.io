@@ -1,6 +1,8 @@
 ---
 title: Grocery
-description: Grocery
 keywords:
-  - Grocery
+  - grocery mangawhai
+  - supermarket mangawhai heads
+  - dairy mangawhai
+  - food shop mangawhai
 ---

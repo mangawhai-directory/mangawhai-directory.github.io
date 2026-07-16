@@ -1,8 +1,8 @@
 ---
 title: Funerals & End of Life Care
-description: |-
-  Funeral home mangawhai
-  Death doula mangawhai
 keywords:
-  - funerals mangawhai, death doula mangawhai
+  - funeral director mangawhai
+  - funeral home mangawhai heads
+  - death doula mangawhai
+  - end of life care mangawhai
 ---
