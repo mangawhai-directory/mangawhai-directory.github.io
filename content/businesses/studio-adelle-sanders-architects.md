@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Studio Adelle Sanders Architects
 slug: studio-adelle-sanders-architects
 blurb: ''
@@ -18,13 +19,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - builders-renovations
-  - architects
+  - creative-services
 tags:
   - Architect
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-11
 status: active
 ---
