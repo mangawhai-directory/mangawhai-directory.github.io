@@ -1,4 +1,5 @@
 ---
+tier: free
 title: OTO Group Architecture
 slug: oto-group-architecture
 blurb: ''
@@ -18,13 +19,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - architects
-  - builders-renovations
+  - creative-services
 tags:
   - Architect
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-11
 status: active
 ---
