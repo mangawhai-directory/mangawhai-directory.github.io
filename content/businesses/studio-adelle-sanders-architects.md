@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - creative-services
+  - architects
 tags:
   - Architect
 hours: []
