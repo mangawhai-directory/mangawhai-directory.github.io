@@ -1,10 +1,11 @@
 ---
+tier: free
 title: Harcourts Mangawhai Heads
 slug: harcourts-mangawhai-heads
-blurb: 'Full-service real estate agency for Mangawhai Heads handling residential sales, rentals, property management and listings.'
+blurb: ''
 address:
-  street: '6 Molesworth Drive'
-  suburb: 'Mangawhai'
+  street: 6 Molesworth Drive
+  suburb: Mangawhai
   postcode: '0505'
   country: NZ
 phone: 09 431 4053
@@ -20,13 +21,10 @@ socials:
 categories:
   - real-estate
 tags:
-  - Real Estate
+  - Real Estate Agency
   - Rentals
-  - Property Management
-
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
