@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Real Estate
 slug: mangawhai-real-estate
 blurb: ''
@@ -20,12 +21,9 @@ socials:
 categories:
   - real-estate
 tags:
-  - Real Estate
-  - Waterfront
-  - Architectural Homes
+  - Real Estate Agency
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
