@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Arizto
 slug: arizto
 blurb: Megan Hetges
@@ -19,10 +20,10 @@ socials:
   youtube: ''
 categories:
   - real-estate
-tags: []
+tags:
+  - Real Estate Agency
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-10
 status: active
 ---
