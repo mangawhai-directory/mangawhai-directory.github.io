@@ -1,7 +1,8 @@
 ---
+tier: free
 title: Sanctuary Interiors
 slug: sanctuary-interiors
-blurb: Home Staging & Styling, Interior Design
+blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
@@ -19,10 +20,12 @@ socials:
   youtube: ''
 categories:
   - real-estate
-tags: []
+  - creative-services
+tags:
+  - Home Staging & Styling
+  - Interior Design
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-10
 status: active
 ---
