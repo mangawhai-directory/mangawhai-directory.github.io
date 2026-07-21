@@ -1,7 +1,8 @@
 ---
+tier: free
 title: Trinity Real Estate Mangawhai
 slug: trinity-real-estate-mangawhai
-blurb: Property marketing, negotiation and consultation experts serving the Kaipara region with over 20 years of real estate experience.
+blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
@@ -20,11 +21,9 @@ socials:
 categories:
   - real-estate
 tags:
-  - Real Estate
-
+  - Real Estate Agency
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
