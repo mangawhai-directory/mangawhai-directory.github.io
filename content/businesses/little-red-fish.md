@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Little Red Fish
 slug: little-red-fish
 blurb: ''
@@ -20,12 +21,12 @@ socials:
 categories:
   - takeaways-food-trucks
   - cafes-restaurants
+  - food-producers
 tags:
   - Seafood Deli
   - Takeaways
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
