@@ -39,7 +39,11 @@ collections:
       - { label: Active, field: status, pattern: active }
       - { label: Closed, field: status, pattern: closed }
     view_groups:
-      - { label: Category, field: categories }
+      # `categories` is a list — Sveltia flattens list fields to indexed keys
+      # (categories.0, categories.1, ...). Reference the first slot so we group
+      # by the primary category. Multi-category listings only appear under
+      # their first category.
+      - { label: Primary category, field: categories.0 }
       - { label: Status, field: status }
       - { label: Tier, field: tier }
       - { label: Suburb, field: address.suburb }
