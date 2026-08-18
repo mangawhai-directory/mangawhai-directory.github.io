@@ -1,15 +1,16 @@
 ---
-title: Anna Kingi Counsellor
-slug: anna-kingi-counsellor
-blurb: NZCCA-registered Mangawhai counsellor working with chronic illness, grief, life transitions and integration of overwhelming experiences.
+tier: free
+title: Fullness Whole Person Therapy
+slug: fullness-whole-person-therapy
+blurb: ''
 address:
-  street: 1 Pearson Street
+  street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0800 452 530
-email: ''
-website: ''
+phone: 020 4025 6567
+email: admin@fullness.co.nz
+website: https://www.fullness.co.nz/
 socials:
   facebook: ''
   instagram: ''
@@ -21,11 +22,8 @@ categories:
   - health-care-practitioners
 tags:
   - Counsellor
-  - Mental Health
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-08-18
 status: active
 ---
