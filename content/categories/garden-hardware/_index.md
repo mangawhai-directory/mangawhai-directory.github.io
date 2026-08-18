@@ -1,8 +1,6 @@
 ---
-title: "Garden & Hardware"
+title: Nurseries
 keywords:
   - garden centre mangawhai
-  - hardware store mangawhai heads
   - nursery mangawhai
-  - timber supplies mangawhai
 ---
