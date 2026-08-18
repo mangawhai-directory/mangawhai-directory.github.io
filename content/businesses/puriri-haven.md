@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Puriri Haven
 slug: puriri-haven
 blurb: Three-acre Mangawhai wedding and elopement venue set among century-old native trees, with a pond, jetty and on-site glamping yurt.
@@ -24,10 +25,8 @@ tags:
   - Wedding Venue
   - Elopement
   - Glamping
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-10'
-status: active
+last_verified: 2026-05-10
+status: closed
 ---
