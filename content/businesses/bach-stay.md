@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Bach Stay
 slug: bach-stay
 blurb: ''
@@ -7,6 +8,8 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
+phone: 021 065 6360
+email: info@bachstay.co.nz
 website: https://bachstay.co.nz
 socials:
   facebook: https://facebook.com/BachStay
@@ -22,9 +25,7 @@ tags:
   - Holiday Rental
   - Bach
 hours: []
-tier: free
-last_verified: '2026-05-09'
-status: active
-phone: 021 065 6360
-email: info@bachstay.co.nz
+nzbn: ''
+last_verified: 2026-05-09
+status: closed
 ---
