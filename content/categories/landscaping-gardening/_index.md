@@ -1,9 +1,6 @@
 ---
-title: Nurseries, Landscaping & Gardening
+title: Arborists & Landscapers
 keywords:
   - landscaper mangawhai
-  - gardener mangawhai heads
-  - lawn mowing mangawhai
-  - hedge trimming mangawhai
-  - nursery mangawhai
+  - arborist mangawhai
 ---
