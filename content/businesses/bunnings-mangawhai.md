@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Bunnings Warehouse Mangawhai
 slug: bunnings-mangawhai
 blurb: ''
@@ -18,14 +19,12 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - garden-hardware
+  - shops-boutiques
 tags:
   - Hardware
   - Garden
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
