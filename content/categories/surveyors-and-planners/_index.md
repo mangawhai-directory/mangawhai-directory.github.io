@@ -1,5 +1,5 @@
 ---
-title: Surveyors and Planners
+title: Surveyors & Planners
 keywords:
   - surveyor mangawhai
   - land surveyor mangawhai heads
