@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Elevate by Zoe Jaques
 slug: elevate-by-zoe-jaques
 blurb: Integrative naturopath and pharmacist based in Mangawhai offering in-clinic and online consultations.
@@ -22,13 +23,16 @@ categories:
 tags:
   - Naturopath
   - Pharmacist
-
 hours:
-  - dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-    opens: "09:00"
-    closes: "17:00"
+  - dayOfWeek:
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+    opens: 09:00
+    closes: 17:00
 nzbn: ''
-tier: free
-last_verified: '2026-05-10'
-status: active
+last_verified: 2026-05-10
+status: closed
 ---
