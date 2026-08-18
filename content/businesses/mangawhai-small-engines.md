@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Small Engines
 slug: mangawhai-small-engines
 blurb: ''
@@ -18,16 +19,13 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - garden-hardware
-  - landscaping-gardening
+  - automotive-marine
 tags:
   - Mowers
   - Small Engines
   - Repairs
-
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
