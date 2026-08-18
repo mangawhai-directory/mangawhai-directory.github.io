@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Bachcare Mangawhai
 slug: bachcare-mangawhai
 blurb: ''
@@ -18,15 +19,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - holiday-homes
   - property-management
 tags:
   - Holiday Rental Management
-  - Bach
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-08-18
 status: active
 ---
