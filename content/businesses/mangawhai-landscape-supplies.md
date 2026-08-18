@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Landscape Supplies
 slug: mangawhai-landscape-supplies
 blurb: ''
@@ -7,6 +8,8 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
+phone: ''
+email: ''
 website: https://yellow.co.nz/y/mangawhai-landscape-mangawhai
 socials:
   facebook: ''
@@ -19,9 +22,8 @@ categories:
   - garden-hardware
 tags:
   - Landscape Supplies
-
 hours: []
-tier: free
-last_verified: '2026-05-09'
-status: active
+nzbn: ''
+last_verified: 2026-05-09
+status: closed
 ---
