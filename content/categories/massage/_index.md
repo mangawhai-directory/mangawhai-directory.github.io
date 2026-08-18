@@ -1,5 +1,5 @@
 ---
-title: Massage
+title: Massage Therapy
 keywords:
   - massage mangawhai
   - massage therapist mangawhai heads
