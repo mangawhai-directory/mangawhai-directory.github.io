@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Premier Property Care
 slug: premier-property-care
 blurb: ''
@@ -7,6 +8,8 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
+phone: ''
+email: ''
 website: https://premierpropertycare.co.nz
 socials:
   facebook: ''
@@ -16,14 +19,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - landscaping-gardening
   - property-maintenance
 tags:
   - Property Maintenance
   - Lawnmowing
-
 hours: []
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
