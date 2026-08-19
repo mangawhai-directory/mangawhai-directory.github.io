@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Oceanside Pilates
 slug: oceanside-pilates
 blurb: ''
@@ -21,10 +22,10 @@ socials:
 categories:
   - fitness-yoga-pilates
 tags:
+  - Comprehensive Pilates
   - Mat Pilates
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-12
 status: active
 ---
