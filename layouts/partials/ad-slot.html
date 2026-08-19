@@ -13,6 +13,10 @@
     price  — monthly price shown in placeholder (e.g. "$250 / month")
     class  — optional extra Tailwind classes for the wrapper
 
+  Both the ad and the placeholder carry data-ad-* attributes; ad-tracking.html
+  reads them to emit GA4 ad_click / ad_impression events. See data/ads.yaml for
+  the `id` and `advertiser` fields behind them.
+
   Aspect ratio is applied responsively: aspect-[wm/hm] below `lg`,
   aspect-[w/h] from `lg` and up. If the wrapper has explicit lg:h-[Hpx], that
   height takes precedence over the aspect-ratio at desktop.
@@ -33,12 +37,18 @@
 {{- end -}}
 
 {{- $hasAd := and $cfg (and (isset $cfg "image") $cfg.image) -}}
+{{- $adID := $slot -}}
+{{- $advertiser := "" -}}
+{{- if $cfg -}}
+  {{- if (isset $cfg "id") }}{{ $adID = $cfg.id }}{{ end -}}
+  {{- if (isset $cfg "advertiser") }}{{ $advertiser = $cfg.advertiser }}{{ end -}}
+{{- end -}}
 {{- $hasMobileAd := and $hasAd (and (isset $cfg "imageMobile") $cfg.imageMobile) -}}
 {{- $aspect := printf "aspect-[%d/%d] lg:aspect-[%d/%d]" $wm $hm $w $h -}}
 
 <aside class="ad-slot {{ $extra }}" aria-label="Advertisement" data-print-hide>
   {{- if $hasAd }}
-  <a href="{{ $cfg.href | default "#" }}" class="block h-full w-full overflow-hidden rounded-lg border border-border" {{ if hasPrefix ($cfg.href | default "") "http" }}rel="sponsored noopener" target="_blank"{{ end }}>
+  <a href="{{ $cfg.href | default "#" }}" class="block h-full w-full overflow-hidden rounded-lg border border-border" data-ad-type="ad" data-ad-id="{{ $adID }}" data-ad-slot="{{ $slot }}" data-ad-advertiser="{{ $advertiser }}" {{ if hasPrefix ($cfg.href | default "") "http" }}rel="sponsored noopener" target="_blank"{{ end }}>
     <picture>
       {{- if $hasMobileAd }}
       <source media="(min-width: 744px)" srcset="{{ $cfg.image }}" width="{{ $w }}" height="{{ $h }}">
@@ -49,7 +59,7 @@
     </picture>
   </a>
   {{- else }}
-  <a href="{{ "/advertise/" | relURL }}" class="group flex h-full w-full {{ $aspect }} flex-col items-center justify-center gap-2 rounded-lg border border-dashed border-border bg-muted/30 px-4 py-6 text-center no-underline transition-colors hover:border-foreground/30 hover:bg-muted/60 sm:px-6 sm:py-8">
+  <a href="{{ "/advertise/" | relURL }}" data-ad-type="placeholder" data-ad-id="placeholder" data-ad-slot="{{ $slot }}" class="group flex h-full w-full {{ $aspect }} flex-col items-center justify-center gap-2 rounded-lg border border-dashed border-border bg-muted/30 px-4 py-6 text-center no-underline transition-colors hover:border-foreground/30 hover:bg-muted/60 sm:px-6 sm:py-8">
     <span class="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">Advertisement</span>
     <span class="text-base font-semibold text-foreground">Your ad here</span>
     <span class="text-xs text-muted-foreground">

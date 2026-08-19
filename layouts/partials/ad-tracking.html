@@ -1,0 +1,68 @@
+{{- /*
+  ad-tracking.html — GA4 click and viewable-impression tracking for ad slots.
+
+  Reads the data-ad-* attributes emitted by ad-slot.html and sends:
+    ad_click              — a paid ad was clicked
+    ad_placeholder_click  — a "Your ad here" slot was clicked (inventory demand,
+                            kept separate so it never inflates an advertiser's numbers)
+    ad_impression         — a paid ad was ≥50% on screen for 1 continuous second
+                            (the IAB viewable display impression standard)
+
+  Every event carries ad_id, ad_slot and ad_advertiser. These must be registered
+  as event-scoped custom dimensions in GA4 (Admin → Custom definitions) or they
+  will not appear in reports.
+
+  Included from baseof.html under hugo.IsProduction, alongside the gtag snippet.
+  Ads open in a new tab, so the page is not unloading on click and a plain
+  gtag() call is reliable — no beacon transport or event callback needed.
+*/ -}}
+<script>
+  (function () {
+    if (typeof gtag !== 'function') return;
+    var ads = document.querySelectorAll('a[data-ad-id]');
+    if (!ads.length) return;
+
+    function params(el) {
+      return {
+        ad_id: el.getAttribute('data-ad-id'),
+        ad_slot: el.getAttribute('data-ad-slot'),
+        ad_advertiser: el.getAttribute('data-ad-advertiser') || '',
+        ad_destination: el.href
+      };
+    }
+
+    document.addEventListener('click', function (e) {
+      var el = e.target && e.target.closest ? e.target.closest('a[data-ad-id]') : null;
+      if (!el) return;
+      var name = el.getAttribute('data-ad-type') === 'placeholder' ? 'ad_placeholder_click' : 'ad_click';
+      gtag('event', name, params(el));
+    });
+
+    if (!('IntersectionObserver' in window)) return;
+    var timers = new WeakMap();
+    // Permanent guard: unobserve() alone can still deliver an already-queued
+    // entry, and a double-counted impression is a number advertisers get billed on.
+    var fired = new WeakSet();
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var el = entry.target;
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          if (fired.has(el) || timers.has(el)) return;
+          timers.set(el, setTimeout(function () {
+            fired.add(el);
+            observer.unobserve(el);
+            timers.delete(el);
+            gtag('event', 'ad_impression', params(el));
+          }, 1000));
+        } else if (timers.has(el)) {
+          clearTimeout(timers.get(el));
+          timers.delete(el);
+        }
+      });
+    }, { threshold: [0, 0.5] });
+
+    Array.prototype.forEach.call(ads, function (el) {
+      if (el.getAttribute('data-ad-type') === 'ad') observer.observe(el);
+    });
+  })();
+</script>
