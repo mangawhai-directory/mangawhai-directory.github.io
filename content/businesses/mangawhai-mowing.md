@@ -1,4 +1,5 @@
 ---
+tier: free
 title: Mangawhai Mowing
 slug: mangawhai-mowing
 blurb: ''
@@ -18,13 +19,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - landscaping-gardening
+  - property-maintenance
 tags:
   - Lawnmowing
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
