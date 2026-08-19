@@ -147,11 +147,18 @@ collections:
       - { name: body, label: Intro copy, widget: markdown, required: false, hint: "Optional intro paragraph shown under the category heading. The page's meta description is generated automatically from the category name and business count." }
 
   # ──────────────────────────────────────────────────────────────────────
-  # Pages — fixed top-level content files (advertise, contact, privacy, terms).
+  # Pages — the home page plus fixed top-level content files
+  # (advertise, contact, privacy, terms).
   # ──────────────────────────────────────────────────────────────────────
   - name: pages
     label: Pages
     files:
+      - name: home
+        label: Home page
+        file: content/_index.md
+        fields:
+          - { name: title, label: Heading (H1), widget: string, hint: "Big heading in the homepage hero banner. Leave blank to fall back to the site title." }
+          - { name: description, label: Tagline, widget: text, hint: "Sentence under the heading in the hero banner. Also used as the homepage meta description for Google, so keep it under ~155 characters." }
       - name: advertise
         label: Advertise
         file: content/advertise.md

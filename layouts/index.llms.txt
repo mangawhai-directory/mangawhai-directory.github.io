@@ -6,9 +6,9 @@
     3. Optional prose body
     4. H2 sections of links
 */ -}}
-# {{ site.Title }}
+# {{ .Title | default site.Title }}
 
-> {{ site.Params.description }}
+> {{ .Params.description | default site.Params.description }}
 
 A free, locally curated business directory covering Mangawhai, Mangawhai Heads, Te Arai, Kaiwaka and surrounds in Northland, New Zealand. Listings are organised by category. Every business gets a free organic listing; we also sell a small number of paid display-ad slots.
 

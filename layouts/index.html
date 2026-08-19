@@ -1,11 +1,12 @@
 {{ define "json-ld" }}
 {{- $base := site.BaseURL -}}
+{{- $desc := .Params.description -}}
 {{- $org := dict
     "@context" "https://schema.org"
     "@type" "Organization"
     "name" site.Title
     "url" $base
-    "description" site.Params.description
+    "description" ($desc | default site.Params.description)
 -}}
 {{- $website := dict
     "@context" "https://schema.org"
@@ -28,8 +29,8 @@
 <section class="relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat" style="background-image: url('{{ "mangawhai.jpeg" | relURL }}');">
   <div class="absolute inset-0 bg-black/40" aria-hidden="true"></div>
   <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:py-24">
-    <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-5xl">{{ site.Title }}</h1>
-    <p class="mx-auto mt-4 max-w-prose text-lg text-white/90">{{ site.Params.description }}</p>
+    <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-5xl">{{ .Title | default site.Title }}</h1>
+    <p class="mx-auto mt-4 max-w-prose text-lg text-white/90">{{ .Params.description | default site.Params.description }}</p>
   </div>
 </section>
 
