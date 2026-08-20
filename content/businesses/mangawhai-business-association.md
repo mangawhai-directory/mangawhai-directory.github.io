@@ -1,27 +1,31 @@
 ---
-title: "Mangawhai Business Association"
-slug: "mangawhai-business-association"
-blurb: ""
+tier: free
+title: Mangawhai Business Association
+slug: mangawhai-business-association
+blurb: ''
+image: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-email: "hello@mangawhai.co.nz"
-website: "https://www.mangawhai.co.nz"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: ''
+email: hello@mangawhai.co.nz
+website: https://www.mangawhai.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["community-clubs-churches", "professional-services"]
+  facebook: https://www.facebook.com/p/Mangawhai-Business-Association-100064792339726/
+  instagram: https://www.instagram.com/mangawhaibusinessassociation_
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - community-clubs-churches
+  - professional-services
 tags:
   - Business Association
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
