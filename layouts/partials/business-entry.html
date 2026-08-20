@@ -6,8 +6,15 @@
   Desktop layout uses CSS Grid. When tags are present they sit in row 1 col 1
   above the title; otherwise the title takes row 1. The square image is pinned
   to the top of col 2 (sm:self-start) and spans the rows in col 1 so col 2
-  reserves space without forcing inflation. Mobile collapses to a single-
-  column stack in DOM order.
+  reserves space without forcing inflation.
+
+  Mobile collapses to a single column. The image is pinned to row 1 so it
+  heads the entry — ahead of the tags rather than after the title — and drops
+  to half width, centred in the column. The remaining items auto-place into
+  rows 2+ in DOM order.
+  row-start-1 is repeated at sm because sm:row-span-* emits the grid-row
+  shorthand, which would otherwise reset the start back to auto and let the
+  image drift down a row on desktop.
 */ -}}
 {{- $id := .File.BaseFileName -}}
 {{- $closed := eq (.Params.status | default "active") "closed" -}}
@@ -23,7 +30,7 @@
 {{- $hasActions := or $hasContact $hasSocials -}}
 {{- $tags := .Params.tags | default slice -}}
 {{- $hasTags := gt (len $tags) 0 -}}
-<article id="{{ $id }}" class="business-card py-6 {{ if $closed }}is-discontinued{{ end }}">
+<article id="{{ $id }}" class="business-card py-[29px] {{ if $closed }}is-discontinued{{ end }}">
   <div class="grid{{ if $showImage }} min-[640px]:grid-cols-[3fr_1fr] min-[640px]:gap-x-5 min-[744px]:grid-cols-[4fr_1fr]{{ end }}">
     {{- if $hasTags }}
     <ul data-fade class="flex flex-wrap gap-1.5 list-none p-0 m-0" aria-label="Services">
@@ -43,10 +50,10 @@
     </h2>
 
     {{- if $showImage }}
-    <img data-fade class="mt-4 block w-full aspect-square rounded-md object-cover sm:mt-0 sm:col-start-2 sm:row-start-1 {{ if $hasTags }}sm:row-span-3{{ else }}sm:row-span-2{{ end }} sm:self-start sm:w-full min-[640px]:max-w-[300px] min-[744px]:max-w-[400px]" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
+    <img data-fade class="row-start-1 mx-auto mb-4 block w-1/2 aspect-square rounded-md object-cover sm:mx-0 sm:mb-0 sm:col-start-2 {{ if $hasTags }}sm:row-span-3{{ else }}sm:row-span-2{{ end }} sm:row-start-1 sm:self-start sm:w-full min-[640px]:max-w-[300px] min-[744px]:max-w-[400px]" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
     {{- end }}
 
-    <div class="min-w-0{{ if $showImage }} mt-4 sm:mt-0{{ end }}">
+    <div class="min-w-0">
       {{- with .Params.address }}
       {{- $parts := slice -}}
       {{- with .street }}{{ $parts = $parts | append . }}{{ end -}}

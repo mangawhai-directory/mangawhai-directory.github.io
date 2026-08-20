@@ -19,8 +19,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - fitness-yoga-pilates
-  - health-care-practitioners
+  - fitness-pilates-yoga
+  - health-practitioners
 tags:
   - Yoga
   - Nutritionist

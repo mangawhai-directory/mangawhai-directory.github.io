@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - landscaping-gardening
+  - landscape-tree-services
 tags:
   - Land clearing
   - Mulching

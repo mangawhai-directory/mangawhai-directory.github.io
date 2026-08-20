@@ -18,8 +18,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - health-care-practitioners
-  - massage
+  - health-practitioners
+  - massage-therapy
 tags:
   - Naturopath
   - Acupuncture

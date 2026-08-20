@@ -20,8 +20,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - plumbers
-  - shops-boutiques
+  - plumbing-gasfitting
+  - retail
 tags:
   - Plumbing Supplies
 hours: []

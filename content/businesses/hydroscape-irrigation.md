@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - landscaping-gardening
+  - landscape-tree-services
 tags:
   - Irrigation
   - Water Features

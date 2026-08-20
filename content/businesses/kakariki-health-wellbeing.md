@@ -21,7 +21,7 @@ socials:
   youtube: ''
 categories:
   - grocery
-  - shops-boutiques
+  - retail
 tags:
   - Organic Food
   - Health Supplements

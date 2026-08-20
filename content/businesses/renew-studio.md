@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
+  - beauty-therapy
   - sauna-spa
 tags:
   - Red Light Therapy

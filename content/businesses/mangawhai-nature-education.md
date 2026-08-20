@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - schools-childcare
+  - education-childcare
 tags:
   - Outdoor Education Program
   - School Holiday Program

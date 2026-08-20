@@ -21,7 +21,7 @@ socials:
   youtube: ''
 categories:
   - creative-services
-  - shops-boutiques
+  - retail
 tags:
   - Indoor & Outdoor Art
   - Custom Art

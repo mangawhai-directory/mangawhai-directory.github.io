@@ -15,7 +15,7 @@ socials:
   linkedin: ""
   tiktok: ""
   youtube: ""
-categories: ["garden-hardware"]
+categories: ["nurseries"]
 tags:
   - Native Plants
   - Nursery

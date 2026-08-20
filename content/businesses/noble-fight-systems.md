@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - fitness-yoga-pilates
+  - fitness-pilates-yoga
 tags:
   - Muay Thai
   - Kickboxing

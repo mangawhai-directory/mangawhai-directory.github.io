@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - shops-boutiques
+  - retail
   - grocery
   - food-producers
 tags:

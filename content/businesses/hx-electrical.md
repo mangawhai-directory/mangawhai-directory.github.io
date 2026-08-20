@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - electricians
+  - electrical
 tags:
   - Solar
 hours: []

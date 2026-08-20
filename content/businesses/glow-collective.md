@@ -18,8 +18,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
-  - health-care-practitioners
+  - beauty-therapy
+  - health-practitioners
 tags:
   - Massage
   - Acupuncture

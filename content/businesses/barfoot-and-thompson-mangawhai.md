@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - real-estate
+  - real-estate-services
 tags:
   - Real Estate Agency
 hours:

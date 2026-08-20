@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - health-care-practitioners
+  - health-practitioners
 tags:
   - Counsellor
 hours: []

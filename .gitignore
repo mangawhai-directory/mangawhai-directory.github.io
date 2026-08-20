@@ -4,3 +4,6 @@ resources/
 scripts/node_modules/
 node_modules/
 .bin/
+
+# Claude Code local config (agents, skills, permissions)
+.claude/

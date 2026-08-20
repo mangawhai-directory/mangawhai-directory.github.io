@@ -19,7 +19,7 @@ socials:
   youtube: ''
 categories:
   - takeaways-food-trucks
-  - cafes-restaurants
+  - cafes-restaurants-bars
 tags:
   - Sushi
   - Japanese

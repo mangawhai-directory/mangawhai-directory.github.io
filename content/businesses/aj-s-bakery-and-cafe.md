@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - bakeries
+  - bakeries-cake-makers
 tags:
   - Bakery
   - Cafe

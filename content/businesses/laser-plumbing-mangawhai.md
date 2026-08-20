@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - plumbers
+  - plumbing-gasfitting
 tags:
   - Plumbing
   - Gas Fitting

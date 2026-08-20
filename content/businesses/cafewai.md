@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - cafes-restaurants
+  - cafes-restaurants-bars
 tags:
   - Coffee Roastery
   - Cafe

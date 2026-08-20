@@ -18,8 +18,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
-  - massage
+  - beauty-therapy
+  - massage-therapy
 tags:
   - Face Massage
   - Massage

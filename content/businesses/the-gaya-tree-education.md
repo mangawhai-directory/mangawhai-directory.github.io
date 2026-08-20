@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - schools-childcare
+  - education-childcare
 tags:
   - Music & Art Program
 hours: []

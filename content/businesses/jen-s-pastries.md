@@ -22,7 +22,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - bakeries
+  - bakeries-cake-makers
   - food-producers
 tags:
   - Pastries

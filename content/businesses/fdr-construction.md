@@ -20,7 +20,7 @@ socials:
   youtube: ''
 categories:
   - property-maintenance
-  - builders-renovations
+  - construction
 tags:
   - Decking
   - Fencing

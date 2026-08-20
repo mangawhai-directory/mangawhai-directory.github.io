@@ -19,7 +19,7 @@ socials:
   youtube: ''
 categories:
   - community-clubs-churches
-  - cafes-restaurants
+  - cafes-restaurants-bars
 tags:
   - Sports Club
   - Bar

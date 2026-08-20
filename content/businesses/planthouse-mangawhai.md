@@ -16,7 +16,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - garden-hardware
+  - nurseries
 tags:
   - Plant Nursery
   - Garden

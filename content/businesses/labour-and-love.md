@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - midwives-postpartum
+  - pregnancy-birth-postpartum-care
 tags:
   - Birthing Pool Hire
 hours: []

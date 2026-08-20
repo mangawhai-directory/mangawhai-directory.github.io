@@ -4,7 +4,7 @@
   No-op if the slug has no entry.
 */ -}}
 {{- $slug := path.Base .RelPermalink -}}
-{{- $related := index site.Data.related_categories $slug -}}
+{{- $related := index hugo.Data.related_categories $slug -}}
 {{- if $related }}
 <aside class="mt-12 rounded-lg border border-border bg-muted/40 p-6" aria-labelledby="related-categories-heading">
   <h2 id="related-categories-heading" class="m-0 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Related categories</h2>

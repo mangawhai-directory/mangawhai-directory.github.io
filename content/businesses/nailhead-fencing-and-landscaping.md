@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - builders-renovations
+  - construction
 tags:
   - Fencing
   - Landscaping

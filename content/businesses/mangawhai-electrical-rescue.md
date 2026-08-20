@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - electricians
+  - electrical
 tags:
   - Electrical
   - After Hours

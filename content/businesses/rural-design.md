@@ -20,8 +20,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - garden-hardware
-  - landscaping-gardening
+  - nurseries
+  - landscape-tree-services
 tags:
   - Ecological Consultancy
   - Wholesale Plant Supply

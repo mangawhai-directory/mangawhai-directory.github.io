@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
+  - beauty-therapy
 tags:
   - Sauna
 hours: []

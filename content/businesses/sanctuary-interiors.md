@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - real-estate
+  - real-estate-services
   - creative-services
 tags:
   - Home Staging & Styling

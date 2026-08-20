@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - accommodation
+  - campgrounds-camps
 tags:
   - Holiday Park
 hours: []

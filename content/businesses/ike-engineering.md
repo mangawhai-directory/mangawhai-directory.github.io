@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - civil-engineering
+  - engineering
 tags:
   - Engineering
 hours: []

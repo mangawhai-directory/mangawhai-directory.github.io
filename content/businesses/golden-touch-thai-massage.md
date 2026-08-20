@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - massage
+  - massage-therapy
 tags:
   - Thai Massage
 hours: []

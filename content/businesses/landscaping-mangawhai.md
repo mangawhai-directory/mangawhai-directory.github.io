@@ -15,7 +15,7 @@ socials:
   linkedin: ""
   tiktok: ""
   youtube: ""
-categories: ["landscaping-gardening"]
+categories: ["landscape-tree-services"]
 tags:
   - Landscaping
 

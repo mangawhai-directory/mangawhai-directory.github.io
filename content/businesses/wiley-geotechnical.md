@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - civil-engineering
+  - engineering
 tags:
   - Geotechnical
   - Geological

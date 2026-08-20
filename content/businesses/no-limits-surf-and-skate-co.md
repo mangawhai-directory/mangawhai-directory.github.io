@@ -19,7 +19,7 @@ socials:
   youtube: ''
 categories:
   - surf-beach-watersports
-  - shops-boutiques
+  - retail
 tags:
   - mangawhai-heads
   - Surf Shop

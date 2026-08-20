@@ -4,7 +4,7 @@
   a subtle placeholder that displays the slot's package, size and price.
 
   Args (dict):
-    slot   — config path under site.Data.ads (e.g. "home", "category.cafes-restaurants")
+    slot   — config path under hugo.Data.ads (e.g. "home", "category.cafes-restaurants-bars")
     w      — desktop intrinsic width  in px (e.g. 1152, 540)
     h      — desktop intrinsic height in px (e.g. 300,  350)
     wm     — mobile intrinsic width   in px (default = w)
@@ -30,8 +30,8 @@
 {{- $price := .price | default "" -}}
 {{- $extra := .class | default "" -}}
 
-{{- /* Walk dotted slot path through site.Data.ads */ -}}
-{{- $cfg := site.Data.ads -}}
+{{- /* Walk dotted slot path through hugo.Data.ads */ -}}
+{{- $cfg := hugo.Data.ads -}}
 {{- range split $slot "." -}}
   {{- if $cfg }}{{ $cfg = index $cfg . }}{{ end -}}
 {{- end -}}

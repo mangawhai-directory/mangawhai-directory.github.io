@@ -13,7 +13,7 @@ Every business gets a **free organic listing**. Paid ads simply put your brand i
 
 ### Premium listing — $30+gst per update
 
-A one-off fee, **not** a monthly subscription. You pay $30+gst each time you ask us to set up or change your premium content — initial setup, swapping the image, refreshing the blurb, or updating opening hours. Once we've made the change, the premium content stays live on your listing indefinitely at no further cost.
+A one-off fee, **not** a monthly subscription. You pay $30+gst each time you ask us to set up or change your premium content — initial setup, swapping the image, refreshing the blurb, or updating opening hours. Once we've made the change, the premium content stays live on your listing at no further cost for as long as we carry premium listings — see our [terms](/terms/) for what happens if we change the offering.
 
 Free listings show your name, address, and contact buttons. The premium tier unlocks:
 
@@ -42,10 +42,10 @@ A banner placed at the top of one category page (e.g. *Construction*, *Cafes & R
 A wide tile placed below the hero on the homepage.
 
 - **Desktop creative:** 1152 × 400 px
-- **Mobile creative:** 800 px x 800 px (recommended) — scales to fit the viewport
+- **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
 - Brand-builder placement — every visitor to the directory passes through here.
 - Static image plus a click-through.
-- Limited slots; rotates evenly with other homepage advertisers.
+- One advertiser holds the homepage tile for the whole of each booked month.
 
 ## Creative specs
 

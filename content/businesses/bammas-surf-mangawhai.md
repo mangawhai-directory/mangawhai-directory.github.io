@@ -20,7 +20,7 @@ socials:
   youtube: ''
 categories:
   - surf-beach-watersports
-  - shops-boutiques
+  - retail
 tags:
   - Surf Shop
 hours: []

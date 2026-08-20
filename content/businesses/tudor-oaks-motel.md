@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - accommodation
+  - campgrounds-camps
 tags:
   - Motel
 hours: []

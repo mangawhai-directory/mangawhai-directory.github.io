@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - garden-hardware
+  - nurseries
 tags:
   - Landscape Supplies
 hours: []

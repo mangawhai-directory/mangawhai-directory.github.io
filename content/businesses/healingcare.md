@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - massage
+  - massage-therapy
 tags:
   - Massage
 hours: []

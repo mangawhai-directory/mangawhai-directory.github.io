@@ -19,8 +19,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - shops-boutiques
-  - landscaping-gardening
+  - retail
+  - landscape-tree-services
 tags:
   - Landscape Supplies
 hours: []

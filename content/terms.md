@@ -3,7 +3,7 @@ title: "Terms & Conditions"
 description: "Terms of use for visitors to Mangawhai Directory and terms governing paid advertising on the site."
 ---
 
-_Last updated: 19 May 2026._
+_Last updated: 19 August 2026._
 
 These Terms govern your use of [mangawhaidirectory.co.nz](https://mangawhaidirectory.co.nz/) (the "**Site**") and any paid advertising or Premium Listing Update you book with us. The Site and all related advertising services are owned, operated, and invoiced by **Sanderson Howe Limited** (NZ company number 8196168), trading as "**Mangawhai Directory**" — in these Terms, "we", "us" and "our" refer to Sanderson Howe Limited. By using the Site or placing a booking, you agree to these Terms.
 
@@ -18,7 +18,7 @@ These Terms are split into two parts:
 
 ### About the directory
 
-Mangawhai Directory is a community-focused listing of businesses operating in Mangawhai, Mangawhai Heads, Te Arai, Kaiwaka and surrounds. Listings are curated by us from publicly available sources (websites, NZBN, public social profiles, community knowledge) — not supplied by the businesses themselves unless explicitly noted.
+Mangawhai Directory is a community-focused listing of businesses operating in Mangawhai, Mangawhai Heads, Te Arai, Kaiwaka and surrounds. Listings are compiled by us from information that is already publicly published — businesses' own websites and social pages, and public directories, listings, articles and community websites covering the area — not supplied by the businesses themselves unless explicitly noted.
 
 ### No warranty as to accuracy
 
@@ -40,7 +40,14 @@ All trade marks, logos, and business names referenced on the Site are the proper
 
 ### Listing corrections, updates and takedowns
 
-If you are connected to a business listed on the Site and want a listing corrected, updated, or removed, contact us via the [contact page](/contact/) or email us. We aim to act on legitimate requests within 10 working days.
+If you are connected to a business listed on the Site and want a listing corrected, updated, or removed, contact us via the [contact page](/contact/) or email us.
+
+- **Personal information** — your name, phone number, email address or home address: tell us and we will remove or correct it **within 5 working days**. You do not need to give a reason. This is also a correction request under the Privacy Act 2020 — see our [Privacy Policy](/privacy/).
+- **Anything else** about a listing: we aim to act on legitimate requests within 10 working days.
+
+### Complaints about advertising
+
+If you believe an advertisement on the Site is unlawful, harmful, or breaches someone's rights, contact us. Within **48 hours** of receiving your complaint we will pass its substance (without your contact details) to the advertiser and ask whether they consent to it being taken down. If they consent, or we cannot reach them within 48 hours, we will remove it. If they object, we may leave it up while the matter is resolved, and you can take it to [Netsafe](https://netsafe.org.nz/) or the courts. We follow this process to preserve the safe harbour in section 24 of the [Harmful Digital Communications Act 2015](https://www.legislation.govt.nz/act/public/2015/0063/latest/whole.html).
 
 ### Intellectual property in the directory
 
@@ -78,16 +85,16 @@ This Part applies if you book a paid display-advertising slot with us. By placin
   - **More than 14 days before** go-live: full refund of the invoice.
   - **14 days or less before** go-live: 50% refund of the invoice.
   - **On or after** go-live: no refund.
-- The above is subject to your rights at law. If we remove your advertisement for reasons outside your control (e.g. site restructure or technical failure on our side), we may issue a pro-rata refund at our discretion.
+- The above is subject to your rights at law. If your advertisement does not run for a material part of a booked month for a reason on our side (for example a site restructure or a technical failure), we will refund the affected period pro rata, or extend your booking by the equivalent period if you prefer. This is in addition to your rights at law.
 - To extend or repeat a placement, simply contact us before your current period ends — we will issue a fresh invoice for the new months.
 
 ### Premium Listing Updates
 
 - The Premium Listing fee is a **one-off charge per update**, not a recurring subscription. Each time you ask us to add or change Premium Listing content (image, blurb, opening hours, or any combination), we will issue an invoice at the per-update price shown on the [advertise page](/advertise/), exclusive of GST unless stated otherwise.
-- Once paid and applied, your Premium Listing content stays live on the Site indefinitely at no further cost, until you request a change (which is a new Update and a new fee) or your business listing is removed or marked closed.
+- Once paid and applied, your Premium Listing content stays live on the Site at no further cost for as long as we carry premium listings — until you request a change (which is a new Update and a new fee), or your business listing is removed or marked closed, or we change the offering as described below.
 - We aim to publish each Update within a reasonable time of receiving the final Material and cleared payment.
 - The Premium Listing fee covers our editorial and production work and is **non-refundable once we have started that work**. If you cancel before we have started — and before Material has been produced or scheduled — we will cancel the invoice in full or refund any payment already received.
-- We may discontinue or restructure the Premium Listing offering at any time. Where we do, your existing Premium Listing content will stay live for a reasonable transition period, and you will not be charged again unless you request a new Update under any replacement arrangement.
+- We may change or discontinue the Premium Listing offering. If we do, your existing Premium Listing content will stay live for at least **3 months** from the date we tell you, and you will not be charged again unless you ask for a new Update under any replacement arrangement. If we remove your Premium Listing content within **12 months** of the Update you paid for, and not because of something you have done, we will refund that Update fee.
 
 ### Creative specifications and approval
 
@@ -110,6 +117,8 @@ You warrant that:
 
 You indemnify us against any losses, claims, damages, costs and expenses (including reasonable legal costs) we incur as a result of any breach of these warranties — for example, a third party claiming your Material infringes their copyright, trade mark, or privacy rights, or that it is misleading.
 
+Your liability under this indemnity is limited to claims arising from Material you supplied, and does not extend to any loss caused by our own act, omission or breach — including any change we make to your Material. We will tell you promptly about any claim, will not settle it without your agreement (not to be unreasonably withheld), and will take reasonable steps to mitigate our loss.
+
 ### No guarantee of results
 
 We do **not** represent, warrant, or guarantee any minimum number of impressions, page views, clicks, click-through rate, leads, enquiries, conversions, sales, traffic uplift, search-engine ranking, brand uplift, or any other commercial outcome from your advertisement. Performance depends on factors outside our control (the strength of your creative, market conditions, season, and the visiting audience). The Site is supplied on a reasonable-endeavours basis only.
@@ -118,7 +127,11 @@ We do not guarantee continuous, uninterrupted, or error-free display. Planned an
 
 ### Email communications
 
-By becoming an Advertiser, you consent to us sending you operational, billing, and reasonable service-related emails — including a courtesy note near the end of a booked period in case you wish to book again, and confirmation emails relating to any Premium Listing Update. These are not "commercial electronic messages" requiring further consent under the [Unsolicited Electronic Messages Act 2007](https://www.legislation.govt.nz/act/public/2007/0007/latest/dlm405134.html). You can unsubscribe from any non-essential marketing email at any time.
+By becoming an Advertiser you agree to us sending you emails about your booking — invoices, confirmations, creative approvals, and a courtesy note near the end of a booked period in case you would like to book again.
+
+Some of these are marketing messages under the [Unsolicited Electronic Messages Act 2007](https://www.legislation.govt.nz/act/public/2007/0007/latest/dlm405134.html). Every marketing email we send you will clearly identify us, give contact details that stay valid, and carry a working unsubscribe link. If you unsubscribe we will stop within 5 working days. We will still send you the emails we need to in order to run your booking — invoices, receipts and service notices — and those are not marketing.
+
+We do not add advertisers to any general mailing list, and we do not sell or share your address.
 
 ### Intellectual property — Material
 
@@ -138,12 +151,14 @@ These limits do not apply to liability that cannot be excluded or limited by law
 
 ### Contracting out (B2B)
 
-The parties acknowledge that advertising and Premium Listing Updates under these Terms are supplied and acquired in trade, that both parties are in trade, that each Booking and Premium Listing Update has a written record (these Terms together with our invoice and email confirmations), and that it is fair and reasonable that:
+This clause applies only where you book advertising or a Premium Listing Update **in trade** — that is, for the purposes of your business — and it applies only once you have confirmed your agreement to these Terms in writing, by signing or replying to accept our booking confirmation or invoice.
 
-- sections 9, 12A, 13 and 14(1) of the Fair Trading Act 1986 do not apply between us, in accordance with section 5D of that Act; and
-- the [Consumer Guarantees Act 1993](https://www.legislation.govt.nz/act/public/1993/0091/latest/DLM311053.html) does not apply between us, in accordance with section 43 of that Act.
+Where that is the case, the parties agree that they are both in trade, that advertising and Premium Listing Updates are supplied and acquired in trade, and that it is fair and reasonable that:
 
-This contracting-out applies only to the relationship between us and an Advertiser in trade. It does not affect any rights of ordinary site visitors who are consumers (see Part A).
+- the [Consumer Guarantees Act 1993](https://www.legislation.govt.nz/act/public/1993/0091/latest/DLM311053.html) does not apply to that supply, in accordance with section 43 of that Act; and
+- sections 9, 12A, 13 and 14(1) of the Fair Trading Act 1986 do not apply to any representation we make to you about the reach, placement, performance or results of advertising on the Site, in accordance with section 5D of that Act.
+
+This does not affect the Commerce Commission's ability to enforce the Fair Trading Act, and it does not affect any rights of ordinary site visitors who are consumers (see Part A). If for any reason this clause does not apply, the rest of these Terms continue in force.
 
 ### Termination by us
 
@@ -187,4 +202,4 @@ If a dispute arises, please contact us first. We will respond within 20 working 
 
 ### Contact
 
-[Contact us](/contact/) for any question about these Terms.
+[Contact us](/contact/) for any question about these Terms, or email [mangawhaidirectory@gmail.com](mailto:mangawhaidirectory@gmail.com).

@@ -18,8 +18,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - cafes-restaurants
-  - shops-boutiques
+  - cafes-restaurants-bars
+  - retail
 tags:
   - mangawhai-heads
   - Deli

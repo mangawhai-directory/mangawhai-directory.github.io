@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - shops-boutiques
+  - retail
 tags:
   - Op Shop
 hours: []

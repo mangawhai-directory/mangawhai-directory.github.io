@@ -34,6 +34,9 @@
   --color-destructive-foreground: hsl(0 0% 98%);
 
   --color-border: hsl(240 5.9% 90%);
+  /* Heavier hairline for the category listing rules, which need to read as
+     separators between whole entries rather than as card edges. */
+  --color-border-strong: hsl(240 5.9% 75%);
   --color-input: hsl(240 5.9% 90%);
   --color-ring: hsl(240 5.9% 10%);
 

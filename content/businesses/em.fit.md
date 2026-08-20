@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - fitness-yoga-pilates
+  - fitness-pilates-yoga
 tags:
   - Gym
   - Personal Training

@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - surveyors-and-planners
+  - surveyors-planners
 tags:
   - Land Surveyor
   - Planning

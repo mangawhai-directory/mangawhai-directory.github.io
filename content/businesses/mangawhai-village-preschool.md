@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - schools-childcare
+  - education-childcare
 tags:
   - Early Childhood
 hours: []

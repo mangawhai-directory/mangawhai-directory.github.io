@@ -19,8 +19,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - health-care-practitioners
-  - fitness-yoga-pilates
+  - health-practitioners
+  - fitness-pilates-yoga
 tags:
   - Yoga
   - Chair Yoga

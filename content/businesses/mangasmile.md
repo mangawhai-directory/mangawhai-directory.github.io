@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-hair-spa
+  - beauty-therapy
 tags:
   - Cosmetic Teeth Whitening
   - Tooth Gems

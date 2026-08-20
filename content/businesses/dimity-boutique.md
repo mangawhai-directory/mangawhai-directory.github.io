@@ -15,7 +15,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - shops-boutiques
+  - retail
 tags:
   - Boutique
   - Clothing

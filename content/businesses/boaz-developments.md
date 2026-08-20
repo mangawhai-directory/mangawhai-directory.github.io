@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - builders-renovations
+  - construction
 tags:
   - Builder
 hours: []

@@ -17,7 +17,7 @@ socials:
   linkedin: "https://www.linkedin.com/company/davis-coastal-consultants"
   tiktok: ""
   youtube: ""
-categories: ["civil-engineering"]
+categories: ["engineering"]
 tags:
   - Coastal Engineering
 

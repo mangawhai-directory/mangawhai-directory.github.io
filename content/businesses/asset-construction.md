@@ -17,7 +17,7 @@ socials:
   linkedin: ""
   tiktok: ""
   youtube: ""
-categories: ["civil-engineering"]
+categories: ["engineering"]
 tags:
   - Civil Construction
 

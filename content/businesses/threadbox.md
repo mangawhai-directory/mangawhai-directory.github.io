@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - shops-boutiques
+  - retail
   - creative-services
 tags:
   - Apparel

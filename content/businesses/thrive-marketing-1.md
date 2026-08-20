@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - digital-services
+  - marketing-digital-services
 tags:
   - Marketing
   - Social Media

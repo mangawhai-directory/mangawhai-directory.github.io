@@ -17,7 +17,7 @@ socials:
   linkedin: ""
   tiktok: ""
   youtube: ""
-categories: ["plumbers"]
+categories: ["plumbing-gasfitting"]
 tags:
   - Plumbing
   - Drainage

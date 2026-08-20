@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - cafes-restaurants
+  - cafes-restaurants-bars
   - takeaways-food-trucks
 tags:
   - Indian Takeaways

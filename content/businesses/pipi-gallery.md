@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - shops-boutiques
+  - retail
 tags:
   - Art Gallery
   - Gifts

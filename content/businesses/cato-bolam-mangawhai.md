@@ -18,8 +18,8 @@ socials:
   tiktok: ''
   youtube: https://www.youtube.com/channel/UCsH8pA-rSChFpYRi03osUyg
 categories:
-  - surveyors-and-planners
-  - civil-engineering
+  - surveyors-planners
+  - engineering
 tags:
   - Planner
   - Land Surveyor

@@ -20,7 +20,7 @@ socials:
   youtube: ''
 categories:
   - takeaways-food-trucks
-  - cafes-restaurants
+  - cafes-restaurants-bars
   - food-producers
 tags:
   - Seafood Deli

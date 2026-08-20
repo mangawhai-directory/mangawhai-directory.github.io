@@ -1,80 +1,80 @@
-cafes-restaurants:
-  - bakeries
+cafes-restaurants-bars:
+  - bakeries-cake-makers
   - takeaways-food-trucks
 takeaways-food-trucks:
-  - cafes-restaurants
-  - bakeries
-bakeries:
-  - cafes-restaurants
+  - cafes-restaurants-bars
+  - bakeries-cake-makers
+bakeries-cake-makers:
+  - cafes-restaurants-bars
   - takeaways-food-trucks
 wineries-vineyards:
-  - cafes-restaurants
-accommodation:
+  - cafes-restaurants-bars
+campgrounds-camps:
   - holiday-homes
   - things-to-do-tours
 holiday-homes:
-  - accommodation
+  - campgrounds-camps
   - cleaning-services
   - property-management
 things-to-do-tours:
   - surf-beach-watersports
-  - accommodation
-  - cafes-restaurants
+  - campgrounds-camps
+  - cafes-restaurants-bars
 surf-beach-watersports:
   - things-to-do-tours
-  - shops-boutiques
-builders-renovations:
-  - electricians
-  - plumbers
+  - retail
+construction:
+  - electrical
+  - plumbing-gasfitting
   - painters-decorators
-  - landscaping-gardening
-plumbers:
-  - builders-renovations
-  - electricians
-electricians:
-  - builders-renovations
-  - plumbers
+  - landscape-tree-services
+plumbing-gasfitting:
+  - construction
+  - electrical
+electrical:
+  - construction
+  - plumbing-gasfitting
 painters-decorators:
-  - builders-renovations
-  - landscaping-gardening
-landscaping-gardening:
-  - garden-hardware
-  - builders-renovations
+  - construction
+  - landscape-tree-services
+landscape-tree-services:
+  - nurseries
+  - construction
   - cleaning-services
 cleaning-services:
   - holiday-homes
-  - landscaping-gardening
-real-estate:
+  - landscape-tree-services
+real-estate-services:
   - property-management
-  - builders-renovations
+  - construction
 property-management:
-  - real-estate
+  - real-estate-services
   - cleaning-services
   - holiday-homes
 medical-dental:
-  - fitness-yoga-pilates
-  - beauty-hair-spa
-beauty-hair-spa:
-  - fitness-yoga-pilates
+  - fitness-pilates-yoga
+  - beauty-therapy
+beauty-therapy:
+  - fitness-pilates-yoga
   - medical-dental
-fitness-yoga-pilates:
-  - beauty-hair-spa
+fitness-pilates-yoga:
+  - beauty-therapy
   - medical-dental
-shops-boutiques:
-  - garden-hardware
-  - cafes-restaurants
-garden-hardware:
-  - landscaping-gardening
-  - shops-boutiques
-  - builders-renovations
+retail:
+  - nurseries
+  - cafes-restaurants-bars
+nurseries:
+  - landscape-tree-services
+  - retail
+  - construction
 professional-services:
-  - real-estate
+  - real-estate-services
   - technology-it-services
 technology-it-services:
   - professional-services
 automotive-marine:
   - professional-services
-schools-childcare:
+education-childcare:
   - community-clubs-churches
 community-clubs-churches:
-  - schools-childcare
+  - education-childcare

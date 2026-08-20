@@ -20,7 +20,7 @@ socials:
   youtube: ''
 categories:
   - holiday-homes
-  - accommodation
+  - campgrounds-camps
 tags:
   - Holiday Rental
   - Bach

@@ -20,8 +20,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - electricians
-  - shops-boutiques
+  - electrical
+  - retail
 tags:
   - Electrical Products Wholesaler
 hours: []

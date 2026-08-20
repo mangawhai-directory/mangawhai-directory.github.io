@@ -20,7 +20,7 @@ socials:
   youtube: ''
 categories:
   - surf-beach-watersports
-  - accommodation
+  - campgrounds-camps
 tags:
   - Accommodation
   - Surf Camps

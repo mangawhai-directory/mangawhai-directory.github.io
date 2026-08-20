@@ -20,9 +20,9 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - massage
-  - fitness-yoga-pilates
-  - health-care-practitioners
+  - massage-therapy
+  - fitness-pilates-yoga
+  - health-practitioners
 tags:
   - Pilates
   - Senior Fitness

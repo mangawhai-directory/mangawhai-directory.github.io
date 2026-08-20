@@ -15,7 +15,7 @@ socials:
   linkedin: ""
   tiktok: ""
   youtube: ""
-categories: ["cafes-restaurants"]
+categories: ["cafes-restaurants-bars"]
 tags:
   - mangawhai-heads
   - Bar

@@ -19,8 +19,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - builders-renovations
-  - shops-boutiques
+  - construction
+  - retail
 hours: []
 nzbn: ''
 last_verified: 2026-05-09

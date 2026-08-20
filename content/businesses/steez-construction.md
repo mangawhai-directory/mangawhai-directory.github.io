@@ -17,7 +17,7 @@ socials:
   linkedin: ""
   tiktok: ""
   youtube: ""
-categories: ["builders-renovations"]
+categories: ["construction"]
 tags:
   - Builder
 
