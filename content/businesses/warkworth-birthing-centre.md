@@ -8,7 +8,7 @@ address:
   suburb: Warkworth
   postcode: '0910'
   country: NZ
-phone: 09 425 8201
+phone: "+6494258201"
 email: admin@wwbc.co.nz
 website: https://www.wwbc.co.nz/
 socials:

@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 524 4966
+phone: "+64225244966"
 email: ''
 website: https://getwashed.co.nz
 socials:

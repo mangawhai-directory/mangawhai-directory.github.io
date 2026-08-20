@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 021 998 857
+phone: "+6421998857"
 email: mireillesitters@gmail.com
 website: https://www.getintouchmassage.co.nz/
 socials:

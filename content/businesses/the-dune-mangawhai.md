@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 5695
+phone: "+6494315695"
 email: ''
 website: https://www.dunemangawhai.co.nz/
 socials:

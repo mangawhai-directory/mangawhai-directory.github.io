@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 027 563 5583
+phone: "+64275635583"
 email: goldenthaimassagenz@gmail.com
 website: https://goldentouchthaimassage.co.nz/
 socials:

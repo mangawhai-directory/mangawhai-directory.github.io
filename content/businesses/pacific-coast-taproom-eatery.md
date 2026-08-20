@@ -1,13 +1,13 @@
 ---
 title: Pacific Coast Taproom & Eatery
-slug: pacific-coast-taproom-and-eatery
+slug: pacific-coast-taproom-eatery
 blurb: ''
 address:
   street: 1 Molesworth Drive
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 945 3838
+phone: "+6499453838"
 email: reservations@thelocalmangawhai.co.nz
 website: https://taproom.nz/
 socials:

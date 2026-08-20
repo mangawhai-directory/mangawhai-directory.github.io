@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 319 939
+phone: "+6421319939"
 email: darren@decltd.co.nz
 website: https://www.decltd.co.nz
 socials:

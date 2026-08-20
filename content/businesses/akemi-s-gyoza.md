@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Akemi's Gyoza
-slug: akemi's-gyoza
+slug: akemi-s-gyoza
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 0274 211 902
+phone: "+64274211902"
 email: info@akemisgyoza.nz
 website: https://www.akemisgyoza.nz/
 socials:

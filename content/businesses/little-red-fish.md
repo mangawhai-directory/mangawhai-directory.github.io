@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 021 172 1320
+phone: "+64211721320"
 email: hello@littleredfish.nz
 website: https://littleredfish.nz/
 socials:

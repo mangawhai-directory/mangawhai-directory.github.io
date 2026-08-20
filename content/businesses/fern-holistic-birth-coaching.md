@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Fern Holistic Birth & Coaching
-slug: fern-holistic-birth-and-coaching
+slug: fern-holistic-birth-coaching
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: +64 21 298 0394
+phone: "+64212980394"
 email: elizafern@outlook.co.nz
 website: ''
 socials:

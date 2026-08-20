@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 4963
+phone: "+6494314963"
 email: sales@mangawhaiitm.co.nz
 website: https://itm.co.nz
 socials:

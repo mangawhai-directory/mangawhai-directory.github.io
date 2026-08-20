@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 027 274 5952
+phone: "+64272745952"
 email: bookings@moirspoint.co.nz
 website: https://moirspointmangawhai.co.nz/
 socials:

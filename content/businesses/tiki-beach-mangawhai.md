@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0975'
   country: NZ
-phone: 021 121 4543
+phone: "+64211214543"
 email: hello@tikibeach.co.nz
 website: https://www.tikibeach.co.nz/
 socials:

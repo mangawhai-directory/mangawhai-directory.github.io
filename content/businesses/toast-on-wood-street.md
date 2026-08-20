@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 022 616 9955
+phone: "+64226169955"
 email: toastmangawhai@gmail.com
 website: https://www.toastmangawhai.co.nz/
 socials:

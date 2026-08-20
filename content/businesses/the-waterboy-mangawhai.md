@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0800 426 269
+phone: "+64800426269"
 email: bookings@thewaterboymangawhai.co.nz
 website: https://www.thewaterboymangawhai.co.nz
 socials:

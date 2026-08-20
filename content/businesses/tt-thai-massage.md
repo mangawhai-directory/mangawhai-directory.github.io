@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 021 817 426
+phone: "+6421817426"
 email: ''
 website: https://ttthaimassage.co.nz/mangawhai
 socials:

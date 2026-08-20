@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 323 1334
+phone: "+64273231334"
 email: ''
 website: https://www.oraaroha.com
 socials:

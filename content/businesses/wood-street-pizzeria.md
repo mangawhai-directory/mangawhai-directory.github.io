@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 4051
+phone: "+6494314051"
 email: ''
 website: https://woodstreetpizzeria.co.nz
 socials:

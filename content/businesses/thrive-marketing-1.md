@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Thrive Marketing
-slug: thrive-marketing
+slug: thrive-marketing-1
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 677 182
+phone: "+6421677182"
 email: libby@thrivemarketing.nz
 website: https://www.thrivemarketing.nz/
 socials:

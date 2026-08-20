@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 430 0495
+phone: "+6494300495"
 email: ''
 website: https://www.mico.co.nz/store-finder/mangawhai
 socials:

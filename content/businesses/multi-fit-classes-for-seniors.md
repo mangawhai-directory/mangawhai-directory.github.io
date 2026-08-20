@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 027 205 3819
+phone: "+64272053819"
 email: ''
 website: ''
 socials:

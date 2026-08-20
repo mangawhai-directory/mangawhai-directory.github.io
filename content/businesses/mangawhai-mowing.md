@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 359 0444
+phone: "+64273590444"
 email: mangawhaimowing@gmail.com
 website: ''
 socials:

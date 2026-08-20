@@ -1,7 +1,7 @@
 ---
 tier: free
 title: TK Revive
-slug: tk-revivie
+slug: tk-revive
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 677 0747
+phone: "+64276770747"
 email: kim@tkrevive.co.nz
 website: https://tkrevive.co.nz/
 socials:

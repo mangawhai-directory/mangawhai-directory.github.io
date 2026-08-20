@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 149 3185
+phone: "+64211493185"
 email: mangawhaipiercing@gmail.com
 website: ''
 socials:

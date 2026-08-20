@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0975'
   country: NZ
-phone: 027 432 3185
+phone: "+64274323185"
 email: ''
 website: https://www.campbell-registered-architects.co.nz/
 socials:

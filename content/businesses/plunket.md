@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 0800 184 803
+phone: "+64800184803"
 email: ''
 website: https://www.plunket.org.nz/plunket-near-me/mangawhaikaiwaka-plunket/
 socials:

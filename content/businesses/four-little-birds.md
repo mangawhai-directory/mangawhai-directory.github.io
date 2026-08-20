@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0244 6825
+phone: "+642102446825"
 email: fourlittlebirdscakes@hotmail.com
 website: ''
 socials:

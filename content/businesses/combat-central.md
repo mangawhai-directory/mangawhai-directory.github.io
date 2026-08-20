@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 474 4137
+phone: "+64274744137"
 email: combatcentralltd@gmail.com
 website: https://www.combatcentral.co.nz
 socials:

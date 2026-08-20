@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 372 506
+phone: "+6421372506"
 email: mangawhai@laserelectrical.co.nz
 website: https://www.lasergroup.co.nz/m/laser-electrical-mangawhai
 socials:

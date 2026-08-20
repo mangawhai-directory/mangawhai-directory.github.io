@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 431 4505
+phone: "+6494314505"
 email: ''
 website: https://themangawhaitavern.co.nz
 socials:

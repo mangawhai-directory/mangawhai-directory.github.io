@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 5571
+phone: "+6494315571"
 email: mangawhaiwater@gmail.com
 website: https://mangawhaiwater.co.nz
 socials:

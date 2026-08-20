@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 222 7488
+phone: "+6492227488"
 email: tbiwhangarei@tbihealth.co.nz
 website: https://tbihealth.co.nz/location/mangawhai/
 socials:

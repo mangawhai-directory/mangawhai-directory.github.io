@@ -9,7 +9,7 @@ address:
   suburb: Kaiwaka
   postcode: '0975'
   country: NZ
-phone: 09 431 2481
+phone: "+6494312481"
 email: info@ruraldesign.co.nz
 website: https://ruraldesign.co.nz/
 socials:

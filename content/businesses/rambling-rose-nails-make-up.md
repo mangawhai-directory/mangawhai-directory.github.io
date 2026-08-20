@@ -1,6 +1,6 @@
 ---
 title: Rambling Rose Nails & Make-up
-slug: rambling-rose-nails-and-makeup
+slug: rambling-rose-nails-make-up
 blurb: ''
 address:
   street: Thelma Road North

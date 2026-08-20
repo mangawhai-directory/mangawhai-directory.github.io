@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 4656
+phone: "+6494314656"
 email: ''
 website: https://www.foursquare.co.nz/upper-north-island/northland/mangawhai-heads
 socials:

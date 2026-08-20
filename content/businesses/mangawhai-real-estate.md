@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0858 8269
+phone: "+642108588269"
 email: ''
 website: https://www.mangawhairealestate.nz/
 socials:

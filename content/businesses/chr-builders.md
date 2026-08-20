@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 582 8453
+phone: "+64225828453"
 email: chr-builders@outlook.com
 website: https://chrbuilders.co.nz
 socials:

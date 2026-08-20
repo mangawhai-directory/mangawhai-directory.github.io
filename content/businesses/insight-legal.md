@@ -7,7 +7,7 @@ address:
   suburb: 'Mangawhai'
   postcode: '0505'
   country: NZ
-phone: 09 425 7884
+phone: "+6494257884"
 email: webinfo@insightlegal.co.nz
 website: https://www.insightlegal.co.nz/
 socials:

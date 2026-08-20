@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 758 613
+phone: "+6421758613"
 email: hello@awaplumbing.co.nz
 website: ''
 socials:

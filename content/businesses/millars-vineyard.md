@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: 09 431 4326
+phone: "+6494314326"
 website: "http://millarsvineyard.co.nz"
 socials:
   facebook: "https://www.facebook.com/millars.vineyard/"

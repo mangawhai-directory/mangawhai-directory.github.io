@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0800 438 527
+phone: "+64800438527"
 email: ''
 website: https://www.lasergroup.co.nz/m/laser-plumbing-mangawhai
 socials:

@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 942 287
+phone: "+6421942287"
 email: mangawhai@electricalrescue.co.nz
 website: https://www.electricalrescue.co.nz/
 socials:

@@ -1,6 +1,6 @@
 ---
 title: Honor Wellbeing Yoga
-slug: yoga-wellbeing-yoga
+slug: honor-wellbeing-yoga
 blurb: ''
 image: ''
 address:
@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 119 5740
+phone: "+64211195740"
 email: honor@honorwellbeing.co.nz
 website: https://www.honorwellbeing.co.nz/yoga
 socials:

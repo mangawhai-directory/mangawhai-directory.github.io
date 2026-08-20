@@ -1,0 +1,40 @@
+{{- /*
+  phone-display — render an E.164 NZ number in the local form people read.
+
+  Front matter stores phone in E.164 ("+6421850943") so tel: links and the
+  JSON-LD `telephone` property are correct anywhere in the world. This partial
+  is display only:
+
+    +6421850943  -> 021 850 943
+    +64272781120 -> 027 278 1120
+    +6494314505  -> 09 431 4505
+    +64800123456 -> 0800 123 456
+
+  Prefix length: 4 for 0800/0508, 3 for 02x mobiles, otherwise 2 (area code).
+  The remainder is split into two groups (3+3, 3+4 or 4+4). Anything that
+  doesn't look like an NZ number is passed through untouched.
+*/ -}}
+{{- $raw := . | default "" -}}
+{{- $out := $raw -}}
+{{- if hasPrefix $raw "+64" -}}
+  {{- $local := printf "0%s" (substr $raw 3) -}}
+  {{- if not (findRE "[^0-9]" $local) -}}
+    {{- $plen := 2 -}}
+    {{- if or (hasPrefix $local "0800") (hasPrefix $local "0508") -}}
+      {{- $plen = 4 -}}
+    {{- else if hasPrefix $local "02" -}}
+      {{- $plen = 3 -}}
+    {{- end -}}
+    {{- $prefix := substr $local 0 $plen -}}
+    {{- $rest := substr $local $plen -}}
+    {{- $rlen := len $rest -}}
+    {{- if eq $rlen 6 -}}
+      {{- $out = printf "%s %s %s" $prefix (substr $rest 0 3) (substr $rest 3) -}}
+    {{- else if eq $rlen 7 -}}
+      {{- $out = printf "%s %s %s" $prefix (substr $rest 0 3) (substr $rest 3) -}}
+    {{- else if eq $rlen 8 -}}
+      {{- $out = printf "%s %s %s" $prefix (substr $rest 0 4) (substr $rest 4) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $out -}}

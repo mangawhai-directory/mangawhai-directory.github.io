@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 021 292 7400
+phone: "+64212927400"
 email: harpertherapy@outlook.com
 website: https://www.harpertherapynz.com/
 socials:

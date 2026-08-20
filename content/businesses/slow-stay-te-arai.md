@@ -8,7 +8,7 @@ address:
   suburb: Te Arai
   postcode: '0975'
   country: NZ
-phone: 021 969 767
+phone: "+6421969767"
 email: ''
 website: https://www.slowstaytearai.com
 socials:

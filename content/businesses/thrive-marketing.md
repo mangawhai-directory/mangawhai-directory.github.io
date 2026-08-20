@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: 021 677 182
+phone: "+6421677182"
 email: "Libby@thrivemarketing.nz"
 website: "https://www.thrivemarketing.nz"
 socials:

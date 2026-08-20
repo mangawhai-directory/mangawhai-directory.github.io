@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 223 3185
+phone: "+64272233185"
 email: nigel@nclarkeearthmoving.co.nz
 website: https://www.nclarkeearthmoving.co.nz/
 socials:

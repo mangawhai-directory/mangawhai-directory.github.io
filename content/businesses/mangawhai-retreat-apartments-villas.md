@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0800 431 5400
+phone: "+648004315400"
 email: ''
 website: https://www.mangawhairetreat.co.nz
 socials:

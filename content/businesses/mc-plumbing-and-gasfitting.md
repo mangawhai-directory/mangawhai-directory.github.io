@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0325 199
+phone: "+64210325199"
 email: mcplumbingnz@gmail.com
 website: ''
 socials:

@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 021 134 9349
+phone: "+64211349349"
 email: ''
 website: ''
 socials:

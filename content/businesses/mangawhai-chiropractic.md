@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 431 5282
+phone: "+6494315282"
 email: admin@mangawhaichiropractic.co.nz
 website: https://mangawhaichiropractic.co.nz
 socials:

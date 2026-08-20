@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 027 581 0888
+phone: "+64275810888"
 email: thevalleyhairdesign@gmail.com
 website: ''
 socials:

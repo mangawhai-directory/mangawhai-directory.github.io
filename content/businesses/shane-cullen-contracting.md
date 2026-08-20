@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 5773
+phone: "+6494315773"
 email: shane@shanecullen.co.nz
 website: https://www.shanecullencontracting.com/
 socials:

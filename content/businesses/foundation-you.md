@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 0223 6554
+phone: "+642102236554"
 email: martin@foundationyou.co.nz
 website: https://foundationyou.co.nz
 socials:

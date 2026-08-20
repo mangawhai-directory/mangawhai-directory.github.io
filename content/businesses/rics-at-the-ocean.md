@@ -1,13 +1,13 @@
 ---
 title: Ocean Restaurant
-slug: Ocean-restaurant
+slug: rics-at-the-ocean
 blurb: Temporarily Closed
 address:
   street: Te Arai Links, 11 Te Ara Whenua Miharo Kotiti
   suburb: Te Arai
   postcode: '0975'
   country: NZ
-phone: 09 883 4600
+phone: "+6498834600"
 email: ''
 website: https://tearai.com/eat-drink/
 socials:

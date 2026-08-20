@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 5760
+phone: "+6494315760"
 email: ''
 website: https://www.aotearoasurf.co.nz
 socials:

@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 133 0020
+phone: "+64211330020"
 email: matt@dynamicelectrical.nz
 website: https://www.dynamicelectrical.nz/
 socials:

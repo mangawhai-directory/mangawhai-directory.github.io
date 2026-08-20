@@ -7,7 +7,7 @@ address:
   suburb: Te Arai
   postcode: '0975'
   country: NZ
-phone: 09 431 4600
+phone: "+6494314600"
 email: ''
 website: https://taraiti.com/
 socials:

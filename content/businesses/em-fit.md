@@ -1,14 +1,14 @@
 ---
 tier: free
 title: Club.Fit
-slug: club-fit
+slug: em-fit
 blurb: ''
 address:
   street: 453 King Road
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 022 427 0637
+phone: "+64224270637"
 email: admin@clubfitmangawhai.com
 website: ''
 socials:

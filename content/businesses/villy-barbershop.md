@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 020 4184 2705
+phone: "+642041842705"
 email: lomzfleming@gmail.com
 website: https://villybarbershop.setmore.com/
 socials:

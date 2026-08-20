@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 4585
+phone: "+6494314585"
 email: svmangawhai@gmail.com
 website: https://mangawhai.store.supervalue.co.nz
 socials:

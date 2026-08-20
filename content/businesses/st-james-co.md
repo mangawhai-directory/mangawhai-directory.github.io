@@ -1,7 +1,7 @@
 ---
 tier: free
 title: St James + Co
-slug: st-james-and-co
+slug: st-james-co
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 359 425
+phone: "+6421359425"
 email: stephyn@stjamesco.nz
 website: https://stjamesco.nz/
 socials:

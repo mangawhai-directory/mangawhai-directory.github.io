@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 767 679
+phone: "+6421767679"
 email: pete@trufinish.co.nz
 website: https://trufinish.co.nz
 socials:

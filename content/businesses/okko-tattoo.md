@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 020 435 0600
+phone: "+64204350600"
 email: ''
 website: https://okkotattoo.carrd.co/
 socials:

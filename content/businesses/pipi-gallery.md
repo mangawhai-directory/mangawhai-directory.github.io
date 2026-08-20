@@ -7,7 +7,7 @@ address:
   suburb: 'Mangawhai'
   postcode: '0505'
   country: NZ
-phone: 09 431 4849
+phone: "+6494314849"
 email: ''
 website: https://smashedpipi.co.nz/
 socials:

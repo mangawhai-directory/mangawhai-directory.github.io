@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 027 328 6326
+phone: "+64273286326"
 email: eat@mean-brgr.co.nz
 website: https://mean-brgr.co.nz
 socials:

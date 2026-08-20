@@ -1,14 +1,14 @@
 ---
 tier: free
 title: Central Building
-slug: central-building
+slug: central-building-tony-farley
 blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 016 7080
+phone: "+64220167080"
 email: centralbuilding@outlook.co.nz
 website: https://www.centralbuilding.co.nz
 socials:

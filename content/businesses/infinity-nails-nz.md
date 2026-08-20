@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 648 969
+phone: "+6421648969"
 email: jana777666@gmail.com
 website: ''
 socials:

@@ -1,7 +1,7 @@
 ---
 tier: paid
 title: Jen's Pastries
-slug: jens-pastries
+slug: jen-s-pastries
 blurb: |-
   French-style pastries, designer cakes, and baked goods made with local NZ ingredients. 
   Available to order online or find us at the Mangawhai Community Market every Saturday from 8am-1pm.
@@ -11,7 +11,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 526 679
+phone: "+6421526679"
 email: jen@jenspastries.co.nz
 website: https://www.jenspastries.co.nz/
 socials:

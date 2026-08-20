@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 021 084 06567
+phone: "+642108406567"
 email: thesageroomenergy@gmail.com
 website: https://www.thesageroom.co.nz/
 socials:

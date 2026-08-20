@@ -25,6 +25,6 @@ hours: []
 tier: free
 last_verified: '2026-05-09'
 status: active
-phone: 021 545 299
+phone: "+6421545299"
 email: brookelanevineyard@gmail.com
 ---

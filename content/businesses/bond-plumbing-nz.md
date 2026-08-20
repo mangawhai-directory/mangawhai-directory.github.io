@@ -1,14 +1,14 @@
 ---
 tier: free
 title: Bond Plumbing
-slug: bond-plumbing
+slug: bond-plumbing-nz
 blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 566 5112
+phone: "+64225665112"
 email: ryan@bondplumbing.com.au
 website: https://bondplumbing.co.nz
 socials:

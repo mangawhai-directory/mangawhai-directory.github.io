@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 553 3020
+phone: "+6495533020"
 email: zane@mangawhaimechanic.co.nz
 website: ''
 socials:

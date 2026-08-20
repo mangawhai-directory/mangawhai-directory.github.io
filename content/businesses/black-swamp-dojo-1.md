@@ -1,14 +1,14 @@
 ---
 tier: free
 title: Black Swamp Dojo
-slug: black-swamp-dojo
+slug: black-swamp-dojo-1
 blurb: Sauna & Ice
 address:
   street: 168 Blackswamp Road
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 029 16071
+phone: "+642102916071"
 email: hello@blackswampdojo.co.nz
 website: https://www.blackswampdojo.co.nz/
 socials:

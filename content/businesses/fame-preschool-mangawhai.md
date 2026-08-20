@@ -1,14 +1,14 @@
 ---
 tier: free
 title: Mangawhai Village Preschool
-slug: mangawhai-village-preschool
+slug: fame-preschool-mangawhai
 blurb: ''
 address:
   street: 1D Molesworth Drive
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 945 3976
+phone: "+6499453976"
 email: admin@mvpreschool.co.nz
 website: https://mvpreschool.co.nz/
 socials:

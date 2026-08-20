@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0975'
   country: NZ
-phone: 021 104 9231
+phone: "+64211049231"
 email: breambaybjj@gmail.com
 website: https://www.holddown.co.nz
 socials:

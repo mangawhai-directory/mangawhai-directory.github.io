@@ -8,7 +8,7 @@ address:
   suburb: Tomarata
   postcode: '0975'
   country: NZ
-phone: 09 883 4600
+phone: "+6498834600"
 email: reservations@tearai.com
 website: https://tearai.com/spa-fitness/
 socials:

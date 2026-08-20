@@ -1,13 +1,13 @@
 ---
 title: Brewed As
-slug: brewed-as
+slug: brewed-as-cafe
 blurb: ''
 address:
   street: Shop 13, 7 Wood Street
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 022 634 8834
+phone: "+64226348834"
 email: brewed.intentions@gmail.com
 website: https://www.brewedas.com
 socials:

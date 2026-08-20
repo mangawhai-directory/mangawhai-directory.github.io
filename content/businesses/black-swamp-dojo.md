@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0975'
   country: NZ
-phone: 021 029 16071
+phone: "+642102916071"
 email: hello@blackswampdojo.co.nz
 website: https://www.blackswampdojo.co.nz
 socials:

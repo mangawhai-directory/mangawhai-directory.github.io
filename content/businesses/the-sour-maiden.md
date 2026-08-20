@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 164 5159
+phone: "+64211645159"
 email: thesourmaiden@gmail.com
 website: https://linktr.ee/thesourmaiden?utm_source=ig&utm_medium=social&utm_content=link_in_bio
 socials:

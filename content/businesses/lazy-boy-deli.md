@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 266 3852
+phone: "+64212663852"
 email: lazyboydeli@gmail.com
 website: ''
 socials:

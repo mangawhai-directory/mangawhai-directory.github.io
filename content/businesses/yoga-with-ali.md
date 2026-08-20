@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 070 0971
+phone: "+64220700971"
 email: alisondean10@gmail.com
 website: ''
 socials:

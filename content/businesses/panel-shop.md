@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0573"
   country: "NZ"
-phone: 021 307 0020
+phone: "+64213070020"
 email: "jaredhollows@gmail.com"
 website: "https://www.thepanelshop.nz"
 socials:

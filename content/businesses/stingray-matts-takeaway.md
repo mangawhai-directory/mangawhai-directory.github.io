@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 4279
+phone: "+6494314279"
 email: ''
 website: https://onlineordering.nz/api/fb/_nk_z_q6
 socials:

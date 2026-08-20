@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: 09 431 4393
+phone: "+6494314393"
 website: "https://computersplus.nz/"
 socials:
   facebook: "https://www.facebook.com/ComputersPlusNZ"

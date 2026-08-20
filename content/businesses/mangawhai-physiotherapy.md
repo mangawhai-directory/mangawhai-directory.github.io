@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Central
   postcode: '0505'
   country: NZ
-phone: 09 431 4476
+phone: "+6494314476"
 email: admin@mangawhaiphysiotherapy.co.nz
 website: https://mangawhaiphysiotherapy.co.nz
 socials:

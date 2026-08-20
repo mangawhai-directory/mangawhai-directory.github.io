@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 444 4420
+phone: "+64274444420"
 email: adelle@sasa.co.nz
 website: https://www.sasa.co.nz/
 socials:

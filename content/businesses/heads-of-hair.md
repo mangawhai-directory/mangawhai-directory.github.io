@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 4981
+phone: "+6494314981"
 email: headsofhairmangawhai@gmail.com
 website: https://www.headsofhair.co.nz/
 socials:

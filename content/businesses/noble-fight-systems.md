@@ -7,7 +7,7 @@ address:
   suburb: Hakaru
   postcode: '0573'
   country: NZ
-phone: 022 089 0827
+phone: "+64220890827"
 email: eddie@noblefight.co.nz
 website: https://www.noblefight.co.nz
 socials:

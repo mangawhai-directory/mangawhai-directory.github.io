@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: 021 708 620
+phone: "+6421708620"
 email: "plumbwise.northland@gmail.com"
 website: "https://plumbwisenorthland.co.nz"
 socials:

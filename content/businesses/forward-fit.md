@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 021 0234 9108
+phone: "+642102349108"
 email: louforward@outlook.com
 website: https://www.forwardfit.nz/
 socials:

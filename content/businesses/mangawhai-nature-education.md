@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 021 0255 7291
+phone: "+642102557291"
 email: mangawhai.nature@gmail.com
 website: https://www.mangawhainature.com/
 socials:

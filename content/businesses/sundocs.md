@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Central
   postcode: '0505'
   country: NZ
-phone: 022 567 1839
+phone: "+64225671839"
 email: admin@sundocs.co.nz
 website: https://sundocs.co.nz
 socials:

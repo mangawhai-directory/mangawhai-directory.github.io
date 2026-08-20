@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 553 4210
+phone: "+6495534210"
 email: ''
 website: https://catobolam.co.nz/mangawhai/
 socials:

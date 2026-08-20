@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Kakariki - Health & Wellbeing
-slug: kakariki-health-and-wellbeing
+slug: kakariki-health-wellbeing
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 431 4070
+phone: "+6494314070"
 email: kakariki.health@gmail.com
 website: ''
 socials:

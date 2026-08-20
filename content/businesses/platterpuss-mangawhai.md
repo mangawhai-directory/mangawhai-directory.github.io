@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 689 981
+phone: "+6421689981"
 email: platterpussmangawhai@gmail.com
 website: ''
 socials:

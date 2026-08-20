@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Mangawhai Shuttles (previously Mangawhai Taxis)
-slug: Mangawhai-shuttles-previously-mangawhai-taxis
+slug: mangawhai-shuttles-previously-mangawhai-taxis
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 626 4295
+phone: "+64226264295"
 email: mangawhaitaxis@gmail.com
 website: https://mangawhaitaxis.com/
 socials:

@@ -1,13 +1,13 @@
 ---
 title: Mangawhai Heads Auto Repair
-slug: https://www.facebook.com/p/Mangawhai-Heads-Auto-Repairs-61573734736850/
+slug: mangawhai-heads-auto-repair
 blurb: ''
 address:
   street: 90 Mangawhai Heads Road
   suburb: Mangawhai Heads
   postcode: '0573'
   country: NZ
-phone: 09 243 0372
+phone: "+6492430372"
 email: andrecumiskey@gmail.com
 website: ''
 socials:

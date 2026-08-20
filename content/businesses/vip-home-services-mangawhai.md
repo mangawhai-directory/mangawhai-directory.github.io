@@ -1,7 +1,7 @@
 ---
 tier: free
 title: VIP Lawn Mowing Mangawhai
-slug: vip-lawn-mowing-mangawhai
+slug: vip-home-services-mangawhai
 blurb: ''
 address:
   street: Mangawhai

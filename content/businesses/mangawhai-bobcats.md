@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 711 775
+phone: "+6421711775"
 email: trav@mangawhaibobcats.co.nz
 website: https://www.mangawhaibobcats.co.nz
 socials:

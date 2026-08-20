@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 022 371 5082
+phone: "+64223715082"
 email: hello@yutorisauna.com
 website: https://www.yutorisauna.com/
 socials:

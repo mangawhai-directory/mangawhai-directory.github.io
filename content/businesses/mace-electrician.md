@@ -1,14 +1,14 @@
 ---
 tier: free
 title: MACE Air Con & Electrical
-slug: mace-air-con-and-electrical
+slug: mace-electrician
 blurb: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 945 0267
+phone: "+6499450267"
 email: info@mace.nz
 website: https://www.mace.nz/
 socials:

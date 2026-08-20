@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 431 3155
+phone: "+6494313155"
 email: admin@mangawhaiosteopathy.co.nz
 website: https://mangawhaiosteopathy.co.nz
 socials:

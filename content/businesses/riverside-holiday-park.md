@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0975'
   country: NZ
-phone: 09 431 4825
+phone: "+6494314825"
 email: office@riversideholidaypark.co.nz
 website: https://www.riversideholidaypark.co.nz/
 socials:

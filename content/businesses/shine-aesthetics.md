@@ -1,13 +1,13 @@
 ---
 title: Shine Aesthetics
-slug: shine-aethetics
+slug: shine-aesthetics
 blurb: Injectables & Fillers
 address:
   street: Shop 6,  2 Leslie Street
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 027 456 9464
+phone: "+64274569464"
 email: mangawhai@shineaethetics.co.nz
 website: https://www.shineaesthetics.co.nz/
 socials:

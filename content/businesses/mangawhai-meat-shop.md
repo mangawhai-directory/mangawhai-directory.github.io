@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 4564
+phone: "+6494314564"
 email: ''
 website: https://mangawhaimeats.co.nz
 socials:

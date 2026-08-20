@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 027 560 4417
+phone: "+64275604417"
 email: ''
 website: https://gringas.co.nz
 socials:

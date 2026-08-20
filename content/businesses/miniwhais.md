@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 09431 4747
+phone: "+6494314747"
 email: hello@miniwhais.co.nz
 website: https://www.miniwhais.co.nz
 socials:

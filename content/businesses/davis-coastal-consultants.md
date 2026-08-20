@@ -7,7 +7,7 @@ address:
   suburb: "Manly"
   postcode: "0930"
   country: "NZ"
-phone: 09 428 0040
+phone: "+6494280040"
 email: "coastal@daviscoastal.co.nz"
 website: "https://daviscoastal.co.nz"
 socials:

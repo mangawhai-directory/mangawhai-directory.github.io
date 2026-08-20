@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 4128
+phone: "+6494314128"
 email: ''
 website: https://www.healthpoint.co.nz/gps-accident-urgent-medical-care/gp/coast-to-coast-health-care/at/4-fagan-place-mangawhai-heads-mangawhai/
 socials:

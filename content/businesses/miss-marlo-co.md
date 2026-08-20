@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Miss Marlo & Co
-slug: miss-marlo-and-co
+slug: miss-marlo-co
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 027 241 1168
+phone: "+64272411168"
 email: hello@missmarloandco.nz
 website: https://www.missmarloandco.nz/
 socials:

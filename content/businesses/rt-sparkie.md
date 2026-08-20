@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 277 3358
+phone: "+64272773358"
 email: ''
 website: https://electricianmangawhai.co.nz/
 socials:

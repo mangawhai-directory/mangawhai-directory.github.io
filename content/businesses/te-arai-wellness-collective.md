@@ -7,7 +7,7 @@ address:
   suburb: Te Arai
   postcode: '0974'
   country: NZ
-phone: 021 143 8179
+phone: "+64211438179"
 email: evieglover@gmail.com
 website: https://www.tearaiwellnesscollective.co.nz/
 socials:

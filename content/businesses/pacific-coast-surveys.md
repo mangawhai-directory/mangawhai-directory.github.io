@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 5353
+phone: "+6494315353"
 email: info@pacificcoastsurvey.co.nz
 website: https://pacificcoastsurvey.co.nz
 socials:

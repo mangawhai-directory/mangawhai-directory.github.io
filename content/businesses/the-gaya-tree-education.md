@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 021 878 916
+phone: "+6421878916"
 email: ''
 website: ''
 socials:

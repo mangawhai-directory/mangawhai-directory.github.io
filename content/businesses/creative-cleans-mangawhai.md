@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0279 0053
+phone: "+642102790053"
 email: mariabegley@gmail.com
 website: ''
 socials:

@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 378 5264
+phone: "+64273785264"
 email: lauren.kiszely@gmail.com
 website: https://linktr.ee/flexyswellness?utm_source=ig&utm_medium=social&utm_content=link_in_bio
 socials:

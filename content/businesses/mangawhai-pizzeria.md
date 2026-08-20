@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 431 5226
+phone: "+6494315226"
 email: ''
 website: ''
 socials:

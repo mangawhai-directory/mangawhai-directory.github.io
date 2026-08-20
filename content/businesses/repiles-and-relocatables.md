@@ -9,7 +9,7 @@ address:
   suburb: Brynderwyn
   postcode: '0587'
   country: NZ
-phone: 0800 767 684
+phone: "+64800767684"
 email: sales@rnrsales.info
 website: https://www.repilesandrelocatables.co.nz/
 socials:

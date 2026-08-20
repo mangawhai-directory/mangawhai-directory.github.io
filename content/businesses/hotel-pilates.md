@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 074 7376
+phone: "+64210747376"
 email: hello@hotelpilates.co.nz
 website: https://www.hotelpilates.co.nz/
 socials:

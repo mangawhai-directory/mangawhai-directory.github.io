@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 021 199 8855
+phone: "+64211998855"
 email: james@juicymedia.co.nz
 website: https://juicymedia.co.nz/
 socials:

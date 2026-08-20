@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 021 432 463
+phone: "+6421432463"
 email: ''
 website: https://www.marryon-celebrant.com
 socials:

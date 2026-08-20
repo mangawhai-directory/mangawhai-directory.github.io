@@ -1,14 +1,14 @@
 ---
 tier: free
 title: Coastal Homes
-slug: coastal-homes
+slug: coastal-homes-northland
 blurb: ''
 address:
   street: 1c Main Street
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 222 4833
+phone: "+64212224833"
 email: lance@coastalhomesnz.com
 website: https://www.coastalhomes.co.nz
 socials:

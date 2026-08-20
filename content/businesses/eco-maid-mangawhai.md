@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 300 4120
+phone: "+64273004120"
 email: helloecomaid@gmail.com
 website: ''
 socials:

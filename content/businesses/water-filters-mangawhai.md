@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0274 485 388
+phone: "+64274485388"
 email: ''
 website: ''
 socials:

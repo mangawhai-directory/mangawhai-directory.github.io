@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 137 7107
+phone: "+64211377107"
 email: info@chipped.co.nz
 website: https://www.chipped.co.nz/
 socials:

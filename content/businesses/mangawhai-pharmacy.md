@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 5057
+phone: "+6494315057"
 email: mangawhaipharmacy@gmail.com
 website: https://mangawhaipharmacy.co.nz
 socials:

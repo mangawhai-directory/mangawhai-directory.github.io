@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 414 275
+phone: "+6421414275"
 email: info@nextphaseelectrical.co.nz
 website: https://www.nextphaseelectrical.co.nz/
 socials:

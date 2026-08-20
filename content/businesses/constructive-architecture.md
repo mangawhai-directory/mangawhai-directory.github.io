@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 022 081 5297
+phone: "+64220815297"
 email: tim@constructivearchitecture.co.nz
 website: https://www.constructivearchitecture.co.nz/
 socials:

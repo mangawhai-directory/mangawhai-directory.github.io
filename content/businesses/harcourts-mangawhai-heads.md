@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 4053
+phone: "+6494314053"
 email: mangawhaiheads@harcourts.co.nz
 website: https://harcourts.net/nz/office/mangawhai
 socials:

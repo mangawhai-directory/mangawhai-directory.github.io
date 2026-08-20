@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 426 1793
+phone: "+64224261793"
 email: mangasmilenz@gmail.com
 website: ''
 socials:

@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 431 5500
+phone: "+6494315500"
 email: sayhello@bennettschocolate.co.nz
 website: https://bennettschocolate.co.nz/pages/visit-us#cafe
 socials:

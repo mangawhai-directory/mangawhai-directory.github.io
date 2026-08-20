@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 027 510 6116
+phone: "+64275106116"
 email: office@mangawhaihills.school.nz
 website: https://mangawhaihills.school.nz
 socials:

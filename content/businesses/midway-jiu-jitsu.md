@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 0818 4779
+phone: "+642108184779"
 email: toby@midwayjiujitsu.com
 website: https://midwayjiujitsu.com/
 socials:

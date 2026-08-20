@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 897 164
+phone: "+6421897164"
 email: hopper.earthworks@gmail.com
 website: https://hopperearthworks.co.nz/
 socials:

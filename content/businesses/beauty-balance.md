@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 021 0917 9744
+phone: "+642109179744"
 email: office@beautybalance.nz
 website: https://www.beautybalance.nz/
 socials:

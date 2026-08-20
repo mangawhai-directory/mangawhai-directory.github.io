@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 054 0285
+phone: "+64210540285"
 email: reece@boazdevelopments.co.nz
 website: https://boazdevelopments.co.nz/
 socials:

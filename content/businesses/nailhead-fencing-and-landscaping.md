@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 365 218
+phone: "+6421365218"
 email: nailheadfencing@gmail.com
 website: https://nailhead.nz
 socials:

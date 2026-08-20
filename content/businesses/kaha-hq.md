@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0573'
   country: NZ
-phone: 027 432 8300
+phone: "+64274328300"
 email: kahafitnessltd@gmail.com
 website: https://www.kahahqfitness.co.nz/
 socials:

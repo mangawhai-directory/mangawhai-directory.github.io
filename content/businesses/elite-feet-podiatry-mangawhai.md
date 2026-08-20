@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 021 036 3702
+phone: "+64210363702"
 email: info@elitefeet.co.nz
 website: https://elitefeet.co.nz
 socials:

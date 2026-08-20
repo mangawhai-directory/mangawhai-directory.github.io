@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 027 336 4060
+phone: "+64273364060"
 email: info@lelavoir.co.nz
 website: https://lelavoir.co.nz/
 socials:

@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 5393
+phone: "+6494315393"
 email: ''
 website: https://www.expedia.co.nz/Mangawhai-Heads-Mangawhai-Hotels.0-n6344037-0.Travel-Guide-Filter-Hotels
 socials:

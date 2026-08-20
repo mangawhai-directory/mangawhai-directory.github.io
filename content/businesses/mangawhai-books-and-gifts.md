@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 4302
+phone: "+6494314302"
 email: info@mangawhaibooksandgifts.co.nz
 website: https://mangawhaibooksandgifts.co.nz/
 socials:

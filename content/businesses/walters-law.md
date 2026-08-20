@@ -7,7 +7,7 @@ address:
   suburb: 'Mangawhai'
   postcode: '0505'
   country: NZ
-phone: 09 431 4477
+phone: "+6494314477"
 email: jwalters@walterslaw.co.nz
 website: https://www.walterslaw.co.nz/
 socials:

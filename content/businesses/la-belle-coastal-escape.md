@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 883 243
+phone: "+6421883243"
 email: labellecoastalescape@gmail.com
 website: https://www.labellecoastalretreat.com/
 socials:

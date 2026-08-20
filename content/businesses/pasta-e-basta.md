@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 027 234 7214
+phone: "+64272347214"
 email: info@pastaebasta.co.nz
 website: ''
 socials:

@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 5730
+phone: "+6494315730"
 email: admin@campbellpark.org.nz
 website: https://www.campbellpark.org.nz/
 socials:

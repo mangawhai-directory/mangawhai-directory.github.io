@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 3098
+phone: "+6494313098"
 email: mangawhaicommunityopshop@gmail.com
 website: https://mangawhaicommunityopshop.com
 socials:

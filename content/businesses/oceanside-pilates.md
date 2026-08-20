@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 022 400 3157
+phone: "+64224003157"
 email: hello@oceansidepilates.co.nz
 website: ''
 socials:

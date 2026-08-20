@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 4807
+phone: "+6494314807"
 email: ''
 website: https://greenviewcafe.co.nz/
 socials:

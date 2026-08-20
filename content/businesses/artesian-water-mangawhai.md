@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 407 219
+phone: "+6421407219"
 email: artesianwatermangawhai@gmail.com
 website: https://www.artesianwatermangawhai.co.nz
 socials:

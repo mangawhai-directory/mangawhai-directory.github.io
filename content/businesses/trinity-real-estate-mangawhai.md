@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 463 224
+phone: "+6421463224"
 email: mike.scott@trinitynetwork.co.nz
 website: https://www.trinityrealestate.co.nz/
 socials:

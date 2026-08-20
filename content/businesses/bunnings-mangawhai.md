@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 952 8300
+phone: "+6499528300"
 email: ''
 website: https://bunnings.co.nz
 socials:

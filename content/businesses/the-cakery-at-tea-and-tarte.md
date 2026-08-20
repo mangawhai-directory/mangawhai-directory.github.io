@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 534 7983
+phone: "+64275347983"
 email: ''
 website: https://www.teatarte.com/
 socials:

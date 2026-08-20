@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 214 0558
+phone: "+64212140558"
 email: mangawhaihypnotherapy@gmail.com
 website: https://mangawhaihypnotherapy.co.nz/
 socials:

@@ -24,7 +24,7 @@ hours: []
 tier: free
 last_verified: '2026-05-09'
 status: active
-phone: 021 945 050
+phone: "+6421945050"
 email: tewhaibaywines@gmail.com
 website: https://www.tewhaibaywines.co.nz/
 ---

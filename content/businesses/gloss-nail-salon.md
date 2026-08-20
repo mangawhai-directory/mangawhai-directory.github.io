@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 022 348 6745
+phone: "+64223486745"
 email: ''
 website: https://www.fresha.com/a/gloss-salon-mangawhai-6-molesworth-drive-z1ycah6b/all-offer?menu=true&pId=607313&utm_content=link_in_bio&utm_medium=social&utm_source=ig
 socials:

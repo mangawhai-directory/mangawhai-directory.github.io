@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 4041
+phone: "+6494314041"
 email: headrock@countrybake.co.nz
 website: ''
 socials:

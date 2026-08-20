@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 021 020 6645
+phone: "+64210206645"
 email: philswaterltd@gmail.com
 website: https://www.philswaterdelivery.co.nz
 socials:

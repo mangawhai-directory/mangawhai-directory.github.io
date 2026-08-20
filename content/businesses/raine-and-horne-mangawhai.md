@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0800 161 006
+phone: "+64800161006"
 email: ''
 website: https://www.raineandhorne.co.nz/mangawhai
 socials:

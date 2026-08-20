@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 021 854 158
+phone: "+6421854158"
 email: ''
 website: https://www.ranahealth.co.nz
 socials:

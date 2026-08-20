@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 0229 9406
+phone: "+642102299406"
 email: healingcaretherapeutic@gmail.com
 website: https://www.healingcare.co.nz/
 socials:

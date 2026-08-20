@@ -7,7 +7,7 @@ address:
   suburb: 'Mangawhai'
   postcode: '0505'
   country: NZ
-phone: 022 653 5288
+phone: "+64226535288"
 email: ''
 website: https://www.mangawhaiartists.org/
 socials:

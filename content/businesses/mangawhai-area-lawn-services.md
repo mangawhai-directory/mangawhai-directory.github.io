@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 536 5953
+phone: "+64225365953"
 email: mangawhailawns@gmail.com
 website: ''
 socials:

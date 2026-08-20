@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 5085
+phone: "+6494315085"
 email: info@mangawhaiclub.org.nz
 website: https://www.mangawhaiclub.org.nz
 socials:

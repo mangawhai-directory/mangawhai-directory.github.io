@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0800 874 663
+phone: "+64800874663"
 email: info@treetrimmers.co.nz
 website: https://treetrimmers.co.nz
 socials:

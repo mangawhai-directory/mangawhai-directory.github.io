@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 230 0293
+phone: "+64212300293"
 email: vali.booth@gmail.com
 website: ''
 socials:

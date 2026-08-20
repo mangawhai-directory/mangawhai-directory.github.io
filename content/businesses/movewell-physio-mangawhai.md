@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 423 7449
+phone: "+6494237449"
 email: ''
 website: https://movewell.nz
 socials:

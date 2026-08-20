@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Mangawhai Property & Cleaning Services
-slug: mangawhai-property-and-cleaning-services
+slug: mangawhai-property-cleaning-services
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0884 6879
+phone: "+642108846879"
 email: info@mpacs.co.nz
 website: https://www.mpacs.co.nz/
 socials:

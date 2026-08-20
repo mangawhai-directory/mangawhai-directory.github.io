@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 421 0238
+phone: "+6494210238"
 email: officialcuts44@gmail.com
 website: ''
 socials:

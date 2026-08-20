@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 5572
+phone: "+6494315572"
 email: ''
 website: ''
 socials:

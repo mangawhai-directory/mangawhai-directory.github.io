@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 173 0522
+phone: "+64211730522"
 email: townandcountrycarpet@gmail.com
 website: ''
 socials:

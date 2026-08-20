@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 765 590
+phone: "+6421765590"
 email: hello@jupiterelectrical.co.nz
 website: https://www.jupiterelectrical.co.nz/
 socials:

@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: 027 224 8621
+phone: "+64272248621"
 website: "https://sdpropertyservices.co.nz"
 socials:
   facebook: "https://www.facebook.com/SDPropertyServicesMangawhai"

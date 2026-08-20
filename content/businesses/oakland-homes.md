@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0800 625 526
+phone: "+64800625526"
 email: peter@oaklandhomes.co.nz
 website: https://www.oaklandhomes.co.nz
 socials:

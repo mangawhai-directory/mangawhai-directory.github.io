@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Black Ridge Plumbing & Gas
-slug: black-ridge-plumbing-and-gas
+slug: black-ridge-plumbing-gas
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 334 820
+phone: "+6421334820"
 email: blackridgeplumbing@gmail.com
 website: https://www.blackridgeplumbing.co.nz/
 socials:

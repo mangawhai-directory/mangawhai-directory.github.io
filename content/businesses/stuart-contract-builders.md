@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 487 711
+phone: "+6421487711"
 email: shayne@stuartbuilders.co.nz
 website: https://stuartbuilders.co.nz
 socials:

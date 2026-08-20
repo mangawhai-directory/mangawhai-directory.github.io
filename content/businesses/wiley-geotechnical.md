@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 039 9385
+phone: "+64210399385"
 email: office@wileygeotechnical.co.nz
 website: https://www.wileygeotechnical.co.nz/
 socials:

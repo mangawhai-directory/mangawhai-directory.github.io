@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 267 1117
+phone: "+64272671117"
 email: sam@fdrconstruction.co.nz
 website: https://about.me/fdrconstruction
 socials:

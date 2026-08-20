@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0878 4088
+phone: "+642108784088"
 email: hollyattwood.celebrant@gmail.com
 website: ''
 socials:

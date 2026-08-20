@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 662 655
+phone: "+6421662655"
 email: aaron@fit365.co.nz
 website: ''
 socials:

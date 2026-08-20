@@ -9,9 +9,9 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 460 1021
+phone: "+64224601021"
 email: hello@honeyhillelectrical.co.nz
-website: honeyhillelectrical.co.nz
+website: "https://honeyhillelectrical.co.nz"
 socials:
   facebook: https://www.facebook.com/profile.php?id=61586875113782
   instagram: ''

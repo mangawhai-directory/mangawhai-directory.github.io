@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 678 309
+phone: "+6421678309"
 email: heroes@lifedojo.me
 website: https://lifedojo.me
 socials:

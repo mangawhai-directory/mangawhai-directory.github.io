@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 108 3056
+phone: "+64221083056"
 email: hello@sanctuaryinteriors.co.nz
 website: https://www.sanctuaryinteriors.co.nz/
 socials:

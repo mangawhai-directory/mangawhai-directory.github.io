@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 3132
+phone: "+6494313132"
 email: ''
 website: https://madlyindianmangawhai.com
 socials:

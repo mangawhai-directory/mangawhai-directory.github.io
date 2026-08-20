@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 039 6203
+phone: "+64210396203"
 email: tearaibuilders@gmail.com
 website: https://www.tearaibuilders.co.nz
 socials:

@@ -1,7 +1,7 @@
 ---
 tier: free
 title: CFI Signs & Advertising
-slug: cfi-signs-and-advertising
+slug: cfi-signs-advertising
 blurb: ''
 image: ''
 address:
@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 0274 856 098
+phone: "+64274856098"
 email: martin@cfisigns.co.nz
 website: https://cfisigns.co.nz/
 socials:

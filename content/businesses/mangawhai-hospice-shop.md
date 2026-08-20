@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 431 9091
+phone: "+6494319091"
 email: shop@northhavenhospice.org.nz
 website: https://www.northhavenhospice.org.nz/hospice-shops/mangawhai
 socials:

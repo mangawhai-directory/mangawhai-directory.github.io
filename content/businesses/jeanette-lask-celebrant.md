@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 613 358
+phone: "+6421613358"
 email: jnetlask@gmail.com
 website: https://www.jeanettelaskcelebrant.com
 socials:

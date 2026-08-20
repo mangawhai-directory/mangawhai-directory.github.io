@@ -1,14 +1,14 @@
 ---
 tier: free
 title: St John Opportunity Shop - Mangawhai
-slug: st-john-opportunity-shop-mangawhai
+slug: mangawhai-st-johns-opportunity-shop
 blurb: ''
 address:
   street: 42 Moir Street
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 247 2921
+phone: "+64272472921"
 email: ''
 website: https://stjohn.org.nz/shop/retail-stores/mangawhai
 socials:

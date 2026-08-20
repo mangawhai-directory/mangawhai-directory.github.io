@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0975'
   country: NZ
-phone: 021 867 623
+phone: "+6421867623"
 email: ''
 website: https://www.gregcampbell.photo
 socials:

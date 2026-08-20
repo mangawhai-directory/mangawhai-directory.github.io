@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 4814
+phone: "+6494314814"
 email: info@supershoppemangawhai.co.nz
 website: https://supershoppemangawhai.co.nz
 socials:

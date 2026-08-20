@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 419 224
+phone: "+6421419224"
 email: mangawhailions@gmail.com
 website: https://www.mangawhailions.com/
 socials:

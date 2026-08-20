@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 405 019
+phone: "+6421405019"
 email: jason@hotwiredelectrical.co.nz
 website: https://www.hotwiredelectrical.co.nz/
 socials:

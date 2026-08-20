@@ -1,13 +1,13 @@
 ---
 title: Michaela's Sweet Cakes
-slug: michaelas-sweet-cakes
+slug: michaela-s-sweet-cakes
 blurb: Online Cake Shop
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0900 0975
+phone: "+642109000975"
 email: michaelas.sweetcakes@gmail.com
 website: ''
 socials:

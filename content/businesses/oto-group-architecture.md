@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 309 0531
+phone: "+64223090531"
 email: nick@otogroup.nz
 website: https://www.otogroup.nz/
 socials:

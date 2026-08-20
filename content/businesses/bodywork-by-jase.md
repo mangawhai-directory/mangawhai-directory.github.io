@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0270 5322
+phone: "+642102705322"
 email: cjasonkingi89@gmail.com
 website: https://bodyworkbyjase.setmore.com
 socials:

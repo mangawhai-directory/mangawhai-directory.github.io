@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 0267 9234
+phone: "+642102679234"
 email: Kate.balanceandharmony@gmail.com
 website: https://www.balanceandharmony.co.nz/
 socials:

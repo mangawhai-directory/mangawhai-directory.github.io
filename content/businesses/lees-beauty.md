@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 348 282
+phone: "+6421348282"
 email: hungum1@gmail.com
 website: ''
 socials:

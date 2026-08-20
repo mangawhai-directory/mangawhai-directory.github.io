@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 4782
+phone: "+6494314782"
 email: office@causewaychurch.org.nz
 website: https://www.causewaychurch.org.nz/
 socials:

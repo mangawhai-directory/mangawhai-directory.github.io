@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 348 0662
+phone: "+64273480662"
 email: ''
 website: ''
 socials:

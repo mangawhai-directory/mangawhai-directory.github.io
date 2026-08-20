@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 217 1114
+phone: "+6492171114"
 email: ''
 website: https://hydroscapeirrigation.co.nz/
 socials:

@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 638 748
+phone: "+6421638748"
 email: info@mangawhaimoving.co.nz
 website: https://www.mangawhaimoving.co.nz/
 socials:

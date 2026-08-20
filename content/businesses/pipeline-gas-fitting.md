@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 499 0879
+phone: "+64274990879"
 email: pipelinegasnz@gmail.com
 website: https://www.pipeline.nz/
 socials:

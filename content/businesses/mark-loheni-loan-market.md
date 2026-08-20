@@ -7,7 +7,7 @@ address:
   suburb: 'Mangawhai'
   postcode: '0505'
   country: NZ
-phone: 022 482 4234
+phone: "+64224824234"
 email: mark.loheni@loanmarket.co.nz
 website: https://adviser.loanmarket.co.nz/mark-loheni/
 socials:

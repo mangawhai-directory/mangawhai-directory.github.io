@@ -1,13 +1,13 @@
 ---
 title: The Bunker
-slug: the-bunker
+slug: bunker-sports-bar
 blurb: ''
 address:
   street: 3 Main Street
   suburb: Mangawhai Central
   postcode: '0505'
   country: NZ
-phone: 09 370 0231
+phone: "+6493700231"
 email: admin@thebunkersportsbar.co.nz
 website: https://thebunkersportsbar.co.nz
 socials:

@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0829 5287
+phone: "+642108295287"
 email: admin@koaphotography.co.nz
 website: https://www.koaphotography.co.nz/
 socials:

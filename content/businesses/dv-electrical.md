@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 133 7402
+phone: "+64211337402"
 email: info@dvelectricalservices.co.nz
 website: https://www.dvelectricalservices.co.nz/
 socials:

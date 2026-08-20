@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0975'
   country: NZ
-phone: 021 705 125
+phone: "+6421705125"
 email: info@treepronorthland.nz
 website: https://treepronorthland.nz
 socials:

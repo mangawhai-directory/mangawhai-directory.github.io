@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 382 0169
+phone: "+64273820169"
 email: resetcleaningco@gmail.com
 website: ''
 socials:

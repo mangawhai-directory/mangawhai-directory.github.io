@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Central
   postcode: '0505'
   country: NZ
-phone: 09 929 9346
+phone: "+6499299346"
 email: ''
 website: https://www.newworld.co.nz/upper-north-island/northland/mangawhai
 socials:

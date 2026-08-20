@@ -1,14 +1,14 @@
 ---
 tier: free
 title: The Cow Shed
-slug: the-cow-shed
+slug: cow-shed-and-shop
 blurb: ''
 address:
   street: Outside Mangawhai Village Hall, 45 Moir Street
   suburb: Mangawhai Village
   postcode: '0573'
   country: NZ
-phone: 09 431 2354
+phone: "+6494312354"
 email: info@thecowshedandshop.co.nz
 website: https://thecowshedandshop.co.nz
 socials:

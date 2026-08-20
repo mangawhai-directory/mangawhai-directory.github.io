@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 022 176 6151
+phone: "+64221766151"
 email: cafekotare@gmail.com
 website: ''
 socials:

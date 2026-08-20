@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0812 9159
+phone: "+642108129159"
 email: carveconstruction1@gmail.com
 website: https://carvelandscaping.co.nz
 socials:

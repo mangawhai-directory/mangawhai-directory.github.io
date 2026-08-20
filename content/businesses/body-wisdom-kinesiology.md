@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 027 292 4836
+phone: "+64272924836"
 email: hello@bodywisdom.co.nz
 website: https://www.bodywisdom.co.nz/
 socials:

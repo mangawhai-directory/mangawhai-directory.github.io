@@ -8,7 +8,7 @@ address:
   suburb: Mangwhai
   postcode: '0505'
   country: NZ
-phone: 022 465 9330
+phone: "+64224659330"
 email: megan.h@arizto.co.nz
 website: https://www.arizto.co.nz/our-people/profile/megan-hetges/
 socials:

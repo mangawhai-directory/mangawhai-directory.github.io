@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Puriri Haven
-slug: puriri-haven
+slug: puriri-haven-1
 blurb: ''
 image: ''
 address:
@@ -9,9 +9,9 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 432 463
+phone: "+6421432463"
 email: ''
-website: www.marryon-celebrant.com
+website: "https://www.marryon-celebrant.com"
 socials:
   facebook: ''
   instagram: https://www.instagram.com/puririhaven/

@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 519 519
+phone: "+6421519519"
 email: info@wolfe.nz
 website: https://wolfe.nz/
 socials:

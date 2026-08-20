@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0210 309 984
+phone: "+64210309984"
 email: cleaningbymichelle@outlook.co.nz
 website: ''
 socials:

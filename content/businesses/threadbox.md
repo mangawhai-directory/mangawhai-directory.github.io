@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 029 770 8502
+phone: "+64297708502"
 email: al@threadbox.co.nz
 website: https://www.threadbox.co.nz
 socials:

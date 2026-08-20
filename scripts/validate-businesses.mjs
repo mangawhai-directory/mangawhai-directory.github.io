@@ -34,11 +34,23 @@ const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const TWELVE_MONTHS_MS = 365 * 24 * 60 * 60 * 1000;
 const TWENTY_FOUR_MONTHS_MS = 2 * TWELVE_MONTHS_MS;
 
+// js-yaml resolves an unquoted YAML timestamp (2026-05-10) to a JS Date, which
+// then fails the schema's `type: string`. The CMS datetime widget writes dates
+// unquoted, so normalise Date back to a YYYY-MM-DD string before validating.
+function normaliseDates(value) {
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  if (Array.isArray(value)) return value.map(normaliseDates);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, normaliseDates(v)]));
+  }
+  return value;
+}
+
 function readFrontmatter(file) {
   const text = fs.readFileSync(file, "utf8");
   const match = text.match(/^---\s*\n([\s\S]*?)\n---\s*(?:\n|$)/);
   if (!match) return null;
-  return yaml.load(match[1]);
+  return normaliseDates(yaml.load(match[1]));
 }
 
 function loadSchema() {
@@ -92,7 +104,7 @@ function structuralChecks(file, fm, knownCats, slugMap) {
   }
   // Phone format
   if (fm.phone && !PHONE_RE.test(fm.phone)) {
-    errors.push(`phone "${fm.phone}" must match ^\\+64\\d{8,10}$`);
+    errors.push(`phone "${fm.phone}" must match ^\\+64\\d{8,11}$`);
   }
   // Postcode format
   if (fm.address?.postcode && !POSTCODE_RE.test(fm.address.postcode)) {

@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 022 071 8851
+phone: "+64220718851"
 email: ''
 website: https://www.tarasanctuary.co.nz/
 socials:

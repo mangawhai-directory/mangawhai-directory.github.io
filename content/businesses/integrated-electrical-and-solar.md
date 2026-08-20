@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 430 0280
+phone: "+6494300280"
 email: admin@integratedes.co.nz
 website: https://integratedes.co.nz/mangawhai/
 socials:

@@ -10,7 +10,7 @@ address:
   country: NZ
 phone: ''
 email: ''
-website: www.airbnb.com/slink/NUX13s9R
+website: "https://www.airbnb.com/slink/NUX13s9R"
 socials:
   facebook: ''
   instagram: https://www.instagram.com/mangawhairetreat/

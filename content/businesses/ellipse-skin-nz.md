@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 871 4041
+phone: "+6498714041"
 email: admin@ellipseskinnz.com
 website: https://www.ellipseskinnz.com/
 socials:

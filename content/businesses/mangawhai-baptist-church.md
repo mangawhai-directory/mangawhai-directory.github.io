@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 2339
+phone: "+6494312339"
 email: trev.avril@gmail.com
 website: ''
 socials:

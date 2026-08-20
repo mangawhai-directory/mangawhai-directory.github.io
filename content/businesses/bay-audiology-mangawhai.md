@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Central
   postcode: '0505'
   country: NZ
-phone: 09 872 2700
+phone: "+6498722700"
 email: ''
 website: https://www.bayaudiology.co.nz/store-locator/hearing-aids-clinics-mangawhai/bay-audiology-mangawhai-s160
 socials:

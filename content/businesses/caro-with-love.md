@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0210 858 8266
+phone: "+642108588266"
 email: carowithlove@gmail.com
 website: https://carowithlove.com
 socials:

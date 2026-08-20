@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 021 0600 858
+phone: "+64210600858"
 email: daniel@ikeengineering.co.nz
 website: https://www.ikeengineering.co.nz/
 socials:

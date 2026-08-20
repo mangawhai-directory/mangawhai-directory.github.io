@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 4660
+phone: "+6494314660"
 email: bammas@xtra.co.nz
 website: ''
 socials:

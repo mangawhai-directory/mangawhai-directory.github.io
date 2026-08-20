@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: 021 671 788
+phone: "+6421671788"
 email: "info@spectrumplumbing.co.nz"
 website: "https://spectrumplumbing.co.nz/"
 socials:

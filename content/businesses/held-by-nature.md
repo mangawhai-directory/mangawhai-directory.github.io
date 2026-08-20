@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 08218 877
+phone: "+642108218877"
 email: ''
 website: https://www.heldbynature.co.nz/
 socials:

@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 09 431 4568
+phone: "+6494314568"
 email: horizon@hsld.nz
 website: https://hsld.nz
 socials:

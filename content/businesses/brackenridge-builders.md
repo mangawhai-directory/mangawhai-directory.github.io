@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 425 8207
+phone: "+6494258207"
 email: info@brackenridgebuilders.co.nz
 website: https://www.brackenridgebuilders.co.nz
 socials:

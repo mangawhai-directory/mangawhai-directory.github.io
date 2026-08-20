@@ -7,7 +7,7 @@ address:
   suburb: "Mangawhai"
   postcode: "0505"
   country: "NZ"
-phone: 021 138 7627
+phone: "+64211387627"
 email: "steezconstruction@gmail.com"
 website: "https://www.steezconstruction.co.nz/"
 socials:

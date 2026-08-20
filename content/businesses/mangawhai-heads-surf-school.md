@@ -24,6 +24,6 @@ hours: []
 tier: free
 last_verified: '2026-05-09'
 status: active
-phone: 021 0840 7547
+phone: "+642108407547"
 email: surf@mangawhaiheadssurfschool.com
 ---

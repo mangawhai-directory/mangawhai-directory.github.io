@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 493 554
+phone: "+6421493554"
 email: info@maycon.co.nz
 website: https://www.maycon.co.nz/
 socials:

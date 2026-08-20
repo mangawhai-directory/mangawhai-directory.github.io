@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Central
   postcode: '0505'
   country: NZ
-phone: 09 431 3359
+phone: "+6494313359"
 email: mobilmangawhai@gmail.com
 website: ''
 socials:

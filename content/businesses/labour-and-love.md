@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 0832 4767
+phone: "+642108324767"
 email: hello@labourandlove.co.nz
 website: https://labourandlove.co.nz/
 socials:

@@ -1,6 +1,6 @@
 ---
 title: Wild Wellness Nutrition and Yoga
-slug: Wild Wellness Nutrition and Yoga
+slug: wild-wellness-nutrition-and-yoga
 blurb: ''
 image: ''
 address:
@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 021 122 4724
+phone: "+64211224724"
 email: francesca@wildwellness.nz
 website: https://www.wildwellness.nz/
 socials:

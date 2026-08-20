@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 961 153
+phone: "+6421961153"
 email: mangawhai@levelelectrical.nz
 website: https://levelnz.nz/electrician-mangawhai/
 socials:

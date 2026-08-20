@@ -9,7 +9,7 @@ address:
   suburb: Wellsford
   postcode: '0974'
   country: NZ
-phone: 09 423 7022
+phone: "+6494237022"
 email: office@tomarata.school.nz
 website: https://www.tomarata.school.nz/
 socials:

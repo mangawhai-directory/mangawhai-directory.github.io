@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: 021 030 8223
+phone: "+64210308223"
 email: hello@beautywithincollective.nz
 website: https://beautywithincollective.nz/
 socials:

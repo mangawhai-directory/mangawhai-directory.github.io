@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 027 279 1786
+phone: "+64272791786"
 email: ''
 website: https://www.mangawhaiwellbeing.co.nz
 socials:

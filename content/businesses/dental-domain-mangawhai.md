@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 777 4343
+phone: "+6497774343"
 email: care@dentaldomain.co.nz
 website: https://dentaldomain.co.nz
 socials:

@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: 027 572 7242
+phone: "+64275727242"
 email: info@sarahcdesign.co.nz
 website: https://www.sarahcdesign.co.nz/
 socials:

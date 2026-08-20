@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 027 358 9767
+phone: "+64273589767"
 email: hxelectrical@gmail.com
 website: ''
 socials:

@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 09 431 7707
+phone: "+6494317707"
 email: office@jasonmorrison.co.nz
 website: https://www.jasonmorrison.co.nz/
 socials:

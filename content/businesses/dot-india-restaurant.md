@@ -1,13 +1,13 @@
 ---
 title: Dot India
-slug: dot-india
+slug: dot-india-restaurant
 blurb: ''
 address:
   street: 6 Molesworth Drive
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 393 0064
+phone: "+6493930064"
 email: ''
 website: https://www.dotindiatakeaway.co.nz/
 socials:

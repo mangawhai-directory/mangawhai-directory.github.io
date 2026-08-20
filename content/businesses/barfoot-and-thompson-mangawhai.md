@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 09 431 5960
+phone: "+6494315960"
 email: ''
 website: https://www.barfoot.co.nz/branches/mangawhai
 socials:

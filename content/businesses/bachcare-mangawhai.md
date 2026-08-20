@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0800 422 242
+phone: "+64800422242"
 email: ''
 website: https://bachcare.co.nz
 socials:

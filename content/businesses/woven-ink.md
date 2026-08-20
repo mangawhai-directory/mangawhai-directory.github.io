@@ -8,7 +8,7 @@ address:
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: 020 4067 9745
+phone: "+642040679745"
 email: woven.ink@outlook.com
 website: https://www.wovenink.co.nz/
 socials:

@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 021 737 868
+phone: "+6421737868"
 email: karl@sanders.co.nz
 website: https://www.sandersdesign.co.nz/
 socials:

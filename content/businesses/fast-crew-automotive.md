@@ -7,7 +7,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: 0800 484 327
+phone: "+64800484327"
 email: fastcrew@xtra.co.nz
 website: https://www.fastcrewautomotive.co.nz
 socials:
