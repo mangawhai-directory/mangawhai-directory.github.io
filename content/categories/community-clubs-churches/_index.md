@@ -1,5 +1,6 @@
 ---
-title: "Community, Clubs & Churches"
+title: Community Groups & Churches
+hidden: false
 keywords:
   - community groups mangawhai
   - sports clubs mangawhai heads
