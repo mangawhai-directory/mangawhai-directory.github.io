@@ -1,15 +1,17 @@
 ---
+tier: free
 title: Mangawhai Baptist Church
 slug: mangawhai-baptist-church
-blurb: Family church catering for all ages with Sunday worship and home group meetings.
+blurb: ''
+image: ''
 address:
   street: Fagan Place
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: "+6494312339"
+phone: 09 431 2339
 email: trev.avril@gmail.com
-website: ''
+website: https://www.mangawhaibaptistchurch.org.nz/
 socials:
   facebook: ''
   instagram: ''
@@ -21,10 +23,8 @@ categories:
   - community-clubs-churches
 tags:
   - Church
-
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
