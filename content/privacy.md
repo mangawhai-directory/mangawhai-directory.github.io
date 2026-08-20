@@ -119,7 +119,7 @@ For any privacy question, access request, correction request, or complaint, cont
 
 - **Privacy Officer:** the Director of Sanderson Howe Limited is our Privacy Officer for the purposes of section 201 of the Privacy Act 2020.
 - **Email:** [mangawhaidirectory@gmail.com](mailto:mangawhaidirectory@gmail.com)
-- **Post:** Sanderson Howe Limited, [POSTAL ADDRESS], Mangawhai, New Zealand
+- **Post:** Sanderson Howe Limited, 59a Jack Boyd Drive, Mangawhai Heads, Kaiwaka, New Zealand
 - **Or via the [contact page](/contact/)**
 
 If you're not satisfied with our response, you can complain to the **Office of the Privacy Commissioner** — the independent regulator under the Privacy Act 2020:
