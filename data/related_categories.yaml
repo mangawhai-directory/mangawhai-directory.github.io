@@ -10,12 +10,7 @@ bakeries-cake-makers:
 wineries-vineyards:
   - cafes-restaurants-bars
 campgrounds-camps:
-  - holiday-homes
   - things-to-do-tours
-holiday-homes:
-  - campgrounds-camps
-  - cleaning-services
-  - property-management
 things-to-do-tours:
   - surf-beach-watersports
   - campgrounds-camps
@@ -42,7 +37,6 @@ landscape-tree-services:
   - construction
   - cleaning-services
 cleaning-services:
-  - holiday-homes
   - landscape-tree-services
 real-estate-services:
   - property-management
@@ -50,7 +44,6 @@ real-estate-services:
 property-management:
   - real-estate-services
   - cleaning-services
-  - holiday-homes
 medical-dental:
   - fitness-pilates-yoga
   - beauty-therapy
