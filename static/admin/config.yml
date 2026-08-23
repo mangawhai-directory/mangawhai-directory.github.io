@@ -143,7 +143,25 @@ collections:
     fields:
       - { name: title, label: Display name, widget: string, hint: "e.g. Cafés & Restaurants" }
       - { name: hidden, label: Hide from site, widget: boolean, default: false, required: false, hint: "When on, this category is removed from the homepage, the LLMs index, related-category links and the category list page. Its own page URL still resolves." }
+
+      # Powers the "Related categories" chips at the bottom of the category page.
+      # Self-references, unknown slugs and hidden categories are filtered out at
+      # render time, so a stale entry degrades quietly rather than breaking the page.
+      - name: related
+        label: Related categories
+        widget: relation
+        collection: categories
+        value_field: "{{slug}}"
+        display_fields: [title]
+        search_fields: [title]
+        multiple: true
+        required: false
+        max: 5
+        hint: "Categories a visitor to this page would plausibly want next. Add the reverse link on the other category too — the site does not do it automatically. 3–5 works best; more than 5 dilutes them."
+
       - { name: keywords, label: SEO keywords, widget: list, required: false }
+      - { name: aliases, label: Old URLs (redirects), widget: list, required: false, hint: "Paths this category used to live at, e.g. /categories/bakeries/. Hugo redirects them here. Leave existing entries alone — removing one breaks old links." }
+      - { name: description, label: Meta description override, widget: text, required: false, hint: "Optional. Leave blank to use the description generated from the category name and business count." }
       - { name: body, label: Intro copy, widget: markdown, required: false, hint: "Optional intro paragraph shown under the category heading. The page's meta description is generated automatically from the category name and business count." }
 
   # ──────────────────────────────────────────────────────────────────────

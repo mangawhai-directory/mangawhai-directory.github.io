@@ -1,21 +1,30 @@
 {{- /*
   related-categories partial — renders an aside with hand-curated sibling
-  category links. Reads from data/related_categories.yaml keyed by current term slug.
-  No-op if the slug has no entry.
+  category links, read from the category's own `related` front matter
+  (editable in the CMS under Categories → Related categories).
+
+  Skips self-references, unknown slugs and categories flagged `hidden`,
+  so the aside disappears cleanly rather than rendering dead links.
 */ -}}
 {{- $slug := path.Base .RelPermalink -}}
-{{- $related := index hugo.Data.related_categories $slug -}}
-{{- if $related }}
+{{- $links := slice -}}
+{{- range .Params.related | default slice -}}
+  {{- if ne . $slug -}}
+    {{- with site.GetPage (printf "/categories/%s" .) -}}
+      {{- if not .Params.hidden -}}
+        {{- $links = $links | append . -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with $links }}
 <aside class="mt-12 rounded-lg bg-surface-sage text-surface-sage-foreground p-6" aria-labelledby="related-categories-heading">
   <h2 id="related-categories-heading" class="m-0 text-xs font-semibold uppercase tracking-widest text-surface-sage-foreground">Related categories</h2>
   <ul class="mt-3 flex flex-wrap gap-2 list-none p-0 m-0">
-    {{- range $related }}
-    {{- $page := site.GetPage (printf "/categories/%s" .) -}}
-    {{- with $page }}{{- if not .Params.hidden }}
+    {{- range . }}
     <li>
       <a class="inline-flex h-8 items-center rounded-md bg-white px-3 text-sm font-medium text-surface-sage-foreground no-underline transition-colors hover:bg-white/70" href="{{ .RelPermalink }}">{{ .Title }}</a>
     </li>
-    {{- end }}{{- end }}
     {{- end }}
   </ul>
 </aside>

@@ -1,5 +1,9 @@
 ---
 title: Architects
+related:
+  - construction
+  - engineering
+  - surveyors-planners
 keywords:
   - architect mangawhai
   - residential architect mangawhai heads
