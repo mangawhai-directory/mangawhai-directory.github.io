@@ -2,9 +2,13 @@
 #
 # Slot keys:
 #   home             → Homepage tile,        1152×400 desktop / 500×500 mobile
-#   category.<slug>  → Category page header, 540×350 desktop / 500×500 mobile
+#   category.<slug>  → Category page header, 500×250 desktop / 500×500 mobile
 #
 # Each slot accepts:
+#   id           — stable reporting key sent to GA4 as `ad_id`. Keep it the same
+#                  across creative swaps so click/impression history stays
+#                  attached to the advertiser. Defaults to the slot path.
+#   advertiser   — display name used in ad performance reports
 #   image        — site-rooted path or full https URL (desktop creative)
 #   imageMobile  — optional mobile creative (used below the lg breakpoint).
 #                  If omitted, the desktop creative scales to fit.
@@ -14,14 +18,18 @@
 # Leave `image` empty (or omit the slot) to show the "Your ad here" placeholder.
 
 home:
-  image: ""
-  imageMobile: ""
-  alt: ""
-  href: ""
+  id: jens-pastries
+  advertiser: "Jen's Pastries"
+  image: "/img/ads/jens-pastries-1152x400.png"
+  imageMobile: "/img/ads/jens-pastries-500x500.png"
+  alt: "Jen's Pastries — handcrafted croissants and designer pastries in Mangawhai"
+  href: "https://www.jenspastries.co.nz/"
 
 category:
-  # cafes-restaurants:
-  #   image: "/img/ads/example-cafes-540x350.jpg"
+  # cafes-restaurants-bars:
+  #   id: allpress-espresso
+  #   advertiser: "Allpress Espresso"
+  #   image: "/img/ads/example-cafes-500x250.jpg"
   #   imageMobile: "/img/ads/example-cafes-500x500.jpg"
   #   alt: "Allpress Espresso — now open"
   #   href: "https://example.com"

@@ -81,41 +81,41 @@
       {{- end }}
 
       {{- if $hasActions }}
-      <div data-fade class="mt-3 flex flex-wrap items-center gap-2">
+      {{- /* One shared button style for every action — website, phone, email and
+             each social platform — so the row reads as a single set of controls.
+             Previously the website was a filled button, phone/email were outline
+             buttons and socials were icon-only squares. Change $actionBtn alone
+             to restyle all of them. */ -}}
+      {{- $actionBtn := "inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90" -}}
+      <ul data-fade class="mt-3 flex flex-wrap items-center gap-2 list-none p-0 m-0">
         {{- with .Params.website }}
-          <li>
-            <a class="inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-md bg-primary px-3 text-sm font-medium text-primary-foreground no-underline transition-colors hover:bg-primary/90" href="{{ . }}" rel="noopener noreferrer" target="_blank">
-              Visit website
-              <svg class="ml-1.5 h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </li>
+        <li>
+          <a class="{{ $actionBtn }}" href="{{ . }}" rel="noopener noreferrer" target="_blank">
+            <svg class="mr-1.5 h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Visit website
+          </a>
+        </li>
         {{- end }}
-
-        {{- if $hasContact }}
-        <ul class="flex flex-wrap items-center gap-2 list-none p-0 m-0">
-          {{- with .Params.phone }}
-          <li>
-            <a class="inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-md border border-input bg-background px-3 text-sm font-medium text-foreground no-underline transition-colors hover:bg-accent hover:text-accent-foreground" href="tel:{{ . }}">
-              <svg class="mr-1.5 h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              {{ partial "phone-display.html" . }}
-            </a>
-          </li>
-          {{- end }}
-          {{- with .Params.email }}
-          <li>
-            <a class="inline-flex h-9 shrink-0 items-center whitespace-nowrap rounded-md border border-input bg-background px-3 text-sm font-medium text-foreground no-underline transition-colors hover:bg-accent hover:text-accent-foreground" href="mailto:{{ . }}">
-              <svg class="mr-1.5 h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              Email
-            </a>
-          </li>
-          {{- end }}
-
-          {{- with .Params.socials -}}
-            {{ partial "social-icons.html" (dict "socials" . "name" $.Title) }}
-          {{- end }}
-        </ul>
+        {{- with .Params.phone }}
+        <li>
+          <a class="{{ $actionBtn }}" href="tel:{{ . }}">
+            <svg class="mr-1.5 h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            {{ partial "phone-display.html" . }}
+          </a>
+        </li>
         {{- end }}
-      </div>
+        {{- with .Params.email }}
+        <li>
+          <a class="{{ $actionBtn }}" href="mailto:{{ . }}">
+            <svg class="mr-1.5 h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </li>
+        {{- end }}
+        {{- with .Params.socials -}}
+          {{ partial "social-icons.html" (dict "socials" . "name" $.Title "class" $actionBtn) }}
+        {{- end }}
+      </ul>
       {{- end }}
 
       {{- if $isPaid }}

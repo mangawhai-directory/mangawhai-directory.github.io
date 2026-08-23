@@ -10,6 +10,12 @@ pluralizelisttitles = false
   defaultKeywords = ["mangawhai", "mangawhai heads", "northland", "directory", "local business"]
   contactEmail = ""
 
+# Hugo executes the Tailwind CLI from node_modules/.bin to build assets/css/main.css.
+# Setting security.exec.allow replaces Hugo's default list, so the defaults are repeated
+# here alongside tailwindcss (dropped from the defaults in Hugo 0.165).
+[security.exec]
+  allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^npx$', '^postcss$', '^tailwindcss$']
+
 [markup.goldmark.renderer]
   unsafe = true
 

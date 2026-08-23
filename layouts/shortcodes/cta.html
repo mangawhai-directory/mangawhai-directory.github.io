@@ -6,7 +6,7 @@
   The `!` overrides defeat the prose container's child-element styles in
   layouts/_default/single.html (e.g. [&_p]:text-muted-foreground).
 */ -}}
-<aside class="my-8 flex flex-col gap-4 rounded-lg border border-border bg-muted/40 p-5 sm:flex-row sm:items-center sm:justify-between">
+<aside class="my-8 flex flex-col gap-4 rounded-lg bg-surface-cream p-5 sm:flex-row sm:items-center sm:justify-between">
   <div class="text-base leading-7 text-foreground! [&_p]:m-0! [&_p]:text-foreground!">
     {{ .Inner | markdownify }}
   </div>

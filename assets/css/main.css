@@ -18,8 +18,8 @@
   --color-popover: hsl(0 0% 100%);
   --color-popover-foreground: hsl(240 10% 3.9%);
 
-  --color-primary: hsl(240 5.9% 10%);
-  --color-primary-foreground: hsl(0 0% 98%);
+  --color-primary: #F2C078;
+  --color-primary-foreground: #000;
 
   --color-secondary: hsl(240 4.8% 95.9%);
   --color-secondary-foreground: hsl(240 5.9% 10%);
@@ -32,6 +32,21 @@
 
   --color-destructive: hsl(0 72.2% 50.6%);
   --color-destructive-foreground: hsl(0 0% 98%);
+
+  /* Footer sits on a solid teal band rather than the neutral tokens, so it
+     carries its own foreground colour. */
+  --color-footer: #55828B;
+  --color-footer-foreground: hsl(0 0% 100%);
+
+  /* Sage panel — a reusable tinted surface for callout blocks that need to
+     sit apart from the page without a border. Too light for white text, so
+     it pairs with the standard dark foreground. */
+  --color-surface-sage: #C1DBB3;
+  --color-surface-sage-foreground: hsl(240 10% 3.9%);
+
+  /* Cream panel — companion tinted surface to the sage one, for borderless
+     callouts. Also light, so it keeps the standard dark foreground. */
+  --color-surface-cream: #FAEDCA;
 
   --color-border: hsl(240 5.9% 90%);
   /* Heavier hairline for the category listing rules, which need to read as
