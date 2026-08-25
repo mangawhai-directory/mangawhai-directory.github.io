@@ -66,9 +66,9 @@ collections:
           - { name: postcode, label: Postcode, widget: string, pattern: ['^\d{4}$', 'Must be 4 digits'] }
           - { name: country, label: Country code, widget: string, default: "NZ" }
 
-      - { name: phone, label: Phone, widget: string, required: false, hint: "E.164 format, e.g. +6494314505" }
-      - { name: email, label: Email, widget: string, required: false }
-      - { name: website, label: Website, widget: string, required: false, hint: "Full URL including https://" }
+      - { name: phone, label: Phone, widget: string, required: false, pattern: ['^(\+64\d{8,11})?$', 'Use E.164 format with no spaces or brackets, e.g. +6494314505 — drop the leading 0 and prefix +64'], hint: "E.164 format, e.g. +6494314505. Not the local 09 … form — the schema check in CI rejects it." }
+      - { name: email, label: Email, widget: string, required: false, pattern: ['^([^\s@]+@[a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9-]*[a-zA-Z0-9])?)+)?$', 'Enter a full email address, e.g. hello@example.co.nz (or leave blank)'], hint: "Full address including the domain. Leave blank if the business prefers phone contact." }
+      - { name: website, label: Website, widget: string, required: false, pattern: ['^(https?://[^\s/?#]+\.[^\s/?#]+(/[^\s]*)?)?$', 'Must be a full URL starting with https:// — e.g. https://example.co.nz, not example.co.nz'], hint: "Full URL including https://. Prefer https:// — CI warns on plain http://." }
 
       - name: socials
         label: Social profiles
