@@ -1,4 +1,4 @@
 ---
-title: "Mangawhai Directory"
-description: "Free local business directory for Mangawhai, Mangawhai Heads, Te Arai and Kaiwaka — find cafés, trades, shops, services and things to do in the area."
+title: Mangawhai Directory
+description: Free local business directory for Mangawhai and surrounding areas  — find a tradie, fitness class, service provider and much more.
 ---
