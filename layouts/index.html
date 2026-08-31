@@ -35,15 +35,20 @@
 </section>
 
 <div class="mx-auto max-w-6xl px-4 pt-10 sm:pt-12 min-[1184px]:px-0">
-  {{ partial "ad-slot.html" (dict
-    "slot" "home"
-    "w" 1152
-    "h" 400
-    "wm" 500
-    "hm" 500
-    "label" "Homepage tile"
-    "price" "$400+gst / month"
-    "class" "mx-auto w-full max-w-[500px] aspect-square lg:max-w-none lg:aspect-[1152/400]") }}
+  {{/* The width constraints move to this wrapper so the label lines up with the
+       creative's left edge at both sizes. */}}
+  <div class="mx-auto w-full max-w-[500px] lg:max-w-none" data-print-hide>
+    <p class="m-0 mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">Advertisement</p>
+    {{ partial "ad-slot.html" (dict
+      "slot" "home"
+      "w" 1152
+      "h" 400
+      "wm" 500
+      "hm" 500
+      "label" "Homepage tile"
+      "price" "$400+gst / month"
+      "class" "w-full aspect-square lg:aspect-[1152/400]") }}
+  </div>
 </div>
 
 <section class="mx-auto max-w-6xl px-4 py-12">

@@ -11,10 +11,10 @@ backend:
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
-# Show CMS-edited entries in the public site only after the editor explicitly
-# publishes; until then they live in PRs. Sveltia inherits Decap's editorial
-# workflow semantics — drafts stay in a feature branch via the GitHub backend.
-publish_mode: editorial_workflow
+# No publish_mode key = "simple" mode: Save commits straight to the `branch`
+# above (main), so an edit is live as soon as the build finishes. Setting
+# `publish_mode: editorial_workflow` would instead park each edit on a
+# cms/<collection>/<slug> branch until it is explicitly published.
 
 site_url: https://mangawhai-directory.github.io
 display_url: https://mangawhai-directory.github.io
