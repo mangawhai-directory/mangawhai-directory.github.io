@@ -1,7 +1,9 @@
 ---
+tier: free
 title: Mortgage Broker Mangawhai
 slug: mortgage-broker-mangawhai
 blurb: Mangawhai-based mortgage brokerage helping first-time homebuyers to investment property investors with re-mortgaging, debt consolidation, new build financing and equity release.
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
@@ -21,10 +23,8 @@ categories:
   - professional-services
 tags:
   - Mortgage Broker
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
-status: active
+last_verified: 2026-05-09
+status: closed
 ---
