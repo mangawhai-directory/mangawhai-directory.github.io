@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: ''
+phone: '+64212817776'
 email: leighcorke522@gmail.com
 website: ''
 socials:
