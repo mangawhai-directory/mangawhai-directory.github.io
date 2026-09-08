@@ -103,6 +103,101 @@
       margin-bottom: 0;
     }
   }
+
+  /* Markdown tables on long-form pages, paired with
+     layouts/_markup/render-table.html. Goldmark emits a bare <table> and the
+     prose container has no table rules, so without this they render with no
+     padding, no rules and headers running together. */
+  .prose-table-scroll {
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+  .prose-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    font-variant-numeric: tabular-nums;
+  }
+  .prose-table th,
+  .prose-table td {
+    padding: 0.75rem 1.25rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose-table th:first-child,
+  .prose-table td:first-child { padding-left: 0; }
+  .prose-table th:last-child,
+  .prose-table td:last-child { padding-right: 0; }
+  .prose-table th {
+    border-bottom: 1px solid var(--color-border-strong);
+    font-weight: 600;
+    color: var(--color-foreground);
+    white-space: nowrap;
+  }
+  .prose-table td {
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-muted-foreground);
+  }
+  .prose-table tbody tr:last-child td { border-bottom: 0; }
+  /* The first cell names the row rather than holding a value. */
+  .prose-table td[data-row-head] {
+    color: var(--color-foreground);
+    font-weight: 500;
+  }
+
+  /* Below the sm breakpoint three or four columns crush together — the
+     "Homepage tile"/"Category header" headings collided outright. Each row
+     becomes a small card instead: the first cell heads it and every other
+     cell shows its column name from data-label, so nothing has to fit
+     side by side and there is no sideways scrolling. */
+  @media (max-width: 639px) {
+    .prose-table,
+    .prose-table tbody,
+    .prose-table tr,
+    .prose-table td { display: block; }
+    .prose-table thead { display: none; }
+    .prose-table tr {
+      margin-bottom: 0.75rem;
+      padding: 0 1rem 0.75rem;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+    }
+    .prose-table tbody tr:last-child { margin-bottom: 0; }
+    .prose-table td {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 0.375rem 0;
+      border-bottom: 0;
+      /* Row-level alignment from markdown would fight the card layout. */
+      text-align: left !important;
+    }
+    .prose-table td::before {
+      content: attr(data-label);
+      flex: 0 0 auto;
+      /* Column names are short; let the value wrap instead of the label. */
+      white-space: nowrap;
+      font-weight: 500;
+      color: var(--color-foreground);
+    }
+    .prose-table .prose-table-value {
+      flex: 0 1 auto;
+      min-width: 0;
+      text-align: right;
+    }
+    .prose-table td[data-row-head] {
+      display: block;
+      margin-bottom: 0.375rem;
+      padding: 0.75rem 0 0.625rem;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .prose-table td[data-row-head]::before { content: none; }
+    .prose-table td[data-row-head] .prose-table-value { text-align: left; }
+  }
 }
 
 /* Print */

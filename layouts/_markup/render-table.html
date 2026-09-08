@@ -1,0 +1,52 @@
+{{- /*
+  render-table — markup for tables written in markdown (advertise, terms, …).
+
+  Goldmark emits a bare <table>, which the prose container in
+  layouts/_default/single.html has no rules for, so tables rendered with no
+  padding and no rules and the headers ran together. This hook adds:
+
+    · a scroll wrapper, so a wide table scrolls instead of crushing;
+    · data-label on every cell, carrying its column heading, so under 640px
+      each row can restack as a small labelled card (see .prose-table in
+      assets/css/main.css);
+    · data-row-head on the first cell, which names the row rather than
+      holding a value, so it can head that card.
+
+  Cell .Text is already-rendered inline markup, so bold prices survive.
+*/ -}}
+{{- $labels := slice -}}
+{{- with .THead }}
+  {{- range (index . 0) }}{{ $labels = $labels | append (.Text | plainify) }}{{ end }}
+{{- end -}}
+{{- /* The wrapper scrolls but is deliberately not a focusable role="region":
+       the card layout means these tables never overflow, so that would only
+       add dead tab stops. A table wide enough to genuinely scroll on desktop
+       should get the focusable treatment then, not speculatively now. */ -}}
+<div class="prose-table-scroll">
+  <table class="prose-table">
+    {{- with .THead }}
+    <thead>
+      {{- range . }}
+      <tr>
+        {{- range . }}
+        <th scope="col"{{ with .Alignment }} style="text-align:{{ . }}"{{ end }}>{{ .Text }}</th>
+        {{- end }}
+      </tr>
+      {{- end }}
+    </thead>
+    {{- end }}
+    {{- with .TBody }}
+    <tbody>
+      {{- range . }}
+      <tr>
+        {{- range $i, $cell := . }}
+        <td{{ if eq $i 0 }} data-row-head{{ end }}
+          {{- if lt $i (len $labels) }} data-label="{{ index $labels $i }}"{{ end }}
+          {{- with $cell.Alignment }} style="text-align:{{ . }}"{{ end }}><span class="prose-table-value">{{ $cell.Text }}</span></td>
+        {{- end }}
+      </tr>
+      {{- end }}
+    </tbody>
+    {{- end }}
+  </table>
+</div>
