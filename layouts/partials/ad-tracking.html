@@ -2,11 +2,11 @@
   ad-tracking.html — GA4 click and viewable-impression tracking for ad slots.
 
   Reads the data-ad-* attributes emitted by ad-slot.html and sends:
-    ad_click              — a paid ad was clicked
+    ad_engagement         — a paid ad was clicked
     ad_placeholder_click  — a "Your ad here" slot was clicked (inventory demand,
                             kept separate so it never inflates an advertiser's numbers)
-    ad_impression         — a paid ad was ≥50% on screen for 1 continuous second
-                            (the IAB viewable display impression standard)
+    ad_view               — a paid ad was viewable for 1 continuous second
+                            (the IAB/MRC viewable display impression standard)
 
   Every event carries ad_id, ad_slot and ad_advertiser. These must be registered
   as event-scoped custom dimensions in GA4 (Admin → Custom definitions) or they
@@ -34,32 +34,57 @@
     document.addEventListener('click', function (e) {
       var el = e.target && e.target.closest ? e.target.closest('a[data-ad-id]') : null;
       if (!el) return;
-      var name = el.getAttribute('data-ad-type') === 'placeholder' ? 'ad_placeholder_click' : 'ad_click';
+      var name = el.getAttribute('data-ad-type') === 'placeholder' ? 'ad_placeholder_click' : 'ad_engagement';
       gtag('event', name, params(el));
     });
 
     if (!('IntersectionObserver' in window)) return;
+
+    // IAB/MRC viewable display impression: half the ad on screen for one
+    // continuous second — plus the large-creative carve-out. intersectionRatio is
+    // a fraction of the *ad*, so an ad taller than twice the viewport can fill the
+    // whole screen and still score under 0.5, and would never register a view. For
+    // those, the test flips to "at least half the viewport is filled by the ad".
+    // Live case: the 500×500 mobile creative on a phone held in landscape.
+    function isViewable(entry) {
+      if (entry.intersectionRatio >= 0.5) return true;
+      var root = entry.rootBounds; // null in some cross-origin contexts
+      if (!root || !root.width || !root.height) return false;
+      var box = entry.intersectionRect;
+      return (box.width * box.height) >= (root.width * root.height) * 0.5;
+    }
+
+    // Thresholds are ratios of the target, so [0, 0.5] alone would stop firing
+    // callbacks for an oversized ad long before isViewable() could ever be
+    // consulted (an ad 3× the viewport height tops out near 0.33). Step finely
+    // enough that every ad keeps producing entries as it scrolls through.
+    var thresholds = [];
+    for (var t = 0; t <= 20; t++) thresholds.push(t / 20);
+
     var timers = new WeakMap();
     // Permanent guard: unobserve() alone can still deliver an already-queued
-    // entry, and a double-counted impression is a number advertisers get billed on.
+    // entry, and a double-counted view is a number advertisers get billed on.
     var fired = new WeakSet();
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         var el = entry.target;
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+        if (entry.isIntersecting && isViewable(entry)) {
+          // Already counted, or already timing — the denser threshold ladder
+          // delivers many entries per ad, and a re-entry must never restart
+          // the one-second clock.
           if (fired.has(el) || timers.has(el)) return;
           timers.set(el, setTimeout(function () {
             fired.add(el);
             observer.unobserve(el);
             timers.delete(el);
-            gtag('event', 'ad_impression', params(el));
+            gtag('event', 'ad_view', params(el));
           }, 1000));
         } else if (timers.has(el)) {
           clearTimeout(timers.get(el));
           timers.delete(el);
         }
       });
-    }, { threshold: [0, 0.5] });
+    }, { threshold: thresholds });
 
     Array.prototype.forEach.call(ads, function (el) {
       if (el.getAttribute('data-ad-type') === 'ad') observer.observe(el);
