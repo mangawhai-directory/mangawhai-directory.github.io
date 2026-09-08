@@ -3,7 +3,7 @@ title: "Terms & Conditions"
 description: "Terms of use for visitors to Mangawhai Directory and terms governing paid advertising on the site."
 ---
 
-_Last updated: 19 August 2026._
+_Last updated: 8 September 2026._
 
 These Terms govern your use of [mangawhaidirectory.co.nz](https://mangawhaidirectory.co.nz/) (the "**Site**") and any paid advertising or Premium Listing Update you book with us. The Site and all related advertising services are owned, operated, and invoiced by **Sanderson Howe Limited** (NZ company number 8196168), trading as "**Mangawhai Directory**" — in these Terms, "we", "us" and "our" refer to Sanderson Howe Limited. By using the Site or placing a booking, you agree to these Terms.
 
@@ -87,6 +87,16 @@ This Part applies if you book a paid display-advertising slot with us. By placin
   - **On or after** go-live: no refund.
 - The above is subject to your rights at law. If your advertisement does not run for a material part of a booked month for a reason on our side (for example a site restructure or a technical failure), we will refund the affected period pro rata, or extend your booking by the equivalent period if you prefer. This is in addition to your rights at law.
 - To extend or repeat a placement, simply contact us before your current period ends — we will issue a fresh invoice for the new months.
+
+### Rates, ongoing rates and founding rates
+
+- Current prices are listed on the [advertise page](/advertise/) and are exclusive of GST unless stated otherwise.
+- **Ongoing rate.** The lower "ongoing" rate applies where you book **three or more months together in a single Booking**. The months do not need to be consecutive. A Booking of one or two months is charged at the single-month rate shown on the advertise page.
+- **Founding rate.** The founding rates shown on the advertise page are open to our **first 10 Advertisers**. Once ten Advertisers have placed a paid Booking, the founding rates close and the then-current published rate applies to new Bookings.
+- **How long a founding rate is held.** If you are one of the first 10 Advertisers, we will honour your founding rate on any Booking you place within **12 months of your first go-live date**, even if our published rate has moved up in the meantime. Bookings within that period do **not** have to be consecutive — a seasonal advertiser who books only over summer keeps the rate. The hold ends if you place no Booking at all for 12 consecutive months.
+- **What happens after that.** Once the 12-month hold ends, the then-current published rate applies to your next Booking. We will tell you at least **60 days** before that happens, so no price change ever reaches you for the first time on an invoice.
+- **Changes to published rates.** We may change our published rates at any time. A change to a published rate **never affects a Booking we have already invoiced you for** — the price you were invoiced is the price you pay for that booked period.
+- The rate steps shown on the advertise page describe what we are aiming at as the Site grows. They are **indications, not commitments**: we are not promising that our prices will rise, or that the Site will reach any particular level of traffic.
 
 ### Premium Listing Updates
 

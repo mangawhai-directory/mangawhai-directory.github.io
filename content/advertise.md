@@ -67,6 +67,8 @@ All prices exclude GST. The ongoing rate applies when you book three months or m
 
 The banner rates above are **founding rates**, held open for our **first 10 advertisers**.
 
+If you're one of the ten, we'll honour your founding rate on any booking you make in the **12 months after you go live** — even if our published rate has moved up by then. Your months don't have to be consecutive, so booking only over summer doesn't cost you the rate. After that we move to the published rate, and we'll tell you at least 60 days beforehand rather than surprising you on an invoice. The full wording is in our [terms](/terms/#part-b--advertising-terms-paid-advertisers).
+
 We price against the traffic we can actually show you today, not what we hope for later. As the directory grows the rate card grows with it — so here is the whole thing in advance, rather than a surprise at renewal:
 
 | Step | Homepage tile | Category header | Applies when |
