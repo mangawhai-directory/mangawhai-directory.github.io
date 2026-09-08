@@ -31,8 +31,8 @@ Want to update something later? Just [contact us](/contact/) with the new conten
 
 A banner placed at the top of one category page (e.g. *Construction*, *Cafes & Restaurants*, *Plumbers*). **Note**: This can be any category you like, it doesn't have to be the one you are in.
 
-- **$35+gst / month** when you book three or more months together.
-- **$40+gst** for a single month.
+- Rate card: **$55+gst / month** for three or more months booked together, or **$65+gst** for a single month.
+- **Founding offer — our first 10 advertisers: $35+gst / month**, or $40+gst for a single month.
 - **Desktop creative:** 500 × 250 px
 - **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
 - Highest-intent placement — people on a category page are actively choosing who to call.
@@ -43,8 +43,8 @@ A banner placed at the top of one category page (e.g. *Construction*, *Cafes & R
 
 A wide tile placed below the hero on the homepage.
 
-- **$95+gst / month** when you book three or more months together.
-- **$110+gst** for a single month.
+- Rate card: **$145+gst / month** for three or more months booked together, or **$165+gst** for a single month.
+- **Founding offer — our first 10 advertisers: $95+gst / month**, or $110+gst for a single month.
 - **Desktop creative:** 1152 × 400 px
 - **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
 - Brand-builder placement — every visitor to the directory passes through here.
@@ -53,15 +53,22 @@ A wide tile placed below the hero on the homepage.
 
 ## Rates at a glance
 
-All prices exclude GST. Banners are sold two ways — **book three or more months together** and the monthly rate drops.
+All prices exclude GST. Book three or more months together and the monthly rate drops.
+
+| Placement | 3+ months, booked together | A single month |
+|---|---|---|
+| Homepage tile | $145 / month | $165 |
+| Category page header | $55 / month | $65 |
+| Premium listing | $65 per update — one-off, no monthly fee | — |
+
+### Founding offer — our first 10 advertisers
 
 | Placement | 3+ months, booked together | A single month |
 |---|---|---|
 | Homepage tile | **$95** / month | $110 |
 | Category page header | **$35** / month | $40 |
-| Premium listing | **$65** per update — one-off, no monthly fee | — |
 
-Three months of the category header is **$105**; three months of the homepage tile is **$285**. The months don't have to be consecutive — book December, January and April together if that's your season.
+That's three months of a category header for **$105**, or three months of the homepage tile for **$285**. The months don't have to be consecutive — book December, January and April together if that's your season.
 
 **We'd rather sell you three months than one, and not only because it's cheaper for you.** We're a young directory with modest traffic, and a single month produces numbers too small to tell you anything useful. Three months gives your report enough to actually read. If you only want one month, that's genuinely fine — we'd just rather you knew why the numbers might look thin.
 
