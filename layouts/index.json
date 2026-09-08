@@ -1,0 +1,76 @@
+{{- /*
+  /index.json — search index consumed by partials/search.html on the homepage.
+
+  Businesses are `render: never` (see content/businesses/_index.md), so each one
+  is addressed as <category page>/#<filename>, the same anchor the
+  business-entry partial emits. A business in several categories is indexed
+  once against its first category; the others still match via the haystack.
+
+  Keys are short because this file ships to every visitor who uses the search:
+    n name · u url · c subtitle (category) · s suburb · x extra haystack text
+    k kind ("c" category, "b" business)
+*/ -}}
+{{- $catTitle := dict -}}
+{{- $catURL := dict -}}
+{{- $results := slice -}}
+
+{{- with site.GetPage "/categories" -}}
+  {{- range .Pages -}}
+    {{- $slug := path.Base .RelPermalink -}}
+    {{- $catTitle = merge $catTitle (dict $slug .Title) -}}
+    {{- $catURL = merge $catURL (dict $slug .RelPermalink) -}}
+  {{- end -}}
+  {{- range sort .Pages "Title" "asc" -}}
+    {{- if not .Params.hidden -}}
+      {{- $results = $results | append (dict
+          "k" "c"
+          "n" .Title
+          "u" .RelPermalink
+          "c" "Category"
+          "x" (delimit (.Params.keywords | default slice) " ")) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with site.GetPage "/businesses" -}}
+  {{- range sort .Pages "Title" "asc" -}}
+    {{- if ne (.Params.status | default "active") "closed" -}}
+      {{- $page := . -}}
+      {{- $cats := .Params.categories | default slice -}}
+      {{- $names := slice -}}
+      {{- range $cats -}}
+        {{- with index $catTitle . }}{{ $names = $names | append . }}{{ end -}}
+      {{- end -}}
+      {{- $primary := "" -}}
+      {{- $url := "" -}}
+      {{- range $cats -}}
+        {{- if not $url -}}
+          {{- with index $catURL . -}}
+            {{- $url = printf "%s#%s" . $page.File.BaseFileName -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if $names }}{{ $primary = index $names 0 }}{{ end -}}
+      {{- if $url -}}
+        {{- $suburb := "" -}}
+        {{- $street := "" -}}
+        {{- with .Params.address -}}
+          {{- $suburb = .suburb | default "" -}}
+          {{- $street = .street | default "" -}}
+        {{- end -}}
+        {{- $extra := slice -}}
+        {{- $extra = $extra | append $names -}}
+        {{- $extra = $extra | append (.Params.tags | default slice) -}}
+        {{- with $street }}{{ $extra = $extra | append . }}{{ end -}}
+        {{- $results = $results | append (dict
+            "k" "b"
+            "n" .Title
+            "u" $url
+            "c" $primary
+            "s" $suburb
+            "x" (delimit $extra " ")) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $results | jsonify -}}

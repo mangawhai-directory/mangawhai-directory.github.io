@@ -24,7 +24,7 @@ pluralizelisttitles = false
   tag = "tags"
 
 [outputs]
-  home = ["html", "rss", "llms"]
+  home = ["html", "rss", "llms", "json"]
   taxonomy = ["html"]
   term = ["html"]
 
