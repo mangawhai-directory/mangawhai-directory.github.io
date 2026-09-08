@@ -1,0 +1,53 @@
+{{- /*
+  listing-tracking.html — GA4 tracking for the action buttons on a business listing.
+
+  Reads the data-listing-* attributes emitted by business-entry.html (and, for the
+  social buttons, threaded through social-icons.html) and sends one event per tap:
+
+    listing_engagement — a visitor tapped Call, Email, Visit website, or a social
+                         link on a listing
+
+  Carried params:
+    listing_action    — call | email | website | social:<platform>
+    listing_slug      — stable business key, safe to report on across renames
+    listing_business  — display name for reports
+    listing_category  — the business's first category slug
+    listing_tier      — free | paid, so we can answer whether a paid listing
+                        actually earns more taps than a free one
+
+  These must be registered as event-scoped custom dimensions in GA4 (Admin →
+  Custom definitions) or they will not reach reports. Registration is NOT
+  retroactive — see MD-28.
+
+  Deliberately NOT sent: the link target. For call and email that is the
+  business's phone number or address, and contact details do not belong in
+  analytics. listing_slug identifies the business without them.
+
+  Taps are not deduplicated per session. Someone who taps Call twice probably
+  called twice; that is signal, not noise, and the reports say so.
+
+  Kept separate from ad-tracking.html on purpose: different lifecycle, and that
+  partial returns early on pages with no ad slots, which is most listing traffic.
+
+  Included from baseof.html under hugo.IsProduction, alongside the gtag snippet.
+  tel: and mailto: do not unload the page and website/social links open in a new
+  tab, so a plain gtag() call is reliable — no beacon transport needed.
+*/ -}}
+<script>
+  (function () {
+    if (typeof gtag !== 'function') return;
+    if (!document.querySelector('a[data-listing-action]')) return;
+
+    document.addEventListener('click', function (e) {
+      var el = e.target && e.target.closest ? e.target.closest('a[data-listing-action]') : null;
+      if (!el) return;
+      gtag('event', 'listing_engagement', {
+        listing_action: el.getAttribute('data-listing-action'),
+        listing_slug: el.getAttribute('data-listing-slug'),
+        listing_business: el.getAttribute('data-listing-business'),
+        listing_category: el.getAttribute('data-listing-category') || '',
+        listing_tier: el.getAttribute('data-listing-tier') || 'free'
+      });
+    });
+  })();
+</script>

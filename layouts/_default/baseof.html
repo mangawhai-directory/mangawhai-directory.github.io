@@ -59,6 +59,7 @@
   </main>
   {{ partial "footer.html" . }}
   {{- if hugo.IsProduction }}{{ partial "ad-tracking.html" . }}{{ end }}
+  {{- if hugo.IsProduction }}{{ partial "listing-tracking.html" . }}{{ end }}
   <script>
     (function () {
       var toggle = document.getElementById('menu-toggle');
