@@ -27,7 +27,7 @@ Free listings show your name, address, and contact buttons. The premium tier unl
 
 Want to update something later? Just [contact us](/contact/) with the new content — another $30+gst per update.
 
-### Category page header — $150+gst / month
+### Category page header — $35+gst / month
 
 A banner placed at the top of one category page (e.g. *Construction*, *Cafes & Restaurants*, *Plumbers*). **Note**: This can be any category you like, it doesn't have to be the one you are in.
 
@@ -37,7 +37,7 @@ A banner placed at the top of one category page (e.g. *Construction*, *Cafes & R
 - Static image plus a click-through to your website, phone or booking link.
 - One advertiser per category at a time.
 
-### Homepage tile — $400+gst / month
+### Homepage tile — $95+gst / month
 
 A wide tile placed below the hero on the homepage.
 
