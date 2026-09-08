@@ -31,7 +31,7 @@ Want to update something later? Just [contact us](/contact/) with the new conten
 
 A banner placed at the top of one category page (e.g. *Construction*, *Cafes & Restaurants*, *Plumbers*). **Note**: This can be any category you like, it doesn't have to be the one you are in.
 
-- **$35+gst / month** on the ongoing rate — three months or more, booked together.
+- **$35+gst / month** when you book three or more months together.
 - **$40+gst** for a single month.
 - **Desktop creative:** 500 × 250 px
 - **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
@@ -43,7 +43,7 @@ A banner placed at the top of one category page (e.g. *Construction*, *Cafes & R
 
 A wide tile placed below the hero on the homepage.
 
-- **$95+gst / month** on the ongoing rate — three months or more, booked together.
+- **$95+gst / month** when you book three or more months together.
 - **$110+gst** for a single month.
 - **Desktop creative:** 1152 × 400 px
 - **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
@@ -53,34 +53,46 @@ A wide tile placed below the hero on the homepage.
 
 ## Rates at a glance
 
-All prices exclude GST. The ongoing rate applies when you book three months or more together.
+All prices exclude GST. Banners are sold two ways — **book three or more months together** and the monthly rate drops.
 
-| Placement | Ongoing (3+ months) | Single month |
+| Placement | 3+ months, booked together | A single month |
 |---|---|---|
 | Homepage tile | **$95** / month | $110 |
 | Category page header | **$35** / month | $40 |
-| Premium listing | **$65** per update | — |
+| Premium listing | **$65** per update — one-off, no monthly fee | — |
 
-**We'd rather sell you three months than one, and not only because it's cheaper for you.** We're a young directory with modest traffic — a single month produces numbers too small to tell you anything useful. Three months gives your report enough to actually read. If you only want to try one month, that's genuinely fine; we'd just rather you knew why the numbers might look thin.
+Three months of the category header is **$105**; three months of the homepage tile is **$285**. The months don't have to be consecutive — book December, January and April together if that's your season.
 
-## Founding rates
+**We'd rather sell you three months than one, and not only because it's cheaper for you.** We're a young directory with modest traffic, and a single month produces numbers too small to tell you anything useful. Three months gives your report enough to actually read. If you only want one month, that's genuinely fine — we'd just rather you knew why the numbers might look thin.
 
-The banner rates above are **founding rates**, held open for our **first 10 advertisers**.
+## How the price changes over time
 
-If you're one of the ten, we'll honour your founding rate on any booking you make in the **12 months after you go live** — even if our published rate has moved up by then. Your months don't have to be consecutive, so booking only over summer doesn't cost you the rate. After that we move to the published rate, and we'll tell you at least 60 days beforehand rather than surprising you on an invoice. The full wording is in our [terms](/terms/#part-b--advertising-terms-paid-advertisers).
-
-We price against the traffic we can actually show you today, not what we hope for later. As the directory grows the rate card grows with it — so here is the whole thing in advance, rather than a surprise at renewal:
+The rates above are **founding rates** — a launch discount for our first 10 advertisers, because early advertisers are taking a chance on a directory that can't yet show them much. Once those ten places are taken, the standard rate applies. After that the rate card moves with our traffic, not with our mood.
 
 | Step | Homepage tile | Category header | Applies when |
 |---|---|---|---|
-| **Founding** (now) | **$95** | **$35** | our first 10 advertisers |
-| Step 2 | $145 | $55 | the site passes 500 visits a month |
+| **Founding** | **$95** | **$35** | our first 10 advertisers — available now |
+| Standard | $145 | $55 | once the first 10 places are taken |
 | Step 3 | $220 | $85 | the site passes 1,200 visits a month |
 | Full rate | $300 | $120 | the site passes 2,500 visits a month |
 
-For context, we're currently around 230 visits a month — so Step 2 means roughly double our present traffic, and the full rate means more than ten times it. We're not pretending any of that is imminent.
+Rates shown are the monthly price when you book three or more months together; a single month is about 15% more at every step.
 
-Every step is tied to a number you can ask us for at any time, and we'll show you the Analytics figure behind it. A price increase should be arithmetic you can check, not something we invent at renewal.
+We're currently around **230 visits a month**, so Step 3 means more than five times our present traffic and the full rate more than ten times it. We're not pretending either is imminent. Both are tied to a number you can ask us for at any time, and we'll show you the Analytics figure behind it — a price increase should be arithmetic you can check, not something we invent at renewal.
+
+## Founding advertisers — the first 10
+
+Ten places, then the price goes to standard. If you take one of them:
+
+- You pay **$95 / $35** rather than the $145 / $55 standard rate — a saving of $600 a year on the homepage tile, $240 on a category header.
+- We **hold that rate for 12 months** from your go-live date, even after founding rates have closed and even if the rate card moves up a step.
+- Your months don't have to be consecutive — booking only over summer costs you nothing.
+- At the end of the 12 months you move to the published rate, and we'll tell you at least **60 days** beforehand rather than surprising you on an invoice.
+- A change to a published rate never affects a booking we've already invoiced.
+
+We're not pretending the ten places are scarce for scarcity's sake. They're cheap because right now you'd be backing us on modest numbers, and that's worth paying you for.
+
+Full wording is in our [terms](/terms/#part-b--advertising-terms-paid-advertisers).
 
 ## Creative specs
 
