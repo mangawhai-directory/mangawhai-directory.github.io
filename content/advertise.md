@@ -78,12 +78,12 @@ The rates above are **founding rates** — a launch discount for our first 10 ad
 
 | Step | Homepage tile | Category header | Applies when |
 |---|---|---|---|
-| **Founding** | **$95** | **$35** | our first 10 advertisers — available now |
-| Step 2 | $145 | $55 | once the first 10 places are taken |
-| Step 3 | $220 | $85 | the site passes 1,200 visits a month |
-| Full rate | $300 | $120 | the site passes 2,500 visits a month |
+| **Founding** | **$95** / month<br>$110 single month | **$35** / month<br>$40 single month | our first 10 advertisers — available now |
+| Step 2 | $145 / month<br>$165 single month | $55 / month<br>$65 single month | once the first 10 places are taken |
+| Step 3 | $220 / month<br>$255 single month | $85 / month<br>$100 single month | the site passes 1,200 visits a month |
+| Full rate | $300 / month<br>$345 single month | $120 / month<br>$140 single month | the site passes 2,500 visits a month |
 
-Rates shown are the monthly price when you book three or more months together; a single month is about 15% more at every step.
+The per-month price applies when three or more months are booked together.
 
 We're currently around **230 visits a month**, so Step 3 means more than five times our present traffic and the full rate more than ten times it. We're not pretending either is imminent. Both are tied to a number you can ask us for at any time, and we'll show you the Analytics figure behind it — a price increase should be arithmetic you can check, not something we invent at renewal.
 
