@@ -1,7 +1,9 @@
 ---
+tier: free
 title: The Studio by No Limits Fitness
 slug: the-studio-by-no-limits-fitness
 blurb: ''
+image: ''
 address:
   street: 11/7 Wood Street
   suburb: Mangawhai Heads
@@ -23,7 +25,6 @@ tags:
   - Gym
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-11
-status: active
+status: closed
 ---
