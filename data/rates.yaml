@@ -1,0 +1,102 @@
+# Single source of truth for advertising rates.
+#
+# Rendered by two shortcodes so the offer cards and the step ladder can never
+# disagree: layouts/shortcodes/pricing-cards.html and rate-steps.html.
+# Mirrors the media kit rate card — update both together.
+#
+# Prices are written as display strings (with the +GST suffix) rather than
+# numbers because that is how they are quoted to advertisers everywhere else.
+
+founding_slots: 10
+
+cards:
+  - name: Premium Listing
+    tone: cream
+    prices:
+      - label: Per update
+        value: $65+GST
+      # Shortened from the media kit's "Every later change" so the row still
+      # fits on one line in the narrowest three-up card (768px viewport).
+      - label: Later changes
+        value: $65+GST
+    band:
+      tone: muted
+      label: No monthly fee
+      rows:
+        - label: Cost to stay listed
+          value: Nothing
+        - label: Minimum term
+          value: None
+    features:
+      - Square image or logo beside your name
+      - A 25–30 word blurb under your name
+      - Opening hours, listed by day
+      - Same listing position — no reordering, no badges
+      - Stays live at no further cost until you change it
+    footnote: Not a subscription. Pay once per change. Best value on the site.
+
+  - name: Category Header
+    tone: sage
+    prices:
+      - label: 3+ months
+        value: $55+GST p/m
+      - label: Single month
+        value: $65+GST
+    band:
+      tone: founding
+      label: Founding offer · first 10 advertisers
+      rows:
+        - label: 3+ months
+          value: $35+GST p/m
+        - label: Single month
+          value: $40+GST
+    features:
+      - Banner at the top of one category page
+      - Any category you like — not just your own
+      - Highest-intent placement on the site
+      - One advertiser per category at a time
+      - Static image plus click-through to web, phone or booking
+    footnote: Desktop 500 × 250 · Mobile 500 × 500
+
+  - name: Homepage Tile
+    tone: amber
+    prices:
+      - label: 3+ months
+        value: $145+GST p/m
+      - label: Single month
+        value: $165+GST
+    band:
+      tone: founding
+      label: Founding offer · first 10 advertisers
+      rows:
+        - label: 3+ months
+          value: $95+GST p/m
+        - label: Single month
+          value: $110+GST
+    features:
+      - Wide tile directly below the homepage hero
+      - Every visitor to the directory passes it
+      - Brand-builder placement
+      - One advertiser holds it for the whole month
+      - Static image plus click-through
+    footnote: Desktop 1152 × 400 · Mobile 500 × 500
+
+# The published ladder. "current: true" marks the rate in force today.
+steps:
+  - name: Founding
+    current: true
+    homepage: { monthly: $95, single: $110 }
+    category: { monthly: $35, single: $40 }
+    when: our first 10 advertisers — available now
+  - name: Step 2
+    homepage: { monthly: $145, single: $165 }
+    category: { monthly: $55, single: $65 }
+    when: once the first 10 places are taken
+  - name: Step 3
+    homepage: { monthly: $220, single: $255 }
+    category: { monthly: $85, single: $100 }
+    when: 3-month average tops 1,200 visits / month
+  - name: Full rate
+    homepage: { monthly: $300, single: $345 }
+    category: { monthly: $120, single: $140 }
+    when: 3-month average tops 2,500 visits / month

@@ -1,0 +1,44 @@
+{{- /*
+  rate-steps — the published rate ladder on /advertise/, from data/rates.yaml.
+
+  Emitted as HTML rather than a markdown table because each price cell carries
+  two values (the 3+ month rate and the single-month rate), which a markdown
+  table cannot express cleanly. It reuses the .prose-table classes from
+  assets/css/main.css, so it inherits the same desktop styling and the same
+  restack-as-cards behaviour under 640px that the markdown tables get from
+  layouts/_markup/render-table.html.
+*/ -}}
+{{- $cols := slice
+    (dict "key" "homepage" "label" "Homepage tile")
+    (dict "key" "category" "label" "Category header")
+-}}
+<div class="prose-table-scroll">
+  <table class="prose-table">
+    <thead>
+      <tr>
+        <th scope="col">Step</th>
+        {{- range $cols }}
+        <th scope="col">{{ .label }}</th>
+        {{- end }}
+        <th scope="col">Applies when</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- range $step := site.Data.rates.steps }}
+      <tr>
+        <td data-row-head data-label="Step"><span class="prose-table-value">{{ if $step.current }}<strong>{{ $step.name }}</strong>{{ else }}{{ $step.name }}{{ end }}</span></td>
+        {{- range $col := $cols }}
+        {{- $rate := index $step $col.key }}
+        <td data-label="{{ $col.label }}">
+          <span class="prose-table-value">
+            <span class="block whitespace-nowrap font-medium text-foreground">{{ $rate.monthly }} p/m</span>
+            <span class="block whitespace-nowrap text-xs text-muted-foreground">{{ $rate.single }} single month</span>
+          </span>
+        </td>
+        {{- end }}
+        <td data-label="Applies when"><span class="prose-table-value">{{ $step.when }}</span></td>
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
+</div>

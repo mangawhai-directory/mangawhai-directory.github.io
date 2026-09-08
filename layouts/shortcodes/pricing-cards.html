@@ -1,0 +1,71 @@
+{{- /*
+  pricing-cards — the three offer cards on /advertise/, driven by
+  data/rates.yaml so they cannot drift from the step ladder below them.
+  Takes its layout from the media kit rate card: a tinted header carrying the
+  name and headline prices, a contrasting band underneath (the founding offer,
+  or "no monthly fee" for the premium listing), then what you get, then a
+  footer strip with the creative spec.
+
+  Tones map to the existing palette tokens in assets/css/main.css, so the page
+  and the PDF stay the same three colours.
+
+  The `!` overrides defeat the prose container's child-element styles in
+  layouts/_default/single.html ([&_p], [&_ul], [&_li]), which out-specify a
+  plain utility class — the same reason cta.html carries them.
+*/ -}}
+{{- $headers := dict
+    "cream" "bg-surface-cream"
+    "sage"  "bg-surface-sage"
+    "amber" "bg-primary"
+-}}
+<div class="my-8 grid gap-5 md:grid-cols-3">
+  {{- range site.Data.rates.cards }}
+  <div class="flex flex-col overflow-hidden rounded-lg border border-border bg-card">
+
+    {{- /* Header: name + the standard prices. */}}
+    <div class="{{ index $headers .tone | default "bg-muted" }} px-4 pb-4 pt-4">
+      <p class="m-0! text-xl! font-semibold leading-7! tracking-tight text-foreground!">{{ .name }}</p>
+      <dl class="m-0 mt-3 border-t border-black/10 pt-3 text-[13px] leading-5">
+        {{- range .prices }}
+        <div class="flex items-baseline justify-between gap-2 py-0.5">
+          <dt class="m-0 min-w-0 text-foreground/70">{{ .label }}</dt>
+          {{- /* The value never wraps: "$55+GST p/m" splitting across two
+                 lines was what squeezed the label into two lines too. */}}
+          <dd class="m-0 whitespace-nowrap font-semibold text-foreground">{{ .value }}</dd>
+        </div>
+        {{- end }}
+      </dl>
+    </div>
+
+    {{- /* Band: the founding offer, or the no-fee note on the premium card. */}}
+    {{- with .band }}
+    {{- $founding := eq .tone "founding" }}
+    <div class="{{ if $founding }}bg-footer text-footer-foreground{{ else }}bg-muted text-foreground{{ end }} px-4 py-4">
+      <p class="m-0! text-sm! font-semibold leading-5! {{ if $founding }}text-footer-foreground!{{ else }}text-foreground!{{ end }}">{{ .label }}</p>
+      <dl class="m-0 mt-2 text-[13px] leading-5">
+        {{- range .rows }}
+        <div class="flex items-baseline justify-between gap-2 py-0.5">
+          <dt class="m-0 min-w-0 {{ if $founding }}text-footer-foreground/85{{ else }}text-muted-foreground{{ end }}">{{ .label }}</dt>
+          <dd class="m-0 whitespace-nowrap font-semibold">{{ .value }}</dd>
+        </div>
+        {{- end }}
+      </dl>
+    </div>
+    {{- end }}
+
+    {{- /* What you get. flex-1 so the footer strips line up across cards. */}}
+    <ul class="m-0! flex-1 list-none! space-y-2 p-4! text-sm text-muted-foreground">
+      {{- range .features }}
+      <li class="relative pl-4 text-muted-foreground!">
+        <span class="absolute left-0 top-[0.55em] h-1.5 w-1.5 rounded-full bg-footer/60" aria-hidden="true"></span>
+        {{ . }}
+      </li>
+      {{- end }}
+    </ul>
+
+    {{- with .footnote }}
+    <p class="m-0! border-t border-border bg-muted/40 px-4 py-3 text-xs! leading-5! text-muted-foreground!">{{ . }}</p>
+    {{- end }}
+  </div>
+  {{- end }}
+</div>
