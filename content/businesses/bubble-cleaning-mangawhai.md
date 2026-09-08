@@ -1,26 +1,30 @@
 ---
-title: "Bubble Cleaning Mangawhai"
-slug: "bubble-cleaning-mangawhai"
-blurb: ""
+tier: free
+title: Bubble Cleaning Mangawhai
+slug: bubble-cleaning-mangawhai
+blurb: ''
+image: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-website: "https://bubblecleaning.co.nz"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: ''
+email: ''
+website: https://bubblecleaning.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["cleaning-services"]
+  facebook: https://www.facebook.com/bubblecleaning.nz/
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - cleaning-services
 tags:
   - Cleaning
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
