@@ -67,12 +67,12 @@ Three months of the category header is **$105**; three months of the homepage ti
 
 ## How the price changes over time
 
-The rates above are **founding rates** — a launch discount for our first 10 advertisers, because early advertisers are taking a chance on a directory that can't yet show them much. Once those ten places are taken, the standard rate applies. After that the rate card moves with our traffic, not with our mood.
+The rates above are **founding rates** — a launch discount for our first 10 advertisers, because early advertisers are taking a chance on a directory that can't yet show them much. Once those ten places are taken, the Step 2 rate applies. After that the rate card moves with our traffic, not with our mood.
 
 | Step | Homepage tile | Category header | Applies when |
 |---|---|---|---|
 | **Founding** | **$95** | **$35** | our first 10 advertisers — available now |
-| Standard | $145 | $55 | once the first 10 places are taken |
+| Step 2 | $145 | $55 | once the first 10 places are taken |
 | Step 3 | $220 | $85 | the site passes 1,200 visits a month |
 | Full rate | $300 | $120 | the site passes 2,500 visits a month |
 
@@ -82,9 +82,9 @@ We're currently around **230 visits a month**, so Step 3 means more than five ti
 
 ## Founding advertisers — the first 10
 
-Ten places, then the price goes to standard. If you take one of them:
+Ten places, then the price goes to Step 2. If you take one of them:
 
-- You pay **$95 / $35** rather than the $145 / $55 standard rate — a saving of $600 a year on the homepage tile, $240 on a category header.
+- You pay **$95 / $35** rather than the $145 / $55 Step 2 rate — a saving of $600 a year on the homepage tile, $240 on a category header.
 - We **hold that rate for 12 months** from your go-live date, even after founding rates have closed and even if the rate card moves up a step.
 - Your months don't have to be consecutive — booking only over summer costs you nothing.
 - At the end of the 12 months you move to the published rate, and we'll tell you at least **60 days** beforehand rather than surprising you on an invoice.
