@@ -11,9 +11,9 @@ Every business gets a **free organic listing**. Paid ads simply put your brand i
 
 ## Packages
 
-### Premium listing — $30+gst per update
+### Premium listing — $65+gst per update
 
-A one-off fee, **not** a monthly subscription. You pay $30+gst each time you ask us to set up or change your premium content — initial setup, swapping the image, refreshing the blurb, or updating opening hours. Once we've made the change, the premium content stays live on your listing at no further cost for as long as we carry premium listings — see our [terms](/terms/) for what happens if we change the offering.
+A one-off fee, **not** a monthly subscription. You pay $65+gst each time you ask us to set up or change your premium content — initial setup, swapping the image, refreshing the blurb, or updating opening hours. Once we've made the change, the premium content stays live on your listing at no further cost for as long as we carry premium listings — see our [terms](/terms/) for what happens if we change the offering.
 
 Free listings show your name, address, and contact buttons. The premium tier unlocks:
 
@@ -25,27 +25,60 @@ Free listings show your name, address, and contact buttons. The premium tier unl
 - **Image spec:** square, ideally 800 × 800 px (renders sharp on retina screens), JPG or PNG under 200 KB.
 - **Blurb:** up to 25-30 words — shorter usually reads better.
 
-Want to update something later? Just [contact us](/contact/) with the new content — another $30+gst per update.
+Want to update something later? Just [contact us](/contact/) with the new content — another $65+gst per update.
 
-### Category page header — $35+gst / month
+### Category page header — from $35+gst / month
 
 A banner placed at the top of one category page (e.g. *Construction*, *Cafes & Restaurants*, *Plumbers*). **Note**: This can be any category you like, it doesn't have to be the one you are in.
 
+- **$35+gst / month** on the ongoing rate — three months or more, booked together.
+- **$40+gst** for a single month.
 - **Desktop creative:** 500 × 250 px
 - **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
 - Highest-intent placement — people on a category page are actively choosing who to call.
 - Static image plus a click-through to your website, phone or booking link.
 - One advertiser per category at a time.
 
-### Homepage tile — $95+gst / month
+### Homepage tile — from $95+gst / month
 
 A wide tile placed below the hero on the homepage.
 
+- **$95+gst / month** on the ongoing rate — three months or more, booked together.
+- **$110+gst** for a single month.
 - **Desktop creative:** 1152 × 400 px
 - **Mobile creative:** 500 × 500 px (recommended) — scales to fit the viewport
 - Brand-builder placement — every visitor to the directory passes through here.
 - Static image plus a click-through.
 - One advertiser holds the homepage tile for the whole of each booked month.
+
+## Rates at a glance
+
+All prices exclude GST. The ongoing rate applies when you book three months or more together.
+
+| Placement | Ongoing (3+ months) | Single month |
+|---|---|---|
+| Homepage tile | **$95** / month | $110 |
+| Category page header | **$35** / month | $40 |
+| Premium listing | **$65** per update | — |
+
+**We'd rather sell you three months than one, and not only because it's cheaper for you.** We're a young directory with modest traffic — a single month produces numbers too small to tell you anything useful. Three months gives your report enough to actually read. If you only want to try one month, that's genuinely fine; we'd just rather you knew why the numbers might look thin.
+
+## Founding rates
+
+The banner rates above are **founding rates**, held open for our **first 10 advertisers**.
+
+We price against the traffic we can actually show you today, not what we hope for later. As the directory grows the rate card grows with it — so here is the whole thing in advance, rather than a surprise at renewal:
+
+| Step | Homepage tile | Category header | Applies when |
+|---|---|---|---|
+| **Founding** (now) | **$95** | **$35** | our first 10 advertisers |
+| Step 2 | $145 | $55 | the site passes 500 visits a month |
+| Step 3 | $220 | $85 | the site passes 1,200 visits a month |
+| Full rate | $300 | $120 | the site passes 2,500 visits a month |
+
+For context, we're currently around 230 visits a month — so Step 2 means roughly double our present traffic, and the full rate means more than ten times it. We're not pretending any of that is imminent.
+
+Every step is tied to a number you can ask us for at any time, and we'll show you the Analytics figure behind it. A price increase should be arithmetic you can check, not something we invent at renewal.
 
 ## Creative specs
 
@@ -62,9 +95,11 @@ A wide tile placed below the hero on the homepage.
 
 Applies to the **Homepage tile** and **Category page header** — both billed per whole calendar month.
 
-- 1 month run from the first to the last day of your selected month.
+- Each booked month runs from the first to the last day of that month.
 - Book any month you like, subject to availability — get in early for peak periods (summer, school holidays). We'll confirm what's available when you enquire.
-- One free swap during the month if you want to refresh creative.
+- The **ongoing rate** applies to three or more months booked together. They don't have to be consecutive, but they do have to be booked at the same time.
+- One free swap per month if you want to refresh creative.
+- A performance report at the end of each booked month.
 - Plain invoice. No contracts. No auto-renewal — we'll ask before continuing.
 
 ## Cancellations
