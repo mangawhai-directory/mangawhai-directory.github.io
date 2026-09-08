@@ -74,7 +74,7 @@ That's three months of a category header for **$105**, or three months of the ho
 
 ## How the price changes over time
 
-The rates above are **founding rates** — a launch discount for our first 10 advertisers, because early advertisers are taking a chance on a directory that can't yet show them much. Once those ten places are taken, the Step 2 rate applies. After that the rate card moves with our traffic, not with our mood.
+We're new, and the rate card should say so. A placement is worth what it delivers today, not what we hope it'll deliver — so the price is tied to our traffic and published in advance rather than sprung on you at renewal. The founding offer is for our first 10 advertisers, who back us before the numbers are worth boasting about; once those ten places are taken, Step 2 applies.
 
 | Step | Homepage tile | Category header | Applies when |
 |---|---|---|---|
