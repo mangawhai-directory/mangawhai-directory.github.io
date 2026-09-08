@@ -92,9 +92,9 @@ We're currently around **230 visits a month**, so Step 3 means more than five ti
 Ten places, then the price goes to Step 2. If you take one of them:
 
 - You pay **$95 / $35** rather than the $145 / $55 Step 2 rate — a saving of $600 a year on the homepage tile, $240 on a category header.
-- We **hold that rate for 12 months** from your go-live date, even after founding rates have closed and even if the rate card moves up a step.
-- Your months don't have to be consecutive — booking only over summer costs you nothing.
-- At the end of the 12 months you move to the published rate, and we'll tell you at least **60 days** beforehand rather than surprising you on an invoice.
+- We **hold that rate for any month you book within 12 months** of your go-live date, even after founding rates have closed and even if the rate card moves up a step.
+- Those months don't have to be consecutive — booking only over summer costs you nothing.
+- We'll tell you the date your hold ends when you make your first booking, and we'll tell you the current rate before you rebook, so a price change never reaches you for the first time on an invoice.
 - A change to a published rate never affects a booking we've already invoiced.
 
 We're not pretending the ten places are scarce for scarcity's sake. They're cheap because right now you'd be backing us on modest numbers, and that's worth paying you for.
@@ -119,6 +119,7 @@ Applies to the **Homepage tile** and **Category page header** — both billed pe
 - Each booked month runs from the first to the last day of that month.
 - Book any month you like, subject to availability — get in early for peak periods (summer, school holidays). We'll confirm what's available when you enquire.
 - The **ongoing rate** applies to three or more months booked together. They don't have to be consecutive, but they do have to be booked at the same time.
+- You can book any months starting within the **next 12 months**. We cap it there so our rates keep pace with what a placement is actually worth — nobody gets to hold today's price against a spot years away.
 - One free swap per month if you want to refresh creative.
 - A performance report at the end of each booked month.
 - Plain invoice. No contracts. No auto-renewal — we'll ask before continuing.
