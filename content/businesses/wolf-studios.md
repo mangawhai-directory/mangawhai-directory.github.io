@@ -11,13 +11,13 @@ address:
   country: NZ
 phone: ''
 email: ''
-website: ''
+website: https://www.wolfstudios.co.nz/
 socials:
   facebook: ''
   instagram: https://www.instagram.com/wolfstudios_mangawhai/
   x: ''
   linkedin: ''
-  tiktok: ''
+  tiktok: https://www.tiktok.com/@wolf.studios.mang
   youtube: ''
 categories:
   - fitness-pilates-yoga
