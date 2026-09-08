@@ -92,9 +92,9 @@ We're currently around **230 visits a month**, so Step 3 means more than five ti
 Ten places, then the price goes to Step 2. If you take one of them:
 
 - You pay **$95 / $35** rather than the $145 / $55 Step 2 rate — a saving of $600 a year on the homepage tile, $240 on a category header.
-- We **hold that rate for any month you book within 12 months** of your go-live date, even after founding rates have closed and even if the rate card moves up a step.
-- Those months don't have to be consecutive — booking only over summer costs you nothing.
-- We'll tell you the date your hold ends when you make your first booking, and we'll tell you the current rate before you rebook, so a price change never reaches you for the first time on an invoice.
+- Your founding rate applies to your **first booking** — and since a booking can cover any months starting within the next 12 months, book a full year and the whole year is at $95 / $35.
+- The months in that booking don't have to be consecutive, so December, January and April is a perfectly good year's booking.
+- Any later booking is at the rate published when you place it, and we'll tell you that rate before you rebook — a price change never reaches you for the first time on an invoice.
 - A change to a published rate never affects a booking we've already invoiced.
 
 We're not pretending the ten places are scarce for scarcity's sake. They're cheap because right now you'd be backing us on modest numbers, and that's worth paying you for.
