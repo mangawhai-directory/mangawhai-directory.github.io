@@ -1,27 +1,30 @@
 ---
-title: "Mangawhai Surf Life Saving Club"
-slug: "mangawhai-surf-life-saving-club"
-blurb: ""
+tier: free
+title: Mangawhai Surf Life Saving Club
+slug: mangawhai-surf-life-saving-club
+blurb: ''
+image: ''
 address:
-  street: "Mangawhai Heads"
-  suburb: "Mangawhai Heads"
-  postcode: "0505"
-  country: "NZ"
-website: "https://mangawhaisurfclub.org.nz"
+  street: 149 Wintle Street
+  suburb: Mangawhai Heads
+  postcode: '0505'
+  country: NZ
+phone: '+6494314679'
+email: admin@mangawhaisurfclub.org.nz
+website: https://mangawhaisurfclub.org.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["community-clubs-churches", "surf-beach-watersports"]
+  facebook: https://www.facebook.com/mangawhaisurfclub/
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - community-clubs-churches
 tags:
-  - mangawhai-heads
   - Surf Life Saving
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
