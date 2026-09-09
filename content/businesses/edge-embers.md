@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Edge & Embers
-slug: edge-and-embers
+slug: edge-embers
 blurb: ''
 image: ''
 address:
