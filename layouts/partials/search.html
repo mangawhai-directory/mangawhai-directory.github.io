@@ -30,7 +30,7 @@
         class="block h-12 w-full rounded-lg border border-input bg-background pl-10 pr-11 text-base leading-none text-foreground shadow-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-foreground/30 focus:ring-2 focus:ring-ring/20 [&::-webkit-search-cancel-button]:appearance-none"
         placeholder="Search businesses, trades and categories…"
         role="combobox" aria-expanded="false" aria-controls="site-search-results"
-        aria-autocomplete="list" aria-describedby="site-search-hint">
+        aria-autocomplete="list">
 
       <button id="site-search-clear" type="button" hidden
         class="absolute inset-y-0 right-0 my-auto mr-2 inline-flex h-7 w-7 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground">
@@ -41,8 +41,6 @@
       <div id="site-search-results" role="listbox" aria-label="Search results" hidden
         class="absolute left-0 right-0 top-full z-30 mt-2 max-h-[22rem] overflow-y-auto overscroll-contain rounded-lg border border-border bg-popover p-1 text-popover-foreground shadow-lg"></div>
     </div>
-
-    <p id="site-search-hint" class="mt-2 text-center text-xs text-muted-foreground">Try a name, a trade, or a suburb — “plumber”, “cafe”, “Kaiwaka”.</p>
 
     <p id="site-search-status" class="sr-only" role="status" aria-live="polite"></p>
   </form>
