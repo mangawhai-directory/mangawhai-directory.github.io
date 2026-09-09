@@ -20,7 +20,6 @@ cards:
       - label: Later changes
         value: $65+GST
     band:
-      tone: muted
       label: No monthly fee
       rows:
         - label: Cost to stay listed
@@ -43,7 +42,6 @@ cards:
       - label: Single month
         value: $65+GST
     band:
-      tone: founding
       label: Founding offer · first 10 advertisers
       rows:
         - label: 3+ months
@@ -66,7 +64,6 @@ cards:
       - label: Single month
         value: $165+GST
     band:
-      tone: founding
       label: Founding offer · first 10 advertisers
       rows:
         - label: 3+ months

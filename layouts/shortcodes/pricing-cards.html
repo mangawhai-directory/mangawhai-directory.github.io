@@ -56,13 +56,12 @@
 
     {{- /* Band: the founding offer, or the no-fee note on the premium card. */}}
     {{- with .band }}
-    {{- $founding := eq .tone "founding" }}
-    <div class="{{ if $founding }}ribbon{{ else }}bg-muted text-foreground px-4 py-4{{ end }}">
-      <p class="{{ if $founding }}ribbon-label{{ else }}m-0! text-sm! font-semibold leading-5! text-foreground!{{ end }}">{{ .label }}</p>
+    <div class="ribbon">
+      <p class="ribbon-label">{{ .label }}</p>
       <dl class="m-0 mt-2 text-[13px] leading-5">
         {{- range .rows }}
         <div class="flex items-baseline justify-between gap-2 py-0.5">
-          <dt class="m-0 min-w-0 {{ if not $founding }}text-foreground/70{{ end }}">{{ .label }}</dt>
+          <dt class="m-0 min-w-0">{{ .label }}</dt>
           <dd class="m-0 whitespace-nowrap font-semibold">{{ .value }}</dd>
         </div>
         {{- end }}
