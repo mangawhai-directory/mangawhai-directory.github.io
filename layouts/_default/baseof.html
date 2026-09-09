@@ -45,6 +45,15 @@
     gtag('config', 'G-6WD32QF2FX');
   </script>
   {{- end }}
+  {{- if .IsHome }}
+  {{- /* The hero headline is the only thing on the site set in Shrikhand, and
+         it sits above the fold, so the homepage preloads it: without this the
+         font is not discovered until the stylesheet has parsed, and the title
+         visibly reflows from the fallback sans. crossorigin is required even
+         though the file is same-origin — fonts are always fetched in CORS
+         mode, and without it the preload is discarded and fetched twice. */ -}}
+  <link rel="preload" as="font" type="font/woff2" href="{{ "/fonts/shrikhand-latin.woff2" | relURL }}" crossorigin>
+  {{- end }}
   {{- with resources.Get "css/main.css" }}
     {{- $css := . | css.TailwindCSS (dict "minify" hugo.IsProduction) -}}
     {{- if hugo.IsProduction }}{{ $css = $css | fingerprint }}{{ end }}
