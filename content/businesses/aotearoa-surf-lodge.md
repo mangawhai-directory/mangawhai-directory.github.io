@@ -3,12 +3,13 @@ tier: free
 title: Aotearoa Surf Lodge
 slug: aotearoa-surf-lodge
 blurb: ''
+image: ''
 address:
   street: 299 Molesworth Drive
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: "+6494315760"
+phone: '+6494315760'
 email: ''
 website: https://www.aotearoasurf.co.nz
 socials:
@@ -19,7 +20,6 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - surf-beach-watersports
   - campgrounds-camps
 tags:
   - Accommodation
