@@ -115,6 +115,47 @@
     }
   }
 
+  /* Founding-offer ribbon on the pricing cards
+     (layouts/shortcodes/pricing-cards.html). The band runs wider than the
+     card and folds back at each end, so the offer reads as a ribbon tied
+     around the card rather than another panel stacked inside it.
+
+     The overhang is bounded by the grid gap (1.75rem): at 0.5rem a side the
+     two neighbouring ribbons keep 0.75rem of clear air between them.
+     The card must not clip its children for any of this to show. */
+  .ribbon {
+    position: relative;
+    margin-inline: -0.5rem;
+    padding: 1rem 1.5rem;
+    background: var(--color-ink);
+    color: var(--color-ink-foreground);
+  }
+  /* The folded-back ends, a shade darker so they read as the ribbon's
+     underside rather than as part of the face. */
+  .ribbon::before,
+  .ribbon::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: color-mix(in srgb, var(--color-ink) 65%, #000);
+  }
+  .ribbon::before { left: 0; clip-path: polygon(0 0, 100% 0, 100% 100%); }
+  .ribbon::after { right: 0; clip-path: polygon(0 0, 100% 0, 0 100%); }
+
+  /* The prose container colours every <p> it contains, so the ribbon has to
+     restate its own — see the callout note below for why this is not done
+     with interpolated utility classes. */
+  .ribbon p { color: inherit !important; }
+  .ribbon .ribbon-label {
+    margin: 0 0 0.5rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+    font-weight: 600;
+  }
+  .ribbon dt { opacity: 0.85; }
+
   /* Callouts (layouts/shortcodes/note.html).
 
      Written as component CSS rather than Tailwind utilities because the
