@@ -1,5 +1,5 @@
 ---
-title: Things to do in Mangawhai
+title: Things to do, Lessons & Tours
 hidden: false
 related:
   - surf-beach-watersports
