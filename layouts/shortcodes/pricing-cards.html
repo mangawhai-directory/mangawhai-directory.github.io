@@ -6,32 +6,48 @@
   or "no monthly fee" for the premium listing), then what you get, then a
   footer strip with the creative spec.
 
-  Tones map to the existing palette tokens in assets/css/main.css, so the page
-  and the PDF stay the same three colours.
+  Each card is one solid colour end to end — header, feature list and footer
+  strip — broken only by the band. No border: the ground defines the edge.
+
+  A tone's "light" flag reverses its text. The two pale grounds take the
+  standard dark foreground (sage 13.3:1, tile 10.4:1); teal is reversed to
+  white by request, which measures 4.24:1 — under the 4.5 AA floor for body
+  text. Darkening that ground to #3F636B (the media kit's --teal-dk) would
+  take it to 6.6:1 if the shortfall ever needs closing.
 
   The `!` overrides defeat the prose container's child-element styles in
   layouts/_default/single.html ([&_p], [&_ul], [&_li]), which out-specify a
-  plain utility class — the same reason cta.html carries them.
+  plain utility class. Note they do NOT survive an opacity modifier —
+  `text-foreground/70!` emits no !important — so anything that has to beat the
+  prose container is set at full strength.
 */ -}}
-{{- $headers := dict
-    "cream" "bg-surface-cream"
-    "sage"  "bg-surface-sage"
-    "amber" "bg-primary"
+{{- $tones := dict
+    "teal"  (dict "bg" "bg-footer"        "light" true)
+    "sage"  (dict "bg" "bg-surface-sage"  "light" false)
+    "tile"  (dict "bg" "bg-surface-tile"  "light" false)
+    "cream" (dict "bg" "bg-surface-cream" "light" false)
 -}}
 <div class="my-8 grid gap-5 md:grid-cols-3">
   {{- range site.Data.rates.cards }}
-  <div class="flex flex-col overflow-hidden rounded-lg border border-border bg-card">
+  {{- $t := index $tones .tone | default (index $tones "cream") -}}
+  {{- $light := $t.light -}}
+  {{- /* Full strength throughout: opacity modifiers both fail the important
+         suffix and cost the contrast these mid-tone grounds cannot spare. */ -}}
+  {{- $ink  := cond $light "text-footer-foreground!" "text-foreground!" -}}
+  {{- $rule := cond $light "border-white/25" "border-black/15" -}}
+  {{- $dot  := cond $light "bg-white/70" "bg-foreground/50" -}}
+  <div class="flex flex-col overflow-hidden rounded-lg {{ $t.bg }}">
 
     {{- /* Header: name + the standard prices. */}}
-    <div class="{{ index $headers .tone | default "bg-muted" }} px-4 pb-4 pt-4">
-      <p class="m-0! text-xl! font-semibold leading-7! tracking-tight text-foreground!">{{ .name }}</p>
-      <dl class="m-0 mt-3 border-t border-black/10 pt-3 text-[13px] leading-5">
+    <div class="px-4 pb-4 pt-4">
+      <p class="m-0! text-xl! font-semibold leading-7! tracking-tight {{ $ink }}">{{ .name }}</p>
+      <dl class="m-0 mt-3 border-t {{ $rule }} pt-3 text-[13px] leading-5">
         {{- range .prices }}
         <div class="flex items-baseline justify-between gap-2 py-0.5">
-          <dt class="m-0 min-w-0 text-foreground/70">{{ .label }}</dt>
+          <dt class="m-0 min-w-0 {{ $ink }}">{{ .label }}</dt>
           {{- /* The value never wraps: "$55+GST p/m" splitting across two
                  lines was what squeezed the label into two lines too. */}}
-          <dd class="m-0 whitespace-nowrap font-semibold text-foreground">{{ .value }}</dd>
+          <dd class="m-0 whitespace-nowrap font-semibold {{ $ink }}">{{ .value }}</dd>
         </div>
         {{- end }}
       </dl>
@@ -40,12 +56,12 @@
     {{- /* Band: the founding offer, or the no-fee note on the premium card. */}}
     {{- with .band }}
     {{- $founding := eq .tone "founding" }}
-    <div class="{{ if $founding }}bg-footer text-footer-foreground{{ else }}bg-muted text-foreground{{ end }} px-4 py-4">
-      <p class="m-0! text-sm! font-semibold leading-5! {{ if $founding }}text-footer-foreground!{{ else }}text-foreground!{{ end }}">{{ .label }}</p>
+    <div class="{{ if $founding }}bg-ink text-ink-foreground{{ else }}bg-muted text-foreground{{ end }} px-4 py-4">
+      <p class="m-0! text-sm! font-semibold leading-5! {{ if $founding }}text-ink-foreground!{{ else }}text-foreground!{{ end }}">{{ .label }}</p>
       <dl class="m-0 mt-2 text-[13px] leading-5">
         {{- range .rows }}
         <div class="flex items-baseline justify-between gap-2 py-0.5">
-          <dt class="m-0 min-w-0 {{ if $founding }}text-footer-foreground/85{{ else }}text-muted-foreground{{ end }}">{{ .label }}</dt>
+          <dt class="m-0 min-w-0 {{ if $founding }}text-ink-foreground/85{{ else }}text-foreground/70{{ end }}">{{ .label }}</dt>
           <dd class="m-0 whitespace-nowrap font-semibold">{{ .value }}</dd>
         </div>
         {{- end }}
@@ -53,18 +69,19 @@
     </div>
     {{- end }}
 
-    {{- /* What you get. flex-1 so the footer strips line up across cards. */}}
-    <ul class="m-0! flex-1 list-none! space-y-2 p-4! text-sm text-muted-foreground">
+    {{- /* What you get, on the card's own ground. flex-1 so the footer strips
+           line up across cards. */}}
+    <ul class="m-0! flex-1 list-none! space-y-2 p-4! text-sm {{ $ink }}">
       {{- range .features }}
-      <li class="relative pl-4 text-muted-foreground!">
-        <span class="absolute left-0 top-[0.55em] h-1.5 w-1.5 rounded-full bg-footer/60" aria-hidden="true"></span>
+      <li class="relative pl-4 {{ $ink }}">
+        <span class="absolute left-0 top-[0.55em] h-1.5 w-1.5 rounded-full {{ $dot }}" aria-hidden="true"></span>
         {{ . }}
       </li>
       {{- end }}
     </ul>
 
     {{- with .footnote }}
-    <p class="m-0! border-t border-border bg-muted/40 px-4 py-3 text-xs! leading-5! text-muted-foreground!">{{ . }}</p>
+    <p class="m-0! border-t {{ $rule }} px-4 py-3 text-xs! leading-5! {{ $ink }}">{{ . }}</p>
     {{- end }}
   </div>
   {{- end }}

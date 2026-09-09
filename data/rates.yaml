@@ -11,7 +11,7 @@ founding_slots: 10
 
 cards:
   - name: Premium Listing
-    tone: cream
+    tone: teal
     prices:
       - label: Per update
         value: $65+GST
@@ -59,7 +59,7 @@ cards:
     footnote: Desktop 500 × 250 · Mobile 500 × 500
 
   - name: Homepage Tile
-    tone: amber
+    tone: tile
     prices:
       - label: 3+ months
         value: $145+GST p/m

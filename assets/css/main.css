@@ -48,6 +48,17 @@
      callouts. Also light, so it keeps the standard dark foreground. */
   --color-surface-cream: #FAEDCA;
 
+  /* The homepage tile card's ground. Named for the slot it fills rather than
+     the hue, so the colour can be retuned without renaming the token again.
+     Light, so it takes the standard dark foreground (10.4:1). */
+  --color-surface-tile: #EFA8B8;
+
+  /* Ink — near-black navy for the founding-offer bands on the pricing cards.
+     Darker and cooler than --color-foreground, so the band reads as a
+     separate panel rather than as body text on a tint. */
+  --color-ink: #1C1F33;
+  --color-ink-foreground: hsl(0 0% 100%);
+
   --color-border: hsl(240 5.9% 90%);
   /* Heavier hairline for the category listing rules, which need to read as
      separators between whole entries rather than as card edges. */
