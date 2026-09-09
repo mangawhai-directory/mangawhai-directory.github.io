@@ -56,7 +56,9 @@
 
     {{- /* Band: the founding offer, or the no-fee note on the premium card. */}}
     {{- with .band }}
-    <div class="ribbon">
+    {{- $rib := .tone | default "ink" -}}
+    {{- if not (in (slice "ink" "sand") $rib) }}{{ $rib = "ink" }}{{ end -}}
+    <div class="ribbon ribbon-{{ $rib }}">
       <p class="ribbon-label">{{ .label }}</p>
       <dl class="m-0 mt-2 text-[13px] leading-5">
         {{- range .rows }}

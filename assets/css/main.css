@@ -127,11 +127,9 @@
     position: relative;
     margin-inline: -0.5rem;
     padding: 1rem 1.5rem;
-    background: var(--color-ink);
-    color: var(--color-ink-foreground);
   }
-  /* The folded-back ends, a shade darker so they read as the ribbon's
-     underside rather than as part of the face. */
+  /* The folded-back ends, a shade darker than the face so they read as the
+     ribbon's underside. Colour comes from the tone, below. */
   .ribbon::before,
   .ribbon::after {
     content: "";
@@ -139,10 +137,20 @@
     bottom: -0.5rem;
     width: 0.5rem;
     height: 0.5rem;
-    background: color-mix(in srgb, var(--color-ink) 65%, #000);
   }
   .ribbon::before { left: 0; clip-path: polygon(0 0, 100% 0, 100% 100%); }
   .ribbon::after { right: 0; clip-path: polygon(0 0, 100% 0, 0 100%); }
+
+  /* Ink for the founding offer; sand for the premium card's band, which
+     states a fact rather than an offer and so reverses to dark text (11.9:1).
+     These are hand-written classes, not utilities, so the shortcode is free
+     to build the name by interpolation. */
+  .ribbon-ink { background: var(--color-ink); color: var(--color-ink-foreground); }
+  .ribbon-ink::before,
+  .ribbon-ink::after { background: color-mix(in srgb, var(--color-ink) 65%, #000); }
+  .ribbon-sand { background: var(--color-primary); color: var(--color-foreground); }
+  .ribbon-sand::before,
+  .ribbon-sand::after { background: color-mix(in srgb, var(--color-primary) 72%, #000); }
 
   /* The prose container colours every <p> it contains, so the ribbon has to
      restate its own — see the callout note below for why this is not done

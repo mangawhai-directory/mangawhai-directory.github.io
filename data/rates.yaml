@@ -20,6 +20,7 @@ cards:
       - label: Later changes
         value: $65+GST
     band:
+      tone: sand
       label: No monthly fee
       rows:
         - label: Cost to stay listed
