@@ -26,21 +26,30 @@
 {{ end }}
 
 {{ define "main" }}
-{{- /* Hero background. The source is a 4032px-wide camera export, far more
-       than any viewport needs, so Hugo derives the two sizes that are actually
-       used. A plain url() lands first for browsers without image-set(); the
-       image-set() line then upgrades them to WebP. */ -}}
+{{- /* Hero background. The source is a 4032x1137 panorama — 3.55:1 — and the
+       mobile hero is nearly square, so background-size:cover scales it by
+       HEIGHT there and shows perhaps a third of its width. Resizing the whole
+       panorama for mobile therefore wastes almost every pixel: a 960px-wide
+       variant is upscaled about 4x on a DPR3 phone, which is what made it look
+       fuzzy. Mobile gets a CROP at true device resolution instead; desktop,
+       whose viewport suits the wide aspect, gets the panorama resized.
+
+       Each pair is 1x and 2x: a DPR3 phone picks the 2x crop, which is still
+       ample once cropped. Plain url() lands first for browsers without
+       image-set(); image-set() then upgrades to WebP. */ -}}
 {{- $hero := resources.Get "images/hero-mangawhai.jpg" -}}
-{{- $smJpg := $hero.Resize "960x q76 jpg" -}}
-{{- $smWebp := $hero.Resize "960x q70 webp" -}}
-{{- $lgJpg := $hero.Resize "1920x q76 jpg" -}}
-{{- $lgWebp := $hero.Resize "1920x q70 webp" -}}
+{{- $mJpg  := $hero.Fill   "700x620 Center q78 jpg"  -}}
+{{- $mWebp := $hero.Fill   "700x620 Center q75 webp" -}}
+{{- $m2    := $hero.Fill  "1400x1240 Center q66 webp" -}}
+{{- $dJpg  := $hero.Resize "1600x q78 jpg"  -}}
+{{- $dWebp := $hero.Resize "1600x q75 webp" -}}
+{{- $d2    := $hero.Resize "2880x q66 webp" -}}
 <style>
-  .hero-bg{background-image:url('{{ $smJpg.RelPermalink }}');}
-  .hero-bg{background-image:image-set(url('{{ $smWebp.RelPermalink }}') type('image/webp'),url('{{ $smJpg.RelPermalink }}') type('image/jpeg'));}
+  .hero-bg{background-image:url('{{ $mJpg.RelPermalink }}');}
+  .hero-bg{background-image:image-set(url('{{ $mWebp.RelPermalink }}') type('image/webp') 1x,url('{{ $m2.RelPermalink }}') type('image/webp') 2x);}
   @media (min-width:768px){
-    .hero-bg{background-image:url('{{ $lgJpg.RelPermalink }}');}
-    .hero-bg{background-image:image-set(url('{{ $lgWebp.RelPermalink }}') type('image/webp'),url('{{ $lgJpg.RelPermalink }}') type('image/jpeg'));}
+    .hero-bg{background-image:url('{{ $dJpg.RelPermalink }}');}
+    .hero-bg{background-image:image-set(url('{{ $dWebp.RelPermalink }}') type('image/webp') 1x,url('{{ $d2.RelPermalink }}') type('image/webp') 2x);}
   }
 </style>
 <section class="hero-bg relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat">
