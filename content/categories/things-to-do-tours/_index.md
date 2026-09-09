@@ -1,5 +1,5 @@
 ---
-title: Surf & Fishing
+title: Things to do in Mangawhai
 hidden: false
 related:
   - surf-beach-watersports
@@ -9,6 +9,8 @@ keywords:
   - surf lessons mangawhai
   - tours mangawhai heads
   - fishing charter mangawhai
+  - activities mangawhai
+  - things to do in mangawhai
 aliases: []
 description: ''
 ---
