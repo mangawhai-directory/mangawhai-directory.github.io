@@ -1,5 +1,6 @@
 ---
-title: "Surf, Beach & Watersports"
+title: Surf, Beach & Watersports
+hidden: true
 related:
   - things-to-do-tours
   - campgrounds-camps
@@ -10,4 +11,6 @@ keywords:
   - surf school mangawhai heads
   - kayak hire mangawhai
   - paddleboard mangawhai
+aliases: []
+description: ''
 ---
