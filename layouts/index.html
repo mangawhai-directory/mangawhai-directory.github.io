@@ -38,12 +38,31 @@
        ample once cropped. Plain url() lands first for browsers without
        image-set(); image-set() then upgrades to WebP. */ -}}
 {{- $hero := resources.Get "images/hero-mangawhai.jpg" -}}
-{{- $mJpg  := $hero.Fill   "700x620 Center q78 jpg"  -}}
-{{- $mWebp := $hero.Fill   "700x620 Center q75 webp" -}}
-{{- $m2    := $hero.Fill  "1400x1240 Center q66 webp" -}}
-{{- $dJpg  := $hero.Fill  "1600x450 Center q78 jpg"  -}}
-{{- $dWebp := $hero.Fill  "1600x450 Center q75 webp" -}}
-{{- $d2    := $hero.Fill  "2880x810 Center q66 webp" -}}
+
+{{- /* Sky trim. Fill can only anchor (Center, Top, ...), never offset, so the
+       window is moved by pre-cropping the source and letting Center land
+       somewhere new. $skyTrim is in RENDERED pixels — what you'd measure on
+       the built image — and each breakpoint converts it to source pixels
+       itself, so both shift by the same visible amount despite their very
+       different scale factors. Raise it to show less sky.
+
+       Desktop's window (1606 of 3213 source rows) has room above and below,
+       so trimming 2x from the top moves its centre — and the window — down by
+       exactly $skyTrim. Mobile's near-square window already uses the full
+       source height, so there is nothing to slide into: it can only lose the
+       sky off the top, which trims 1x and zooms in by that much. */ -}}
+{{- $skyTrim := 60 -}}
+{{- $dShift := int (math.Round (mul $skyTrim (div $hero.Width 1600.0))) -}}
+{{- $dSrc := $hero.Crop (printf "%dx%d Bottom q98" $hero.Width (sub $hero.Height (mul 2 $dShift))) -}}
+{{- $mShift := int (math.Round (mul $skyTrim (div $hero.Height 620.0))) -}}
+{{- $mSrc := $hero.Crop (printf "%dx%d Bottom q98" $hero.Width (sub $hero.Height $mShift)) -}}
+
+{{- $mJpg  := $mSrc.Fill   "700x620 Center q78 jpg"  -}}
+{{- $mWebp := $mSrc.Fill   "700x620 Center q75 webp" -}}
+{{- $m2    := $mSrc.Fill  "1400x1240 Center q66 webp" -}}
+{{- $dJpg  := $dSrc.Fill  "1600x450 Center q78 jpg"  -}}
+{{- $dWebp := $dSrc.Fill  "1600x450 Center q75 webp" -}}
+{{- $d2    := $dSrc.Fill  "2880x810 Center q66 webp" -}}
 <style>
   .hero-bg{background-image:url('{{ $mJpg.RelPermalink }}');}
   .hero-bg{background-image:image-set(url('{{ $mWebp.RelPermalink }}') type('image/webp') 1x,url('{{ $m2.RelPermalink }}') type('image/webp') 2x);}
@@ -53,7 +72,7 @@
   }
 </style>
 <section class="hero-bg relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat">
-  <div class="absolute inset-0 bg-black/40" aria-hidden="true"></div>
+  <div class="absolute inset-0 bg-black/35" aria-hidden="true"></div>
   <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:py-24">
     <h1 class="font-display text-4xl uppercase text-white sm:text-5xl">{{ .Title | default site.Title }}</h1>
     <p class="mx-auto mt-4 max-w-prose text-lg text-white/90">{{ .Params.description | default site.Params.description }}</p>
