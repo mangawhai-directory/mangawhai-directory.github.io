@@ -86,6 +86,19 @@
     color: var(--color-foreground);
     -webkit-font-smoothing: antialiased;
   }
+
+  /* The header is sticky at h-16 (64px), so anything deep-linked lands
+     underneath it unless the target reserves room. Search results link to
+     /categories/<slug>/#<business>, which would otherwise hide a listing's
+     tags and name; the advertise page links into a Terms heading.
+
+     Scoped to the two things actually linked to. A blanket [id] rule would
+     also offset the search dropdown's own scrollIntoView on its option rows
+     (#site-search-opt-*) and push the highlighted result out of view. */
+  .business-card,
+  .prose :is(h2, h3)[id] {
+    scroll-margin-top: 5rem;
+  }
 }
 
 @layer components {
