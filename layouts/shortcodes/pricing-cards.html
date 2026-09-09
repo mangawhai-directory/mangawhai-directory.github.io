@@ -28,7 +28,7 @@
     "cream" (dict "bg" "bg-surface-cream" "light" false)
 -}}
 <div class="my-8 grid gap-7 md:grid-cols-3">
-  {{- range site.Data.rates.cards }}
+  {{- range hugo.Data.rates.cards }}
   {{- $t := index $tones .tone | default (index $tones "cream") -}}
   {{- $light := $t.light -}}
   {{- /* Full strength throughout: opacity modifiers both fail the important

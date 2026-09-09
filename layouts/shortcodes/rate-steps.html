@@ -24,7 +24,7 @@
       </tr>
     </thead>
     <tbody>
-      {{- range $step := site.Data.rates.steps }}
+      {{- range $step := hugo.Data.rates.steps }}
       <tr>
         <td data-row-head data-label="Step"><span class="prose-table-value">{{ if $step.current }}<strong>{{ $step.name }}</strong>{{ else }}{{ $step.name }}{{ end }}</span></td>
         {{- range $col := $cols }}
