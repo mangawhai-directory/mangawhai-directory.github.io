@@ -1,29 +1,17 @@
 {{- /*
-  note — plain callout block for long-form pages.
-  Args: title (optional heading), tone (cream | sage | teal; default cream).
+  note — callout block for long-form pages.
+  Args: title (optional heading), tone (cream | sage | teal | ink).
 
-  Shape matches cta.html exactly — rounded-lg, p-5, my-8, no border bar — so
-  every callout on the site is the same component. Only the ground varies,
-  and only across the site palette:
-    cream --color-surface-cream #FAEDCA · sage --color-surface-sage #C1DBB3
-    teal  --color-footer        #55828B (reverses to the light foreground)
-
-  The `!` overrides defeat the prose container's [&_p] styles in
-  layouts/_default/single.html, which out-specify a plain utility class.
+  Shape matches cta.html — rounded-lg, 1.25rem padding — so every callout on
+  the site reads as one component. Everything visual lives in .note / .note-*
+  in assets/css/main.css; see the comment there for why the tones are not
+  Tailwind utilities.
 */ -}}
-{{- $tones := dict
-    "cream" "bg-surface-cream"
-    "sage"  "bg-surface-sage"
-    "teal"  "bg-footer"
--}}
 {{- $tone := .Get "tone" | default "cream" -}}
-{{- $dark := eq $tone "teal" -}}
-{{- $ink := cond $dark "text-footer-foreground!" "text-foreground!" -}}
-<aside class="my-8 rounded-lg {{ index $tones $tone | default (index $tones "cream") }} p-5">
+{{- if not (in (slice "cream" "sage" "teal" "ink") $tone) }}{{ $tone = "cream" }}{{ end -}}
+<aside class="note note-{{ $tone }}">
   {{- with .Get "title" }}
-  <p class="m-0! mb-2! text-base! font-semibold leading-7! {{ $ink }}">{{ . }}</p>
+  <p class="note-title">{{ . }}</p>
   {{- end }}
-  <div class="text-base leading-7 {{ $ink }} [&_p]:m-0! [&_p]:mb-3! [&_p]:text-base! [&_p]:leading-7! [&_p]:{{ $ink }} [&_p:last-child]:mb-0!">
-    {{ .Inner | markdownify }}
-  </div>
+  {{ .Inner | markdownify }}
 </aside>

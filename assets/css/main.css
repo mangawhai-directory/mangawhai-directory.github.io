@@ -115,6 +115,38 @@
     }
   }
 
+  /* Callouts (layouts/shortcodes/note.html).
+
+     Written as component CSS rather than Tailwind utilities because the
+     shortcode picks its tone at render time. A class assembled by template
+     interpolation — "[&_p]:" plus a variable — never appears as a literal in
+     any scanned file, so Tailwind never generates it, and the callout
+     silently falls back to the prose container's grey body text. Naming the
+     tones here keeps that impossible. */
+  .note {
+    margin: 2rem 0;
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  .note-cream { background: var(--color-surface-cream); color: var(--color-foreground); }
+  .note-sage  { background: var(--color-surface-sage);  color: var(--color-foreground); }
+  .note-teal  { background: var(--color-footer);        color: var(--color-footer-foreground); }
+  .note-ink   { background: var(--color-ink);           color: var(--color-ink-foreground); }
+
+  /* The prose container in layouts/_default/single.html colours every <p> and
+     <a> it contains, so the callout restates its own or reverses to grey. */
+  .note :is(p, li, strong, a) { color: inherit !important; }
+  .note p {
+    margin: 0 0 0.75rem !important;
+    font-size: 1rem !important;
+    line-height: 1.75 !important;
+  }
+  .note p:last-child { margin-bottom: 0 !important; }
+  .note .note-title { margin-bottom: 0.5rem !important; font-weight: 600; }
+  .note a { text-decoration: underline; }
+
   /* Markdown tables on long-form pages, paired with
      layouts/_markup/render-table.html. Goldmark emits a bare <table> and the
      prose container has no table rules, so without this they render with no
