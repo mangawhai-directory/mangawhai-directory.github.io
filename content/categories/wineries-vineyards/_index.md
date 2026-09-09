@@ -1,5 +1,6 @@
 ---
-title: "Wineries & Vineyards"
+title: Vineyards
+hidden: false
 related:
   - cafes-restaurants-bars
   - food-producers
@@ -7,7 +8,8 @@ related:
   - things-to-do-tours
 keywords:
   - winery mangawhai
-  - vineyard kaiwaka
-  - northland wine
+  - vineyard mangawhai
   - cellar door mangawhai
+aliases: []
+description: ''
 ---
