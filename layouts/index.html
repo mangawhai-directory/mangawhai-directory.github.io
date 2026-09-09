@@ -26,7 +26,24 @@
 {{ end }}
 
 {{ define "main" }}
-<section class="relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat" style="background-image: url('{{ "mangawhai.jpeg" | relURL }}');">
+{{- /* Hero background. The source is a 4032px-wide camera export, far more
+       than any viewport needs, so Hugo derives the two sizes that are actually
+       used. A plain url() lands first for browsers without image-set(); the
+       image-set() line then upgrades them to WebP. */ -}}
+{{- $hero := resources.Get "images/hero-mangawhai.jpg" -}}
+{{- $smJpg := $hero.Resize "960x q76 jpg" -}}
+{{- $smWebp := $hero.Resize "960x q70 webp" -}}
+{{- $lgJpg := $hero.Resize "1920x q76 jpg" -}}
+{{- $lgWebp := $hero.Resize "1920x q70 webp" -}}
+<style>
+  .hero-bg{background-image:url('{{ $smJpg.RelPermalink }}');}
+  .hero-bg{background-image:image-set(url('{{ $smWebp.RelPermalink }}') type('image/webp'),url('{{ $smJpg.RelPermalink }}') type('image/jpeg'));}
+  @media (min-width:768px){
+    .hero-bg{background-image:url('{{ $lgJpg.RelPermalink }}');}
+    .hero-bg{background-image:image-set(url('{{ $lgWebp.RelPermalink }}') type('image/webp'),url('{{ $lgJpg.RelPermalink }}') type('image/jpeg'));}
+  }
+</style>
+<section class="hero-bg relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat">
   <div class="absolute inset-0 bg-black/40" aria-hidden="true"></div>
   <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:py-24">
     <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-5xl">{{ .Title | default site.Title }}</h1>
