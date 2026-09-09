@@ -1,7 +1,7 @@
 ---
 tier: free
-title: Mangawhai Surf Life Saving Club
-slug: mangawhai-surf-life-saving-club
+title: Mangawhai Heads Volunteer Lifeguard Service
+slug: mangawhai-heads-volunteer-lifeguard-service
 blurb: ''
 image: ''
 address:
