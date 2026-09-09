@@ -1,12 +1,16 @@
 ---
+tier: free
 title: Mangawhai Heads Surf School
 slug: mangawhai-heads-surf-school
 blurb: ''
+image: ''
 address:
   street: Mangawhai Heads
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
+phone: '+642108407547'
+email: surf@mangawhaiheadssurfschool.com
 website: https://mangawhaiheadssurfschool.com
 socials:
   facebook: https://www.facebook.com/mangawhaisurfschool/
@@ -16,14 +20,11 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - surf-beach-watersports
+  - things-to-do-tours
 tags:
-  - mangawhai-heads
   - Surf Lessons
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
-phone: "+642108407547"
-email: surf@mangawhaiheadssurfschool.com
 ---
