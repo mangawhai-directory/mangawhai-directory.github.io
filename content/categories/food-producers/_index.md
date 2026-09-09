@@ -1,5 +1,6 @@
 ---
-title: Food Producers
+title: Food & Product Makers
+hidden: false
 related:
   - bakeries-cake-makers
   - wineries-vineyards
@@ -10,4 +11,6 @@ keywords:
   - local produce mangawhai heads
   - honey mangawhai
   - artisan food mangawhai
+aliases: []
+description: ''
 ---
