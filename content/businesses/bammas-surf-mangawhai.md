@@ -3,12 +3,13 @@ tier: free
 title: Bammas Surf Mangawhai
 slug: bammas-surf-mangawhai
 blurb: ''
+image: ''
 address:
   street: 43 Moir Street
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+6494314660"
+phone: '+6494314660'
 email: bammas@xtra.co.nz
 website: ''
 socials:
@@ -19,7 +20,6 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - surf-beach-watersports
   - retail
 tags:
   - Surf Shop
