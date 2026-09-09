@@ -3,12 +3,13 @@ tier: free
 title: Flowerpower Northland
 slug: flowerpower-northland
 blurb: ''
+image: ''
 address:
   street: 17 Kapawiti Road
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: "+64274490464"
+phone: '+64274490464'
 email: flowerpowernorthland@gmail.com
 website: https://www.flowerpowernorthland.co.nz
 socials:
@@ -20,6 +21,7 @@ socials:
   youtube: ''
 categories:
   - creative-services
+  - weddings
 tags:
   - Florist
 hours: []
