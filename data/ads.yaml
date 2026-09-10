@@ -26,6 +26,14 @@ home:
   href: "https://www.jenspastries.co.nz/"
 
 category:
+  architects:
+    id: constructive-architecture
+    advertiser: "Constructive Architecture"
+    image: "/img/ads/constructive-architecture-500x250.svg"
+    imageMobile: "/img/ads/constructive-architecture-500x500.svg"
+    alt: "Constructive Architecture — residential architecture in Mangawhai: new homes, alterations and interiors"
+    href: "https://www.constructivearchitecture.co.nz/"
+
   # cafes-restaurants-bars:
   #   id: allpress-espresso
   #   advertiser: "Allpress Espresso"
