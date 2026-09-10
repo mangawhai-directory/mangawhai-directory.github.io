@@ -2,13 +2,16 @@
 tier: free
 title: Mangawhai Piercing
 slug: mangawhai-piercing
-blurb: ''
+blurb: |-
+  Mangawhai Piercing offer safe and professional piercing services and stock an extensive range of implant-grade titanium flat-backs and ear/body jewellery. 
+  Located in Mangawhai Village, by appointment only.
+image: /uploads/mangawhai piercing.PNG
 address:
   street: Mangawhai
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: "+64211493185"
+phone: '+64211493185'
 email: mangawhaipiercing@gmail.com
 website: ''
 socials:
