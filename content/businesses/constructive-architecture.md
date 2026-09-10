@@ -1,14 +1,15 @@
 ---
-tier: free
+tier: paid
 title: Constructive Architecture
 slug: constructive-architecture
 blurb: ''
+image: /uploads/constructive architecture.jpg
 address:
   street: 10 Pa Hill Lane
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: "+64220815297"
+phone: '+64220815297'
 email: tim@constructivearchitecture.co.nz
 website: https://www.constructivearchitecture.co.nz/
 socials:
