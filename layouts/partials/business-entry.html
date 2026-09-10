@@ -37,6 +37,38 @@
 {{- $lCat := "" -}}
 {{- with .Params.categories }}{{ $lCat = index . 0 }}{{ end -}}
 {{- $listingAttrs := printf `data-listing-slug="%s" data-listing-business="%s" data-listing-category="%s" data-listing-tier="%s"` $lSlug (.Title | htmlEscape) $lCat $lTier -}}
+{{- /* Listing image geometry. The rate card sells "square image or logo", and a
+     wordmark logo is typically 3:1 — object-cover in a square box crops it to
+     the middle third, which turns "constructive architecture" into "structi".
+     So a banner-shaped image keeps its own proportions instead, and only
+     photo-shaped ones take the square crop that gives the rows their rhythm.
+     A very tall image is contained rather than cropped, since letting it set
+     the height would leave one entry towering over the rest.
+
+     Dimensions come from the file itself: images.Config reads a static path,
+     so this needs no front matter and cannot fall out of sync with the upload.
+     fileExists guards it — images.Config on a missing path fails the build,
+     and the CMS can save a listing before its image finishes uploading.
+
+     The ratio goes in an inline style, not aspect-[w/h]: Tailwind only sees
+     classes that appear literally in the source it scans, and a class built at
+     render time never reaches it. */ -}}
+{{- $imgW := 0 -}}
+{{- $imgH := 0 -}}
+{{- $imgAR := 0.0 -}}
+{{- if $showImage -}}
+  {{- $ipath := printf "static%s" .Params.image -}}
+  {{- if fileExists $ipath -}}
+    {{- $icfg := images.Config $ipath -}}
+    {{- $imgW = $icfg.Width -}}
+    {{- $imgH = $icfg.Height -}}
+    {{- if gt $imgH 0 }}{{ $imgAR = div (float $imgW) (float $imgH) }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- $wideImg := ge $imgAR 2.0 -}}
+{{- $tallImg := and (gt $imgAR 0.0) (le $imgAR 0.55) -}}
+{{- /* Clamped so an extreme banner cannot render as a hairline. */ -}}
+{{- $imgRatio := cond (gt $imgAR 4.0) 4.0 $imgAR -}}
 {{- $tags := .Params.tags | default slice -}}
 {{- $hasTags := gt (len $tags) 0 -}}
 <article id="{{ $id }}" class="business-card py-[29px] {{ if $closed }}is-discontinued{{ end }}">
@@ -59,7 +91,17 @@
     </h2>
 
     {{- if $showImage }}
-    <img data-fade class="row-start-1 mx-auto mb-4 block w-1/2 aspect-square rounded-md object-cover sm:mx-0 sm:mb-0 sm:col-start-2 {{ if $hasTags }}sm:row-span-3{{ else }}sm:row-span-2{{ end }} sm:row-start-1 sm:self-start sm:w-full min-[640px]:max-w-[300px] min-[744px]:max-w-[400px]" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="128" height="128" />
+    {{- /* A banner-shaped image is short, so half the column would leave it
+           tiny on a phone; it takes the full column width instead. */ -}}
+    {{- $imgFit := "aspect-square object-cover" -}}
+    {{- $imgCol := "w-1/2" -}}
+    {{- if $wideImg -}}
+      {{- $imgFit = "object-contain" -}}
+      {{- $imgCol = "w-full max-w-[320px]" -}}
+    {{- else if $tallImg -}}
+      {{- $imgFit = "aspect-square object-contain" -}}
+    {{- end -}}
+    <img data-fade class="row-start-1 mx-auto mb-4 block {{ $imgCol }} {{ $imgFit }} rounded-md sm:mx-0 sm:mb-0 sm:col-start-2 {{ if $hasTags }}sm:row-span-3{{ else }}sm:row-span-2{{ end }} sm:row-start-1 sm:self-start sm:w-full min-[640px]:max-w-[300px] min-[744px]:max-w-[400px]"{{ if $wideImg }} style="aspect-ratio:{{ printf "%.4f" $imgRatio }}"{{ end }} src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="{{ $imgW | default 128 }}" height="{{ $imgH | default 128 }}" />
     {{- end }}
 
     <div class="min-w-0">
