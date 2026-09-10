@@ -1,30 +1,31 @@
 ---
-title: N Clarke Earthmoving
+tier: free
+title: N. Clarke Earthmoving
 slug: n-clarke-earthmoving
-blurb: Mangawhai-focused earthmoving contractor serving from Hibiscus Coast through Whangarei.
+blurb: ''
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+64272233185"
+phone: '+64272233185'
 email: nigel@nclarkeearthmoving.co.nz
 website: https://www.nclarkeearthmoving.co.nz/
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/profile.php?id=61573191044116&locale=en_GB#
   instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
-  - engineering
+  - landscape-tree-services
+  - construction
 tags:
   - Earthmoving
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-09-10
 status: active
 ---
