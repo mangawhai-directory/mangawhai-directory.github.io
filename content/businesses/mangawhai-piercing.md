@@ -1,5 +1,5 @@
 ---
-tier: free
+tier: paid
 title: Mangawhai Piercing
 slug: mangawhai-piercing
 blurb: |-
