@@ -1,7 +1,6 @@
 ---
-title: Engineering
-aliases:
-  - /categories/civil-engineering/
+title: Earthworks & Engineering
+hidden: false
 related:
   - architects
   - construction
@@ -11,4 +10,7 @@ keywords:
   - coastal engineering mangawhai
   - earthworks mangawhai
   - drainage mangawhai
+aliases:
+  - /categories/civil-engineering/
+description: ''
 ---
