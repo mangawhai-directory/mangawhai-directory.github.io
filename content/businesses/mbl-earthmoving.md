@@ -20,8 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - landscape-tree-services
-  - construction
+  - engineering
 tags:
   - Earthmoving
 hours: []
