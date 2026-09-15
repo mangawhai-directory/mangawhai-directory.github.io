@@ -13,15 +13,14 @@ phone: '+6421897164'
 email: hopper.earthworks@gmail.com
 website: https://hopperearthworks.co.nz/
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/p/Hopper-Earthworks-Ltd-100075749005733/
   instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
-  - landscape-tree-services
-  - construction
+  - engineering
 tags:
   - Earthworks
 hours: []
