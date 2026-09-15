@@ -1,13 +1,15 @@
 ---
+tier: free
 title: Hopper Earthworks
 slug: hopper-earthworks
-blurb: Mangawhai earthworks and excavation contractor servicing from Ruakaka to Puhoi.
+blurb: ''
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+6421897164"
+phone: '+6421897164'
 email: hopper.earthworks@gmail.com
 website: https://hopperearthworks.co.nz/
 socials:
@@ -21,11 +23,8 @@ categories:
   - engineering
 tags:
   - Earthworks
-  - Excavation
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
