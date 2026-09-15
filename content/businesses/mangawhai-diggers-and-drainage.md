@@ -1,9 +1,11 @@
 ---
+tier: free
 title: Mangawhai Diggers and Drainage
 slug: mangawhai-diggers-and-drainage
-blurb: Family-owned Mangawhai earthworks and drainage contractor (C R Johnson Ltd) established in 1956.
+blurb: ''
+image: ''
 address:
-  street: 263 Black Swamp Road, RD5
+  street: 263 Black Swamp Road
   suburb: Mangawhai
   postcode: '0975'
   country: NZ
@@ -22,10 +24,8 @@ categories:
 tags:
   - Earthworks
   - Drainage
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
+last_verified: 2026-05-09
 status: active
 ---
