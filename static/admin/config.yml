@@ -33,7 +33,7 @@ collections:
     extension: md
     format: yaml-frontmatter
     slug: "{{slug}}"
-    summary: "{{title}}{{#if status}} — {{status}}{{/if}}"
+    summary: "{{title}} — {{status}}"
     sortable_fields: [title, last_verified, status]
     view_filters:
       - { label: Active, field: status, pattern: active }
