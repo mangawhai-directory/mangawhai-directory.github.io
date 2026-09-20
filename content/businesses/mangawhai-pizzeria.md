@@ -1,13 +1,15 @@
 ---
+tier: free
 title: Mangawhai Pizzeria
 slug: mangawhai-pizzeria
 blurb: ''
+image: ''
 address:
   street: 41 Moir Street
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: "+6494315226"
+phone: '+6494315226'
 email: ''
 website: ''
 socials:
@@ -25,7 +27,6 @@ tags:
   - Pasta
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-04
-status: active
+status: closed
 ---
