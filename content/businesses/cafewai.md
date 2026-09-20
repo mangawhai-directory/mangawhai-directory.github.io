@@ -1,6 +1,7 @@
 ---
-title: Cafewai
-slug: cafewai
+tier: free
+title: Caifewhai
+slug: caifewhai
 blurb: ''
 image: ''
 address:
@@ -25,7 +26,6 @@ tags:
   - Cafe
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-13
 status: active
 ---
