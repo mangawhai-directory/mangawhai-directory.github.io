@@ -27,12 +27,15 @@
 
 {{ define "main" }}
 {{- /* Hero background. The source is a 5712x3213 photo — 16:9 — while the
-       hero band is far wider than it is tall on desktop and nearly square on
-       mobile. Neither shape matches 16:9, so a plain resize would ship a tall
-       image that background-size:cover throws most of away. Both breakpoints
-       get a CROP at the shape they actually render: a wide band for desktop, a
-       near-square one at true device resolution for mobile, which is what
-       keeps the phone version sharp.
+       hero band is far wider than it is tall on desktop and, since the mobile
+       hero fills the screen below the header, taller than it is wide on a
+       phone. Neither shape matches 16:9, so a plain resize would ship an image
+       that background-size:cover throws most of away. Both breakpoints get a
+       CROP at the shape they actually render: a wide band for desktop, a 9:16
+       portrait one at true device resolution for mobile, which is what keeps
+       the phone version sharp. The portrait crop only spans about a third of
+       the source's width, so the two breakpoints frame the photo differently
+       by design.
 
        Each pair is 1x and 2x: a DPR3 phone picks the 2x crop, which is still
        ample once cropped. Plain url() lands first for browsers without
@@ -46,23 +49,23 @@
        itself, so both shift by the same visible amount despite their very
        different scale factors. Raise it to show less sky.
 
-       Desktop's window (1606 of 3213 source rows) has room above and below,
+       Desktop's window (1928 of 3213 source rows) has room above and below,
        so trimming 2x from the top moves its centre — and the window — down by
-       exactly $skyTrim. Mobile's near-square window already uses the full
-       source height, so there is nothing to slide into: it can only lose the
-       sky off the top, which trims 1x and zooms in by that much. */ -}}
+       exactly $skyTrim. Mobile's portrait window already uses the full source
+       height, so there is nothing to slide into: it can only lose the sky off
+       the top, which trims 1x and zooms in by that much. */ -}}
 {{- $skyTrim := 60 -}}
 {{- $dShift := int (math.Round (mul $skyTrim (div $hero.Width 1600.0))) -}}
 {{- $dSrc := $hero.Crop (printf "%dx%d Bottom q98" $hero.Width (sub $hero.Height (mul 2 $dShift))) -}}
-{{- $mShift := int (math.Round (mul $skyTrim (div $hero.Height 620.0))) -}}
+{{- $mShift := int (math.Round (mul $skyTrim (div $hero.Height 1280.0))) -}}
 {{- $mSrc := $hero.Crop (printf "%dx%d Bottom q98" $hero.Width (sub $hero.Height $mShift)) -}}
 
-{{- $mJpg  := $mSrc.Fill   "700x620 Center q78 jpg"  -}}
-{{- $mWebp := $mSrc.Fill   "700x620 Center q75 webp" -}}
-{{- $m2    := $mSrc.Fill  "1400x1240 Center q66 webp" -}}
-{{- $dJpg  := $dSrc.Fill  "1600x450 Center q78 jpg"  -}}
-{{- $dWebp := $dSrc.Fill  "1600x450 Center q75 webp" -}}
-{{- $d2    := $dSrc.Fill  "2880x810 Center q66 webp" -}}
+{{- $mJpg  := $mSrc.Fill   "720x1280 Center q78 jpg"  -}}
+{{- $mWebp := $mSrc.Fill   "720x1280 Center q75 webp" -}}
+{{- $m2    := $mSrc.Fill  "1440x2560 Center q66 webp" -}}
+{{- $dJpg  := $dSrc.Fill  "1600x540 Center q78 jpg"  -}}
+{{- $dWebp := $dSrc.Fill  "1600x540 Center q75 webp" -}}
+{{- $d2    := $dSrc.Fill  "2880x972 Center q66 webp" -}}
 <style>
   .hero-bg{background-image:url('{{ $mJpg.RelPermalink }}');}
   .hero-bg{background-image:image-set(url('{{ $mWebp.RelPermalink }}') type('image/webp') 1x,url('{{ $m2.RelPermalink }}') type('image/webp') 2x);}
@@ -71,9 +74,15 @@
     .hero-bg{background-image:image-set(url('{{ $dWebp.RelPermalink }}') type('image/webp') 1x,url('{{ $d2.RelPermalink }}') type('image/webp') 2x);}
   }
 </style>
-<section class="hero-bg relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat">
+{{- /* On phones the hero fills the screen below the sticky header: 65px is
+       that header's own height (h-16 = 64px plus its 1px bottom border), so
+       change this if partials/header.html changes height. svh rather than vh
+       so the band is sized to the viewport with the browser chrome showing
+       and never overflows it. From md up the hero goes back to being a band
+       sized by its padding. */ -}}
+<section class="hero-bg relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat max-md:flex max-md:min-h-[calc(100svh_-_65px)] max-md:items-center">
   <div class="absolute inset-0 bg-black/35" aria-hidden="true"></div>
-  <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:py-24">
+  <div class="relative w-full mx-auto max-w-6xl px-4 py-16 text-center sm:py-32">
     <h1 class="font-display text-4xl uppercase text-white sm:text-5xl">{{ .Title | default site.Title }}</h1>
     <p class="mx-auto mt-4 max-w-prose text-lg text-white/90">{{ .Params.description | default site.Params.description }}</p>
   </div>
