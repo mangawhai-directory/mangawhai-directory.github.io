@@ -1,13 +1,15 @@
 ---
+tier: free
 title: Ike Engineering
 slug: ike-engineering
 blurb: ''
+image: ''
 address:
   street: 500 Tara Road
   suburb: Mangawhai
   postcode: '0573'
   country: NZ
-phone: "+64210600858"
+phone: '+64210600858'
 email: daniel@ikeengineering.co.nz
 website: https://www.ikeengineering.co.nz/
 socials:
@@ -20,10 +22,9 @@ socials:
 categories:
   - engineering
 tags:
-  - Engineering
+  - Industrial Engineering
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-12
 status: active
 ---
