@@ -20,7 +20,6 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - beauty-therapy
   - massage-therapy
 tags:
   - Face Massage
