@@ -1,13 +1,15 @@
 ---
+tier: free
 title: Get in Touch Massage
 slug: get-in-touch-massage
 blurb: ''
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: "+6421998857"
+phone: '+6421998857'
 email: mireillesitters@gmail.com
 website: https://www.getintouchmassage.co.nz/
 socials:
@@ -19,10 +21,10 @@ socials:
   youtube: ''
 categories:
   - massage-therapy
-tags: []
+tags:
+  - Massage
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-10
 status: active
 ---
