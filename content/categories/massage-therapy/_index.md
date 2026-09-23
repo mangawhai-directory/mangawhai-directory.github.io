@@ -1,7 +1,6 @@
 ---
-title: Massage Therapy
-aliases:
-  - /categories/massage/
+title: Massage & Bodywork
+hidden: false
 related:
   - health-practitioners
   - sauna-spa
@@ -12,4 +11,7 @@ keywords:
   - massage therapist mangawhai heads
   - remedial massage mangawhai
   - relaxation massage mangawhai
+aliases:
+  - /categories/massage/
+description: ''
 ---
