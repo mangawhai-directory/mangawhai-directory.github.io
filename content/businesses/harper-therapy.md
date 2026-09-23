@@ -1,13 +1,15 @@
 ---
+tier: free
 title: Harper Therapy
 slug: harper-therapy
 blurb: Massage Therapy
+image: ''
 address:
-  street: 38 Jack Boyd Drive
-  suburb: Mangawhai Heads
-  postcode: '0505'
+  street: 168 Black Swamp Road
+  suburb: Mangawhai
+  postcode: '0975'
   country: NZ
-phone: "+64212927400"
+phone: '+64212927400'
 email: harpertherapy@outlook.com
 website: https://www.harpertherapynz.com/
 socials:
@@ -23,7 +25,6 @@ tags:
   - Massage
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-10
 status: active
 ---
