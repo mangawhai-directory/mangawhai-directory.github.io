@@ -1,7 +1,9 @@
 ---
+tier: free
 title: Toni Bryant Massage
 slug: toni-bryant-massage
 blurb: ''
+image: ''
 address:
   street: Jude Road
   suburb: Mangawhai
@@ -20,10 +22,9 @@ socials:
 categories:
   - massage-therapy
 tags:
-  - massage
+  - Massage
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-10
 status: active
 ---
