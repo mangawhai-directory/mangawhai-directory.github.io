@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - property-maintenance
+  - storage
 tags:
   - Storage
 hours: []
