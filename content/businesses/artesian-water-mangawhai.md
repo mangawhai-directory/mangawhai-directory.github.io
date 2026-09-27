@@ -1,13 +1,15 @@
 ---
+tier: free
 title: Artesian Water Mangawhai
 slug: artesian-water-mangawhai
-blurb: 14,000L bulk water delivery for the Mahurangi, Rodney and Mangawhai regions.
+blurb: ''
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+6421407219"
+phone: '+6421407219'
 email: artesianwatermangawhai@gmail.com
 website: https://www.artesianwatermangawhai.co.nz
 socials:
@@ -20,12 +22,9 @@ socials:
 categories:
   - water-delivery
 tags:
-  - Bulk Water
-  - Tank Top Up
-
+  - Water Delivery
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---
