@@ -1,13 +1,15 @@
 ---
+tier: free
 title: Phil's Water Delivery
 slug: phils-water-delivery
-blurb: Mangawhai-based bulk water delivery for tank top-ups and pool fills.
+blurb: ''
+image: ''
 address:
   street: 24 Jack Boyd Drive
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: "+64210206645"
+phone: '+64210206645'
 email: philswaterltd@gmail.com
 website: https://www.philswaterdelivery.co.nz
 socials:
@@ -20,13 +22,9 @@ socials:
 categories:
   - water-delivery
 tags:
-  - Bulk Water
-  - Tank Top Up
-  - Pool Fill
-
+  - Water Delivery
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---
