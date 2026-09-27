@@ -1,13 +1,15 @@
 ---
+tier: free
 title: Mangawhai Water Ltd
 slug: mangawhai-water
-blurb: Locally owned, Taumata Arowai-registered household water supplier delivering 10,000L tank top-ups across Mangawhai and surrounds.
+blurb: ''
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+6494315571"
+phone: '+6494315571'
 email: mangawhaiwater@gmail.com
 website: https://mangawhaiwater.co.nz
 socials:
@@ -20,12 +22,9 @@ socials:
 categories:
   - water-delivery
 tags:
-  - Bulk Water
-  - Tank Top Up
-
+  - Water Delivery
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---
