@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+64211222691"
+phone: '+64211222691'
 email: ''
 website: ''
 socials:
@@ -23,7 +23,7 @@ categories:
   - movers-taxis
   - property-maintenance
 tags:
-  - Rubbish removal
+  - Rubbish Removal
 hours: []
 nzbn: ''
 last_verified: 2026-08-18
