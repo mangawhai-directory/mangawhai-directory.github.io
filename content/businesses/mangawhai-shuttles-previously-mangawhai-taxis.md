@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+64226264295"
+phone: '+64226264295'
 email: mangawhaitaxis@gmail.com
 website: https://mangawhaitaxis.com/
 socials:
@@ -22,8 +22,7 @@ socials:
 categories:
   - movers-taxis
 tags:
-  - Transportation service
-  - Taxi service
+  - Taxi Service
 hours: []
 nzbn: ''
 last_verified: 2026-08-18
