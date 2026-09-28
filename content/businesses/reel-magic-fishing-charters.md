@@ -1,7 +1,9 @@
 ---
+tier: free
 title: Reel Magic Fishing Charters
 slug: reel-magic-fishing-charters
 blurb: ''
+image: ''
 address:
   street: Mangawhai Heads
   suburb: Mangawhai Heads
@@ -21,10 +23,8 @@ categories:
   - things-to-do-tours
 tags:
   - Fishing Charter
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-09'
-status: active
+last_verified: 2026-05-09
+status: closed
 ---
