@@ -5,16 +5,16 @@ slug: aotearoa-surf-school
 blurb: ''
 image: ''
 address:
-  street: 299 Molesworth Drive
-  suburb: Mangawhai Heads
-  postcode: '0505'
+  street: 11 Te Arai Point Road
+  suburb: Te Arai
+  postcode: '9075'
   country: NZ
 phone: '+6494315760'
-email: ''
+email: surf@aotearoasurf.co.nz
 website: https://www.aotearoasurf.co.nz
 socials:
-  facebook: ''
-  instagram: ''
+  facebook: https://www.facebook.com/aotearoasurf/
+  instagram: https://www.instagram.com/aotearoasurfschool/
   x: ''
   linkedin: ''
   tiktok: ''
