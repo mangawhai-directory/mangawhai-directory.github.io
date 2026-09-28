@@ -1,11 +1,11 @@
 ---
-title: "Advertise on Mangawhai Directory"
-description: "Reach locals and visitors actively searching for Mangawhai businesses. Simple ad packages — no contracts, no commission, no fluff."
+title: Advertise on Mangawhai Directory
+description: Reach locals and visitors actively searching for Mangawhai businesses. Simple ad packages — no contracts, no commission, no fluff.
 ---
 
-Mangawhai Directory is where people land when they already know they need to call someone — a builder, a cafe, a plumber, a place to stay. There's no scroll of sponsored noise above the listings, so a single ad on the page actually gets seen.
+Mangawhai Directory is where people land when they're already looking for a particular local trade or service. There's no scroll of sponsored noise above the listings, so a single ad on the page actually gets seen.
 
-Every business gets a **free listing** whether they advertise or not — name, address and contact buttons. Advertising buys you a banner above the list, or a richer listing. It never buys a better position within the list.
+Every business gets a **free listing** whether they advertise or not — name, address and contact buttons. Advertising buys you a banner above the list, it does not buy a better position within the list which remains strictly alphabetical.
 
 ## What it costs
 
@@ -46,7 +46,7 @@ We'd rather sell you three than one, and not only because it's cheaper for you. 
 ## Creative specs
 
 | Placement | Desktop | Mobile | Format |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Homepage tile | 1152 × 400 px | 500 × 500 px | JPG / PNG / SVG |
 | Category header | 500 × 250 px | 500 × 500 px | JPG / PNG / SVG |
 | Premium listing image | 800 × 800 px square | — | JPG / PNG |
@@ -77,7 +77,7 @@ We design ads for advertisers who'd rather not do it themselves — a one-off co
 Measured from your go-live date — the first day of your first booked month.
 
 | When you cancel | Refund |
-|---|---|
+| --- | --- |
 | More than 14 days before go-live | Full refund |
 | 14 days or less before go-live | 50% refund |
 | On or after go-live | No refund |
