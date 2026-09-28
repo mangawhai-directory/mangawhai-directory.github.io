@@ -21,9 +21,8 @@ socials:
   youtube: ''
 categories:
   - cleaning-services
-  - technology-it-services
 tags:
-  - House-cleaning booking app
+  - House-cleaning Booking App
 hours: []
 nzbn: ''
 last_verified: 2026-09-08
