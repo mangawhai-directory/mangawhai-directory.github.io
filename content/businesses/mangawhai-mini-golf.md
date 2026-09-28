@@ -1,26 +1,30 @@
 ---
-title: "Mangawhai Mini Golf"
-slug: "mangawhai-mini-golf"
-blurb: ""
+tier: free
+title: Mangawhai Mini Golf
+slug: mangawhai-mini-golf
+blurb: ''
+image: ''
 address:
-  street: "8 Wood Street"
-  suburb: "Mangawhai Heads"
-  postcode: "0505"
-  country: "NZ"
+  street: Mangawhai Fishing & Tackle, 8 Wood Street
+  suburb: Mangawhai Heads
+  postcode: '0505'
+  country: NZ
+phone: ''
+email: ''
+website: ''
 socials:
-  facebook: "https://www.facebook.com/mangawhaiminigolf/"
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["things-to-do-tours"]
+  facebook: https://www.facebook.com/mangawhaiminigolf/
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - things-to-do-tours
 tags:
-  - mangawhai-heads
   - Mini Golf
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
