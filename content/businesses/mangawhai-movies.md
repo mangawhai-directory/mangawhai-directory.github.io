@@ -1,28 +1,30 @@
 ---
+tier: free
 title: Mangawhai Movies
 slug: mangawhai-movies
 blurb: ''
+image: ''
 address:
   street: 181 Molesworth Drive
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
+phone: ''
+email: mangawhaimovies@gmail.com
 website: https://mangawhaimovies.com
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/mangawhaimovies/
   instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
-  - community-clubs-churches
   - things-to-do-tours
 tags:
-  - Cinema
-
+  - Movie Theatre
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
 ---
