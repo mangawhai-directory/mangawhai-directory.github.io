@@ -1,15 +1,19 @@
 ---
-title: RnR Charters Ltd
+tier: free
+title: RnR Charters
 slug: rnr-charters
 blurb: ''
+image: ''
 address:
-  street: 2 Alamar Crescent
+  street: Mangawhai
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-website: https://www.newzealand.com/int/plan/business/rnr-charters-ltd-boat-cruise/
+phone: '+6421954241'
+email: rnrcharters@gmail.com
+website: https://www.rnrcharters.co.nz/
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/RnRChartersNZ/
   instagram: ''
   x: ''
   linkedin: ''
@@ -19,9 +23,8 @@ categories:
   - things-to-do-tours
 tags:
   - Fishing Charter
-
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
 ---
