@@ -1,12 +1,16 @@
 ---
-title: Mangawhai Activity Zone
-slug: mangawhai-activity-zone
+tier: free
+title: Mangawhai Activity Zone (MAZ)
+slug: mangawhai-activity-zone-maz
 blurb: ''
+image: ''
 address:
   street: 191 Molesworth Drive
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
+phone: ''
+email: ''
 website: https://mangawhaiactivityzone.co.nz
 socials:
   facebook: ''
@@ -19,10 +23,12 @@ categories:
   - community-clubs-churches
   - things-to-do-tours
 tags:
-  - Family Activities
-
+  - Playground
+  - Skate Park
+  - Pump Track
+  - Field
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
 ---
