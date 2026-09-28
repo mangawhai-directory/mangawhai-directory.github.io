@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+6421638748"
+phone: '+6421638748'
 email: info@mangawhaimoving.co.nz
 website: https://www.mangawhaimoving.co.nz/
 socials:
@@ -22,8 +22,7 @@ socials:
 categories:
   - movers-taxis
 tags:
-  - House moving
-  - House packing
+  - House Movers
 hours: []
 nzbn: ''
 last_verified: 2026-08-18
