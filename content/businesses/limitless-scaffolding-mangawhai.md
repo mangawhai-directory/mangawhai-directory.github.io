@@ -13,7 +13,7 @@ phone: '+6421757199'
 email: matt@limitlessscaffolding.co.nz
 website: https://www.limitlessscaffolding.co.nz/
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/LimitlessScaffolding/
   instagram: ''
   x: ''
   linkedin: ''
