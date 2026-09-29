@@ -20,6 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
+  - animals
   - medical-dental
 tags:
   - Vet
