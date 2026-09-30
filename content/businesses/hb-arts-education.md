@@ -23,7 +23,7 @@ categories:
   - education-childcare
   - creative-services
 tags:
-  - Visual Arts Tuition
+  - Art Classes
 hours: []
 nzbn: ''
 last_verified: 2026-09-28
