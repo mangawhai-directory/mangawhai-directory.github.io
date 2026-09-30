@@ -22,6 +22,7 @@ socials:
 categories:
   - creative-services
   - real-estate-services
+  - marketing-digital-services
 tags:
   - Photographer
   - Videographer
