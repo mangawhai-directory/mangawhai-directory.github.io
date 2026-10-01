@@ -1,7 +1,9 @@
 ---
+tier: free
 title: Mangawhai Tennis Club
 slug: mangawhai-tennis-club
 blurb: Social tennis club at Mangawhai Domain with six floodlit all-weather courts welcoming players of all abilities.
+image: ''
 address:
   street: 75 Moir Street
   suburb: Mangawhai
@@ -20,11 +22,9 @@ socials:
 categories:
   - community-clubs-churches
 tags:
-  - Tennis
-
+  - Tennis Club
 hours: []
 nzbn: ''
-tier: free
 last_verified: 2026-05-09
 status: active
 ---
