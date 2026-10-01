@@ -1,26 +1,31 @@
 ---
-title: "Sustainable Kaipara"
-slug: "sustainable-kaipara"
-blurb: ""
+tier: free
+title: Sustainable Kaipara
+slug: sustainable-kaipara
+blurb: ''
+image: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-website: "https://sustainablekaipara.org"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: ''
+email: kiaora@sustainablekaipara.org
+website: https://sustainablekaipara.org
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["community-clubs-churches"]
+  facebook: https://www.facebook.com/sustainablekaipara
+  instagram: https://www.instagram.com/sustainablekaipara/
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - community-clubs-churches
 tags:
-  - Environmental
-
+  - Compost Collection
+  - Enviromental Events
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
