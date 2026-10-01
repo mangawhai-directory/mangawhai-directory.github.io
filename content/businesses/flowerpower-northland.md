@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - creative-services
+  - flowers
   - weddings
 tags:
   - Florist
