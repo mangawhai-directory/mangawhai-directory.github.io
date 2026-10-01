@@ -1,26 +1,30 @@
 ---
-title: "Weed Action Piroa-Brynderwyns"
-slug: "weed-action-piroa-brynderwyns"
-blurb: ""
+tier: free
+title: Mangawhai Community Park Weed Warriors
+slug: Mangawhai-community-park-weed-warriors
+blurb: ''
+image: ''
 address:
-  street: "Mangawhai"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-website: "https://pbl.org.nz/page29.html"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: '+642755374017'
+email: habitat@piroaconservation.org.nz
+website: ''
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["community-clubs-churches"]
+  facebook: https://www.facebook.com/profile.php?id=61594014960236
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - community-clubs-churches
 tags:
-  - Conservation
-
+  - Weed Control
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
