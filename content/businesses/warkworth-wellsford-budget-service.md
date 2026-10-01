@@ -1,26 +1,30 @@
 ---
-title: "Warkworth Wellsford Budget Service"
-slug: "warkworth-wellsford-budget-service"
-blurb: ""
+tier: free
+title: Warkworth Wellsford Budget Service
+slug: warkworth-wellsford-budget-service
+blurb: ''
+image: ''
 address:
-  street: "Wellsford"
-  suburb: "Wellsford"
-  postcode: "0900"
-  country: "NZ"
-website: "https://wwbudgetservice.co.nz"
+  street: Wellsford
+  suburb: Wellsford
+  postcode: '0900'
+  country: NZ
+phone: ''
+email: ''
+website: https://wwbudgetservice.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["community-clubs-churches"]
+  facebook: ''
+  instagram: ''
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - community-clubs-churches
 tags:
   - Budget Advice
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: closed
 ---
