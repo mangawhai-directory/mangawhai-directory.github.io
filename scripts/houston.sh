@@ -38,13 +38,14 @@ DBURL="${CT_DATABASE_URL:-$(jq -r '.database_url // empty' "$HOME/.config/housto
 # One request per invocation: `houston mcp` serves MCP on stdio, so the
 # handshake is replayed each time. A few hundred milliseconds buys statelessness.
 call() {
-  local tool="$1" args="$2" out line
+  local tool="$1" args="$2" out line err
+  err="$(mktemp)"; trap 'rm -f "$err"' RETURN
   out="$(printf '%s\n' \
     '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"houston.sh","version":"1"}}}' \
     '{"jsonrpc":"2.0","method":"notifications/initialized"}' \
     "$(jq -nc --arg t "$tool" --argjson a "$args" '{jsonrpc:"2.0",id:2,method:"tools/call",params:{name:$t,arguments:$a}}')" \
-    | CT_AUTH_TOKEN="$TOKEN" CT_DATABASE_URL="$DBURL" timeout 60 houston mcp 2>/dev/null)" \
-    || die "could not reach Houston" "is its database reachable?"
+    | CT_AUTH_TOKEN="$TOKEN" CT_DATABASE_URL="$DBURL" timeout 60 houston mcp 2>"$err")" \
+    || die "Houston did not answer" "$(grep -m1 -i 'error' "$err" || echo 'is its database reachable?')"
 
   line="$(printf '%s' "$out" | grep '"id":2' | tail -1)"
   [ -n "$line" ] || die "Houston returned nothing for $tool" "is the token valid for this project?"
