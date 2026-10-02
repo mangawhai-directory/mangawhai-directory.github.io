@@ -4,6 +4,7 @@
 #   scripts/versions.sh          compare this machine and every workflow against
 #                                the deploy workflow; exit 1 on any mismatch
 #   scripts/versions.sh hugo     print the Hugo version the deploy uses
+#   scripts/versions.sh edition  print its edition: extended or standard
 #   scripts/versions.sh node     print the Node major version the deploy uses
 #
 # The deploy workflow (.github/workflows/hugo.yaml) is the source of truth,
@@ -28,9 +29,10 @@ if grep -q 'hugo_extended_' "$DEPLOY"; then want_ed=extended; else want_ed=stand
 
 case "${1:-}" in
   hugo) [ -n "$want_hugo" ] || exit 2; echo "$want_hugo"; exit 0 ;;
+  edition) echo "$want_ed"; exit 0 ;;
   node) [ -n "$want_node" ] || exit 2; echo "$want_node"; exit 0 ;;
   "") ;;
-  *) sed -n '2,8p' "$0" | sed 's/^# \{0,1\}//'; exit 2 ;;
+  *) sed -n '2,9p' "$0" | sed 's/^# \{0,1\}//'; exit 2 ;;
 esac
 
 green=$'\033[32m'; red=$'\033[31m'; yellow=$'\033[33m'; off=$'\033[0m'

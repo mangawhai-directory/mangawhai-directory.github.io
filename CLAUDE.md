@@ -116,7 +116,8 @@ config once before). `config.yml`:
   setup. Leave them alone.
 
 Because CMS commits do not go through pull requests, the pull-request check below never sees them.
-The test workflow also runs on every push to `main` with the previous commit as the base, so a CMS
+The `Site checks` workflow (`.github/workflows/site-checks.yml`) also runs on every push to `main`,
+with the previous commit as the base, so a CMS
 save that breaks something shows a red check on that commit — after it has deployed.
 
 ## Layouts and the Tailwind pipeline
