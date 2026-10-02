@@ -30,6 +30,7 @@ TOKEN="${CT_AUTH_TOKEN:-$(jq -r '.token // empty' "$TOKEN_FILE" 2>/dev/null)}"
 DBURL="${CT_DATABASE_URL:-$(jq -r '.database_url // empty' "$HOME/.config/houston/config.json" 2>/dev/null)}"
 [ -n "$TOKEN" ] || die "no Houston lane token for this project" \
   "expected {\"token\": \"…\"} in $REPO/.houston.local.json (gitignored), or CT_AUTH_TOKEN" \
+  ${owner:+"or, from this helper checkout, in $owner/.houston.local.json"} \
   "a maintainer with planning access mints one per lane; do not substitute another credential"
 [ -n "$DBURL" ] || die "no Houston database url" \
   "expected CT_DATABASE_URL, or database_url in ~/.config/houston/config.json"

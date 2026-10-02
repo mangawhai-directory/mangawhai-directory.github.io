@@ -73,16 +73,17 @@ case "${1:-}" in
 
     # Ignored files (node_modules, public/, resources/, .cache/) survive on purpose.
     git -C "$WORKER_PATH" fetch --prune -q origin || die "could not fetch in $WORKER_PATH"
+    # Clean AFTER switching, so the new branch's .gitignore decides what stays.
     git -C "$WORKER_PATH" reset -q --hard 2>/dev/null || true
-    git -C "$WORKER_PATH" clean -fdq \
-      && git -C "$WORKER_PATH" checkout -q --no-track -B "$branch" origin/main \
+    git -C "$WORKER_PATH" checkout -q -f --no-track -B "$branch" origin/main \
+      && git -C "$WORKER_PATH" clean -fdq \
       || die "could not reset the helper checkout"
     # Drop every other local branch, so a stale one cannot be pushed by mistake.
     git -C "$WORKER_PATH" for-each-ref --format='%(refname:short)' refs/heads/ \
       | grep -vxF "$branch" | xargs -r git -C "$WORKER_PATH" branch -q -D
 
     for dir in "$WORKER_PATH" "$WORKER_PATH/scripts"; do
-      deps_ok "$dir" || { say "installing Node packages in ${dir#"$WORKER_PATH"/}…"; deps_install "$dir" || die "npm ci failed in $dir"; }
+      deps_ok "$dir" || { say "installing Node packages in ${dir#"$WORKER_PATH"}/…"; deps_install "$dir" || die "npm ci failed in $dir"; }
     done
     echo "helper checkout on $(git -C "$WORKER_PATH" branch --show-current) at $(git -C "$WORKER_PATH" log --oneline -1)"
     echo "  $WORKER_PATH"
