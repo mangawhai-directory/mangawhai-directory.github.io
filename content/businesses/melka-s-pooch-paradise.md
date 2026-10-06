@@ -22,6 +22,7 @@ socials:
 categories:
   - animals
 tags:
+  - Kennels
   - Dog Boarding
   - Playdays
 hours: []
