@@ -3,12 +3,13 @@ tier: free
 title: Nailhead Fencing & Landscaping
 slug: nailhead-fencing-and-landscaping
 blurb: ''
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+6421365218"
+phone: '+6421365218'
 email: nailheadfencing@gmail.com
 website: https://nailhead.nz
 socials:
@@ -20,6 +21,7 @@ socials:
   youtube: ''
 categories:
   - construction
+  - landscape-tree-services
 tags:
   - Fencing
   - Landscaping
