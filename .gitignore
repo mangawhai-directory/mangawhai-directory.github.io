@@ -6,3 +6,8 @@ node_modules/
 .bin/
 .dontcheckin
 .claude/
+
+# make test builds and compares here (scripts/test.sh)
+/.cache/
+# A task-tracker lane token read by scripts/houston.sh. A credential — never commit it.
+/.houston.local.json

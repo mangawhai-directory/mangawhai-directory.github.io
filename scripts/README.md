@@ -1,6 +1,19 @@
 # Scripts
 
-Validation and tooling scripts for the Mangawhai Directory.
+Validation and tooling scripts for the Mangawhai Directory. Most are run through
+the Makefile at the repository root (`make help`).
+
+| Script | Run by | Does |
+|---|---|---|
+| `validate-businesses.mjs` | `make test` | validates listing front matter (below) |
+| `check-site.py` | `make test` | checks a built copy of the site (header comment lists every check) |
+| `test.sh` | `make test` | runs both plus a production build; `--base <ref>` reports only new findings |
+| `versions.sh` | `make check` | holds this machine and every workflow to the deploy's Hugo and Node |
+| `setup.sh` | `make setup`, `make check` | installs and checks what a build needs |
+| `worker.sh` | `make worker-reset` | the separate clone maintainers' helper agents work in |
+| `houston.sh` | by hand | reads a maintainer task for a helper agent; needs a token |
+| `lib.sh` | the above | shared helpers |
+| `generate-businesses.mjs` | nobody | one-time seeding script; overwrites listings — do not run (see CLAUDE.md) |
 
 ## validate-businesses.mjs
 
@@ -12,7 +25,7 @@ filename match, category existence, phone/postcode/email/URL format,
 ### Run
 
 ```sh
-cd scripts && npm install     # first time only
+make setup                                     # first time only (installs scripts/node_modules)
 node scripts/validate-businesses.mjs           # human-readable
 node scripts/validate-businesses.mjs --json    # JSON output for CI
 ```
