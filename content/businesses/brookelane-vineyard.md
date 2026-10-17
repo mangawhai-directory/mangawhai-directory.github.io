@@ -1,12 +1,16 @@
 ---
+tier: free
 title: Brookelane Vineyard
 slug: brookelane-vineyard
 blurb: ''
+image: ''
 address:
-  street: Mangawhai Valley
-  suburb: Mangawhai Valley
+  street: Mangawhai
+  suburb: Mangawhai
   postcode: '0505'
   country: NZ
+phone: '+6421545299'
+email: brookelanevineyard@gmail.com
 website: http://brookelanevineyard.com
 socials:
   facebook: https://www.facebook.com/TeWhaiBayWines
@@ -17,14 +21,13 @@ socials:
   youtube: ''
 categories:
   - wineries-vineyards
+  - food-producers
 tags:
   - Vineyard
-  - Winery
-
+  - Gin Distillery
+  - Regular Events
 hours: []
-tier: free
-last_verified: '2026-05-09'
+nzbn: ''
+last_verified: 2026-05-09
 status: active
-phone: "+6421545299"
-email: brookelanevineyard@gmail.com
 ---
