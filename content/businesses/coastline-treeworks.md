@@ -3,7 +3,7 @@ tier: paid
 title: Coastline Treeworks
 slug: coastline-treeworks
 blurb: Professional, large volume mulching of scrub/vegetation & gorse, land clearing and tree removal services. Competitive rates on mulch, delivered within Mangawhai.
-image: /uploads/Screenshot 2026-10-18 at 7.46.56 PM.png
+image: /uploads/Screenshot 2026-10-18 at 8.19.08 PM.png
 address:
   street: Mangawhai
   suburb: Mangawhai
