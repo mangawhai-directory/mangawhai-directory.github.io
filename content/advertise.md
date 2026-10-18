@@ -30,19 +30,6 @@ Take one of the ten and you pay **$95 / $35** rather than the $145 / $55 Step 2 
 
 The founding rate applies to your **first booking**, and a booking can cover any months starting within the next 12 months — so book a full year and the whole year is at the founding rate. Those months need not be consecutive. Any later booking is at the rate published when you place it, and we'll tell you that rate before you rebook.
 
-We're not pretending the ten places are scarce for scarcity's sake. They're cheap because right now you'd be backing us on modest numbers, and that's worth paying you for.
-{{< /note >}}
-
-{{< note title="Where the later steps come from" tone="teal" >}}
-We're currently around **230 visits a month**. Step 3 means more than five times that, and the full rate more than ten times it — we're not pretending either is imminent. Both are tied to a number you can ask us for at any time, and we'll show you the Analytics figure behind it. A price rise should be arithmetic you can check, not something we invent at renewal. A change to a published rate never affects a booking already invoiced.
-{{< /note >}}
-
-{{< note title="Three months, or one?" tone="sage" >}}
-Three months of the category header is **$105** in total, or **$285** for the homepage tile — and the months need not be consecutive, so December, January and April is a perfectly good booking.
-
-We'd rather sell you three than one, and not only because it's cheaper for you. A single month at our current traffic produces numbers too small to tell you anything. Three months gives your report enough to actually read. If you only want one, that's genuinely fine — we'd just rather you knew why the figures might look thin.
-{{< /note >}}
-
 ## Creative specs
 
 | Placement | Desktop | Mobile | Format |
