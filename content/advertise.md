@@ -17,19 +17,6 @@ All prices exclude GST. Book three or more months together and the monthly rate 
 **Not sure which one?** Tell us what you're selling and who to, and we'll tell you honestly which placement we'd take — including if we think none of them are worth it for you.
 {{< /cta >}}
 
-## What you pay now, and what happens next
-
-We're new, and the rate card should say so. A placement is worth what it delivers today, not what we hope it'll deliver — so the price is tied to our traffic and published in advance rather than sprung on you at renewal.
-
-{{< rate-steps >}}
-
-The per-month price applies when three or more months are booked together. The two traffic steps are measured on a **three-month rolling average**, not a single month's total — Mangawhai is seasonal, and one busy January shouldn't leave you paying a summer price in the middle of winter.
-
-{{< note title="What a founding place is worth" tone="ink" >}}
-Take one of the ten and you pay **$95 / $35** rather than the $145 / $55 Step 2 rate — **$600 a year less** on the homepage tile, **$240 less** on a category header.
-
-The founding rate applies to your **first booking**, and a booking can cover any months starting within the next 12 months — so book a full year and the whole year is at the founding rate. Those months need not be consecutive. Any later booking is at the rate published when you place it, and we'll tell you that rate before you rebook.
-
 ## Creative specs
 
 | Placement | Desktop | Mobile | Format |
