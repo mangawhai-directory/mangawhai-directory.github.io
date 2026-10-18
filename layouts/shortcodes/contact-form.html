@@ -2,13 +2,18 @@
   contact-form — the /contact/ form, posted to Static Contact.
 
   A shortcode rather than raw HTML in content/contact.md because the category
-  list has to come from content/categories/ at build time, and the rate in the
-  months hint from data/rates.yaml, so neither can drift.
+  list has to come from content/categories/ at build time, and the rates in the
+  placement headings and hints from data/rates.yaml, so neither can drift.
 
   Static Contact forwards every posted field, sorted by key, labelled
   ucfirst(key), with name="x[]" arrays joined by ", ". So the keys below decide
   the email's labels and order; nothing is configured on its side. The
   thank-you redirect is the form's return URL there, not set here.
+
+  Placements are checkboxes, not a select, because an advertiser can take more
+  than one at once. Each checkbox owns a panel with that placement's fields,
+  and every field is named for its placement (category_header_months[],
+  homepage_tile_months[]) so two bookings in one email never share a key.
 
   Conditional groups are <fieldset>s toggled by the script at the bottom. A
   hidden group is always BOTH `hidden` and `disabled`, set together: disabled
@@ -17,8 +22,10 @@
   topic, which is also what a visitor without JavaScript gets — and the
   botbuster script needs JavaScript anyway.
 
-  Deep links: ?topic=advertise&type=premium-listing|category-header|homepage-tile
-  &category=<slug>. Unknown values are ignored and the defaults stand.
+  Deep links: ?topic=advertise&type=premium-listing,category-header,homepage-tile
+  &category=<slug>. `type` takes one or several, comma-separated, and a valid
+  one also switches the topic to Advertise. Unknown values are ignored and the
+  defaults stand.
 
   The `!` overrides defeat the prose container's child-element styles in
   layouts/_default/single.html ([&_p] sets size, colour and margin).
@@ -27,15 +34,19 @@
 {{- $select := "block h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background" -}}
 {{- $multi := "block w-full rounded-md border border-input bg-background px-2 py-1 text-sm text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background [&_option]:rounded-sm [&_option]:px-2 [&_option]:py-1.5" -}}
 {{- $label := "mb-1.5 block text-sm font-medium text-foreground" -}}
-{{- $legend := "mb-2 text-sm font-medium text-foreground" -}}
 {{- $hint := "m-0! mt-1.5! text-xs! leading-5! text-muted-foreground!" -}}
-{{- $check := "h-4 w-4 shrink-0 accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background" -}}
-{{- $choice := "flex items-center gap-2 text-sm text-foreground" -}}
 {{- $group := "min-w-0 space-y-4 border-0 p-0" -}}
+{{- $check := "h-4 w-4 shrink-0 accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background" -}}
+{{- $head := "flex cursor-pointer items-center gap-3 px-3 py-3 text-sm font-medium text-foreground" -}}
+{{- $price := "ml-auto shrink-0 text-xs font-normal text-muted-foreground" -}}
+{{- $panel := "min-w-0 space-y-4 border-0 px-3 pb-4 pt-0" -}}
 
-{{- /* The rate in force today (steps[].current), for the months hint. */ -}}
+{{- /* The rate in force today (steps[].current), for the banner headings and
+       hints, and the Premium card's per-update price for its heading. */ -}}
 {{- $now := dict -}}
 {{- range hugo.Data.rates.steps }}{{ if .current }}{{ $now = . }}{{ end }}{{ end -}}
+{{- $premium := "" -}}
+{{- range hugo.Data.rates.cards }}{{ if eq .name "Premium Listing" }}{{ with index .prices 0 }}{{ $premium = .value }}{{ end }}{{ end }}{{ end -}}
 
 <form action="https://staticcontact.com/send/af0749c3-ffbd-4a08-be03-d1306a539a72" method="post" id="contactform" class="mt-8 max-w-xl space-y-4">
   <div>
@@ -69,77 +80,88 @@
       <input id="contact-business" type="text" name="business" autocomplete="organization" required class="{{ $input }}">
     </div>
 
-    <div>
-      <label for="contact-advert-type" class="{{ $label }}">Placement</label>
-      <select id="contact-advert-type" name="advert_type" required class="{{ $select }}">
-        <option value="" selected>Choose a placement</option>
-        {{- range hugo.Data.rates.cards }}
-        <option value="{{ .name }}">{{ .name }}</option>
-        {{- end }}
-      </select>
-    </div>
+    <fieldset id="contact-placements" class="{{ $group }}">
+      <legend class="{{ $label }}">Placements</legend>
+      <p class="{{ $hint }}">Tick every placement you're interested in. Each one opens its own details.</p>
+      <div class="mt-2 divide-y divide-border rounded-md border border-input bg-background">
 
-    {{- /* Premium Listing: priced per update, so no months. The image, blurb
-           and hours themselves come by email after the invoice. */}}
-    <fieldset id="contact-premium" data-for="Premium Listing" class="{{ $group }}" hidden disabled>
-      <legend class="sr-only">Premium Listing details</legend>
-
-      <fieldset class="{{ $group }}">
-        <legend class="{{ $legend }}">Already listed on the directory?</legend>
-        <div class="flex flex-wrap gap-x-6 gap-y-2">
-          <label class="{{ $choice }}"><input type="radio" name="advert_listed" value="Yes" required class="{{ $check }}"> Yes</label>
-          <label class="{{ $choice }}"><input type="radio" name="advert_listed" value="No" class="{{ $check }}"> No</label>
-          <label class="{{ $choice }}"><input type="radio" name="advert_listed" value="Not sure" class="{{ $check }}"> Not sure</label>
+        {{- /* Premium Listing: priced per update, so no months and nothing
+               else to ask. The image, blurb and hours come by email after
+               the invoice; the panel just says what to have ready. The
+               specs mirror content/advertise.md. */}}
+        <div>
+          <label class="{{ $head }}">
+            <input type="checkbox" name="placements[]" value="Premium Listing" data-panel="contact-panel-premium" aria-controls="contact-panel-premium" aria-expanded="false" class="{{ $check }}">
+            Premium Listing
+            {{- with $premium }}<span class="{{ $price }}">{{ . }} per update</span>{{ end }}
+          </label>
+          <fieldset id="contact-panel-premium" class="{{ $panel }}" hidden disabled>
+            <legend class="sr-only">Premium Listing details</legend>
+            <p class="{{ $hint }}">
+              When we reply we'll ask you for a square image or logo
+              (800 x 800 px, JPG or PNG, under 200 KB), a blurb of 25-30 words, and your opening hours by
+              day. Send whatever you have ready and we'll crop or tidy it at no extra charge.
+            </p>
+          </fieldset>
         </div>
-      </fieldset>
 
-      <fieldset class="{{ $group }}" aria-describedby="contact-premium-hint">
-        <legend class="{{ $legend }}">What would you like to add?</legend>
-        <div class="space-y-2">
-          <label class="{{ $choice }}"><input type="checkbox" name="advert_premium[]" value="Image or logo" class="{{ $check }}"> Image or logo</label>
-          <label class="{{ $choice }}"><input type="checkbox" name="advert_premium[]" value="Blurb" class="{{ $check }}"> Blurb</label>
-          <label class="{{ $choice }}"><input type="checkbox" name="advert_premium[]" value="Opening hours" class="{{ $check }}"> Opening hours</label>
+        {{- /* The two banners are booked by calendar month. Month options are
+               written by the script from the visitor's date: a list rendered
+               here would go stale between builds. One advertiser holds a
+               placement in any month, so availability is confirmed by reply;
+               the repository only knows what is live today. */}}
+        <div>
+          <label class="{{ $head }}">
+            <input type="checkbox" name="placements[]" value="Category Header" data-panel="contact-panel-category" aria-controls="contact-panel-category" aria-expanded="false" class="{{ $check }}">
+            Category Header
+            {{- with $now.category }}<span class="{{ $price }}">from {{ .monthly }}+GST p/m</span>{{ end }}
+          </label>
+          <fieldset id="contact-panel-category" class="{{ $panel }}" hidden disabled>
+            <legend class="sr-only">Category Header details</legend>
+            <div>
+              <label for="contact-category-header-category" class="{{ $label }}">Category</label>
+              <select id="contact-category-header-category" name="category_header_category" required class="{{ $select }}">
+                <option value="" selected>Choose a category</option>
+                {{- range (site.GetPage "/categories").Pages.ByTitle }}
+                <option value="{{ path.Base .RelPermalink }}">{{ .Title }}</option>
+                {{- end }}
+              </select>
+            </div>
+            <div>
+              <label for="contact-category-header-months" class="{{ $label }}">Months</label>
+              <select id="contact-category-header-months" name="category_header_months[]" data-months multiple size="6" required aria-describedby="contact-category-header-hint" class="{{ $multi }}"></select>
+              <p id="contact-category-header-hint" class="{{ $hint }}">
+                Select every month you want (hold Ctrl or ⌘ to pick more than one on a computer).
+                {{- with $now.category }} Three or more months together get the monthly rate — {{ .monthly }}+GST p/m instead of {{ .single }}+GST for a single month.{{ end }}
+                Dependent on availability: one advertiser holds a category in any month, so we'll confirm
+                which of your months are free before we send an invoice.
+              </p>
+            </div>
+          </fieldset>
         </div>
-        <p id="contact-premium-hint" class="{{ $hint }}">Tick any that apply. You'll send us the details themselves when we reply.</p>
-      </fieldset>
-    </fieldset>
 
-    <fieldset id="contact-category" data-for="Category Header" class="{{ $group }}" hidden disabled>
-      <legend class="sr-only">Category Header details</legend>
-      <div>
-        <label for="contact-advert-category" class="{{ $label }}">Category</label>
-        <select id="contact-advert-category" name="advert_category" required class="{{ $select }}">
-          <option value="" selected>Choose a category</option>
-          {{- range (site.GetPage "/categories").Pages.ByTitle }}
-          <option value="{{ path.Base .RelPermalink }}">{{ .Title }}</option>
-          {{- end }}
-        </select>
+        <div>
+          <label class="{{ $head }}">
+            <input type="checkbox" name="placements[]" value="Homepage Tile" data-panel="contact-panel-homepage" aria-controls="contact-panel-homepage" aria-expanded="false" class="{{ $check }}">
+            Homepage Tile
+            {{- with $now.homepage }}<span class="{{ $price }}">from {{ .monthly }}+GST p/m</span>{{ end }}
+          </label>
+          <fieldset id="contact-panel-homepage" class="{{ $panel }}" hidden disabled>
+            <legend class="sr-only">Homepage Tile details</legend>
+            <div>
+              <label for="contact-homepage-tile-months" class="{{ $label }}">Months</label>
+              <select id="contact-homepage-tile-months" name="homepage_tile_months[]" data-months multiple size="6" required aria-describedby="contact-homepage-tile-hint" class="{{ $multi }}"></select>
+              <p id="contact-homepage-tile-hint" class="{{ $hint }}">
+                Select every month you want (hold Ctrl or ⌘ to pick more than one on a computer).
+                {{- with $now.homepage }} Three or more months together get the monthly rate — {{ .monthly }}+GST p/m instead of {{ .single }}+GST for a single month.{{ end }}
+                Dependent on availability: one advertiser holds the tile in any month, so we'll confirm
+                which of your months are free before we send an invoice.
+              </p>
+            </div>
+          </fieldset>
+        </div>
+
       </div>
-    </fieldset>
-
-    {{- /* Shared by the two banners, both booked by calendar month. The
-           options are written by the script from the visitor's date: a list
-           rendered here would go stale between builds. */}}
-    <fieldset id="contact-booking" data-for="Category Header|Homepage Tile" class="{{ $group }}" hidden disabled>
-      <legend class="sr-only">Months and artwork</legend>
-      <div>
-        <label for="contact-advert-months" class="{{ $label }}">Months</label>
-        <select id="contact-advert-months" name="advert_months[]" multiple size="6" required aria-describedby="contact-months-hint" class="{{ $multi }}"></select>
-        <p id="contact-months-hint" class="{{ $hint }}">
-          Select every month you want (hold Ctrl or ⌘ to pick more than one on a computer). Three or more months together get the monthly rate
-          {{- with $now.category }}<span data-for="Category Header"> — {{ .monthly }}+GST p/m instead of {{ .single }}+GST for a single month</span>{{ end }}
-          {{- with $now.homepage }}<span data-for="Homepage Tile"> — {{ .monthly }}+GST p/m instead of {{ .single }}+GST for a single month</span>{{ end -}}
-          .
-        </p>
-      </div>
-
-      <fieldset class="{{ $group }}">
-        <legend class="{{ $legend }}">Artwork</legend>
-        <div class="space-y-2">
-          <label class="{{ $choice }}"><input type="radio" name="advert_artwork" value="Ready to go" required class="{{ $check }}"> Ready to go</label>
-          <label class="{{ $choice }}"><input type="radio" name="advert_artwork" value="Need it designed (quote me)" class="{{ $check }}"> Need it designed (quote me)</label>
-        </div>
-      </fieldset>
     </fieldset>
     </div>
   </fieldset>
@@ -165,14 +187,12 @@
     if (!form) return;
 
     var topic = document.getElementById('contact-topic');
-    var type = document.getElementById('contact-advert-type');
-    var category = document.getElementById('contact-advert-category');
-    var months = document.getElementById('contact-advert-months');
     var advertise = document.getElementById('contact-advertise');
+    var category = document.getElementById('contact-category-header-category');
     var message = document.getElementById('contact-message');
     var messageLabel = document.getElementById('contact-message-label');
-    var groups = advertise.querySelectorAll('fieldset[data-for]');
-    var hints = document.querySelectorAll('#contact-months-hint [data-for]');
+    var boxes = advertise.querySelectorAll('input[name="placements[]"]');
+    var monthLists = advertise.querySelectorAll('select[data-months]');
     var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
       'August', 'September', 'October', 'November', 'December'];
     var TYPES = {
@@ -187,26 +207,35 @@
       el.disabled = !on;
     }
 
-    function shows(el, value) {
-      return el.getAttribute('data-for').split('|').indexOf(value) !== -1;
-    }
-
     /* The next 12 calendar months, starting next month: a banner goes live on
        the first day of a booked month, so this month has already started. */
     var d = new Date();
     for (var i = 1; i <= 12; i++) {
       var m = new Date(d.getFullYear(), d.getMonth() + i, 1);
-      var opt = document.createElement('option');
-      opt.value = m.getFullYear() + '-' + ('0' + (m.getMonth() + 1)).slice(-2);
-      opt.textContent = MONTHS[m.getMonth()] + ' ' + m.getFullYear();
-      months.appendChild(opt);
+      var value = m.getFullYear() + '-' + ('0' + (m.getMonth() + 1)).slice(-2);
+      var text = MONTHS[m.getMonth()] + ' ' + m.getFullYear();
+      for (var k = 0; k < monthLists.length; k++) {
+        var opt = document.createElement('option');
+        opt.value = value;
+        opt.textContent = text;
+        monthLists[k].appendChild(opt);
+      }
     }
 
     function update() {
       var ad = topic.value === 'Advertise';
       show(advertise, ad);
-      for (var i = 0; i < groups.length; i++) show(groups[i], ad && shows(groups[i], type.value));
-      for (var j = 0; j < hints.length; j++) hints[j].hidden = !shows(hints[j], type.value);
+      var any = false;
+      for (var i = 0; i < boxes.length; i++) {
+        var on = ad && boxes[i].checked;
+        any = any || boxes[i].checked;
+        boxes[i].setAttribute('aria-expanded', on ? 'true' : 'false');
+        show(document.getElementById(boxes[i].getAttribute('data-panel')), on);
+      }
+      /* Checkboxes have no `required` that means "at least one", so the
+         first box carries a custom message until something is ticked. It
+         is ignored while the whole advertising group is disabled. */
+      boxes[0].setCustomValidity(any ? '' : 'Tick at least one placement.');
       message.required = !ad;
       messageLabel.textContent = ad ? 'Anything else?' : 'Message';
     }
@@ -215,13 +244,20 @@
        dropped, so the field keeps its default. */
     var q = new URLSearchParams(window.location.search);
     if ((q.get('topic') || '').toLowerCase() === 'advertise') topic.value = 'Advertise';
-    var t = TYPES[(q.get('type') || '').toLowerCase()];
-    if (t) type.value = t;
+    var wanted = (q.get('type') || '').toLowerCase().split(',');
+    for (var b = 0; b < boxes.length; b++) {
+      for (var w = 0; w < wanted.length; w++) {
+        if (TYPES[wanted[w]] === boxes[b].value) {
+          boxes[b].checked = true;
+          topic.value = 'Advertise';
+        }
+      }
+    }
     var c = (q.get('category') || '').toLowerCase();
     if (/^[a-z0-9-]+$/.test(c) && category.querySelector('option[value="' + c + '"]')) category.value = c;
 
     topic.addEventListener('change', update);
-    type.addEventListener('change', update);
+    for (var e = 0; e < boxes.length; e++) boxes[e].addEventListener('change', update);
     /* Back/forward restores field values without firing change events. */
     window.addEventListener('pageshow', update);
     update();
