@@ -126,8 +126,11 @@ if [ -n "$BASE" ]; then
   mkdir -p "$src/scripts" "$src/schemas"
   cp "$REPO/scripts/validate-businesses.mjs" "$REPO/scripts/check-site.py" "$src/scripts/"
   cp "$REPO/schemas/"*.json "$src/schemas/"
-  ln -sfn "$REPO/node_modules" "$src/node_modules"
-  ln -sfn "$REPO/scripts/node_modules" "$src/scripts/node_modules"
+  # Hard-linked copies, not symlinks: from 0.168 Hugo runs the Tailwind CLI
+  # under Node's permission model and refuses a node_modules symlink that
+  # resolves outside the source tree. Hard links are instant and stay inside.
+  cp -al "$REPO/node_modules" "$src/node_modules" 2>/dev/null || cp -a "$REPO/node_modules" "$src/node_modules"
+  cp -al "$REPO/scripts/node_modules" "$src/scripts/node_modules" 2>/dev/null || cp -a "$REPO/scripts/node_modules" "$src/scripts/node_modules"
   collect "$src" "$WORK/base"
   # A base we could not judge must not make this change look clean.
   if grep -q '^validate: scripts/validate-businesses.mjs: did not run' "$WORK/base/findings.txt"; then

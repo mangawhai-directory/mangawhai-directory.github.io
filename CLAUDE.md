@@ -54,10 +54,11 @@ and edition the deploy uses), Node 24 (for Tailwind), npm, git and Python 3 (for
    `index.json` (the search index) is well formed and every entry's URL and anchor resolves; and
    nothing `hugo list drafts|future|expired` reports was published. External links are not fetched.
 
-It takes about 3 seconds strict and 5–11 seconds with `BASE` (the base is built too). **On
-`origin/main` today strict mode fails**: some listings fail the validator (mismatched slugs, a
-duplicate slug, an unknown category). Those are content defects to fix through the CMS or a
-content change, not something to work around in the checks.
+It takes about 3 seconds strict and 5–11 seconds with `BASE` (the base is built too). When strict
+mode fails on `origin/main` it is almost always content: the CMS lets a listing's `slug` drift from
+its filename, create a duplicate, or point at a category that does not exist. Fix the listing (the
+filename is canonical, so set `slug` back to the filename stem) rather than working around it in
+the checks.
 
 `BASE` exists because the CMS changes `main` all day and some listings there already fail. A change
 to one listing or one template should be told what *it* broke. The base is exported with
