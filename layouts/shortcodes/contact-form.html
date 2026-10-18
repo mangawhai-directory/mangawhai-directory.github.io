@@ -1,0 +1,229 @@
+{{- /*
+  contact-form — the /contact/ form, posted to Static Contact.
+
+  A shortcode rather than raw HTML in content/contact.md because the category
+  list has to come from content/categories/ at build time, and the rate in the
+  months hint from data/rates.yaml, so neither can drift.
+
+  Static Contact forwards every posted field, sorted by key, labelled
+  ucfirst(key), with name="x[]" arrays joined by ", ". So the keys below decide
+  the email's labels and order; nothing is configured on its side. The
+  thank-you redirect is the form's return URL there, not set here.
+
+  Conditional groups are <fieldset>s toggled by the script at the bottom. A
+  hidden group is always BOTH `hidden` and `disabled`, set together: disabled
+  stops its controls posting (the email carries only what was on screen) and
+  skips their `required` checks. The server-rendered state is the General
+  topic, which is also what a visitor without JavaScript gets — and the
+  botbuster script needs JavaScript anyway.
+
+  Deep links: ?topic=advertise&type=premium-listing|category-header|homepage-tile
+  &category=<slug>. Unknown values are ignored and the defaults stand.
+
+  The `!` overrides defeat the prose container's child-element styles in
+  layouts/_default/single.html ([&_p] sets size, colour and margin).
+*/ -}}
+{{- $input := "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background" -}}
+{{- $select := "block h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background" -}}
+{{- $multi := "block w-full rounded-md border border-input bg-background px-2 py-1 text-sm text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background [&_option]:rounded-sm [&_option]:px-2 [&_option]:py-1.5" -}}
+{{- $label := "mb-1.5 block text-sm font-medium text-foreground" -}}
+{{- $legend := "mb-2 text-sm font-medium text-foreground" -}}
+{{- $hint := "m-0! mt-1.5! text-xs! leading-5! text-muted-foreground!" -}}
+{{- $check := "h-4 w-4 shrink-0 accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background" -}}
+{{- $choice := "flex items-center gap-2 text-sm text-foreground" -}}
+{{- $group := "min-w-0 space-y-4 border-0 p-0" -}}
+
+{{- /* The rate in force today (steps[].current), for the months hint. */ -}}
+{{- $now := dict -}}
+{{- range hugo.Data.rates.steps }}{{ if .current }}{{ $now = . }}{{ end }}{{ end -}}
+
+<form action="https://staticcontact.com/send/af0749c3-ffbd-4a08-be03-d1306a539a72" method="post" id="contactform" class="mt-8 max-w-xl space-y-4">
+  <div>
+    <label for="contact-name" class="{{ $label }}">Name</label>
+    <input id="contact-name" type="text" name="name" autocomplete="name" required class="{{ $input }}">
+  </div>
+
+  <div>
+    <label for="contact-email" class="{{ $label }}">Email</label>
+    <input id="contact-email" type="email" name="email" autocomplete="email" required class="{{ $input }}">
+  </div>
+
+  <div>
+    <label for="contact-topic" class="{{ $label }}">What's it about?</label>
+    <select id="contact-topic" name="topic" required class="{{ $select }}">
+      <option value="General" selected>General enquiry</option>
+      <option value="Advertise">Advertising</option>
+    </select>
+  </div>
+
+  <fieldset id="contact-advertise" class="min-w-0 rounded-lg border-0 bg-surface-cream p-4 sm:p-5" hidden disabled>
+    {{- /* Floated so the legend sits inside the padded box rather than on its
+           top edge. The groups below are spaced with flex gap, not space-y:
+           gap skips the hidden groups, where space-y would leave a trailing
+           margin on whichever visible group is followed by hidden ones. */}}
+    <legend class="float-left mb-4 w-full text-base font-semibold text-foreground">Advertising enquiry</legend>
+    <div class="clear-both flex flex-col gap-4">
+
+    <div>
+      <label for="contact-business" class="{{ $label }}">Business name</label>
+      <input id="contact-business" type="text" name="business" autocomplete="organization" required class="{{ $input }}">
+    </div>
+
+    <div>
+      <label for="contact-advert-type" class="{{ $label }}">Placement</label>
+      <select id="contact-advert-type" name="advert_type" required class="{{ $select }}">
+        <option value="" selected>Choose a placement</option>
+        {{- range hugo.Data.rates.cards }}
+        <option value="{{ .name }}">{{ .name }}</option>
+        {{- end }}
+      </select>
+    </div>
+
+    {{- /* Premium Listing: priced per update, so no months. The image, blurb
+           and hours themselves come by email after the invoice. */}}
+    <fieldset id="contact-premium" data-for="Premium Listing" class="{{ $group }}" hidden disabled>
+      <legend class="sr-only">Premium Listing details</legend>
+
+      <fieldset class="{{ $group }}">
+        <legend class="{{ $legend }}">Already listed on the directory?</legend>
+        <div class="flex flex-wrap gap-x-6 gap-y-2">
+          <label class="{{ $choice }}"><input type="radio" name="advert_listed" value="Yes" required class="{{ $check }}"> Yes</label>
+          <label class="{{ $choice }}"><input type="radio" name="advert_listed" value="No" class="{{ $check }}"> No</label>
+          <label class="{{ $choice }}"><input type="radio" name="advert_listed" value="Not sure" class="{{ $check }}"> Not sure</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="{{ $group }}" aria-describedby="contact-premium-hint">
+        <legend class="{{ $legend }}">What would you like to add?</legend>
+        <div class="space-y-2">
+          <label class="{{ $choice }}"><input type="checkbox" name="advert_premium[]" value="Image or logo" class="{{ $check }}"> Image or logo</label>
+          <label class="{{ $choice }}"><input type="checkbox" name="advert_premium[]" value="Blurb" class="{{ $check }}"> Blurb</label>
+          <label class="{{ $choice }}"><input type="checkbox" name="advert_premium[]" value="Opening hours" class="{{ $check }}"> Opening hours</label>
+        </div>
+        <p id="contact-premium-hint" class="{{ $hint }}">Tick any that apply. You'll send us the details themselves when we reply.</p>
+      </fieldset>
+    </fieldset>
+
+    <fieldset id="contact-category" data-for="Category Header" class="{{ $group }}" hidden disabled>
+      <legend class="sr-only">Category Header details</legend>
+      <div>
+        <label for="contact-advert-category" class="{{ $label }}">Category</label>
+        <select id="contact-advert-category" name="advert_category" required class="{{ $select }}">
+          <option value="" selected>Choose a category</option>
+          {{- range (site.GetPage "/categories").Pages.ByTitle }}
+          <option value="{{ path.Base .RelPermalink }}">{{ .Title }}</option>
+          {{- end }}
+        </select>
+      </div>
+    </fieldset>
+
+    {{- /* Shared by the two banners, both booked by calendar month. The
+           options are written by the script from the visitor's date: a list
+           rendered here would go stale between builds. */}}
+    <fieldset id="contact-booking" data-for="Category Header|Homepage Tile" class="{{ $group }}" hidden disabled>
+      <legend class="sr-only">Months and artwork</legend>
+      <div>
+        <label for="contact-advert-months" class="{{ $label }}">Months</label>
+        <select id="contact-advert-months" name="advert_months[]" multiple size="6" required aria-describedby="contact-months-hint" class="{{ $multi }}"></select>
+        <p id="contact-months-hint" class="{{ $hint }}">
+          Select every month you want (hold Ctrl or ⌘ to pick more than one on a computer). Three or more months together get the monthly rate
+          {{- with $now.category }}<span data-for="Category Header"> — {{ .monthly }}+GST p/m instead of {{ .single }}+GST for a single month</span>{{ end }}
+          {{- with $now.homepage }}<span data-for="Homepage Tile"> — {{ .monthly }}+GST p/m instead of {{ .single }}+GST for a single month</span>{{ end -}}
+          .
+        </p>
+      </div>
+
+      <fieldset class="{{ $group }}">
+        <legend class="{{ $legend }}">Artwork</legend>
+        <div class="space-y-2">
+          <label class="{{ $choice }}"><input type="radio" name="advert_artwork" value="Ready to go" required class="{{ $check }}"> Ready to go</label>
+          <label class="{{ $choice }}"><input type="radio" name="advert_artwork" value="Need it designed (quote me)" class="{{ $check }}"> Need it designed (quote me)</label>
+        </div>
+      </fieldset>
+    </fieldset>
+    </div>
+  </fieldset>
+
+  <div>
+    <label for="contact-message" class="{{ $label }}"><span id="contact-message-label">Message</span></label>
+    <textarea id="contact-message" name="message" rows="5" required class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"></textarea>
+  </div>
+  <p class="text-xs! leading-5! text-muted-foreground!">
+    We only use your details to reply to your enquiry. See our
+    <a href="/privacy/" class="underline underline-offset-4">Privacy Policy</a>.
+  </p>
+
+  <div>
+    <button type="submit" class="inline-flex h-10 items-center rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">Send message</button>
+  </div>
+  <script src="https://staticcontact.com/js/static_contact_botbuster.js"></script>
+</form>
+
+<script>
+  (function () {
+    var form = document.getElementById('contactform');
+    if (!form) return;
+
+    var topic = document.getElementById('contact-topic');
+    var type = document.getElementById('contact-advert-type');
+    var category = document.getElementById('contact-advert-category');
+    var months = document.getElementById('contact-advert-months');
+    var advertise = document.getElementById('contact-advertise');
+    var message = document.getElementById('contact-message');
+    var messageLabel = document.getElementById('contact-message-label');
+    var groups = advertise.querySelectorAll('fieldset[data-for]');
+    var hints = document.querySelectorAll('#contact-months-hint [data-for]');
+    var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+      'August', 'September', 'October', 'November', 'December'];
+    var TYPES = {
+      'premium-listing': 'Premium Listing',
+      'category-header': 'Category Header',
+      'homepage-tile': 'Homepage Tile'
+    };
+
+    /* The two attributes always move together: see the note at the top. */
+    function show(el, on) {
+      el.hidden = !on;
+      el.disabled = !on;
+    }
+
+    function shows(el, value) {
+      return el.getAttribute('data-for').split('|').indexOf(value) !== -1;
+    }
+
+    /* The next 12 calendar months, starting next month: a banner goes live on
+       the first day of a booked month, so this month has already started. */
+    var d = new Date();
+    for (var i = 1; i <= 12; i++) {
+      var m = new Date(d.getFullYear(), d.getMonth() + i, 1);
+      var opt = document.createElement('option');
+      opt.value = m.getFullYear() + '-' + ('0' + (m.getMonth() + 1)).slice(-2);
+      opt.textContent = MONTHS[m.getMonth()] + ' ' + m.getFullYear();
+      months.appendChild(opt);
+    }
+
+    function update() {
+      var ad = topic.value === 'Advertise';
+      show(advertise, ad);
+      for (var i = 0; i < groups.length; i++) show(groups[i], ad && shows(groups[i], type.value));
+      for (var j = 0; j < hints.length; j++) hints[j].hidden = !shows(hints[j], type.value);
+      message.required = !ad;
+      messageLabel.textContent = ad ? 'Anything else?' : 'Message';
+    }
+
+    /* Prefill from the query string. A value that matches no option is
+       dropped, so the field keeps its default. */
+    var q = new URLSearchParams(window.location.search);
+    if ((q.get('topic') || '').toLowerCase() === 'advertise') topic.value = 'Advertise';
+    var t = TYPES[(q.get('type') || '').toLowerCase()];
+    if (t) type.value = t;
+    var c = (q.get('category') || '').toLowerCase();
+    if (/^[a-z0-9-]+$/.test(c) && category.querySelector('option[value="' + c + '"]')) category.value = c;
+
+    topic.addEventListener('change', update);
+    type.addEventListener('change', update);
+    /* Back/forward restores field values without firing change events. */
+    window.addEventListener('pageshow', update);
+    update();
+  })();
+</script>
