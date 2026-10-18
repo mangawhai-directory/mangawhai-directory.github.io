@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Bob & Ben
-slug: bob-and-ben
+slug: bob-ben
 blurb: ''
 image: ''
 address:

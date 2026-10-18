@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Mangawhai Tracks
-slug: mangawhai-tracks
+slug: mangawhai-tracks-charitable-trust
 blurb: ''
 image: ''
 address:

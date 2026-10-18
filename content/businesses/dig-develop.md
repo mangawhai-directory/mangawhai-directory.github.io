@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Dig & Develop
-slug: dig-and-develop
+slug: dig-develop
 blurb: ''
 image: ''
 address:

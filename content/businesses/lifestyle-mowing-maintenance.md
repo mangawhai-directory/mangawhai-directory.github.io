@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Lifestyle Mowing & Maintenance
-slug: lifestyle-mowing-and-maintenance
+slug: lifestyle-mowing-maintenance
 blurb: ''
 image: ''
 address:

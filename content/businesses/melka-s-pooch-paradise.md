@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Melka's Pooch Paradise
-slug: melkas-pooch-paradise
+slug: melka-s-pooch-paradise
 blurb: ''
 image: ''
 address:

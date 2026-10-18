@@ -1,0 +1,79 @@
+name: Site checks
+
+# Runs `make test` — the listing validator, a production build that fails on
+# any Hugo warning, and scripts/check-site.py over the built site — and fails
+# only on findings the change ADDED. Findings already on the base are listed in
+# the log and do not fail the run (see scripts/test.sh).
+#
+# pull_request (every path): a pull request is told what it broke and nothing
+# else. A listing edit is not blocked because forty other listings on main
+# already fail the validator; a template change is checked too, which the
+# path-filtered "Validate businesses" workflow never does.
+#
+# push to main: the CMS commits straight to main, so its saves never open a
+# pull request. Each push is checked against the commit before it, so a save
+# that breaks something gets a red mark on that commit. It has deployed by then:
+# this reports, it does not block. Nothing here deploys, and it does not touch
+# the deploy workflow.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-checks-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  # The job id is the check name GitHub reports, and a branch-protection rule
+  # matches on it. Renaming it later silently drops it from any rule naming it.
+  site-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The base commit has to be here for the comparison.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            scripts/package-lock.json
+
+      # The deploy workflow's Hugo, read from it rather than repeated here, so
+      # the two cannot drift. make setup then checks every version again.
+      - name: Install Hugo
+        run: |
+          v="$(scripts/versions.sh hugo)"
+          case "$(scripts/versions.sh edition)" in extended) pkg=hugo_extended ;; *) pkg=hugo ;; esac
+          wget -q -O "$RUNNER_TEMP/hugo.deb" \
+            "https://github.com/gohugoio/hugo/releases/download/v${v}/${pkg}_${v}_linux-amd64.deb"
+          sudo dpkg -i "$RUNNER_TEMP/hugo.deb"
+          hugo version
+
+      - name: make setup
+        run: make setup
+
+      # For a pull request the checkout is GitHub's merge commit, whose first
+      # parent is exactly the base it was merged onto. For a push, the commit
+      # main pointed at before it.
+      - name: make test
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ "${{ github.event_name }}" = pull_request ]; then
+            base="$(git rev-parse HEAD^1)"
+          elif [ -n "$BEFORE" ] && git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            base="$BEFORE"
+          else
+            base="$(git rev-parse HEAD^1)"
+          fi
+          echo "comparing against $base"
+          make test BASE="$base"

@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Artesian & Solway Water
-slug: artesian-and-solway-water
+slug: artesian-solway-water
 blurb: ''
 image: ''
 address:

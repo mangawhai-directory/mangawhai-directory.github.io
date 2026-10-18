@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Mangawhai Activity Zone (MAZ)
-slug: mangawhai-activity-zone-maz
+slug: mangawhai-activity-zone
 blurb: ''
 image: ''
 address:

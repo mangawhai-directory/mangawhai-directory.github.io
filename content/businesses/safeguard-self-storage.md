@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Safeguard Self Storage
-slug: selfguard-self-storage
+slug: safeguard-self-storage
 blurb: ''
 image: ''
 address:

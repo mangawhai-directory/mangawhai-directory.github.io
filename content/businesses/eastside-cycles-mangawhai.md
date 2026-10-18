@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Eastside Cycle Repair Mangawhai
-slug: eastside-cycle-repair-mangawhai
+slug: eastside-cycles-mangawhai
 blurb: ''
 image: ''
 address:

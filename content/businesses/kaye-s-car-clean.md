@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Kaye's Car Clean
-slug: kayes-car-clean
+slug: kaye-s-car-clean
 blurb: ''
 image: ''
 address:
