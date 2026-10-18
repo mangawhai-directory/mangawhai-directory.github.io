@@ -3,12 +3,13 @@ tier: free
 title: Sanctuary Interiors
 slug: sanctuary-interiors
 blurb: ''
+image: ''
 address:
-  street: Mangawhai
-  suburb: Mangawhai
+  street: Shop 1 Parkview, 200 Molesworth Drive
+  suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: "+64221083056"
+phone: '+64221083056'
 email: hello@sanctuaryinteriors.co.nz
 website: https://www.sanctuaryinteriors.co.nz/
 socials:
@@ -19,11 +20,13 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - real-estate-services
+  - retail
   - creative-services
+  - real-estate-services
 tags:
-  - Home Staging & Styling
+  - Homewares Store
   - Interior Design
+  - Home Staging & Styling
 hours: []
 nzbn: ''
 last_verified: 2026-05-10

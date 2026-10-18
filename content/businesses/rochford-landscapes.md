@@ -1,26 +1,30 @@
 ---
-title: "Rochford Landscapes"
-slug: "rochford-landscapes"
-blurb: ""
+tier: free
+title: Rochford Landscapes
+slug: rochford-landscapes
+blurb: ''
+image: ''
 address:
-  street: "Matakana-Mangawhai"
-  suburb: "Matakana-Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-website: "https://www.rochfordlandscapes.co.nz"
+  street: 5/362 Matakana Valley Road Matakana
+  suburb: Matakana
+  postcode: '0985'
+  country: NZ
+phone: '+6421939117'
+email: sales@rochfordlandscapes.co.nz
+website: https://www.rochfordlandscapes.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["landscape-tree-services"]
+  facebook: https://www.facebook.com/profile.php?id=100093302722777
+  instagram: https://www.instagram.com/rochford_landscapes
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - landscape-tree-services
 tags:
   - Landscaping
-
 hours: []
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---

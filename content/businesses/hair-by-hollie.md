@@ -3,12 +3,13 @@ tier: free
 title: Hair by Hollie Duke
 slug: hair-by-hollie
 blurb: ''
+image: ''
 address:
-  street: Tara Road
+  street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+64220426059"
+phone: '+64220426059'
 email: grayhollie@googlemail.com
 website: ''
 socials:
