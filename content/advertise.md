@@ -13,7 +13,7 @@ All prices exclude GST. Book three or more months together and the monthly rate 
 
 {{< pricing-cards >}}
 
-{{< cta href="/contact/" label="Request a quote" >}}
+{{< cta href="/contact/?topic=advertise" label="Request a quote" >}}
 **Not sure which one?** Tell us what you're selling and who to, and we'll tell you honestly which placement we'd take — including if we think none of them are worth it for you.
 {{< /cta >}}
 
@@ -38,7 +38,7 @@ We design ads for advertisers who'd rather not do it themselves — a one-off co
 
 ## Booking, payment and cancellation
 
-**How to book.** [Contact us](/contact/) with the placement you want, the category if you're taking a category header, and the months you'd like to run. We'll confirm availability, send an invoice, and put you live on the first day of your booked month. Get in early for peak periods — summer and school holidays go first.
+**How to book.** [Contact us](/contact/?topic=advertise) with the placement you want, the category if you're taking a category header, and the months you'd like to run. We'll confirm availability, send an invoice, and put you live on the first day of your booked month. Get in early for peak periods — summer and school holidays go first.
 
 **Term.** Bookings are for one or more whole calendar months that you nominate — just March, or March through May. Each booked month runs from the first to the last day of that month. No rolling subscriptions and no auto-renewal: when your booked period ends the ad comes down unless you book again. You can book any months starting within the next 12 months, and we cap it there so nobody holds today's price against a spot years away.
 

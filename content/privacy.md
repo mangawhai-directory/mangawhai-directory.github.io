@@ -42,7 +42,7 @@ If we ever change this — for example, by introducing a third-party ad server �
 
 ### When you contact us
 
-Our contact form is operated for us by **Static Contact** (staticcontact.com), a third-party form-to-email service. When you submit the form, your name, email address and message are sent to Static Contact's servers, which forward them to us by email and keep a copy in their own archive for up to 90 days. Those servers may be located outside New Zealand. The contact page also loads a small anti-spam script from Static Contact.
+Our contact form is operated for us by **Static Contact** (staticcontact.com), a third-party form-to-email service. When you submit the form, your name, email address and message — and, for advertising enquiries, your business name and the placement details you choose — are sent to Static Contact's servers, which forward them to us by email and keep a copy in their own archive for up to 90 days. Those servers may be located outside New Zealand. The contact page also loads a small anti-spam script from Static Contact.
 
 We use what you send us only to respond to you and to keep a record of the enquiry. We keep the email in our own records for up to 12 months and then delete it. We do not pass enquiry messages on to listed businesses unless you ask us to.
 

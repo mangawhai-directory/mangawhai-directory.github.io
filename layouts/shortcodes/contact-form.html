@@ -1,0 +1,265 @@
+{{- /*
+  contact-form — the /contact/ form, posted to Static Contact.
+
+  A shortcode rather than raw HTML in content/contact.md because the category
+  list has to come from content/categories/ at build time, and the rates in the
+  placement headings and hints from data/rates.yaml, so neither can drift.
+
+  Static Contact forwards every posted field, sorted by key, labelled
+  ucfirst(key), with name="x[]" arrays joined by ", ". So the keys below decide
+  the email's labels and order; nothing is configured on its side. The
+  thank-you redirect is the form's return URL there, not set here.
+
+  Placements are checkboxes, not a select, because an advertiser can take more
+  than one at once. Each checkbox owns a panel with that placement's fields,
+  and every field is named for its placement (category_header_months[],
+  homepage_tile_months[]) so two bookings in one email never share a key.
+
+  Conditional groups are <fieldset>s toggled by the script at the bottom. A
+  hidden group is always BOTH `hidden` and `disabled`, set together: disabled
+  stops its controls posting (the email carries only what was on screen) and
+  skips their `required` checks. The server-rendered state is the General
+  topic, which is also what a visitor without JavaScript gets — and the
+  botbuster script needs JavaScript anyway.
+
+  Deep links: ?topic=advertise&type=premium-listing,category-header,homepage-tile
+  &category=<slug>. `type` takes one or several, comma-separated, and a valid
+  one also switches the topic to Advertise. Unknown values are ignored and the
+  defaults stand.
+
+  The `!` overrides defeat the prose container's child-element styles in
+  layouts/_default/single.html ([&_p] sets size, colour and margin).
+*/ -}}
+{{- $input := "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background" -}}
+{{- $select := "block h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background" -}}
+{{- $multi := "block w-full rounded-md border border-input bg-background px-2 py-1 text-sm text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background [&_option]:rounded-sm [&_option]:px-2 [&_option]:py-1.5" -}}
+{{- $label := "mb-1.5 block text-sm font-medium text-foreground" -}}
+{{- $hint := "m-0! mt-1.5! text-xs! leading-5! text-muted-foreground!" -}}
+{{- $group := "min-w-0 space-y-4 border-0 p-0" -}}
+{{- $check := "h-4 w-4 shrink-0 accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background" -}}
+{{- $head := "flex cursor-pointer items-center gap-3 px-3 py-3 text-sm font-medium text-foreground" -}}
+{{- $price := "ml-auto shrink-0 text-xs font-normal text-muted-foreground" -}}
+{{- $panel := "min-w-0 space-y-4 border-0 px-3 pb-4 pt-0" -}}
+
+{{- /* The rate in force today (steps[].current), for the banner headings and
+       hints, and the Premium card's per-update price for its heading. */ -}}
+{{- $now := dict -}}
+{{- range hugo.Data.rates.steps }}{{ if .current }}{{ $now = . }}{{ end }}{{ end -}}
+{{- $premium := "" -}}
+{{- range hugo.Data.rates.cards }}{{ if eq .name "Premium Listing" }}{{ with index .prices 0 }}{{ $premium = .value }}{{ end }}{{ end }}{{ end -}}
+
+<form action="https://staticcontact.com/send/af0749c3-ffbd-4a08-be03-d1306a539a72" method="post" id="contactform" class="mt-8 max-w-xl space-y-4">
+  <div>
+    <label for="contact-name" class="{{ $label }}">Name</label>
+    <input id="contact-name" type="text" name="name" autocomplete="name" required class="{{ $input }}">
+  </div>
+
+  <div>
+    <label for="contact-email" class="{{ $label }}">Email</label>
+    <input id="contact-email" type="email" name="email" autocomplete="email" required class="{{ $input }}">
+  </div>
+
+  <div>
+    <label for="contact-topic" class="{{ $label }}">What's it about?</label>
+    <select id="contact-topic" name="topic" required class="{{ $select }}">
+      <option value="General" selected>General enquiry</option>
+      <option value="Advertise">Advertising</option>
+    </select>
+  </div>
+
+  <fieldset id="contact-advertise" class="min-w-0 rounded-lg border-0 bg-surface-cream p-4 sm:p-5" hidden disabled>
+    {{- /* Floated so the legend sits inside the padded box rather than on its
+           top edge. The groups below are spaced with flex gap, not space-y:
+           gap skips the hidden groups, where space-y would leave a trailing
+           margin on whichever visible group is followed by hidden ones. */}}
+    <legend class="float-left mb-4 w-full text-base font-semibold text-foreground">Advertising enquiry</legend>
+    <div class="clear-both flex flex-col gap-4">
+
+    <div>
+      <label for="contact-business" class="{{ $label }}">Business name</label>
+      <input id="contact-business" type="text" name="business" autocomplete="organization" required class="{{ $input }}">
+    </div>
+
+    <fieldset id="contact-placements" class="{{ $group }}">
+      <legend class="{{ $label }}">Placements</legend>
+      <p class="{{ $hint }}">Tick every placement you're interested in. Each one opens its own details.</p>
+      <div class="mt-2 divide-y divide-border rounded-md border border-input bg-background">
+
+        {{- /* Premium Listing: priced per update, so no months and nothing
+               else to ask. The image, blurb and hours come by email after
+               the invoice; the panel just says what to have ready. The
+               specs mirror content/advertise.md. */}}
+        <div>
+          <label class="{{ $head }}">
+            <input type="checkbox" name="placements[]" value="Premium Listing" data-panel="contact-panel-premium" aria-controls="contact-panel-premium" aria-expanded="false" class="{{ $check }}">
+            Premium Listing
+            {{- with $premium }}<span class="{{ $price }}">{{ . }} per update</span>{{ end }}
+          </label>
+          <fieldset id="contact-panel-premium" class="{{ $panel }}" hidden disabled>
+            <legend class="sr-only">Premium Listing details</legend>
+            <p class="{{ $hint }}">
+              When we reply we'll ask you for a square image or logo
+              (800 x 800 px, JPG or PNG, under 200 KB), a blurb of 25-30 words, and your opening hours by
+              day. Send whatever you have ready and we'll crop or tidy it at no extra charge.
+            </p>
+          </fieldset>
+        </div>
+
+        {{- /* The two banners are booked by calendar month. Month options are
+               written by the script from the visitor's date: a list rendered
+               here would go stale between builds. One advertiser holds a
+               placement in any month, so availability is confirmed by reply;
+               the repository only knows what is live today. */}}
+        <div>
+          <label class="{{ $head }}">
+            <input type="checkbox" name="placements[]" value="Category Header" data-panel="contact-panel-category" aria-controls="contact-panel-category" aria-expanded="false" class="{{ $check }}">
+            Category Header
+            {{- with $now.category }}<span class="{{ $price }}">from {{ .monthly }}+GST p/m</span>{{ end }}
+          </label>
+          <fieldset id="contact-panel-category" class="{{ $panel }}" hidden disabled>
+            <legend class="sr-only">Category Header details</legend>
+            <div>
+              <label for="contact-category-header-category" class="{{ $label }}">Category</label>
+              <select id="contact-category-header-category" name="category_header_category" required class="{{ $select }}">
+                <option value="" selected>Choose a category</option>
+                {{- range (site.GetPage "/categories").Pages.ByTitle }}
+                <option value="{{ path.Base .RelPermalink }}">{{ .Title }}</option>
+                {{- end }}
+              </select>
+            </div>
+            <div>
+              <label for="contact-category-header-months" class="{{ $label }}">Months</label>
+              <select id="contact-category-header-months" name="category_header_months[]" data-months multiple size="6" required aria-describedby="contact-category-header-hint" class="{{ $multi }}"></select>
+              <p id="contact-category-header-hint" class="{{ $hint }}">
+                Select every month you want (hold Ctrl or ⌘ to pick more than one on a computer).
+                {{- with $now.category }} Three or more months together get the monthly rate — {{ .monthly }}+GST p/m instead of {{ .single }}+GST for a single month.{{ end }}
+                Dependent on availability: one advertiser holds a category in any month, so we'll confirm
+                which of your months are free before we send an invoice.
+              </p>
+            </div>
+          </fieldset>
+        </div>
+
+        <div>
+          <label class="{{ $head }}">
+            <input type="checkbox" name="placements[]" value="Homepage Tile" data-panel="contact-panel-homepage" aria-controls="contact-panel-homepage" aria-expanded="false" class="{{ $check }}">
+            Homepage Tile
+            {{- with $now.homepage }}<span class="{{ $price }}">from {{ .monthly }}+GST p/m</span>{{ end }}
+          </label>
+          <fieldset id="contact-panel-homepage" class="{{ $panel }}" hidden disabled>
+            <legend class="sr-only">Homepage Tile details</legend>
+            <div>
+              <label for="contact-homepage-tile-months" class="{{ $label }}">Months</label>
+              <select id="contact-homepage-tile-months" name="homepage_tile_months[]" data-months multiple size="6" required aria-describedby="contact-homepage-tile-hint" class="{{ $multi }}"></select>
+              <p id="contact-homepage-tile-hint" class="{{ $hint }}">
+                Select every month you want (hold Ctrl or ⌘ to pick more than one on a computer).
+                {{- with $now.homepage }} Three or more months together get the monthly rate — {{ .monthly }}+GST p/m instead of {{ .single }}+GST for a single month.{{ end }}
+                Dependent on availability: one advertiser holds the tile in any month, so we'll confirm
+                which of your months are free before we send an invoice.
+              </p>
+            </div>
+          </fieldset>
+        </div>
+
+      </div>
+    </fieldset>
+    </div>
+  </fieldset>
+
+  <div>
+    <label for="contact-message" class="{{ $label }}"><span id="contact-message-label">Message</span></label>
+    <textarea id="contact-message" name="message" rows="5" required class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"></textarea>
+  </div>
+  <p class="text-xs! leading-5! text-muted-foreground!">
+    We only use your details to reply to your enquiry. See our
+    <a href="/privacy/" class="underline underline-offset-4">Privacy Policy</a>.
+  </p>
+
+  <div>
+    <button type="submit" class="inline-flex h-10 items-center rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">Send message</button>
+  </div>
+  <script src="https://staticcontact.com/js/static_contact_botbuster.js"></script>
+</form>
+
+<script>
+  (function () {
+    var form = document.getElementById('contactform');
+    if (!form) return;
+
+    var topic = document.getElementById('contact-topic');
+    var advertise = document.getElementById('contact-advertise');
+    var category = document.getElementById('contact-category-header-category');
+    var message = document.getElementById('contact-message');
+    var messageLabel = document.getElementById('contact-message-label');
+    var boxes = advertise.querySelectorAll('input[name="placements[]"]');
+    var monthLists = advertise.querySelectorAll('select[data-months]');
+    var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+      'August', 'September', 'October', 'November', 'December'];
+    var TYPES = {
+      'premium-listing': 'Premium Listing',
+      'category-header': 'Category Header',
+      'homepage-tile': 'Homepage Tile'
+    };
+
+    /* The two attributes always move together: see the note at the top. */
+    function show(el, on) {
+      el.hidden = !on;
+      el.disabled = !on;
+    }
+
+    /* The next 12 calendar months, starting next month: a banner goes live on
+       the first day of a booked month, so this month has already started. */
+    var d = new Date();
+    for (var i = 1; i <= 12; i++) {
+      var m = new Date(d.getFullYear(), d.getMonth() + i, 1);
+      var value = m.getFullYear() + '-' + ('0' + (m.getMonth() + 1)).slice(-2);
+      var text = MONTHS[m.getMonth()] + ' ' + m.getFullYear();
+      for (var k = 0; k < monthLists.length; k++) {
+        var opt = document.createElement('option');
+        opt.value = value;
+        opt.textContent = text;
+        monthLists[k].appendChild(opt);
+      }
+    }
+
+    function update() {
+      var ad = topic.value === 'Advertise';
+      show(advertise, ad);
+      var any = false;
+      for (var i = 0; i < boxes.length; i++) {
+        var on = ad && boxes[i].checked;
+        any = any || boxes[i].checked;
+        boxes[i].setAttribute('aria-expanded', on ? 'true' : 'false');
+        show(document.getElementById(boxes[i].getAttribute('data-panel')), on);
+      }
+      /* Checkboxes have no `required` that means "at least one", so the
+         first box carries a custom message until something is ticked. It
+         is ignored while the whole advertising group is disabled. */
+      boxes[0].setCustomValidity(any ? '' : 'Tick at least one placement.');
+      message.required = !ad;
+      messageLabel.textContent = ad ? 'Anything else?' : 'Message';
+    }
+
+    /* Prefill from the query string. A value that matches no option is
+       dropped, so the field keeps its default. */
+    var q = new URLSearchParams(window.location.search);
+    if ((q.get('topic') || '').toLowerCase() === 'advertise') topic.value = 'Advertise';
+    var wanted = (q.get('type') || '').toLowerCase().split(',');
+    for (var b = 0; b < boxes.length; b++) {
+      for (var w = 0; w < wanted.length; w++) {
+        if (TYPES[wanted[w]] === boxes[b].value) {
+          boxes[b].checked = true;
+          topic.value = 'Advertise';
+        }
+      }
+    }
+    var c = (q.get('category') || '').toLowerCase();
+    if (/^[a-z0-9-]+$/.test(c) && category.querySelector('option[value="' + c + '"]')) category.value = c;
+
+    topic.addEventListener('change', update);
+    for (var e = 0; e < boxes.length; e++) boxes[e].addEventListener('change', update);
+    /* Back/forward restores field values without firing change events. */
+    window.addEventListener('pageshow', update);
+    update();
+  })();
+</script>
