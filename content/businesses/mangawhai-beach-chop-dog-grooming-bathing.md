@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Mangawhai Beach Chop Dog Grooming & Bathing
-slug: mangawhai-beach-chop-dog-grooming-and-bathing
+slug: mangawhai-beach-chop-dog-grooming-bathing
 blurb: ''
 image: ''
 address:

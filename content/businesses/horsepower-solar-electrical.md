@@ -1,7 +1,7 @@
 ---
 tier: free
 title: HorsePower Solar & Electrical
-slug: horsepower-solar-and-electrical
+slug: horsepower-solar-electrical
 blurb: ''
 image: ''
 address:

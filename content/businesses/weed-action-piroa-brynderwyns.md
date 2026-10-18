@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Mangawhai Community Park Weed Warriors
-slug: Mangawhai-community-park-weed-warriors
+slug: weed-action-piroa-brynderwyns
 blurb: ''
 image: ''
 address:

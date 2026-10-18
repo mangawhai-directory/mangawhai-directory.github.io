@@ -1,7 +1,7 @@
 ---
 tier: free
 title: JB Solar & Electrical
-slug: jb-solar-and-electrical
+slug: jb-solar-electrical
 blurb: ''
 image: ''
 address:

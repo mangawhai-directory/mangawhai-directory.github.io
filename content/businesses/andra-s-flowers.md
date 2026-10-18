@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Andra's Flowers
-slug: andras-flowers
+slug: andra-s-flowers
 blurb: ''
 image: ''
 address:

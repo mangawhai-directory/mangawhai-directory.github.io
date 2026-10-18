@@ -1,7 +1,7 @@
 ---
 tier: free
 title: James Mansel Jewellery
-slug: james-mansell-jewellery
+slug: james-mansel-jewellery
 blurb: ''
 image: ''
 address:

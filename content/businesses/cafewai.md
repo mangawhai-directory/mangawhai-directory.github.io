@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Caifewhai
-slug: caifewhai
+slug: cafewai
 blurb: ''
 image: ''
 address:

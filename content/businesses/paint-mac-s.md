@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Paint Mac's
-slug: paint-mac's
+slug: paint-mac-s
 blurb: ''
 image: ''
 address:
@@ -20,7 +20,6 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - painters-decorators-1
   - painters-decorators
 tags:
   - Painter

@@ -1,7 +1,7 @@
 ---
 tier: free
 title: The Local
-slug: the-local
+slug: pacific-coast-taproom-eatery
 blurb: ''
 image: ''
 address:
