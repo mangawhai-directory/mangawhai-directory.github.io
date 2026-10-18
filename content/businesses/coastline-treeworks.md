@@ -3,13 +3,13 @@ tier: free
 title: Coastline Treeworks
 slug: coastline-treeworks
 blurb: ''
-image: ''
+image: /uploads/Screenshot 2026-10-18 at 7.46.56 PM.png
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+6421745547"
+phone: '+6421745547'
 email: sophie@coastlinetreeworks.co.nz
 website: https://coastlinetreeworks.co.nz/
 socials:
