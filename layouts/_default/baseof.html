@@ -16,8 +16,54 @@
     {{- $ogTitle := cond .IsHome (string site.Title) (printf "%s | %s" .Title site.Title) -}}
     {{- $ogDesc := partial "seo-description.html" . -}}
     {{- $ogType := cond (eq .Kind "term") "article" "website" -}}
+    {{- /* Share-card image, in priority order:
+           1. the page's own `images` front matter (Hugo's convention; first entry),
+           2. a hand-made assets/img/og-default.png, if one is ever dropped in,
+           3. the default card, built here from the homepage hero photo.
+           The default card is the hero photo filled to 1200x630 (the size
+           Facebook, X and LinkedIn render large), darkened by the same 35% black
+           the hero overlays, with the site name in Shrikhand, uppercase and
+           white, as the hero headline is, on two lines. Hugo caches the
+           processed image, so it is built once per build, not once per page.
+           Fill anchors Top, unlike the hero's sky trim: 1200x630 is wider than
+           the 16:9 source, and taking the dropped rows off the foreground bush
+           instead of the sky moves the moored boats down below the name rather
+           than behind it. ColorBalance -35 scales every channel to 65%, which is
+           exactly a black/35 overlay. images.Text's y is the top of its line
+           box, so the block is centred by hand: 1.22 x the font size is the
+           distance from y to the middle of the two lines' ink, measured on the
+           built image for Shrikhand. Re-measure if the size or text changes. */ -}}
     {{- $ogImage := "" -}}
-    {{- with resources.Get "img/og-default.png" }}{{ $ogImage = .Permalink }}{{ end -}}
+    {{- $ogW := 0 -}}
+    {{- $ogH := 0 -}}
+    {{- $ogMime := "" -}}
+    {{- $ogAlt := "" -}}
+    {{- with .Params.images -}}
+      {{- $ogImage = index . 0 | absURL -}}
+      {{- $ogAlt = $.Title -}}
+    {{- else -}}
+      {{- $card := resources.Get "img/og-default.png" -}}
+      {{- if not $card -}}
+        {{- with resources.Get "images/hero-mangawhai.jpg" -}}
+          {{- $ogSize := 112 -}}
+          {{- $font := resources.Get "fonts/Shrikhand-Regular.ttf" -}}
+          {{- $text := images.Text (replace (upper site.Title) " " "\n") (dict
+                "font" $font "size" $ogSize "color" "#ffffff"
+                "x" 600 "y" (sub 315 (int (math.Round (mul $ogSize 1.22)))) "alignx" "center") -}}
+          {{- $card = .Fill "1200x630 Top q82 jpg"
+                | images.Filter (images.ColorBalance -35 -35 -35) $text
+                | resources.Copy "img/og-default.jpg" | fingerprint -}}
+          {{- $ogAlt = printf "%s, over boats moored on the Mangawhai estuary" site.Title -}}
+        {{- end -}}
+      {{- end -}}
+      {{- with $card -}}
+        {{- $ogImage = .Permalink -}}
+        {{- $ogW = .Width -}}
+        {{- $ogH = .Height -}}
+        {{- $ogMime = .MediaType.Type -}}
+        {{- $ogAlt = $ogAlt | default site.Title -}}
+      {{- end -}}
+    {{- end -}}
     <meta property="og:type" content="{{ $ogType }}">
     <meta property="og:title" content="{{ $ogTitle }}">
     <meta property="og:description" content="{{ $ogDesc }}">
@@ -26,8 +72,17 @@
     <meta property="og:site_name" content="{{ site.Title }}">
     {{- if $ogImage }}
     <meta property="og:image" content="{{ $ogImage }}">
+    {{- with $ogMime }}
+    <meta property="og:image:type" content="{{ . }}">
+    {{- end }}
+    {{- if $ogW }}
+    <meta property="og:image:width" content="{{ $ogW }}">
+    <meta property="og:image:height" content="{{ $ogH }}">
+    {{- end }}
+    <meta property="og:image:alt" content="{{ $ogAlt }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{{ $ogImage }}">
+    <meta name="twitter:image:alt" content="{{ $ogAlt }}">
     {{- else }}
     <meta name="twitter:card" content="summary">
     {{- end }}
