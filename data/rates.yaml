@@ -14,11 +14,11 @@ cards:
     tone: teal
     prices:
       - label: Per update
-        value: $65+GST
+        value: $39+GST
       # Shortened from the media kit's "Every later change" so the row still
       # fits on one line in the narrowest three-up card (768px viewport).
       - label: Later changes
-        value: $65+GST
+        value: $39+GST
     band:
       tone: sand
       label: No monthly fee
