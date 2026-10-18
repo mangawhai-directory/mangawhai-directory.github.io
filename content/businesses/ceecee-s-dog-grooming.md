@@ -1,7 +1,7 @@
 ---
 tier: free
 title: CeeCee's Dog Grooming
-slug: ceecees-dog-grooming
+slug: ceecee-s-dog-grooming
 blurb: ''
 image: ''
 address:
