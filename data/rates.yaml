@@ -6,6 +6,12 @@
 #
 # Prices are written as display strings (with the +GST suffix) rather than
 # numbers because that is how they are quoted to advertisers everywhere else.
+#
+# Each card's `example` drives its "What is this?" pop-up: the real page that
+# shows a current advertiser in that placement (`page`, a site path), the id to
+# scroll it to (`anchor`), and a one-line `caption`. The build fails if `page`
+# is not a page the site builds; `make test` fails if `anchor` is not on it.
+# When the advertiser named in a caption leaves, point the example at another.
 
 founding_slots: 10
 
@@ -34,6 +40,10 @@ cards:
       - Same listing position — no reordering, no badges
       - Stays live at no further cost until you change it
     footnote: Not a subscription. Pay once per change. Best value on the site.
+    example:
+      page: /categories/bakeries-cake-makers/
+      anchor: jen-s-pastries
+      caption: Jen's Pastries' premium listing on the Bakeries & Cake Makers page
 
   - name: Category Header
     tone: sage
@@ -56,6 +66,10 @@ cards:
       - One advertiser per category at a time
       - Static image plus click-through to web, phone or booking
     footnote: Desktop 500 × 250 · Mobile 500 × 500
+    example:
+      page: /categories/architects/
+      anchor: ad-category
+      caption: Constructive Architecture's header on the Architects page
 
   - name: Homepage Tile
     tone: tile
@@ -78,6 +92,10 @@ cards:
       - One advertiser holds it for the whole month
       - Static image plus click-through
     footnote: Desktop 1152 × 400 · Mobile 500 × 500
+    example:
+      page: /
+      anchor: ad-home
+      caption: Jen's Pastries' tile on the homepage
 
 # The published ladder. "current: true" marks the rate in force today.
 steps:

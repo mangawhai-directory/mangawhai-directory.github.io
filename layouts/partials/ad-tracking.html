@@ -18,6 +18,8 @@
 */ -}}
 <script>
   (function () {
+    // The advertise page frames real pages as examples; a framed view is not a real one.
+    if (window.self !== window.top) return;
     if (typeof gtag !== 'function') return;
     var ads = document.querySelectorAll('a[data-ad-id]');
     if (!ads.length) return;

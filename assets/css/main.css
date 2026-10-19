@@ -125,14 +125,20 @@
   /* The header is sticky at h-16 (64px), so anything deep-linked lands
      underneath it unless the target reserves room. Search results link to
      /categories/<slug>/#<business>, which would otherwise hide a listing's
-     tags and name; the advertise page links into a Terms heading.
+     tags and name; the advertise page links into a Terms heading, and its
+     "What is this?" examples open on the ad slots.
 
-     Scoped to the two things actually linked to. A blanket [id] rule would
+     Scoped to the things actually linked to. A blanket [id] rule would
      also offset the search dropdown's own scrollIntoView on its option rows
      (#site-search-opt-*) and push the highlighted result out of view. */
   .business-card,
   .prose :is(h2, h3)[id] {
     scroll-margin-top: 5rem;
+  }
+  /* More for the ad slots: the homepage tile's "Advertisement" label sits
+     above the slot and would otherwise land under the header. */
+  .ad-slot[id] {
+    scroll-margin-top: 6.5rem;
   }
 }
 
