@@ -17,7 +17,7 @@ do not put private notes, plans or anything about the people behind the site int
 
 ## A push to main deploys the live site
 
-`.github/workflows/hugo.yaml` builds with Hugo 0.165.0 extended and Node 24 and deploys to GitHub
+`.github/workflows/hugo.yaml` builds with Hugo 0.168.0 extended and Node 24 and deploys to GitHub
 Pages on **every push to `main`**. A merge is a release, and so is every CMS save (see below).
 Work on a branch and open a pull request. Never push to `main`, never trigger that workflow by
 hand, and never merge without being told to.
