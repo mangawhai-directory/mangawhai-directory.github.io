@@ -130,7 +130,11 @@
        phone; from md the two sit side by side, desktop on the left. The
        iframes carry their size as width/height for the fit script, and the
        page to load in data-src until the dialog opens. The anchor is kept
-       apart from the URL: see the script. */ -}}
+       apart from the URL: see the script. The frames are a picture of the
+       placement, not a way into the site: a transparent cover takes every
+       click and wheel, the iframe ignores pointer events underneath it, and
+       tabindex="-1" keeps it out of the tab order, so nobody browses or buys
+       from inside the example. */ -}}
 {{- range hugo.Data.rates.cards }}
 {{- $name := .name -}}
 {{- with index $examples .name }}
@@ -154,14 +158,16 @@
         <figcaption class="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Mobile</figcaption>
         <div class="mx-auto w-full max-w-xs rounded-[2rem] border-8 border-foreground bg-foreground md:max-w-none">
           <div class="relative overflow-hidden rounded-[1.5rem] bg-background" data-example-fit>
-            <iframe data-src="{{ .page }}" data-anchor="{{ .anchor }}" width="375" height="720" title="{{ $name }} example, mobile" class="absolute left-0 top-0 block origin-top-left border-0"></iframe>
+            <iframe data-src="{{ .page }}" data-anchor="{{ .anchor }}" width="375" height="720" title="{{ $name }} example, mobile" tabindex="-1" class="pointer-events-none absolute left-0 top-0 block origin-top-left border-0"></iframe>
+            <div class="absolute inset-0" aria-hidden="true"></div>
           </div>
         </div>
       </figure>
       <figure class="m-0 md:order-1">
         <figcaption class="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Desktop</figcaption>
         <div class="relative overflow-hidden rounded-lg border border-border bg-background" data-example-fit>
-          <iframe data-src="{{ .page }}" data-anchor="{{ .anchor }}" width="1280" height="800" title="{{ $name }} example, desktop" class="absolute left-0 top-0 block origin-top-left border-0"></iframe>
+          <iframe data-src="{{ .page }}" data-anchor="{{ .anchor }}" width="1280" height="800" title="{{ $name }} example, desktop" tabindex="-1" class="pointer-events-none absolute left-0 top-0 block origin-top-left border-0"></iframe>
+          <div class="absolute inset-0" aria-hidden="true"></div>
         </div>
       </figure>
     </div>
