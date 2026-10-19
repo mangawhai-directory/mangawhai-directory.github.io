@@ -5,13 +5,13 @@ slug: jen-s-pastries
 blurb: |-
   French-style pastries, designer cakes, and baked goods made with local NZ ingredients. 
   Available to order online or find us at the Mangawhai Community Market every Saturday from 8am-1pm.
-image: /uploads/JensPastriesIMG_8611.webp
+image: /uploads/Screenshot 2026-10-20 at 11.49.05 AM.png
 address:
   street: Mangawhai Community Market at Mangawhai Beach School, 34 Insley Street
   suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: "+6421526679"
+phone: '+6421526679'
 email: jen@jenspastries.co.nz
 website: https://www.jenspastries.co.nz/
 socials:
