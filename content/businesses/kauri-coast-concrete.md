@@ -20,10 +20,9 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - construction
-  - landscape-tree-services
+  - concrete-services
 tags:
-  - Concrete Services
+  - Concrete
 hours: []
 nzbn: ''
 last_verified: 2026-10-11
