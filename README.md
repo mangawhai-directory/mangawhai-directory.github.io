@@ -6,7 +6,7 @@ deployed to GitHub Pages.
 
 ## Set up
 
-You need **Hugo 0.165.0 extended**, **Node 24** with npm, **git** and **Python 3**. The versions are
+You need **Hugo 0.168.0 extended**, **Node 24** with npm, **git** and **Python 3**. The versions are
 the ones the deploy uses; `make check` tells you if yours differ.
 
 ```bash
