@@ -20,8 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - construction
-  - landscape-tree-services
+  - concrete-services
 tags:
   - Concrete Services
 hours: []
