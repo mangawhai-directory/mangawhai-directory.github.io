@@ -20,8 +20,8 @@
 home:
   id: jens-pastries
   advertiser: "Jen's Pastries"
-  image: "/img/ads/jens-pastries-1152x400.png"
-  imageMobile: "/img/ads/jens-pastries-500x500.png"
+  image: "/img/ads/jens-pastries-1152x400.webp"
+  imageMobile: "/img/ads/jens-pastries-500x500.webp"
   alt: "Jen's Pastries — handcrafted croissants and designer pastries in Mangawhai"
   href: "https://www.jenspastries.co.nz/"
 
