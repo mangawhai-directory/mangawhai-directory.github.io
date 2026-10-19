@@ -21,6 +21,7 @@ socials:
   youtube: ''
 categories:
   - creative-services
+  - weddings
 tags:
   - Family Lifestyle Photography
   - Wedding Photography
