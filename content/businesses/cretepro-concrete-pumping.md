@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - construction
+  - concrete-services
 tags:
   - Concrete Pump Hire
   - Concrete Pumping
