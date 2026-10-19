@@ -23,7 +23,7 @@ categories:
   - property-maintenance
 tags:
   - Gate Automation
-  - Alarm & Camera Systems
+  - Home Security
 hours: []
 nzbn: ''
 last_verified: 2026-09-28
