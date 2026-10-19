@@ -12,6 +12,9 @@
     label  — package name shown in placeholder (e.g. "Homepage tile")
     price  — monthly price shown in placeholder (e.g. "$250 / month")
     class  — optional extra Tailwind classes for the wrapper
+    id     — optional fragment id for the wrapper, so the slot can be deep-linked
+             (the advertise page's "What is this?" examples scroll to it). Keep
+             it stable: data/rates.yaml names it.
 
   Both the ad and the placeholder carry data-ad-* attributes; ad-tracking.html
   reads them to emit GA4 ad_engagement / ad_view events. See data/ads.yaml for
@@ -46,7 +49,7 @@
 {{- $hasMobileAd := and $hasAd (and (isset $cfg "imageMobile") $cfg.imageMobile) -}}
 {{- $aspect := printf "aspect-[%d/%d] lg:aspect-[%d/%d]" $wm $hm $w $h -}}
 
-<aside class="ad-slot {{ $extra }}" aria-label="Advertisement" data-print-hide>
+<aside{{ with .id }} id="{{ . }}"{{ end }} class="ad-slot {{ $extra }}" aria-label="Advertisement" data-print-hide>
   {{- if $hasAd }}
   <a href="{{ $cfg.href | default "#" }}" class="block h-full w-full overflow-hidden rounded-lg border border-border" data-ad-type="ad" data-ad-id="{{ $adID }}" data-ad-slot="{{ $slot }}" data-ad-advertiser="{{ $advertiser }}" {{ if hasPrefix ($cfg.href | default "") "http" }}rel="sponsored noopener" target="_blank"{{ end }}>
     <picture>

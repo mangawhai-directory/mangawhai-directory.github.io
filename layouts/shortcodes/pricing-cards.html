@@ -20,6 +20,19 @@
   plain utility class. Note they do NOT survive an opacity modifier —
   `text-foreground/70!` emits no !important — so anything that has to beat the
   prose container is set at full strength.
+
+  "What is this?" — each card's `example` in data/rates.yaml names a real page
+  showing a current advertiser in that placement. The link under the title is a
+  plain link to that page and anchor, so it still works without JavaScript; with
+  it, the link opens a dialog framing the page twice, at 1280px (desktop) and
+  375px (mobile), each scaled down to fit. Real pages rather than screenshots,
+  so the example cannot go stale when a creative or the design changes. Real
+  iframes rather than the partials rendered inline, because every placement
+  switches layout on viewport media queries: a narrow box on a wide screen
+  would still show the desktop layout. The frames get their src only while the
+  dialog is open, so the advertise page does not load three more pages; and
+  baseof.html and the tracking partials send nothing from a framed page, so
+  these views never reach an advertiser's numbers.
 */ -}}
 {{- $tones := dict
     "teal"  (dict "bg" "bg-footer"        "light" true)
@@ -27,6 +40,25 @@
     "tile"  (dict "bg" "bg-surface-tile"  "light" false)
     "cream" (dict "bg" "bg-surface-cream" "light" false)
 -}}
+{{- /* Resolve every example first, keyed by card name: a renamed category
+       or a removed page must fail the build, not leave a link to nowhere.
+       GetPage wants "/categories/architects", not the URL's trailing slash. */ -}}
+{{- $examples := dict -}}
+{{- range hugo.Data.rates.cards }}
+  {{- $name := .name -}}
+  {{- with .example }}
+    {{- $p := site.GetPage (strings.TrimSuffix "/" .page | default "/") -}}
+    {{- if not $p }}
+      {{- errorf "pricing-cards: data/rates.yaml card %q has example.page %q, which is not a page this site builds" $name .page -}}
+    {{- end -}}
+    {{- $examples = merge $examples (dict $name (dict
+          "id" (printf "example-%s" (anchorize $name))
+          "href" (printf "%s#%s" $p.RelPermalink .anchor)
+          "page" $p.RelPermalink
+          "anchor" .anchor
+          "caption" .caption)) -}}
+  {{- end }}
+{{- end -}}
 <div class="my-8 grid gap-7 md:grid-cols-3">
   {{- range hugo.Data.rates.cards }}
   {{- $t := index $tones .tone | default (index $tones "cream") -}}
@@ -42,6 +74,9 @@
     {{- /* Header: name + the standard prices. */}}
     <div class="px-4 pb-4 pt-4">
       <p class="m-0! text-xl! font-semibold leading-7! tracking-tight {{ $ink }}">{{ .name }}</p>
+      {{- with index $examples .name }}
+      <a href="{{ .href }}" class="mt-1 inline-block text-sm font-medium! underline underline-offset-2 {{ $ink }}" aria-haspopup="dialog" data-example-open="{{ .id }}">What is this?</a>
+      {{- end }}
       <dl class="m-0 mt-3 border-t {{ $rule }} pt-3 text-[13px] leading-5">
         {{- range .prices }}
         <div class="flex items-baseline justify-between gap-2 py-0.5">
@@ -88,3 +123,114 @@
   </div>
   {{- end }}
 </div>
+
+{{- /* One dialog per card. Inside the prose container, so every <p> restates
+       its own size, margin and colour with `!` (see the note at the top).
+       The mobile frame comes first so it leads when the frames stack on a
+       phone; from md the two sit side by side, desktop on the left. The
+       iframes carry their size as width/height for the fit script, and the
+       page to load in data-src until the dialog opens. The anchor is kept
+       apart from the URL: see the script. */ -}}
+{{- range hugo.Data.rates.cards }}
+{{- $name := .name -}}
+{{- with index $examples .name }}
+<dialog id="{{ .id }}" aria-labelledby="{{ .id }}-title" class="m-auto max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] max-w-6xl overflow-y-auto rounded-lg border border-border bg-background p-0 text-foreground shadow-xl backdrop:bg-black/50" data-example>
+  <div class="p-4 sm:p-6">
+    <div class="flex items-start justify-between gap-4">
+      <div>
+        <p id="{{ .id }}-title" class="m-0! text-xl! font-semibold leading-7! tracking-tight text-foreground!">{{ $name }}</p>
+        <p class="m-0! mt-1! text-sm! leading-5! text-muted-foreground!">{{ .caption }}.</p>
+      </div>
+      <form method="dialog" class="shrink-0">
+        <button type="submit" class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-border text-foreground hover:bg-muted" aria-label="Close">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </form>
+    </div>
+    <p class="m-0! mt-3! text-sm! leading-6! text-foreground!">This is the placement as it appears on the site today, for a current advertiser. Your own creative replaces it.</p>
+
+    <div class="mt-5 grid gap-6 md:grid-cols-[minmax(0,1fr)_15rem] md:items-start">
+      <figure class="m-0 md:order-2">
+        <figcaption class="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Mobile</figcaption>
+        <div class="mx-auto w-full max-w-xs rounded-[2rem] border-8 border-foreground bg-foreground md:max-w-none">
+          <div class="relative overflow-hidden rounded-[1.5rem] bg-background" data-example-fit>
+            <iframe data-src="{{ .page }}" data-anchor="{{ .anchor }}" width="375" height="720" title="{{ $name }} example, mobile" class="absolute left-0 top-0 block origin-top-left border-0"></iframe>
+          </div>
+        </div>
+      </figure>
+      <figure class="m-0 md:order-1">
+        <figcaption class="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Desktop</figcaption>
+        <div class="relative overflow-hidden rounded-lg border border-border bg-background" data-example-fit>
+          <iframe data-src="{{ .page }}" data-anchor="{{ .anchor }}" width="1280" height="800" title="{{ $name }} example, desktop" class="absolute left-0 top-0 block origin-top-left border-0"></iframe>
+        </div>
+      </figure>
+    </div>
+
+    <p class="m-0! mt-4! text-sm! leading-5!"><a href="{{ .href }}">Open this page</a></p>
+  </div>
+</dialog>
+{{- end }}
+{{- end }}
+
+{{- /* Mirrors the mobile menu script in baseof.html. Without dialog support
+       the handler never attaches and the links navigate as plain links.
+       Escape and the close button (method="dialog") close natively; a click on
+       the backdrop lands on the <dialog> itself, since its content fills an
+       inner wrapper. The frames are scaled with a transform, which does not
+       change layout size, so each box is given the scaled height by hand.
+       Each frame is scrolled to its anchor once loaded rather than given a
+       #fragment: a fragment in a same-origin frame also scrolls every scroller
+       above it, and opened the dialog scrolled to the bottom on a phone.
+       scrollTo on the frame's own window moves only the frame. */}}
+<script>
+  (function () {
+    var links = document.querySelectorAll('[data-example-open]');
+    if (!links.length || typeof HTMLDialogElement !== 'function') return;
+
+    function fit(dialog) {
+      dialog.querySelectorAll('[data-example-fit]').forEach(function (box) {
+        var frame = box.querySelector('iframe');
+        var scale = Math.min(1, box.clientWidth / parseInt(frame.getAttribute('width'), 10));
+        frame.style.transform = 'scale(' + scale + ')';
+        box.style.height = (parseInt(frame.getAttribute('height'), 10) * scale) + 'px';
+      });
+    }
+
+    links.forEach(function (link) {
+      var dialog = document.getElementById(link.getAttribute('data-example-open'));
+      if (!dialog) return;
+      var frames = dialog.querySelectorAll('iframe[data-src]');
+
+      frames.forEach(function (f) {
+        f.addEventListener('load', function () {
+          if (!f.getAttribute('src')) return;
+          var w = f.contentWindow;
+          var target = w.document.getElementById(f.getAttribute('data-anchor'));
+          if (!target) return;
+          var margin = parseFloat(w.getComputedStyle(target).scrollMarginTop) || 0;
+          w.scrollTo(0, target.getBoundingClientRect().top + w.scrollY - margin);
+        });
+      });
+
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        frames.forEach(function (f) { f.src = f.getAttribute('data-src'); });
+        document.body.classList.add('overflow-hidden');
+        dialog.showModal();
+        fit(dialog);
+      });
+      dialog.addEventListener('click', function (e) {
+        if (e.target === dialog) dialog.close();
+      });
+      dialog.addEventListener('close', function () {
+        frames.forEach(function (f) { f.removeAttribute('src'); });
+        document.body.classList.remove('overflow-hidden');
+        link.focus();
+      });
+    });
+
+    window.addEventListener('resize', function () {
+      document.querySelectorAll('dialog[data-example][open]').forEach(fit);
+    });
+  })();
+</script>

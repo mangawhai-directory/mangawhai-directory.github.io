@@ -97,7 +97,8 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-6WD32QF2FX');
+    // The advertise page frames real pages as examples; a framed copy is not a visit.
+    if (window.self === window.top) gtag('config', 'G-6WD32QF2FX');
   </script>
   {{- end }}
   {{- if .IsHome }}
