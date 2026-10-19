@@ -27,6 +27,8 @@ tags:
   - Photographer
   - Videographer
   - Real Estate Media
+  - Content Creation
+  - Business Photography
 hours: []
 nzbn: ''
 last_verified: 2026-09-28
