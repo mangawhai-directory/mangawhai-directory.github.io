@@ -2,7 +2,7 @@
 tier: paid
 title: Constructive Architecture
 slug: constructive-architecture
-blurb: ''
+blurb: Constructive Architecture is the Mangawhai studio of ADNZ award-winning architectural designer Tim Wernham, designing healthy, sustainable homes.
 image: /uploads/constructive-architecture.webp
 address:
   street: 10 Pa Hill Lane
