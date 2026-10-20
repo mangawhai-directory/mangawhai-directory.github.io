@@ -3,12 +3,13 @@ tier: free
 title: Meant to Be Mangawhai
 slug: meant-to-be-mangawhai
 blurb: ''
+image: ''
 address:
   street: Shop 6/41 Moir Street
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+6494314040"
+phone: '+6494314820'
 email: ''
 website: ''
 socials:
