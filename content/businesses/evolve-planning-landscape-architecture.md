@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Evolve Planning + Landscape Architecture
-slug: evolve-planning-and-landscape-architecture
+slug: evolve-planning-landscape-architecture
 blurb: ''
 image: ''
 address:

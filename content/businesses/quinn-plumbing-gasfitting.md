@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Quinn Plumbing & Gasfitting
-slug: quinn-plimbing-and-gasfitting
+slug: quinn-plumbing-gasfitting
 blurb: ''
 image: ''
 address:

@@ -3,7 +3,7 @@ tier: paid
 title: Constructive Architecture
 slug: constructive-architecture
 blurb: ''
-image: /uploads/constructive architecture.jpg
+image: /uploads/constructive-architecture.webp
 address:
   street: 10 Pa Hill Lane
   suburb: Mangawhai
