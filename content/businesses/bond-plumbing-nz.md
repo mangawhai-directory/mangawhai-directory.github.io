@@ -3,12 +3,13 @@ tier: free
 title: Bond Plumbing
 slug: bond-plumbing-nz
 blurb: ''
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+64225665112"
+phone: '+64225665112'
 email: ryan@bondplumbing.com.au
 website: https://bondplumbing.co.nz
 socials:
@@ -24,7 +25,8 @@ tags:
   - Plumbing
   - Gas Fitting
   - Drainage
-  - Bathroom Renovations
+  - Blocked Drains - CCTV & Jetting
+  - Septic Tank Maintenance
 hours: []
 nzbn: ''
 last_verified: 2026-05-09
