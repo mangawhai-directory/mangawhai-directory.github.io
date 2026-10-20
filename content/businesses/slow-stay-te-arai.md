@@ -3,28 +3,28 @@ tier: free
 title: Slow Stay Te Arai
 slug: slow-stay-te-arai
 blurb: Boutique coastal lodge on a 2.5ha estate offering luxury accommodation with a heated saltwater pool, near Te Arai Links Golf Course.
+image: ''
 address:
   street: School Road
   suburb: Te Arai
   postcode: '0975'
   country: NZ
-phone: "+6421969767"
+phone: '+6421969767'
 email: ''
 website: https://www.slowstaytearai.com
 socials:
   facebook: ''
-  instagram: https://www.instagram.com/slow_stay_tearai/
+  instagram: ''
   x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
-  - campgrounds-camps
+  - accomodation
 tags:
-  - Boutique Lodge
-  - Luxury
+  - Boutique Luxury Lodge
 hours: []
 nzbn: ''
 last_verified: 2026-05-09
-status: closed
+status: active
 ---
