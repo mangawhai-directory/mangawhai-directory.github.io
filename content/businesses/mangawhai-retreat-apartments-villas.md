@@ -3,12 +3,13 @@ tier: free
 title: Mangawhai Retreat Apartments & Villas
 slug: mangawhai-retreat-apartments-villas
 blurb: Uncomplicated holiday accommodation nestled between native bush and Kaipara coastline, with one-bedroom apartments and two-bedroom villas.
+image: ''
 address:
   street: 208 Cames Road
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+648004315400"
+phone: '+648004315400'
 email: ''
 website: https://www.mangawhairetreat.co.nz
 socials:
@@ -19,12 +20,12 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - campgrounds-camps
+  - accomodation
 tags:
   - Apartments
   - Villas
 hours: []
 nzbn: ''
 last_verified: 2026-05-09
-status: closed
+status: active
 ---
