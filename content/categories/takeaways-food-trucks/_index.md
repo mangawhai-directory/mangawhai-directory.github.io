@@ -1,5 +1,6 @@
 ---
-title: Takeaways & Food Trucks
+title: Takeaways & Catering
+hidden: false
 related:
   - cafes-restaurants-bars
   - bakeries-cake-makers
@@ -9,4 +10,8 @@ keywords:
   - food trucks mangawhai heads
   - fish and chips mangawhai
   - pizza mangawhai
+  - catering mangawhai
+  - wedding catering mangawhai
+aliases: []
+description: ''
 ---
