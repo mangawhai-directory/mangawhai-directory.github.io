@@ -109,7 +109,10 @@ config once before). `config.yml`:
 - Commits read `Create Business “<file>”`, `Update Business “<file>”`, `Delete Business “<file>”`,
   `Update Category “<slug>”`, `Update Pages “home”`, and are authored by a dedicated GitHub account
   rather than a person.
-- Uploads go to `static/uploads/` and are referenced as `/uploads/<name>`.
+- Uploads go to `static/uploads/` and are referenced as `/uploads/<name>`. The CMS converts
+  raster images to WebP, scales them down and minifies SVGs **in the browser before the commit**
+  (`media_libraries` in `config.yml`; the listing image field has tighter limits of its own).
+  Nothing in the build touches an upload, so a file that reaches the repository is served as is.
 - New listing filenames come from the **title**, slugified (`Andra's Flowers` →
   `andra-s-flowers.md`), not from the `slug` field — despite the field's hint. Editing a slug in the
   CMS does not rename the file, which is how the slug/filename mismatches arose.
