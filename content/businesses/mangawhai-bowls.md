@@ -10,7 +10,7 @@ address:
   postcode: '0505'
   country: NZ
 phone: '+64273133059'
-email: thebowlingsecretary@gmail.com
+email: bowlsmangawhai@gmail.com
 website: https://mangawhaibowls.co.nz/
 socials:
   facebook: ''
