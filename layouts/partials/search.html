@@ -1,5 +1,10 @@
 {{- /*
-  search.html — homepage search over businesses and categories.
+  search.html — homepage search over businesses and categories. Rendered
+  inside the hero band in layouts/index.html, where it floats 40px off the
+  band's bottom edge: the wrapper is positioned against the section, so the
+  heading and tagline stay centred in the band regardless of the search. The
+  hero's text is centred, so the wrapper resets alignment or the result rows
+  inherit it.
 
   Reads /index.json (layouts/index.json), fetched lazily on first focus or
   keystroke so the index never costs a visitor who doesn't search. Results are
@@ -14,8 +19,8 @@
 */ -}}
 {{- $indexURL := "" -}}
 {{- with site.Home.OutputFormats.Get "json" }}{{ $indexURL = .RelPermalink }}{{ end -}}
-<section class="mx-auto max-w-6xl px-4 pt-10 sm:pt-12" data-print-hide>
-  <form id="site-search" class="mx-auto max-w-2xl" role="search" action="{{ "/" | relURL }}" method="get" autocomplete="off">
+<div class="absolute inset-x-0 bottom-10 mx-auto max-w-2xl scroll-mt-20 px-4 text-left" data-print-hide>
+  <form id="site-search" role="search" action="{{ "/" | relURL }}" method="get" autocomplete="off">
     <label class="sr-only" for="site-search-input">Search businesses and categories</label>
 
     {{- /* The icons and the results panel are positioned against this wrapper,
@@ -27,7 +32,7 @@
       </span>
 
       <input id="site-search-input" name="q" type="search" enterkeyhint="search"
-        class="block h-12 w-full rounded-lg border border-input bg-background pl-10 pr-11 text-base leading-none text-foreground shadow-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-foreground/30 focus:ring-2 focus:ring-ring/20 [&::-webkit-search-cancel-button]:appearance-none"
+        class="block h-12 w-full rounded-lg border border-input bg-background pl-10 pr-11 text-base leading-none text-foreground shadow-md outline-none sm:h-14 transition-colors placeholder:text-muted-foreground focus:border-foreground/30 focus:ring-2 focus:ring-ring/20 [&::-webkit-search-cancel-button]:appearance-none"
         placeholder="Search businesses, trades and categories…"
         role="combobox" aria-expanded="false" aria-controls="site-search-results"
         aria-autocomplete="list">
@@ -44,7 +49,7 @@
 
     <p id="site-search-status" class="sr-only" role="status" aria-live="polite"></p>
   </form>
-</section>
+</div>
 
 <script>
   (function () {
@@ -220,9 +225,27 @@
       });
     }
 
+    /* On a phone the search sits at the foot of the hero, so its results
+       would open below the fold. Bring the box up under the sticky header
+       on focus (scroll-mt-20 on the wrapper leaves room for the header) so
+       the panel has the screen. Deferred a tick so it runs after the
+       browser's own scroll-into-view for the keyboard rather than fighting
+       it, and skipped when the box is already near the top. */
+    var mobile = window.matchMedia('(max-width: 767px)');
+    function reveal() {
+      if (!mobile.matches) return;
+      setTimeout(function () {
+        if (document.activeElement !== input) return;
+        if (form.parentNode.getBoundingClientRect().top > 160) {
+          form.parentNode.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        }
+      }, 50);
+    }
+
     input.addEventListener('input', update);
     input.addEventListener('focus', function () {
       load();
+      reveal();
       if (input.value.trim().length >= 2 && panel.hidden) update();
     });
 

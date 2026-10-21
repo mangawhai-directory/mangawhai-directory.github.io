@@ -79,13 +79,22 @@
        change this if partials/header.html changes height. svh rather than vh
        so the band is sized to the viewport with the browser chrome showing
        and never overflows it. From md up the hero goes back to being a band
-       sized by its padding. */ -}}
-<section class="hero-bg relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat max-md:flex max-md:min-h-[calc(100svh_-_65px)] max-md:items-center">
+       sized by its padding.
+
+       The search floats 40px off the bottom of the band (partials/search.html
+       positions itself), out of the flow, so the heading and tagline stay
+       centred in the band. On phones the band's bottom padding reserves the
+       search's room so the centred text cannot land under it on a short
+       landscape screen; from md up the padding alone leaves ample space. The
+       results panel hangs below the band over whatever follows, which works
+       because the section does not clip overflow. */ -}}
+<section class="hero-bg relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat max-md:flex max-md:min-h-[calc(100svh_-_65px)] max-md:items-center max-md:pb-28">
   <div class="absolute inset-0 bg-black/35" aria-hidden="true"></div>
-  <div class="relative w-full mx-auto max-w-6xl px-4 py-16 text-center sm:py-32">
+  <div class="relative w-full mx-auto max-w-6xl px-4 py-16 text-center sm:py-56">
     <h1 class="font-display text-4xl uppercase text-white sm:text-5xl">{{ .Title | default site.Title }}</h1>
     <p class="mx-auto mt-4 max-w-prose text-lg text-white/90">{{ .Params.description | default site.Params.description }}</p>
   </div>
+  {{ partial "search.html" . }}
 </section>
 
 <div class="mx-auto max-w-6xl px-4 pt-10 sm:pt-12 min-[1184px]:px-0">
@@ -105,8 +114,6 @@
       "class" "w-full aspect-square lg:aspect-[1152/400]") }}
   </div>
 </div>
-
-{{ partial "search.html" . }}
 
 <section class="mx-auto max-w-6xl px-4 py-12">
   <h2 class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Browse categories</h2>
