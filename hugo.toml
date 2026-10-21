@@ -16,16 +16,6 @@ pluralizelisttitles = false
 [security.exec]
   allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^npx$', '^postcss$', '^tailwindcss$']
 
-# Hugo caches the Tailwind output and only rebuilds it when something it
-# knows feeds the CSS changes. Tailwind emits a class because it is written in
-# a layout, so a layout change can need new CSS, and without this `hugo server`
-# keeps serving the old stylesheet (a new utility shows in the HTML but has no
-# rule) until the cache is cleared. The production build is unaffected.
-[build]
-  [[build.cachebusters]]
-    source = 'layouts/.*'
-    target = 'css'
-
 [markup.goldmark.renderer]
   unsafe = true
 
