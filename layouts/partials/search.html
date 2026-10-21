@@ -19,7 +19,7 @@
 */ -}}
 {{- $indexURL := "" -}}
 {{- with site.Home.OutputFormats.Get "json" }}{{ $indexURL = .RelPermalink }}{{ end -}}
-<div class="absolute inset-x-0 bottom-10 mx-auto max-w-2xl px-4 text-left" data-print-hide>
+<div class="absolute inset-x-0 bottom-10 mx-auto max-w-2xl scroll-mt-20 px-4 text-left" data-print-hide>
   <form id="site-search" role="search" action="{{ "/" | relURL }}" method="get" autocomplete="off">
     <label class="sr-only" for="site-search-input">Search businesses and categories</label>
 
@@ -225,9 +225,27 @@
       });
     }
 
+    /* On a phone the search sits at the foot of the hero, so its results
+       would open below the fold. Bring the box up under the sticky header
+       on focus (scroll-mt-20 on the wrapper leaves room for the header) so
+       the panel has the screen. Deferred a tick so it runs after the
+       browser's own scroll-into-view for the keyboard rather than fighting
+       it, and skipped when the box is already near the top. */
+    var mobile = window.matchMedia('(max-width: 767px)');
+    function reveal() {
+      if (!mobile.matches) return;
+      setTimeout(function () {
+        if (document.activeElement !== input) return;
+        if (form.parentNode.getBoundingClientRect().top > 160) {
+          form.parentNode.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        }
+      }, 50);
+    }
+
     input.addEventListener('input', update);
     input.addEventListener('focus', function () {
       load();
+      reveal();
       if (input.value.trim().length >= 2 && panel.hidden) update();
     });
 
