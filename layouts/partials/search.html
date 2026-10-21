@@ -1,8 +1,10 @@
 {{- /*
   search.html — homepage search over businesses and categories. Rendered
-  inside the hero band in layouts/index.html, under the heading and tagline,
-  so the wrapper here only sets the width and the gap from the tagline; the
-  hero supplies the horizontal padding and the background.
+  inside the hero band in layouts/index.html, where it floats 40px off the
+  band's bottom edge: the wrapper is positioned against the section, so the
+  heading and tagline stay centred in the band regardless of the search. The
+  hero's text is centred, so the wrapper resets alignment or the result rows
+  inherit it.
 
   Reads /index.json (layouts/index.json), fetched lazily on first focus or
   keystroke so the index never costs a visitor who doesn't search. Results are
@@ -17,7 +19,7 @@
 */ -}}
 {{- $indexURL := "" -}}
 {{- with site.Home.OutputFormats.Get "json" }}{{ $indexURL = .RelPermalink }}{{ end -}}
-<div class="mx-auto mt-8 max-w-2xl text-left sm:mt-10" data-print-hide>
+<div class="absolute inset-x-0 bottom-10 mx-auto max-w-2xl px-4 text-left" data-print-hide>
   <form id="site-search" role="search" action="{{ "/" | relURL }}" method="get" autocomplete="off">
     <label class="sr-only" for="site-search-input">Search businesses and categories</label>
 
