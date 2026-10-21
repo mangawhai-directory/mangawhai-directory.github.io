@@ -1,5 +1,8 @@
 {{- /*
-  search.html — homepage search over businesses and categories.
+  search.html — homepage search over businesses and categories. Rendered
+  inside the hero band in layouts/index.html, under the heading and tagline,
+  so the wrapper here only sets the width and the gap from the tagline; the
+  hero supplies the horizontal padding and the background.
 
   Reads /index.json (layouts/index.json), fetched lazily on first focus or
   keystroke so the index never costs a visitor who doesn't search. Results are
@@ -14,8 +17,8 @@
 */ -}}
 {{- $indexURL := "" -}}
 {{- with site.Home.OutputFormats.Get "json" }}{{ $indexURL = .RelPermalink }}{{ end -}}
-<section class="mx-auto max-w-6xl px-4 pt-10 sm:pt-12" data-print-hide>
-  <form id="site-search" class="mx-auto max-w-2xl" role="search" action="{{ "/" | relURL }}" method="get" autocomplete="off">
+<div class="mx-auto mt-8 max-w-2xl text-left sm:mt-10" data-print-hide>
+  <form id="site-search" role="search" action="{{ "/" | relURL }}" method="get" autocomplete="off">
     <label class="sr-only" for="site-search-input">Search businesses and categories</label>
 
     {{- /* The icons and the results panel are positioned against this wrapper,
@@ -27,7 +30,7 @@
       </span>
 
       <input id="site-search-input" name="q" type="search" enterkeyhint="search"
-        class="block h-12 w-full rounded-lg border border-input bg-background pl-10 pr-11 text-base leading-none text-foreground shadow-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-foreground/30 focus:ring-2 focus:ring-ring/20 [&::-webkit-search-cancel-button]:appearance-none"
+        class="block h-12 w-full rounded-lg border border-input bg-background pl-10 pr-11 text-base leading-none text-foreground shadow-md outline-none sm:h-14 transition-colors placeholder:text-muted-foreground focus:border-foreground/30 focus:ring-2 focus:ring-ring/20 [&::-webkit-search-cancel-button]:appearance-none"
         placeholder="Search businesses, trades and categories…"
         role="combobox" aria-expanded="false" aria-controls="site-search-results"
         aria-autocomplete="list">
@@ -44,7 +47,7 @@
 
     <p id="site-search-status" class="sr-only" role="status" aria-live="polite"></p>
   </form>
-</section>
+</div>
 
 <script>
   (function () {

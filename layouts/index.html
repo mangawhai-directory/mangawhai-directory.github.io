@@ -82,9 +82,14 @@
        sized by its padding. */ -}}
 <section class="hero-bg relative border-b border-border bg-muted/30 bg-cover bg-center bg-no-repeat max-md:flex max-md:min-h-[calc(100svh_-_65px)] max-md:items-center">
   <div class="absolute inset-0 bg-black/35" aria-hidden="true"></div>
-  <div class="relative w-full mx-auto max-w-6xl px-4 py-16 text-center sm:py-32">
+  <div class="relative w-full mx-auto max-w-6xl px-4 py-16 text-center sm:py-36">
     <h1 class="font-display text-4xl uppercase text-white sm:text-5xl">{{ .Title | default site.Title }}</h1>
     <p class="mx-auto mt-4 max-w-prose text-lg text-white/90">{{ .Params.description | default site.Params.description }}</p>
+    {{- /* The search sits in the hero so it is the first thing to use. Its
+           results panel is absolutely positioned and hangs below the band
+           over whatever follows, which works because the section does not
+           clip overflow. */ -}}
+    {{ partial "search.html" . }}
   </div>
 </section>
 
@@ -105,8 +110,6 @@
       "class" "w-full aspect-square lg:aspect-[1152/400]") }}
   </div>
 </div>
-
-{{ partial "search.html" . }}
 
 <section class="mx-auto max-w-6xl px-4 py-12">
   <h2 class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Browse categories</h2>
