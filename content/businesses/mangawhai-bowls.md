@@ -9,9 +9,9 @@ address:
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: ''
-email: ''
-website: https://mangawhai.bowls.nz/
+phone: '+64273133059'
+email: thebowlingsecretary@gmail.com
+website: https://mangawhaibowls.co.nz/
 socials:
   facebook: ''
   instagram: ''
