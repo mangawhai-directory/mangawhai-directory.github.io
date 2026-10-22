@@ -1,10 +1,15 @@
 ---
-title: Movers & Taxis
+title: Movers, Taxis & Vehicle Hire
 hidden: false
 related:
-  - petrol-stations
   - automotive-marine
   - real-estate-services
 keywords:
-  - house movers, taxi services
+  - house movers mangawhai
+  - taxi mangawhai
+  - truck hire mangawhai
+  - caravan hire mangawhai
+  - dump runs mangawhai
+aliases: []
+description: ''
 ---
