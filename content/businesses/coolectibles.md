@@ -23,6 +23,8 @@ categories:
   - retail
 tags:
   - Retro & Vintage
+  - Collectables & Clothing
+  - Art & Books
 hours: []
 nzbn: ''
 last_verified: 2026-10-19
