@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: ''
+phone: '+642109074435'
 email: hello@luxelivingltd.co.nz
 website: ''
 socials:
