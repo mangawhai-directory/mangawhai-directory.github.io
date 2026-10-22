@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - creative-services
+  - photography-videography
   - real-estate-services
   - marketing-digital-services
 tags:
