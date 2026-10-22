@@ -1,30 +1,31 @@
 ---
+tier: free
 title: Greg Campbell Wedding Photography
 slug: greg-campbell-wedding-photography
 blurb: Mangawhai-based wedding photographer with 450+ weddings shot across Northland, Auckland and beyond.
+image: ''
 address:
-  street: 350 Cames Road
+  street: Mangawhai
   suburb: Mangawhai
-  postcode: '0975'
+  postcode: '0505'
   country: NZ
-phone: "+6421867623"
-email: ''
+phone: '+6421867623'
+email: gregcampbellweddingphotography@gmail.com
 website: https://www.gregcampbell.photo
 socials:
   facebook: https://www.facebook.com/GregCampbellWeddingPhotography/
   instagram: ''
-  x: https://x.com/thegregcampbell
+  x: ''
   linkedin: ''
   tiktok: ''
   youtube: ''
 categories:
+  - photography-videography
   - weddings
 tags:
   - Wedding Photographer
-
 hours: []
 nzbn: ''
-tier: free
-last_verified: '2026-05-10'
+last_verified: 2026-05-10
 status: active
 ---
