@@ -21,6 +21,7 @@ socials:
   youtube: ''
 categories:
   - marketing-digital-services
+  - photography-videography
 tags:
   - Content Creation
   - Brand Photography
