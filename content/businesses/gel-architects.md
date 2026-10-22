@@ -5,7 +5,7 @@ slug: gel-architects
 blurb: ''
 image: ''
 address:
-  street: Mangawhai
+  street: Wintle Street
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
