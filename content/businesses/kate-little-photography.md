@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - creative-services
+  - photography-videography
   - weddings
 tags:
   - Family Photography
