@@ -13,7 +13,7 @@ phone: ''
 email: ''
 website: https://www.bachcare.co.nz/cottage/Mangawhai-Heads/Sun-Kissed-Pool-Villa-Mangawhai-Holiday-Home-1151969.html
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/p/Sunkissed-Pool-Villa-61591746733104/
   instagram: https://www.instagram.com/sunkissedpoolvilla/
   x: ''
   linkedin: ''
