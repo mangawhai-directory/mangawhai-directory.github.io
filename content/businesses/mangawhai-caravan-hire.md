@@ -21,6 +21,7 @@ socials:
   youtube: ''
 categories:
   - movers-taxis
+  - accomodation
 tags:
   - Caravan Hire
 hours: []
