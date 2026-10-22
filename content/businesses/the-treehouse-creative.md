@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+64276360051"
+phone: '+64276360051'
 email: info@thetreehousecreative.co.nz
 website: https://thetreehousecreative.co.nz/
 socials:
@@ -21,6 +21,7 @@ socials:
   youtube: ''
 categories:
   - creative-services
+  - photography-videography
 tags:
   - Photography
   - Wedsite Design
