@@ -20,6 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
+  - photography-videography
   - creative-services
 tags:
   - Nature & Landscape Photography
