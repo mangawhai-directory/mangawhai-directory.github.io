@@ -3,12 +3,13 @@ tier: free
 title: Koa Photography
 slug: koa-photography
 blurb: ''
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+642108295287"
+phone: '+642108295287'
 email: admin@koaphotography.co.nz
 website: https://www.koaphotography.co.nz/
 socials:
@@ -19,8 +20,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
+  - photography-videography
   - weddings
-  - creative-services
 tags:
   - Photography
   - Wedding Photography
