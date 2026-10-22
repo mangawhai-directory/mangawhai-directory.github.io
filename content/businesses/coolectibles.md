@@ -1,7 +1,7 @@
 ---
 tier: free
-title: Coolectibles
-slug: coolectibles
+title: Coolectables
+slug: coolectables
 blurb: ''
 image: ''
 address:
