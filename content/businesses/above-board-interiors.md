@@ -21,6 +21,7 @@ socials:
   youtube: ''
 categories:
   - construction
+  - painters-decorators
 tags:
   - Plasterer
   - Plasterboard Supply
