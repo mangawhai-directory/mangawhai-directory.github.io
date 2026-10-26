@@ -11,7 +11,9 @@
 #   advertiser   — display name used in ad performance reports
 #   image        — site-rooted path or full https URL (desktop creative)
 #   imageMobile  — optional mobile creative (used below the lg breakpoint).
-#                  If omitted, the desktop creative scales to fit.
+#                  If omitted, the one creative is shown at its own aspect
+#                  ratio at every width (a square stays square on desktop, a
+#                  banner scales down on phones).
 #   alt          — descriptive alt text
 #   href         — click-through URL
 #
@@ -37,8 +39,7 @@ category:
   electrical:
     id: mangawhai-electrical-rescue
     advertiser: "Mangawhai Electrical Rescue"
-    image: "/img/ads/mangawhai-electrical-rescue-500x250.png"
-    imageMobile: "/img/ads/mangawhai-electrical-rescue-500x500.png"
+    image: "/img/ads/mangawhai-electrical-rescue-500x500.png"
     alt: "Mangawhai Electrical Rescue — Patrick Kneller, registered electrician in Mangawhai: LED lighting, switches, power points, hot water, heating and stoves"
     href: "https://www.electricalrescue.co.nz/"
 

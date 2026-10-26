@@ -24,11 +24,16 @@
   aspect-[w/h] from `lg` and up. If the wrapper has explicit lg:h-[Hpx], that
   height takes precedence over the aspect-ratio at desktop.
 
-  An ad with no mobile creative keeps the desktop ratio at every width: the
-  wrapper gets an inline aspect-ratio of w/h, which outranks the caller's
-  aspect-square, so the one creative scales down instead of being cropped to
-  a square by object-cover. An inline style rather than a class because the
-  ratio is built at render time and Tailwind would never emit it.
+  An ad with no mobile creative is shown at its own ratio at every width: the
+  wrapper gets an inline aspect-ratio read from the image file (falling back
+  to w/h when the file cannot be measured, e.g. an SVG or a remote URL) and
+  height:auto. Inline beats the caller's aspect-square and its fixed desktop
+  height, so a lone banner scales down on phones and a lone square stays
+  square on desktop, instead of object-cover cropping either. An inline style
+  rather than a class because the ratio is built at render time and Tailwind
+  would never emit it. images.Config reads the static path, so the ratio can
+  never drift from the file; fileExists guards it because a missing path
+  would fail the build.
 */ -}}
 {{- $slot := .slot -}}
 {{- $w := .w -}}
@@ -54,8 +59,16 @@
 {{- end -}}
 {{- $hasMobileAd := and $hasAd (and (isset $cfg "imageMobile") $cfg.imageMobile) -}}
 {{- $aspect := printf "aspect-[%d/%d] lg:aspect-[%d/%d]" $wm $hm $w $h -}}
+{{- $soloW := $w -}}
+{{- $soloH := $h -}}
+{{- if and $hasAd (not $hasMobileAd) -}}
+  {{- $ipath := printf "static%s" $cfg.image -}}
+  {{- if and (hasPrefix $cfg.image "/") (in (slice ".png" ".jpg" ".jpeg" ".webp" ".gif") (path.Ext $cfg.image | lower)) (fileExists $ipath) -}}
+    {{- with images.Config $ipath }}{{ $soloW = .Width }}{{ $soloH = .Height }}{{ end -}}
+  {{- end -}}
+{{- end -}}
 
-<aside{{ with .id }} id="{{ . }}"{{ end }} class="ad-slot {{ $extra }}"{{ if and $hasAd (not $hasMobileAd) }} style="aspect-ratio:{{ $w }}/{{ $h }}"{{ end }} aria-label="Advertisement" data-print-hide>
+<aside{{ with .id }} id="{{ . }}"{{ end }} class="ad-slot {{ $extra }}"{{ if and $hasAd (not $hasMobileAd) }} style="aspect-ratio:{{ $soloW }}/{{ $soloH }};height:auto"{{ end }} aria-label="Advertisement" data-print-hide>
   {{- if $hasAd }}
   <a href="{{ $cfg.href | default "#" }}" class="block h-full w-full overflow-hidden rounded-lg border border-border" data-ad-type="ad" data-ad-id="{{ $adID }}" data-ad-slot="{{ $slot }}" data-ad-advertiser="{{ $advertiser }}" {{ if hasPrefix ($cfg.href | default "") "http" }}rel="sponsored noopener" target="_blank"{{ end }}>
     <picture>
@@ -63,7 +76,7 @@
       <source media="(min-width: 744px)" srcset="{{ $cfg.image }}" width="{{ $w }}" height="{{ $h }}">
       <img src="{{ $cfg.imageMobile }}" alt="{{ $cfg.alt | default "" }}" width="{{ $wm }}" height="{{ $hm }}" loading="lazy" decoding="async" class="block h-full w-full {{ $aspect }} object-cover">
       {{- else }}
-      <img src="{{ $cfg.image }}" alt="{{ $cfg.alt | default "" }}" width="{{ $w }}" height="{{ $h }}" loading="lazy" decoding="async" class="block h-full w-full {{ $aspect }} object-cover">
+      <img src="{{ $cfg.image }}" alt="{{ $cfg.alt | default "" }}" width="{{ $soloW }}" height="{{ $soloH }}" loading="lazy" decoding="async" class="block h-full w-full object-cover">
       {{- end }}
     </picture>
   </a>
