@@ -1,7 +1,7 @@
 ---
-title: Building Trades & Supplies
+title: Construction Services
+hidden: false
 related:
-  - builders
   - painters-decorators
   - landscape-tree-services
   - property-maintenance
@@ -15,4 +15,6 @@ keywords:
   - bricklayer mangawhai
   - building supplies mangawhai
   - house relocation northland
+aliases: []
+description: ''
 ---
