@@ -23,7 +23,6 @@ categories:
   - construction
 tags:
   - Builder
-  - Old-School Craftsmanship
   - Character Homes
 hours: []
 nzbn: ''
