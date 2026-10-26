@@ -1,14 +1,15 @@
 ---
 tier: free
-title: Stuart Contract Builders
-slug: stuart-contract-builders
+title: Stuart Builders
+slug: stuart-builders
 blurb: ''
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+6421487711"
+phone: '+6421487711'
 email: shayne@stuartbuilders.co.nz
 website: https://stuartbuilders.co.nz
 socials:
