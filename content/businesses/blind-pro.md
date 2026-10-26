@@ -22,6 +22,7 @@ socials:
 categories:
   - painters-decorators
   - construction
+  - building-trades-supplies
 tags:
   - Blinds & Shutters
   - Awnings
