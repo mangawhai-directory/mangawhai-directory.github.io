@@ -2,7 +2,8 @@
 title: Painters & Decorators
 hidden: false
 related:
-  - construction
+  - builders
+  - building-trades-supplies
   - property-maintenance
 keywords:
   - painter mangawhai

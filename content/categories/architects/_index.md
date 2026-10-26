@@ -1,7 +1,8 @@
 ---
 title: Architects
 related:
-  - construction
+  - builders
+  - building-trades-supplies
   - engineering
   - surveyors-planners
 keywords:

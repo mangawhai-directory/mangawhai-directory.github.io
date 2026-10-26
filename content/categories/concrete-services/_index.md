@@ -2,7 +2,8 @@
 title: Concrete Services
 hidden: false
 related:
-  - construction
+  - builders
+  - building-trades-supplies
   - engineering
   - landscape-tree-services
 keywords:

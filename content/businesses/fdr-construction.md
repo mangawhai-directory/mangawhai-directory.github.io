@@ -20,7 +20,7 @@ socials:
   youtube: ''
 categories:
   - property-maintenance
-  - construction
+  - building-trades-supplies
 tags:
   - Decking
   - Fencing

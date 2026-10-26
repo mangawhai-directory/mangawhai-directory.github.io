@@ -3,7 +3,8 @@ title: Electrical
 aliases:
   - /categories/electricians/
 related:
-  - construction
+  - builders
+  - building-trades-supplies
   - plumbing-gasfitting
   - technology-it-services
 keywords:

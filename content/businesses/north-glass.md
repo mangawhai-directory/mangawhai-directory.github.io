@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - construction
+  - building-trades-supplies
   - automotive-marine
 tags:
   - Glass for Home

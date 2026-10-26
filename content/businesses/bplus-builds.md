@@ -20,7 +20,6 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - construction
   - creative-services
 tags:
   - Furniture Maker

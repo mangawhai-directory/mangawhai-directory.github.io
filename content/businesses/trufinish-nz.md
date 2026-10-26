@@ -21,7 +21,7 @@ socials:
   youtube: ''
 categories:
   - painters-decorators
-  - construction
+  - building-trades-supplies
 tags:
   - Painting
   - Plastering

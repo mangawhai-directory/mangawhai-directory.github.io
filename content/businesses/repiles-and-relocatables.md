@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - construction
+  - building-trades-supplies
 tags:
   - House movers
   - Relocatable homes

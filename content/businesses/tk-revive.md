@@ -20,7 +20,6 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - construction
   - cleaning-services
 tags:
   - House Washing

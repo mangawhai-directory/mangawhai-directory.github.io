@@ -3,7 +3,8 @@ title: Plumbing & Gasfitting
 aliases:
   - /categories/plumbers/
 related:
-  - construction
+  - builders
+  - building-trades-supplies
   - electrical
   - water-delivery
 keywords:

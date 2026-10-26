@@ -21,7 +21,6 @@ socials:
   youtube: ''
 categories:
   - automotive-marine
-  - construction
 tags:
   - Qualified Boat Builders
 hours: []
