@@ -21,7 +21,7 @@ socials:
   youtube: ''
 categories:
   - landscape-tree-services
-  - building-trades-supplies
+  - construction-services
 tags:
   - Hard & Soft Landscaping
   - Earthworks

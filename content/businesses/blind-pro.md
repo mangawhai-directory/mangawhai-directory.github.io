@@ -21,8 +21,7 @@ socials:
   youtube: ''
 categories:
   - painters-decorators
-  - construction
-  - building-trades-supplies
+  - construction-services
 tags:
   - Blinds & Shutters
   - Awnings
