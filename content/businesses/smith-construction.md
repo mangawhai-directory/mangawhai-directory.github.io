@@ -18,7 +18,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - construction
+  - builders
 tags:
   - Builder
 

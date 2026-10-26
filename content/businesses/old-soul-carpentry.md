@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - construction
+  - builders
 tags:
   - Builder
   - Character Homes

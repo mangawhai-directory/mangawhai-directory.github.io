@@ -19,7 +19,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - construction
+  - building-trades-supplies
   - retail
 hours: []
 nzbn: ''

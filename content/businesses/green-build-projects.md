@@ -15,7 +15,7 @@ socials:
   linkedin: ""
   tiktok: ""
   youtube: ""
-categories: ["construction"]
+categories: ["builders"]
 tags:
   - Builder
   - Sustainable Build

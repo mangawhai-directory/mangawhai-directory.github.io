@@ -1,16 +1,20 @@
 ---
-title: Construction
+title: Builders
 aliases:
+  - /categories/construction/
   - /categories/builders-renovations/
 related:
+  - building-trades-supplies
   - architects
   - engineering
   - electrical
   - plumbing-gasfitting
   - painters-decorators
+  - concrete-services
 keywords:
   - builder mangawhai
-  - renovation mangawhai heads
+  - builders mangawhai heads
+  - renovation mangawhai
   - house builder northland
-  - construction mangawhai
+  - new build te arai
 ---
