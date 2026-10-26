@@ -23,6 +23,12 @@
   Aspect ratio is applied responsively: aspect-[wm/hm] below `lg`,
   aspect-[w/h] from `lg` and up. If the wrapper has explicit lg:h-[Hpx], that
   height takes precedence over the aspect-ratio at desktop.
+
+  An ad with no mobile creative keeps the desktop ratio at every width: the
+  wrapper gets an inline aspect-ratio of w/h, which outranks the caller's
+  aspect-square, so the one creative scales down instead of being cropped to
+  a square by object-cover. An inline style rather than a class because the
+  ratio is built at render time and Tailwind would never emit it.
 */ -}}
 {{- $slot := .slot -}}
 {{- $w := .w -}}
@@ -49,7 +55,7 @@
 {{- $hasMobileAd := and $hasAd (and (isset $cfg "imageMobile") $cfg.imageMobile) -}}
 {{- $aspect := printf "aspect-[%d/%d] lg:aspect-[%d/%d]" $wm $hm $w $h -}}
 
-<aside{{ with .id }} id="{{ . }}"{{ end }} class="ad-slot {{ $extra }}" aria-label="Advertisement" data-print-hide>
+<aside{{ with .id }} id="{{ . }}"{{ end }} class="ad-slot {{ $extra }}"{{ if and $hasAd (not $hasMobileAd) }} style="aspect-ratio:{{ $w }}/{{ $h }}"{{ end }} aria-label="Advertisement" data-print-hide>
   {{- if $hasAd }}
   <a href="{{ $cfg.href | default "#" }}" class="block h-full w-full overflow-hidden rounded-lg border border-border" data-ad-type="ad" data-ad-id="{{ $adID }}" data-ad-slot="{{ $slot }}" data-ad-advertiser="{{ $advertiser }}" {{ if hasPrefix ($cfg.href | default "") "http" }}rel="sponsored noopener" target="_blank"{{ end }}>
     <picture>
