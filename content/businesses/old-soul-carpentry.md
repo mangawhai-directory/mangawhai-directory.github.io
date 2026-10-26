@@ -2,7 +2,7 @@
 tier: free
 title: Old Soul Carpentry
 slug: old-soul-carpentry
-blurb: test
+blurb: ''
 image: ''
 address:
   street: Mangawhai
