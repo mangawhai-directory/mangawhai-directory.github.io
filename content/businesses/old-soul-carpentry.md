@@ -2,10 +2,8 @@
 tier: paid
 title: Old Soul Carpentry
 slug: old-soul-carpentry
-blurb: |-
-  New Age Carpentry, Old School Vibes. 
-  Old Soul Carpentry specialises in architectural new builds, bespoke renovations and thoughtfully crafted outdoor spaces. With over 15 years of industry experience, we bring a hands-on approach, an eye for detail and a genuine passion for quality craftsmanship.
-image: ''
+blurb: Old Soul Carpentry specialises in architectural new builds, bespoke renovations and thoughtfully crafted outdoor spaces. With over 15 years of industry experience, we bring a hands-on approach, an eye for detail and a genuine passion for quality craftsmanship. Licensed and Certified Builders creating spaces with soul throughout the Kaipara region.
+image: /uploads/old soul logo.webp
 address:
   street: Mangawhai
   suburb: Mangawhai
