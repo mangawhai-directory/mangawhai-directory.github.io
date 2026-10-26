@@ -20,7 +20,7 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - building-trades-supplies
+  - construction-services
   - painters-decorators
 tags:
   - Plasterer

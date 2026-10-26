@@ -4,7 +4,7 @@ aliases:
   - /categories/plumbers/
 related:
   - builders
-  - building-trades-supplies
+  - construction-services
   - electrical
   - water-delivery
 keywords:

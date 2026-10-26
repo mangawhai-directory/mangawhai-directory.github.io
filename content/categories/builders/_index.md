@@ -4,7 +4,7 @@ aliases:
   - /categories/construction/
   - /categories/builders-renovations/
 related:
-  - building-trades-supplies
+  - construction-services
   - architects
   - engineering
   - electrical

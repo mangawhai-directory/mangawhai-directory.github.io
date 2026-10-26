@@ -4,7 +4,7 @@ aliases:
   - /categories/electricians/
 related:
   - builders
-  - building-trades-supplies
+  - construction-services
   - plumbing-gasfitting
   - technology-it-services
 keywords:

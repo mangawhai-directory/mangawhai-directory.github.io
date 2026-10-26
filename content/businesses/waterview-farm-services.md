@@ -21,7 +21,7 @@ socials:
   youtube: ''
 categories:
   - property-maintenance
-  - building-trades-supplies
+  - construction-services
 tags:
   - Fencing
 hours: []
