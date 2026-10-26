@@ -2,8 +2,8 @@
 tier: free
 title: World Travellers Milford and Mangawhai
 slug: world-travellers-milford-and-mangawhai
-blurb: ''
-image: ''
+blurb: Your local mobile Travel business that books all things travel and we come to you. We offer a 24/7 emergency service while you're away as things can change so quickly. We've always got your back!
+image: /uploads/pasted-image-1792977672764.webp
 address:
   street: Mangawhai
   suburb: Mangawhai
