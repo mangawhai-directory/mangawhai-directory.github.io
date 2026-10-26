@@ -9,9 +9,9 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: ''
-email: ''
-website: https://sevencircles.nz/
+phone: '+64210704324'
+email: kerry@sevencircles.nz
+website: ''
 socials:
   facebook: https://www.facebook.com/sevencirclesfarm/
   instagram: https://www.instagram.com/seven_circles_farm/
