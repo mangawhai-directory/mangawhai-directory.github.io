@@ -34,6 +34,22 @@ category:
     alt: "Constructive Architecture — residential architecture in Mangawhai: new homes, alterations and interiors"
     href: "https://www.constructivearchitecture.co.nz/"
 
+  electrical:
+    id: mangawhai-electrical-rescue
+    advertiser: "Mangawhai Electrical Rescue"
+    image: "/img/ads/mangawhai-electrical-rescue-500x250.png"
+    imageMobile: "/img/ads/mangawhai-electrical-rescue-500x500.png"
+    alt: "Mangawhai Electrical Rescue — Patrick Kneller, registered electrician in Mangawhai: LED lighting, switches, power points, hot water, heating and stoves"
+    href: "https://www.electricalrescue.co.nz/"
+
+  water-delivery:
+    id: artesian-solway-water
+    advertiser: "Artesian & Solway Water"
+    image: "/img/ads/artesian-solway-water-500x250.jpg"
+    imageMobile: "/img/ads/artesian-solway-water-500x500.jpg"
+    alt: "Artesian & Solway Water — household and commercial water delivery, water tank sensors and bulk cartage in Mangawhai"
+    href: "https://artesianwater.net.nz/"
+
   # cafes-restaurants-bars:
   #   id: allpress-espresso
   #   advertiser: "Allpress Espresso"
