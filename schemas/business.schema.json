@@ -18,7 +18,7 @@
   "properties": {
     "title": { "type": "string", "minLength": 1, "maxLength": 120 },
     "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
-    "blurb": { "type": "string", "maxLength": 320 },
+    "blurb": { "type": "string", "maxLength": 560 },
     "image": {
       "type": "string",
       "anyOf": [
