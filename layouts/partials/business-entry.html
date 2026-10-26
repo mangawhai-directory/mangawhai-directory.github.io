@@ -4,9 +4,10 @@
   Stable fragment id from filename for /<category>/#<slug> deep links and JSON-LD @id.
 
   Desktop layout uses CSS Grid. When tags are present they sit in row 1 col 1
-  above the title; otherwise the title takes row 1. The square image is pinned
-  to the top of col 2 (sm:self-start) and spans the rows in col 1 so col 2
-  reserves space without forcing inflation.
+  above the title; otherwise the title takes row 1. The square image sits in
+  col 2, centred vertically against the text (sm:self-center), and spans the
+  rows in col 1 so col 2 reserves space without forcing inflation. A small
+  image on a card with several rows of text would otherwise hang at the top.
 
   Mobile collapses to a single column. The image is pinned to row 1 so it
   heads the entry — ahead of the tags rather than after the title — and drops
@@ -102,7 +103,7 @@
     {{- else if $tallImg -}}
       {{- $imgFit = "aspect-square object-contain" -}}
     {{- end -}}
-    <img data-fade class="row-start-1 mx-auto mb-4 block {{ $imgCol }} {{ $imgFit }} rounded-md sm:mx-0 sm:mb-0 sm:col-start-2 {{ if $hasTags }}sm:row-span-3{{ else }}sm:row-span-2{{ end }} sm:row-start-1 sm:self-start sm:w-full min-[640px]:max-w-[300px] min-[744px]:max-w-[400px]"{{ if $wideImg }} style="aspect-ratio:{{ printf "%.4f" $imgRatio }}"{{ end }} src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="{{ $imgW | default 128 }}" height="{{ $imgH | default 128 }}" />
+    <img data-fade class="row-start-1 mx-auto mb-4 block {{ $imgCol }} {{ $imgFit }} rounded-md sm:mx-0 sm:mb-0 sm:col-start-2 {{ if $hasTags }}sm:row-span-3{{ else }}sm:row-span-2{{ end }} sm:row-start-1 sm:self-center sm:w-full min-[640px]:max-w-[300px] min-[744px]:max-w-[400px]"{{ if $wideImg }} style="aspect-ratio:{{ printf "%.4f" $imgRatio }}"{{ end }} src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" width="{{ $imgW | default 128 }}" height="{{ $imgH | default 128 }}" />
     {{- end }}
 
     <div class="min-w-0">
