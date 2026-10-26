@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Eventflowers Mangawhai
-slug: eventflowers-mangawhai
+slug: flowerpower-northland
 blurb: ''
 image: ''
 address:

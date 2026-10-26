@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Mangawhai Pool & Spa Services
-slug: mangawhai-pool-and-spa-services
+slug: mangawhai-pool-spa-services
 blurb: ''
 image: ''
 address:

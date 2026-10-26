@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Stuart Builders
-slug: stuart-builders
+slug: stuart-contract-builders
 blurb: ''
 image: ''
 address:

@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Marevich Building & Landscaping
-slug: marevich-building-and-landscaping
+slug: marevich-building-landscaping
 blurb: ''
 image: ''
 address:

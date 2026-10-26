@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Jennet Plumbing
-slug: jennett-plumbing
+slug: jennet-plumbing
 blurb: ''
 image: ''
 address:

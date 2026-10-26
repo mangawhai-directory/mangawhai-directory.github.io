@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Conscious Connection
-slug: conscious Connection
+slug: conscious-connection
 blurb: ''
 image: ''
 address:

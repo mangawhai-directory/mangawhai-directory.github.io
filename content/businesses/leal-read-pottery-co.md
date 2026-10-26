@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Lael Read Pottery Co
-slug: lael-read-pottery-co
+slug: leal-read-pottery-co
 blurb: ''
 image: ''
 address:

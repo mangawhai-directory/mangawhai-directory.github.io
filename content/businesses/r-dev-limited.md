@@ -1,7 +1,7 @@
 ---
 tier: free
 title: R-DEV Limited
-slug: rdev-limited
+slug: r-dev-limited
 blurb: ''
 image: ''
 address:

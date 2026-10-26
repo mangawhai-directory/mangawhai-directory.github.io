@@ -1,7 +1,7 @@
 ---
 tier: free
 title: EnPointe Mowing & Maintenance
-slug: enpointe-mowing-and-maintenance
+slug: enpointe-mowing-maintenance
 blurb: ''
 image: ''
 address:
