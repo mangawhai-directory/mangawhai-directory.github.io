@@ -10,8 +10,9 @@
 
   Mobile collapses to a single column. The image is pinned to row 1 so it
   heads the entry — ahead of the tags rather than after the title — and drops
-  to half width, centred in the column. The remaining items auto-place into
-  rows 2+ in DOM order.
+  to three-quarter width, centred in the column (half width read as a thumbnail
+  on a phone, where the image is the whole point of a paid listing). The
+  remaining items auto-place into rows 2+ in DOM order.
   row-start-1 is repeated at sm because sm:row-span-* emits the grid-row
   shorthand, which would otherwise reset the start back to auto and let the
   image drift down a row on desktop.
@@ -91,10 +92,10 @@
     </h2>
 
     {{- if $showImage }}
-    {{- /* A banner-shaped image is short, so half the column would leave it
-           tiny on a phone; it takes the full column width instead. */ -}}
+    {{- /* A banner-shaped image is short, so three-quarters of the column would
+           leave it tiny on a phone; it takes the full column width instead. */ -}}
     {{- $imgFit := "aspect-square object-cover" -}}
-    {{- $imgCol := "w-1/2" -}}
+    {{- $imgCol := "w-3/4" -}}
     {{- if $wideImg -}}
       {{- $imgFit = "object-contain" -}}
       {{- $imgCol = "w-full max-w-[320px]" -}}
