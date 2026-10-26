@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Bruce's Brazing
-slug: bruces-brazing
+slug: bruce-s-brazing
 blurb: ''
 image: ''
 address:
