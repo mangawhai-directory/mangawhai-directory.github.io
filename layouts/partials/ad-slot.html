@@ -18,7 +18,8 @@
 
   Both the ad and the placeholder carry data-ad-* attributes; ad-tracking.html
   reads them to emit GA4 ad_engagement / ad_view events. See data/ads.yaml for
-  the `id` and `advertiser` fields behind them.
+  the `id` and `advertiser` fields behind them, and for how a slot's bookings
+  are laid out by month.
 
   Aspect ratio is applied responsively: aspect-[wm/hm] below `lg`,
   aspect-[w/h] from `lg` and up. If the wrapper has explicit lg:h-[Hpx], that
@@ -49,10 +50,27 @@
 {{- $price := .price | default "" -}}
 {{- $extra := .class | default "" -}}
 
-{{- /* Walk dotted slot path through hugo.Data.ads */ -}}
-{{- $cfg := hugo.Data.ads -}}
+{{- /* Walk the dotted slot path through hugo.Data.ads to the slot, then pick
+     the booking that covers the month this build runs in. Months are YYYY-MM
+     strings, so plain string comparison orders them; a booking with no `to`
+     runs until it is removed. The month is NZ time: the deploy workflow and
+     the Makefile set TZ=Pacific/Auckland, and the site is rebuilt at the
+     start of every month so the switch happens by itself. To preview another
+     month: HUGO_PARAMS_ADSMONTH=2027-01 (Hugo maps that env var to
+     site.Params.adsmonth, which needs no security.funcs allow-list entry). */ -}}
+{{- $slotCfg := hugo.Data.ads -}}
 {{- range split $slot "." -}}
-  {{- if $cfg }}{{ $cfg = index $cfg . }}{{ end -}}
+  {{- if $slotCfg }}{{ $slotCfg = index $slotCfg . }}{{ end -}}
+{{- end -}}
+{{- $month := now.Format "2006-01" -}}
+{{- with site.Params.adsmonth }}{{ $month = string . }}{{ end -}}
+{{- $cfg := dict -}}
+{{- with $slotCfg -}}
+  {{- range (index . "bookings" | default slice) -}}
+    {{- $from := string (index . "from" | default "") -}}
+    {{- $to := string (index . "to" | default "9999-12") -}}
+    {{- if and (le $from $month) (ge $to $month) }}{{ $cfg = . }}{{ end -}}
+  {{- end -}}
 {{- end -}}
 
 {{- $hasAd := and $cfg (and (isset $cfg "image") $cfg.image) -}}

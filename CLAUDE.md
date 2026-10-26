@@ -18,9 +18,10 @@ do not put private notes, plans or anything about the people behind the site int
 ## A push to main deploys the live site
 
 `.github/workflows/hugo.yaml` builds with Hugo 0.168.0 extended and Node 24 and deploys to GitHub
-Pages on **every push to `main`**. A merge is a release, and so is every CMS save (see below).
-Work on a branch and open a pull request. Never push to `main`, never trigger that workflow by
-hand, and never merge without being told to.
+Pages on **every push to `main`**, and on a schedule at the start of every month (for the ad
+bookings, below). A merge is a release, and so is every CMS save (see below). Work on a branch
+and open a pull request. Never push to `main`, never trigger that workflow by hand, and never
+merge without being told to.
 
 ## Where it runs, and the commands
 
@@ -45,6 +46,10 @@ and edition the deploy uses), Node 24 (for Tailwind), npm, git and Python 3 (for
    `schemas/business.schema.json`, plus slug matches filename, slugs unique, categories exist,
    phone (`+64…`), postcode, email, URL scheme, and `last_verified` age (warning at 12 months,
    error at 24). Warnings never fail.
+1. **ads** — `scripts/validate-ads.mjs`: every booking in `data/ads.yaml`: `YYYY-MM` months,
+   `from` before `to`, no two bookings on one slot in the same month, the category exists,
+   required fields, and every creative is in `static/` (the site check only sees the creatives
+   in the current month's build). A booking that has ended is a warning.
 2. **build** — `hugo --gc --minify` into `.cache/test/` with path and i18n warnings on; any `WARN`
    or `ERROR` line fails, because Hugo itself exits 0 on a warning.
 3. **site** — `scripts/check-site.py` over that build: every page has `lang`, a title and a meta
@@ -94,9 +99,30 @@ generated from the name and the listing count (`layouts/partials/seo-description
 `description` is set.
 
 **Pages**: `content/_index.md` (home heading and tagline), `advertise.md`, `contact.md`,
-`privacy.md`, `terms.md`, `thanks.md`. **Data**: `data/ads.yaml` (ad slots: the home tile and
-per-category banners) and `data/rates.yaml` (read by the `pricing-cards` and `rate-steps`
-shortcodes on the advertise page), both read with `hugo.Data`.
+`privacy.md`, `terms.md`, `thanks.md`. **Data**: `data/ads.yaml` (ad bookings, below) and
+`data/rates.yaml` (read by the `pricing-cards` and `rate-steps` shortcodes on the advertise
+page), both read with `hugo.Data`.
+
+### Ad bookings
+
+Ads are sold by whole calendar month. `data/ads.yaml` holds, per slot (`home` and
+`category.<slug>`), a list of `bookings` with `from` and an optional `to` month as quoted
+`YYYY-MM` strings; the file's header documents every field. `layouts/partials/ad-slot.html`
+picks the booking that covers **the month the build runs in, New Zealand time** (`TZ` is set by
+the deploy workflow and the Makefile), or shows the "Your ad here" placeholder. Nothing edits
+the file on the 1st: the deploy workflow has a `schedule` trigger at 12:00 UTC on the 1st
+(midnight NZST, 1am NZDT) that rebuilds the site, so bookings go up and come down by themselves.
+Every ordinary push rebuilds too, so a booking is never more than one build late.
+
+- `make ads` prints the next twelve months slot by slot (`make ads FROM=2027-01` to start later).
+- Preview another month locally: `HUGO_PARAMS_ADSMONTH=2027-01 make serve`. Hugo maps that
+  variable to `site.Params.adsmonth`, which the partial reads first; no `security.funcs`
+  change is needed (that setting, like `security.exec`, replaces the whole allow-list).
+- To book: add a booking with the creatives in `static/img/ads/`, run `make test`, open a pull
+  request. Merging early is safe; the ad appears on its `from` month.
+- GitHub disables a scheduled workflow after 60 days without a commit to the repository. CMS
+  saves keep it alive; if the site ever goes quiet that long, run the workflow by hand on the 1st.
+- The `id` is the GA4 `ad_id`: keep it across rebookings so an advertiser's history stays whole.
 
 ## The CMS, and what it commits
 

@@ -11,6 +11,8 @@
 #   validate   scripts/validate-businesses.mjs: every listing's front matter
 #              against schemas/business.schema.json, plus slugs, categories,
 #              phone, postcode, email, URLs and last_verified age
+#   ads        scripts/validate-ads.mjs: every ad booking in data/ads.yaml —
+#              months, overlaps, required fields, creatives present in static/
 #   build      a production build (hugo --gc --minify, as the deploy runs it)
 #              into .cache/test/, where any hugo WARN or ERROR is a finding
 #   site       scripts/check-site.py over that build: titles and descriptions,
@@ -77,6 +79,19 @@ collect() {
     echo "validate: scripts/validate-businesses.mjs: did not run ($(head -c 300 "$out/validate.err" | tr '\n' ' '))" >> "$out/findings.txt"
   fi
 
+  # ads ----------------------------------------------------------------------
+  # Exit 0 clean, 1 with errors, 2 when it could not run; a crash is a finding
+  # too, so a broken validator cannot make a change look clean.
+  t0=$(date +%s%N)
+  ( cd "$src" && node scripts/validate-ads.mjs ) > "$out/ads.txt" 2> "$out/ads.err"
+  rc=$?
+  grep '^ERROR ' "$out/ads.txt" | sed 's/^ERROR /ads: /' >> "$out/findings.txt"
+  grep '^WARN '  "$out/ads.txt" | sed 's/^WARN /ads: /'  >> "$out/warnings.txt"
+  if [ "$rc" -gt 1 ]; then
+    echo "ads: scripts/validate-ads.mjs: did not run ($(head -c 300 "$out/ads.err" | tr '\n' ' '))" >> "$out/findings.txt"
+  fi
+  printf 'ads       %s in %ss\n' "$(tail -1 "$out/ads.txt" | tr -d '()')" "$(secs "$t0")" >> "$out/summary.txt"
+
   # build --------------------------------------------------------------------
   # Into .cache, not /tmp: hugo here may be a snap, and a snap gets a private
   # /tmp — the build "succeeds" into a directory nothing else can see.
@@ -124,7 +139,7 @@ if [ -n "$BASE" ]; then
   if [ -d "$WORK/resources.keep" ]; then rm -rf "$src/resources"; mv "$WORK/resources.keep" "$src/resources"; fi
   # The same checkers and schema on both sides.
   mkdir -p "$src/scripts" "$src/schemas"
-  cp "$REPO/scripts/validate-businesses.mjs" "$REPO/scripts/check-site.py" "$src/scripts/"
+  cp "$REPO/scripts/validate-businesses.mjs" "$REPO/scripts/validate-ads.mjs" "$REPO/scripts/check-site.py" "$src/scripts/"
   cp "$REPO/schemas/"*.json "$src/schemas/"
   # Hard-linked copies, not symlinks: from 0.168 Hugo runs the Tailwind CLI
   # under Node's permission model and refuses a node_modules symlink that
