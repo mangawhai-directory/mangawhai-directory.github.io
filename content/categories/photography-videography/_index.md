@@ -1,5 +1,5 @@
 ---
-title: Photography
+title: Photography & Videography
 hidden: false
 related:
   - creative-services
