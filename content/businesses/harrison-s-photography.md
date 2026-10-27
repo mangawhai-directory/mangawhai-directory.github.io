@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Harrison's Photography
-slug: harrisons-photography
+slug: harrison-s-photography
 blurb: ''
 image: ''
 address:
