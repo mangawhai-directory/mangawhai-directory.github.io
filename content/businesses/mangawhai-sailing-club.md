@@ -23,7 +23,6 @@ categories:
   - community-clubs-churches
 tags:
   - Sailing Club
-hours: []
 nzbn: ''
 last_verified: 2026-10-12
 status: active

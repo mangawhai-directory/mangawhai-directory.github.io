@@ -23,7 +23,6 @@ categories:
   - concrete-services
 tags:
   - Concrete Services
-hours: []
 nzbn: ''
 last_verified: 2026-10-11
 status: active

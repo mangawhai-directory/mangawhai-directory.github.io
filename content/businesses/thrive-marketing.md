@@ -21,13 +21,7 @@ categories: ["professional-services"]
 tags:
   - Marketing
 
-hours:
-  - dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-    opens: "09:00"
-    closes: "16:00"
-  - dayOfWeek: ["Saturday", "Sunday"]
-    opens: "closed"
-    closes: ""
+hours: Mon–Fri 9am–4pm
 tier: "free"
 last_verified: "2026-05-04"
 status: "active"

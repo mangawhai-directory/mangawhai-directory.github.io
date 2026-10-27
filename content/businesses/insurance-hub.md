@@ -23,7 +23,6 @@ categories:
   - professional-services
 tags:
   - Insurance Broker
-hours: []
 nzbn: ''
 last_verified: 2026-08-31
 status: active

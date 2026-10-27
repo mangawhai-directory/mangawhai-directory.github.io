@@ -1,7 +1,7 @@
 ---
 tier: free
 title: Harrison's Photography
-slug: harrisons-photography
+slug: harrison-s-photography
 blurb: ''
 image: ''
 address:
@@ -24,7 +24,6 @@ categories:
 tags:
   - Photography
   - Videography
-hours: []
 nzbn: ''
 last_verified: 2026-10-27
 status: active

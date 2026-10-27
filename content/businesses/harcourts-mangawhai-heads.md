@@ -23,7 +23,6 @@ categories:
 tags:
   - Real Estate Agency
   - Rentals
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: active

@@ -25,7 +25,6 @@ categories:
 tags:
   - Cleaning
   - Airbnb Management
-hours: []
 nzbn: ''
 last_verified: 2026-05-22
 status: active

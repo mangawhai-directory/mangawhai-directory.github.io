@@ -22,7 +22,6 @@ categories:
   - takeaways-food-trucks
 tags:
   - Fish & Chips
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: closed

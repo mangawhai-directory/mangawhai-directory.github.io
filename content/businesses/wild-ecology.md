@@ -24,7 +24,6 @@ categories:
   - surveyors-planners
 tags:
   - Ecological Consultancy
-hours: []
 nzbn: ''
 last_verified: 2026-10-22
 status: active

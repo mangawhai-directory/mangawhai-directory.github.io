@@ -24,7 +24,6 @@ categories:
 tags:
   - Car Cleaning
   - Valet
-hours: []
 nzbn: ''
 last_verified: 2026-10-11
 status: active

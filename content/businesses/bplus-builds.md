@@ -23,7 +23,6 @@ categories:
   - creative-services
 tags:
   - Furniture Maker
-hours: []
 nzbn: ''
 last_verified: 2026-10-02
 status: active

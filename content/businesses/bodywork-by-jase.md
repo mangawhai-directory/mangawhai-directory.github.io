@@ -23,7 +23,6 @@ categories:
   - massage-therapy
 tags:
   - ZenThai Shiatsu
-hours: []
 nzbn: ''
 last_verified: 2026-05-16
 status: closed

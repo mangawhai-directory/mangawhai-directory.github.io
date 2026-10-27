@@ -23,7 +23,6 @@ categories:
   - engineering
 tags:
   - Industrial Engineering
-hours: []
 nzbn: ''
 last_verified: 2026-09-20
 status: active

@@ -24,7 +24,6 @@ categories:
 tags:
   - Yoga
   - Mat Pilates
-hours: []
 nzbn: ''
 last_verified: 2026-09-08
 status: active

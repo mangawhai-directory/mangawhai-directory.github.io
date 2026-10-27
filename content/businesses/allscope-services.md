@@ -26,7 +26,6 @@ tags:
   - Landscaping
   - General Maintenance & Repairs
   - Rural Pest Control
-hours: []
 nzbn: ''
 last_verified: 2026-10-18
 status: active

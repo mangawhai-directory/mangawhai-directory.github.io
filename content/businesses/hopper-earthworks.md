@@ -23,7 +23,6 @@ categories:
   - engineering
 tags:
   - Earthworks
-hours: []
 nzbn: ''
 last_verified: 2026-09-10
 status: active

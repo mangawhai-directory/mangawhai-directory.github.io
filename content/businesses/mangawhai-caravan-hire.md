@@ -24,7 +24,6 @@ categories:
   - accomodation
 tags:
   - Caravan Hire
-hours: []
 nzbn: ''
 last_verified: 2026-10-22
 status: active

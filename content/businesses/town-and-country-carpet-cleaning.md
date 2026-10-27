@@ -23,7 +23,6 @@ tags:
   - Carpet Cleaning
   - Upholstery Cleaning
 
-hours: []
 nzbn: ''
 tier: free
 last_verified: '2026-05-09'

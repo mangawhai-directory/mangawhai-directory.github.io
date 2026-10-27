@@ -23,7 +23,6 @@ categories:
   - cafes-restaurants-bars
 tags:
   - Cafe
-hours: []
 nzbn: ''
 last_verified: 2026-06-01
 status: active

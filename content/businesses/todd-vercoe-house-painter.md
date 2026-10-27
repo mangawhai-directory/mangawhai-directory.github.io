@@ -23,7 +23,6 @@ categories:
   - painters-decorators
 tags:
   - House Painter
-hours: []
 nzbn: ''
 last_verified: 2026-10-20
 status: active

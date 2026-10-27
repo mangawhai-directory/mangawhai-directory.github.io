@@ -23,7 +23,6 @@ categories:
   - landscape-tree-services
 tags:
   - Arborist
-hours: []
 nzbn: ''
 last_verified: 2026-09-24
 status: active

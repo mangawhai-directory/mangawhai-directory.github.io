@@ -23,7 +23,6 @@ categories:
   - beauty-therapy
 tags:
   - Nail Technician
-hours: []
 nzbn: ''
 last_verified: 2026-09-22
 status: active

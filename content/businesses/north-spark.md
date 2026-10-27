@@ -24,7 +24,6 @@ categories:
 tags:
   - Heat Pumps
   - Swimming Pools
-hours: []
 nzbn: ''
 last_verified: 2026-09-24
 status: active

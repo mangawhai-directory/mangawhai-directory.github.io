@@ -23,7 +23,6 @@ categories:
   - cleaning-services
 tags:
   - Cleaner
-hours: []
 nzbn: ''
 last_verified: 2026-10-12
 status: active

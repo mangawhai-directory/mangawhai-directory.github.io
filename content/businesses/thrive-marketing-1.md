@@ -25,7 +25,6 @@ tags:
   - Marketing
   - Social Media
   - Website Design
-hours: []
 nzbn: ''
 last_verified: 2026-05-13
 status: active

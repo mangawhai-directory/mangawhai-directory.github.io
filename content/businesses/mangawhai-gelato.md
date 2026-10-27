@@ -24,7 +24,6 @@ categories:
   - takeaways-food-trucks
 tags:
   - Gelato Caravan
-hours: []
 nzbn: ''
 last_verified: 2026-10-11
 status: active

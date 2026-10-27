@@ -22,7 +22,6 @@ categories:
   - property-management
 tags:
   - Holiday Rental Management
-hours: []
 nzbn: ''
 last_verified: 2026-08-18
 status: closed

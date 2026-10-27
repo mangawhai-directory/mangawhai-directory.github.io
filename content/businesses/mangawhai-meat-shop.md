@@ -25,23 +25,7 @@ categories:
 tags:
   - Butcher
   - Deli
-hours:
-  - dayOfWeek:
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-    opens: 07:00
-    closes: 17:30
-  - dayOfWeek:
-      - Saturday
-    opens: 07:30
-    closes: 14:00
-  - dayOfWeek:
-      - Sunday
-    opens: closed
-    closes: ''
+hours: Mon–Fri 7am–5:30pm, Sat 7:30am–2pm
 nzbn: ''
 last_verified: 2026-05-04
 status: active

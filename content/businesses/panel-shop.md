@@ -21,13 +21,7 @@ categories: ["automotive-marine"]
 tags:
   - Panel Beating
 
-hours:
-  - dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-    opens: "08:00"
-    closes: "17:00"
-  - dayOfWeek: "Saturday"
-    opens: "09:00"
-    closes: "13:00"
+hours: Mon–Fri 8am–5pm, Sat 9am–1pm
 tier: "free"
 last_verified: "2026-05-04"
 status: "active"

@@ -23,7 +23,6 @@ categories:
   - petrol-stations
 tags:
   - Petrol Station
-hours: []
 nzbn: ''
 last_verified: 2026-07-19
 status: active

@@ -23,7 +23,6 @@ categories:
   - automotive-marine
 tags:
   - Mechanic
-hours: []
 nzbn: ''
 last_verified: 2026-10-23
 status: active

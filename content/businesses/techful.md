@@ -25,7 +25,6 @@ tags:
   - Web Development
   - Software Development
   - Solution Architecture
-hours: []
 nzbn: ''
 last_verified: 2026-10-19
 status: active

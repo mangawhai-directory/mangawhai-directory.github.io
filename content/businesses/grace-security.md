@@ -24,7 +24,6 @@ categories:
 tags:
   - Gate Automation
   - Home Security
-hours: []
 nzbn: ''
 last_verified: 2026-09-28
 status: active

@@ -27,7 +27,6 @@ tags:
   - Massage
   - Facial Therapy
   - Acupuncture
-hours: []
 nzbn: ''
 last_verified: 2026-05-10
 status: active

@@ -23,7 +23,6 @@ categories:
   - hairdressers-barbers
 tags:
   - Hair Salon
-hours: []
 nzbn: ''
 last_verified: 2026-10-23
 status: active

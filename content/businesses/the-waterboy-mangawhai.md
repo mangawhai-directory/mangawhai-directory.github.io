@@ -24,7 +24,6 @@ categories:
 tags:
   - Water Delivery
   - Tank & Pool Cleaning
-hours: []
 nzbn: ''
 last_verified: 2026-05-10
 status: active

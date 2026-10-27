@@ -22,7 +22,6 @@ categories:
   - sauna-spa
 tags:
   - Day Spa
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: active

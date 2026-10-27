@@ -24,7 +24,6 @@ categories:
   - community-clubs-churches
 tags:
   - Radio Station
-hours: []
 nzbn: ''
 last_verified: 2026-09-09
 status: active

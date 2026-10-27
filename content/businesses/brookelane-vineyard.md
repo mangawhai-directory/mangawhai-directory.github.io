@@ -26,7 +26,6 @@ tags:
   - Vineyard
   - Gin Distillery
   - Regular Events
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: active

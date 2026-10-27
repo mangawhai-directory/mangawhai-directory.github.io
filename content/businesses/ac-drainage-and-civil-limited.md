@@ -25,7 +25,6 @@ tags:
   - Drainlaying
   - Civil Construction
   - Earthworks
-hours: []
 nzbn: ''
 last_verified: 2026-10-06
 status: active

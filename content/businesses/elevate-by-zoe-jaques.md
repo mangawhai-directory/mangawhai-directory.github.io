@@ -23,15 +23,7 @@ categories:
 tags:
   - Naturopath
   - Pharmacist
-hours:
-  - dayOfWeek:
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-    opens: 09:00
-    closes: 17:00
+hours: Mon–Fri 9am–5pm
 nzbn: ''
 last_verified: 2026-05-10
 status: closed

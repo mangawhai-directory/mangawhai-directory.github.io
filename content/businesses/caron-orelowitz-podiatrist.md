@@ -23,7 +23,6 @@ categories:
   - health-practitioners
 tags:
   - Podiatrist
-hours: []
 nzbn: ''
 last_verified: 2026-10-22
 status: active

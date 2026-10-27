@@ -24,7 +24,6 @@ categories:
 tags:
   - Concrete Pump Hire
   - Concrete Pumping
-hours: []
 nzbn: ''
 last_verified: 2026-10-18
 status: active

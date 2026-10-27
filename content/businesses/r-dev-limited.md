@@ -26,7 +26,6 @@ tags:
   - AI Transformation & Automation
   - Servicing & Networking
   - Wifi Extension
-hours: []
 nzbn: ''
 last_verified: 2026-10-21
 status: active

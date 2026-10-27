@@ -26,7 +26,6 @@ tags:
   - Florist
   - Grower
   - Wedding Flowers
-hours: []
 nzbn: ''
 last_verified: 2026-10-02
 status: active

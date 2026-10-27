@@ -23,7 +23,6 @@ categories:
 tags:
   - Group Fitness
   - Senior Fitness
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-12

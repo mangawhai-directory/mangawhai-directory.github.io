@@ -23,7 +23,6 @@ categories:
   - marketing-digital-services
 tags:
   - Website Fixes & Updates
-hours: []
 nzbn: ''
 last_verified: 2026-10-18
 status: active

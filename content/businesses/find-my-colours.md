@@ -25,7 +25,6 @@ categories:
 tags:
   - Colour Analysis Service
   - Personal Styling
-hours: []
 nzbn: ''
 last_verified: 2026-10-26
 status: active

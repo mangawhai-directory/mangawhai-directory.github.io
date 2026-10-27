@@ -23,7 +23,6 @@ categories:
   - retail
 tags:
   - Antiques & Collectibles
-hours: []
 nzbn: ''
 last_verified: 2026-10-19
 status: active

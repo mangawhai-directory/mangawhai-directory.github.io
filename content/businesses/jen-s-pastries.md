@@ -28,7 +28,6 @@ tags:
   - Pastries
   - Cakes
   - Bakery
-hours: []
 nzbn: ''
 last_verified: 2026-05-07
 status: active

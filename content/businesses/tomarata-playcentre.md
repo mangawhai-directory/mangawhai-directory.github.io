@@ -23,7 +23,6 @@ categories:
   - education-childcare
 tags:
   - Playcentre
-hours: []
 nzbn: ''
 last_verified: 2026-10-12
 status: active

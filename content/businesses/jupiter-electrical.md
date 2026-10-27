@@ -25,7 +25,6 @@ tags:
   - Electrical
   - Heat Pumps
   - Air Conditioning
-hours: []
 nzbn: ''
 last_verified: 2026-06-08
 status: active

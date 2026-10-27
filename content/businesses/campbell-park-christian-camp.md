@@ -23,7 +23,6 @@ categories:
   - campgrounds-camps
 tags:
   - Christian Camp
-hours: []
 nzbn: ''
 last_verified: 2026-05-19
 status: active

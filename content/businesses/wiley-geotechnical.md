@@ -25,7 +25,6 @@ tags:
   - Geotechnical
   - Geological
   - Stormwater
-hours: []
 nzbn: ''
 last_verified: 2026-07-14
 status: closed

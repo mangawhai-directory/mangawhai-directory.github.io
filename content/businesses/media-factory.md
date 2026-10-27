@@ -25,7 +25,6 @@ tags:
   - Print
   - Design
   - Signage
-hours: []
 nzbn: ''
 last_verified: 2026-09-08
 status: active

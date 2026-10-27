@@ -25,7 +25,6 @@ tags:
   - Sourdough Bread
   - Sourdough Bagels
   - Delivery Available
-hours: []
 nzbn: ''
 last_verified: 2026-10-27
 status: active

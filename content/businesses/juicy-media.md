@@ -27,7 +27,6 @@ tags:
   - Displays
   - Vehicle Wraps
   - Web Design
-hours: []
 nzbn: ''
 last_verified: 2026-06-24
 status: active

@@ -23,7 +23,6 @@ categories:
   - animals
 tags:
   - Dog Grooming
-hours: []
 nzbn: ''
 last_verified: 2026-09-29
 status: active

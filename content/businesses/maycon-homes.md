@@ -23,7 +23,6 @@ categories:
   - builders
 tags:
   - Builder
-hours: []
 nzbn: ''
 last_verified: 2026-05-26
 status: active

@@ -22,20 +22,7 @@ categories:
 tags:
   - Cafe
   - Restaurant
-hours:
-  - dayOfWeek:
-      - Sunday
-      - Monday
-      - Tuesday
-    opens: 07:30
-    closes: 15:00
-  - dayOfWeek:
-      - Wednesday
-      - Thursday
-      - Friday
-      - Saturday
-    opens: 07:30
-    closes: 21:30
+hours: Sun–Tue 7:30am–3pm, Wed–Sat 7:30am–9:30pm
 nzbn: ''
 tier: free
 last_verified: 2026-05-04

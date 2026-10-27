@@ -25,7 +25,6 @@ tags:
   - Plumbing
   - Gasfitting
   - 24/7 Emergency Service
-hours: []
 nzbn: ''
 last_verified: 2026-10-20
 status: active

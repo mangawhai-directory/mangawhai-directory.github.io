@@ -23,7 +23,6 @@ categories:
   - pregnancy-birth-postpartum-care
 tags:
   - Doula
-hours: []
 nzbn: ''
 last_verified: 2026-08-11
 status: active

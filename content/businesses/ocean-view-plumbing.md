@@ -23,7 +23,6 @@ categories:
   - plumbing-gasfitting
 tags:
   - Plumbing
-hours: []
 nzbn: ''
 last_verified: 2026-06-23
 status: active

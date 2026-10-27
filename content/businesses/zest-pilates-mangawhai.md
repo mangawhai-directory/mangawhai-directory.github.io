@@ -22,7 +22,6 @@ categories:
   - fitness-pilates-yoga
 tags:
   - Reformer Pilates
-hours: []
 nzbn: ''
 last_verified: 2026-05-04
 status: active

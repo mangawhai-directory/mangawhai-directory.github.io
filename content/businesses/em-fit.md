@@ -24,7 +24,6 @@ tags:
   - Gym
   - Personal Training
   - Group Fitness
-hours: []
 nzbn: ''
 last_verified: 2026-05-12
 status: active

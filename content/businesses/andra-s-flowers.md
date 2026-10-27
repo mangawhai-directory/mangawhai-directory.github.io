@@ -24,7 +24,6 @@ categories:
 tags:
   - Florist
   - Flower Delivery
-hours: []
 nzbn: ''
 last_verified: 2026-10-02
 status: active

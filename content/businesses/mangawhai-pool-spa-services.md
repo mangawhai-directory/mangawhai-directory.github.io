@@ -24,7 +24,6 @@ categories:
 tags:
   - Pool Cleaning
   - Spa Cleaning
-hours: []
 nzbn: ''
 last_verified: 2026-10-20
 status: active

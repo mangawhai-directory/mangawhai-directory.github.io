@@ -153,15 +153,10 @@ collections:
         hint: "Free-form labels. Common ones: family-friendly, dog-friendly, waterfront, takeaway, licensed, mangawhai-heads"
 
       - name: hours
-        label: Opening hours
-        widget: list
+        label: Open
+        widget: string
         required: false
-        collapsed: true
-        summary: "{{fields.dayOfWeek}}: {{fields.opens}}–{{fields.closes}}"
-        fields:
-          - { name: dayOfWeek, label: Day(s), widget: list, hint: "One or more day names, e.g. Monday, Tuesday. Multiple days share an opens/closes pair." }
-          - { name: opens, label: Opens, widget: string, hint: 'HH:MM (24h), or "closed"' }
-          - { name: closes, label: Closes, widget: string, required: false, hint: "HH:MM (24h). Leave blank if 'closed' is set in opens." }
+        hint: 'Plain text, shown as "Open" on paid listings, e.g. "Mon–Sat 10am–4pm, Sun 10am–3pm" or "By appointment". Leave blank to show nothing.'
 
       - { name: nzbn, label: NZBN, widget: string, required: false, hint: "13-digit NZ Business Number. Optional." }
       - name: last_verified

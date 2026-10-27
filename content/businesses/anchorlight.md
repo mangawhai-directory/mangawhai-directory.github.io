@@ -25,7 +25,6 @@ tags:
   - Property Investment & Mortgages
   - Investing & Wealth Building
   - Kiwisaver
-hours: []
 nzbn: ''
 last_verified: 2026-10-21
 status: active

@@ -24,7 +24,6 @@ categories:
 tags:
   - Lawn Mowing
   - Property Maintenance
-hours: []
 nzbn: ''
 last_verified: 2026-10-09
 status: active

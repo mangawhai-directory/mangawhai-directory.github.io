@@ -24,7 +24,6 @@ categories:
 tags:
   - Mobile Sauna
   - Event Hire
-hours: []
 nzbn: ''
 last_verified: 2026-07-15
 status: active

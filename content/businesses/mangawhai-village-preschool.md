@@ -23,7 +23,6 @@ categories:
   - education-childcare
 tags:
   - Early Childhood
-hours: []
 nzbn: ''
 last_verified: 2026-09-08
 status: active

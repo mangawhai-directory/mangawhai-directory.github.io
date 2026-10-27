@@ -25,7 +25,6 @@ tags:
   - iPhone Repair
   - Smart Phone Repair
   - Tablet Repair
-hours: []
 nzbn: ''
 last_verified: 2026-10-18
 status: active

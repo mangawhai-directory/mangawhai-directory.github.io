@@ -22,7 +22,6 @@ categories:
   - real-estate-services
 tags:
   - Real Estate Agency
-hours: []
 nzbn: ''
 last_verified: 2026-05-10
 status: active

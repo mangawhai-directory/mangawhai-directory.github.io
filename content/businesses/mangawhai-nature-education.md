@@ -24,7 +24,6 @@ categories:
 tags:
   - Outdoor Education Program
   - School Holiday Program
-hours: []
 nzbn: ''
 last_verified: 2026-05-26
 status: active

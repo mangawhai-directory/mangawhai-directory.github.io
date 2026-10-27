@@ -23,7 +23,6 @@ categories:
   - concrete-services
 tags:
   - Concrete Grinder & Polisher
-hours: []
 nzbn: ''
 last_verified: 2026-10-11
 status: active

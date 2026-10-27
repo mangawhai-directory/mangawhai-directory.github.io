@@ -24,7 +24,6 @@ categories:
 tags:
   - Pet Supplies
   - Pet Food
-hours: []
 nzbn: ''
 last_verified: 2026-10-06
 status: active

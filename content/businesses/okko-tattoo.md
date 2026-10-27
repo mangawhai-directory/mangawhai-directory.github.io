@@ -23,7 +23,6 @@ categories:
   - tattoo-piercing
 tags:
   - Tattoo Studio
-hours: []
 nzbn: ''
 last_verified: 2026-07-14
 status: active

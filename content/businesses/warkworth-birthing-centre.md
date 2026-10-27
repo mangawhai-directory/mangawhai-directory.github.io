@@ -23,7 +23,6 @@ categories:
 tags:
   - Prenatal Classes
   - Birth
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-12

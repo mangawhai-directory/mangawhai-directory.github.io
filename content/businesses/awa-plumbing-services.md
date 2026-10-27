@@ -25,7 +25,6 @@ tags:
   - Plumbing
   - Gas Fitting
   - Drainage
-hours: []
 nzbn: ''
 last_verified: 2026-06-23
 status: active

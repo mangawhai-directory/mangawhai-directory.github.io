@@ -24,7 +24,6 @@ categories:
   - landscape-tree-services
 tags:
   - Fencing
-hours: []
 nzbn: ''
 last_verified: 2026-10-21
 status: active

@@ -23,7 +23,6 @@ categories:
   - food-producers
 tags:
   - Coffee Roaster
-hours: []
 nzbn: ''
 last_verified: 2026-09-10
 status: active

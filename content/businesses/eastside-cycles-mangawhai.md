@@ -23,7 +23,6 @@ categories:
   - automotive-marine
 tags:
   - Bicycle Repair
-hours: []
 nzbn: ''
 last_verified: 2026-10-09
 status: active

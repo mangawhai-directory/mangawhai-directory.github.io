@@ -26,7 +26,6 @@ tags:
   - Ice Shower
   - Group Fitness
   - Workshops
-hours: []
 nzbn: ''
 last_verified: 2026-05-10
 status: active

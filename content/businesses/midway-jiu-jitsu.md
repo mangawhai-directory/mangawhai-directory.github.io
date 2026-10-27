@@ -23,7 +23,6 @@ categories:
   - fitness-pilates-yoga
 tags:
   - Jiu Jitsu
-hours: []
 nzbn: ''
 last_verified: 2026-05-13
 status: active

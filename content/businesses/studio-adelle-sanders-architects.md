@@ -22,7 +22,6 @@ categories:
   - architects
 tags:
   - Architect
-hours: []
 nzbn: ''
 last_verified: 2026-05-11
 status: active

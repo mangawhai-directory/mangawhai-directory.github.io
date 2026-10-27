@@ -24,7 +24,6 @@ categories:
 tags:
   - Deep Tissue Massage
   - Intuitive Bodywork
-hours: []
 nzbn: ''
 last_verified: 2026-10-20
 status: active

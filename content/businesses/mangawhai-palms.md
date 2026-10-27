@@ -23,7 +23,6 @@ categories:
   - nurseries
 tags:
   - Palms
-hours: []
 nzbn: ''
 last_verified: 2026-08-31
 status: active

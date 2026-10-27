@@ -22,7 +22,6 @@ categories:
   - landscape-tree-services
 tags:
   - Landscaping
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: active

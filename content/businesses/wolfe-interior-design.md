@@ -23,7 +23,6 @@ categories:
   - creative-services
 tags:
   - Interior Design
-hours: []
 nzbn: ''
 last_verified: 2026-08-11
 status: active

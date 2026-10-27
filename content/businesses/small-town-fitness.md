@@ -23,7 +23,6 @@ categories:
   - fitness-pilates-yoga
 tags:
   - Senior Fitness
-hours: []
 nzbn: ''
 last_verified: 2026-05-22
 status: active

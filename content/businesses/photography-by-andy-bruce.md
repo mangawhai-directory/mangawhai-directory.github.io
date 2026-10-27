@@ -24,7 +24,6 @@ categories:
   - creative-services
 tags:
   - Nature & Landscape Photography
-hours: []
 nzbn: ''
 last_verified: 2026-09-30
 status: active

@@ -24,7 +24,6 @@ categories:
   - creative-services
 tags:
   - Art Classes
-hours: []
 nzbn: ''
 last_verified: 2026-09-28
 status: active

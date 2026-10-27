@@ -27,7 +27,6 @@ tags:
   - Washing Machine & Dishwasher Installs
   - Flat Pack Furniture Building
   - Garden Maintenance
-hours: []
 nzbn: ''
 last_verified: 2026-10-22
 status: active

@@ -23,7 +23,6 @@ categories:
   - medical-dental
 tags:
   - Skin Checks
-hours: []
 nzbn: ''
 last_verified: 2026-06-18
 status: active

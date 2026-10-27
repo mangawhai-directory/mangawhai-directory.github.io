@@ -26,7 +26,6 @@ tags:
   - Ecological Consultancy
   - Wholesale Plant Supply
   - Landscape Implementation
-hours: []
 nzbn: ''
 last_verified: 2026-08-18
 status: active

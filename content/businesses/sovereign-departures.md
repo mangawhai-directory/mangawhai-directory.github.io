@@ -24,7 +24,6 @@ categories:
 tags:
   - End of Life Doula
   - Death Coach
-hours: []
 nzbn: ''
 last_verified: 2026-05-12
 status: active

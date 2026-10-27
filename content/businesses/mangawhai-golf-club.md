@@ -24,7 +24,6 @@ categories:
   - community-clubs-churches
 tags:
   - Golf Club
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: active

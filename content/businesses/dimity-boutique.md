@@ -20,7 +20,6 @@ tags:
   - Boutique
   - Clothing
 
-hours: []
 tier: free
 last_verified: '2026-05-09'
 status: active

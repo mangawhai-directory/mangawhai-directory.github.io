@@ -23,7 +23,6 @@ categories:
   - massage-therapy
 tags:
   - Thai Massage
-hours: []
 nzbn: ''
 last_verified: 2026-06-05
 status: active

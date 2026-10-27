@@ -26,7 +26,6 @@ tags:
   - Concreting
   - Decks
   - Fences & Retaining Walls
-hours: []
 nzbn: ''
 last_verified: 2026-10-11
 status: active

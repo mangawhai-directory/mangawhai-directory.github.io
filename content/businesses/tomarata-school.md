@@ -23,7 +23,6 @@ categories:
   - education-childcare
 tags:
   - Primary School
-hours: []
 nzbn: ''
 last_verified: 2026-06-11
 status: active
