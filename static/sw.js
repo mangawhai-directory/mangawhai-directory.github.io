@@ -33,7 +33,7 @@
    This file is copied as-is (Hugo does not minify static/), so keep it plain
    JS with no build step. */
 
-var VERSION = 'v1';
+var VERSION = 'v2';
 var PAGES = 'md-pages-' + VERSION;
 var ASSETS = 'md-assets-' + VERSION;
 var OFFLINE = '/offline/';
