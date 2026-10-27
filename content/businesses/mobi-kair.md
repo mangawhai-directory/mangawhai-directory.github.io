@@ -1,7 +1,7 @@
 ---
 tier: free
-title: Mobi-Kair
-slug: mobi-kair
+title: Mobi-Kair Water Tank Cleaning Services and Repairs
+slug: mobi-kair-water-tank-cleaning-services-and-repairs
 blurb: ''
 image: ''
 address:
@@ -24,6 +24,7 @@ categories:
 tags:
   - Water Tank Cleaning
   - Tank Repairs
+hours: []
 nzbn: ''
 last_verified: 2026-10-22
 status: active
