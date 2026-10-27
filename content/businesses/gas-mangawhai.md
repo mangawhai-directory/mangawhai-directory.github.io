@@ -24,7 +24,6 @@ categories:
 tags:
   - Petrol Station
   - Garden Supplies
-hours: []
 nzbn: ''
 last_verified: 2026-07-19
 status: active

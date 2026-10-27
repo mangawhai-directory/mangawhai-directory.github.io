@@ -23,7 +23,6 @@ categories:
   - hairdressers-barbers
 tags:
   - Barber
-hours: []
 nzbn: ''
 last_verified: 2026-07-15
 status: active

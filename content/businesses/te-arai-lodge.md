@@ -22,7 +22,6 @@ categories:
   - campgrounds-camps
 tags:
   - Lodge
-hours: []
 nzbn: ''
 last_verified: 2026-05-04
 status: closed

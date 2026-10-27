@@ -24,7 +24,6 @@ categories:
 tags:
   - Coworking
   - Workshops
-hours: []
 nzbn: ''
 last_verified: 2026-05-16
 status: active

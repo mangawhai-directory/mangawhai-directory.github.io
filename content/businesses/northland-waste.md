@@ -26,7 +26,6 @@ tags:
   - Rubbish & Recycling Collection
   - Wheelie Bins
   - Skip Bin Hire
-hours: []
 nzbn: ''
 last_verified: 2026-10-17
 status: active

@@ -237,30 +237,14 @@ const DISCONTINUED = new Set([
   "oasis-bar-and-eatery",
 ]);
 
-// Per-business opening hours, keyed by slug. Items follow the schema's
-// OpeningHoursSpecification subset: `dayOfWeek` may be a string or array,
-// `opens`/`closes` are "HH:MM". Slugs not listed get `hours: []`.
+// Per-business opening hours, keyed by slug: one line of free text, shown as
+// "Open" on paid cards. Slugs not listed get no `hours` line.
 const HOURS = {
-  "panel-shop": [
-    { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:00", closes: "17:00" },
-    { dayOfWeek: "Saturday", opens: "09:00", closes: "13:00" },
-  ],
-  "brewed-as-cafe": [
-    { dayOfWeek: ["Sunday", "Monday", "Tuesday"], opens: "07:30", closes: "15:00" },
-    { dayOfWeek: ["Wednesday", "Thursday", "Friday", "Saturday"], opens: "07:30", closes: "21:30" },
-  ],
-  "dot-india-restaurant": [
-    { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "11:00", closes: "14:00" },
-    { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "16:30", closes: "21:00" },
-  ],
-  "barfoot-and-thompson-mangawhai": [
-    { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:30", closes: "17:00" },
-    { dayOfWeek: ["Saturday", "Sunday"], opens: "closed" },
-  ],
-  "thrive-marketing": [
-    { dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "09:00", closes: "16:00" },
-    { dayOfWeek: ["Saturday", "Sunday"], opens: "closed" },
-  ],
+  "panel-shop": "Mon–Fri 8am–5pm, Sat 9am–1pm",
+  "brewed-as-cafe": "Sun–Tue 7:30am–3pm, Wed–Sat 7:30am–9:30pm",
+  "dot-india-restaurant": "Daily 11am–2pm & 4:30–9pm",
+  "barfoot-and-thompson-mangawhai": "Mon–Fri 8:30am–5pm",
+  "thrive-marketing": "Mon–Fri 9am–4pm",
 };
 
 // ---------- helpers ----------
@@ -397,19 +381,7 @@ function buildFrontMatter(row, slug, cats) {
     lines.push(`tags: []`);
   }
   const hours = HOURS[slug];
-  if (hours && hours.length) {
-    lines.push("hours:");
-    for (const h of hours) {
-      const day = Array.isArray(h.dayOfWeek)
-        ? `[${h.dayOfWeek.map(yamlString).join(", ")}]`
-        : yamlString(h.dayOfWeek);
-      lines.push(`  - dayOfWeek: ${day}`);
-      lines.push(`    opens: ${yamlString(h.opens)}`);
-      lines.push(`    closes: ${yamlString(h.closes)}`);
-    }
-  } else {
-    lines.push(`hours: []`);
-  }
+  if (hours) lines.push(`hours: ${yamlString(hours)}`);
   if (row.nzbn) lines.push(`nzbn: ${yamlString(row.nzbn)}`);
   lines.push(`tier: "free"`);
   lines.push(`last_verified: ${yamlString(TODAY)}`);

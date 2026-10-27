@@ -23,7 +23,6 @@ categories:
   - construction-services
 tags:
   - Roofing
-hours: []
 nzbn: ''
 last_verified: 2026-08-31
 status: active

@@ -23,7 +23,6 @@ categories:
   - health-practitioners
 tags:
   - Chiropractor
-hours: []
 nzbn: ''
 last_verified: 2026-10-20
 status: active

@@ -25,7 +25,6 @@ tags:
   - House Washing
   - Window Cleaning
   - Cedar, Deck & Fence Reviving
-hours: []
 nzbn: ''
 last_verified: 2026-05-22
 status: active

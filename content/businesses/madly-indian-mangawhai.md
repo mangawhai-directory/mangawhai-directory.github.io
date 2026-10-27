@@ -21,7 +21,6 @@ categories:
   - takeaways-food-trucks
 tags:
   - Indian Takeaways
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-04

@@ -24,7 +24,6 @@ categories:
 tags:
   - Window Repairs
   - Door Repairs
-hours: []
 nzbn: ''
 last_verified: 2026-09-23
 status: active

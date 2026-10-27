@@ -25,7 +25,6 @@ tags:
   - Mat Pilates
   - Reformer Pilates
   - Small Group Classes
-hours: []
 nzbn: ''
 last_verified: 2026-10-20
 status: active

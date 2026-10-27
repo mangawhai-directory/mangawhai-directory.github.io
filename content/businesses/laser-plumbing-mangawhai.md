@@ -24,7 +24,6 @@ tags:
   - Plumbing
   - Gas Fitting
   - Drainlaying
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: closed

@@ -23,7 +23,6 @@ categories:
   - campgrounds-camps
 tags:
   - Holiday Park
-hours: []
 nzbn: ''
 last_verified: 2026-05-19
 status: active

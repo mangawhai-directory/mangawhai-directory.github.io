@@ -26,7 +26,6 @@ tags:
   - Content Creation
   - Brand Photography
   - Video Production
-hours: []
 nzbn: ''
 last_verified: 2026-09-23
 status: active

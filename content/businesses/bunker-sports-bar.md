@@ -23,7 +23,6 @@ tags:
   - Restaurant
   - Sports Bar
   - Golf Simulators
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-04

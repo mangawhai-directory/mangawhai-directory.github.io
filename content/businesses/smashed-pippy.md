@@ -19,7 +19,6 @@ categories:
 tags:
   - Cafe
 
-hours: []
 tier: free
 last_verified: '2026-05-09'
 status: closed

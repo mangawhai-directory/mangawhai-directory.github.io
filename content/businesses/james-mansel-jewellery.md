@@ -25,7 +25,6 @@ categories:
 tags:
   - Jewellery
   - Watches
-hours: []
 nzbn: ''
 last_verified: 2026-10-13
 status: active

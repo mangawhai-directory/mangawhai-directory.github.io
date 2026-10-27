@@ -23,7 +23,6 @@ categories:
   - movers-taxis
 tags:
   - Taxi Service
-hours: []
 nzbn: ''
 last_verified: 2026-08-18
 status: active

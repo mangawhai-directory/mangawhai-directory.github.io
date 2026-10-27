@@ -22,7 +22,6 @@ categories:
 tags:
   - Church
 
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-09

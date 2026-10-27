@@ -24,7 +24,6 @@ categories:
   - things-to-do-tours
 tags:
   - Walking Event
-hours: []
 nzbn: ''
 last_verified: 2026-05-04
 status: closed

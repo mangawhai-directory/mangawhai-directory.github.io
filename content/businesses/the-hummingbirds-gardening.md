@@ -26,7 +26,6 @@ tags:
   - Garden Maintenance
   - Landscape Design
   - Hardscaping
-hours: []
 nzbn: ''
 last_verified: 2026-10-22
 status: active

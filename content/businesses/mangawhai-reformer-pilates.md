@@ -22,7 +22,6 @@ categories:
 tags:
   - Pilates
   - Reformer
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-04

@@ -26,7 +26,6 @@ tags:
   - Acupuncturist
   - PreConception Care
   - PreBirth Acupuncture
-hours: []
 nzbn: ''
 last_verified: 2026-10-21
 status: active

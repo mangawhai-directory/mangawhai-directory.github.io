@@ -26,7 +26,6 @@ tags:
   - Painting
   - Repairs & Maintenance
   - Exterior Cleaning
-hours: []
 nzbn: ''
 last_verified: 2026-05-04
 status: active

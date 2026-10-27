@@ -23,7 +23,6 @@ categories:
   - things-to-do-tours
 tags:
   - Members-only Golf Club
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: active

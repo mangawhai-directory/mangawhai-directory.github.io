@@ -23,7 +23,6 @@ categories:
   - cleaning-services
 tags:
   - Laundromat
-hours: []
 nzbn: ''
 last_verified: 2026-05-19
 status: active

@@ -24,7 +24,6 @@ categories:
   - property-maintenance
 tags:
   - Septic Tank Services
-hours: []
 nzbn: ''
 last_verified: 2026-10-12
 status: active

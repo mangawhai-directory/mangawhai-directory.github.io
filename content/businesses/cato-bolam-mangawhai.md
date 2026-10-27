@@ -26,7 +26,6 @@ tags:
   - Civil Engineer
   - Subdivision
 
-hours: []
 nzbn: '9429039761200'
 tier: free
 last_verified: '2026-05-10'

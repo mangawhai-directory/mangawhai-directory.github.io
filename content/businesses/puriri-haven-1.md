@@ -24,7 +24,6 @@ categories:
 tags:
   - Wedding Venue
   - Wedding Celebrant
-hours: []
 nzbn: ''
 last_verified: 2026-08-11
 status: active

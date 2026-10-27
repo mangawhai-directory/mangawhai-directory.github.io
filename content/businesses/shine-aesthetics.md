@@ -26,7 +26,6 @@ tags:
   - Registered Nurse
   - Injectables
   - Fillers
-hours: []
 nzbn: ''
 last_verified: 2026-05-08
 status: active

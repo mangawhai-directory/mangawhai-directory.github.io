@@ -24,7 +24,6 @@ tags:
   - Pharmacy
   - Vaccinations
   - Skin Cancer Checks
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: active

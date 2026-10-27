@@ -131,6 +131,23 @@
       {{- with .Params.blurb }}
       <p data-fade class="py-6 text-base text-muted-foreground m-0">{{ . }}</p>
       {{- end }}
+      {{- /* Opening hours are one line of free text that staff type into the CMS
+             ("Mon–Sat 10am–4pm, Sun 10am–3pm", "By appointment"). They used to be a
+             list of day/opens/closes rows grouped into a table here, which was hard to
+             fill in and could not say "by appointment" or "closed over winter", so
+             businesses put their hours in the blurb instead. The text is shown as is,
+             paid listings only, as its own band between the blurb and the buttons.
+             The blurb's py-6 already gives the gap above (mt-6 stands in when there is no
+             blurb); mb-6 matches it below. */ -}}
+      {{- with .Params.hours }}
+      <div data-fade class="{{ if $.Params.blurb }}mt-0{{ else }}mt-6{{ end }} mb-6 flex flex-wrap items-baseline gap-x-2 gap-y-0.5 text-sm">
+        <span class="inline-flex items-baseline gap-1.5 font-medium text-foreground">
+          <svg class="h-3.5 w-3.5 shrink-0 self-center" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Open
+        </span>
+        <span class="text-muted-foreground">{{ . }}</span>
+      </div>
+      {{- end }}
       {{- end }}
 
       {{- if $hasActions }}
@@ -171,71 +188,6 @@
       </ul>
       {{- end }}
 
-      {{- if $isPaid }}
-      {{- with .Params.hours }}
-      {{- if . }}
-      {{- /* Group hours entries that share the exact same dayOfWeek so split-shift
-             ranges (e.g. lunch + dinner) collapse into one row joined by " | ".
-             Stored as a flat slice of "label\trange" strings keyed by an order
-             slice; rebuilt rather than mutated in place because Hugo's `merge`
-             collapses single-element slices inside dict values. */ -}}
-      {{- $labels := slice -}}
-      {{- $ranges := slice -}}
-      {{- $dayAbbr := dict "Monday" "Mon" "Tuesday" "Tue" "Wednesday" "Wed" "Thursday" "Thu" "Friday" "Fri" "Saturday" "Sat" "Sunday" "Sun" -}}
-      {{- range . -}}
-        {{- $days := .dayOfWeek -}}
-        {{- $label := "" -}}
-        {{- if reflect.IsSlice $days -}}
-          {{- $abbr := slice -}}
-          {{- range $days -}}{{ $abbr = $abbr | append (index $dayAbbr . | default .) }}{{- end -}}
-          {{- $label = delimit $abbr ", " -}}
-        {{- else -}}
-          {{- $label = index $dayAbbr $days | default $days -}}
-        {{- end -}}
-        {{- $range := "" -}}
-        {{- if eq .opens "closed" -}}
-          {{- $range = "Closed" -}}
-        {{- else if and .opens .closes -}}
-          {{- $range = printf "%s–%s" .opens .closes -}}
-        {{- else -}}
-          {{- $range = .opens | default "" -}}
-          {{- if .closes }}{{ $range = printf "%s–%s" $range .closes }}{{ end -}}
-        {{- end -}}
-        {{- $idx := -1 -}}
-        {{- range $i, $l := $labels -}}
-          {{- if eq $l $label }}{{ $idx = $i }}{{ end -}}
-        {{- end -}}
-        {{- if ge $idx 0 -}}
-          {{- $existing := index $ranges $idx -}}
-          {{- $newRanges := slice -}}
-          {{- range $i, $r := $ranges -}}
-            {{- if eq $i $idx -}}
-              {{- $newRanges = $newRanges | append (printf "%s | %s" $existing $range) -}}
-            {{- else -}}
-              {{- $newRanges = $newRanges | append $r -}}
-            {{- end -}}
-          {{- end -}}
-          {{- $ranges = $newRanges -}}
-        {{- else -}}
-          {{- $labels = $labels | append $label -}}
-          {{- $ranges = $ranges | append $range -}}
-        {{- end -}}
-      {{- end -}}
-      <div data-fade class="mt-6 text-sm">
-        <p class="m-0 inline-flex items-center gap-1.5 font-medium text-foreground">
-          <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Opening hours
-        </p>
-        <dl class="hours-list mt-2 text-muted-foreground tabular-nums">
-          {{- range $i, $label := $labels }}
-          <dt class="font-medium text-foreground">{{ $label }}</dt>
-          <dd class="m-0">{{ index $ranges $i }}</dd>
-          {{- end }}
-        </dl>
-      </div>
-      {{- end }}
-      {{- end }}
-      {{- end }}
     </div>
   </div>
 </article>

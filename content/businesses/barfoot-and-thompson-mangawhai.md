@@ -22,20 +22,7 @@ categories:
   - real-estate-services
 tags:
   - Real Estate Agency
-hours:
-  - dayOfWeek:
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-    opens: 08:30
-    closes: 17:00
-  - dayOfWeek:
-      - Saturday
-      - Sunday
-    opens: closed
-    closes: ''
+hours: Mon–Fri 8:30am–5pm
 last_verified: 2026-05-04
 status: active
 ---

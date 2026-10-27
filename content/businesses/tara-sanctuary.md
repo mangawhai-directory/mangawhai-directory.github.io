@@ -23,7 +23,6 @@ categories:
 tags:
   - Massage
   - Facial
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-10

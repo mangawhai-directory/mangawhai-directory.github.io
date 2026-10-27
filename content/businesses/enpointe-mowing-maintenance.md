@@ -24,7 +24,6 @@ categories:
 tags:
   - Mowing & Maintenance
   - Large Blocks & Lifestyle Blocks
-hours: []
 nzbn: ''
 last_verified: 2026-10-20
 status: active

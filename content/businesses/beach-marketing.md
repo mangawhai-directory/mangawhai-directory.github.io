@@ -24,7 +24,6 @@ categories:
 tags:
   - Digital Marketing
   - Copywriting
-hours: []
 nzbn: ''
 last_verified: 2026-09-22
 status: active

@@ -25,7 +25,6 @@ categories:
 tags:
   - Portrait Photography
   - Wedding Photography
-hours: []
 nzbn: ''
 last_verified: 2026-10-23
 status: active

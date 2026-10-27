@@ -23,7 +23,6 @@ categories:
   - weddings
 tags:
   - Wedding Celebrant
-hours: []
 nzbn: ''
 last_verified: 2026-10-17
 status: active

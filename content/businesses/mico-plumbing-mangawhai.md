@@ -24,7 +24,6 @@ categories:
   - retail
 tags:
   - Plumbing Supplies
-hours: []
 nzbn: ''
 last_verified: 2026-06-23
 status: active

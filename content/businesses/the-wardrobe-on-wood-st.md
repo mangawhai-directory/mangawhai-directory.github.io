@@ -4,8 +4,6 @@ title: The Wardrobe On Wood St
 slug: the-wardrobe-on-wood-st
 blurb: |-
   A beautiful women’s boutique, offering casual wear, resort wear, special occasion outfits, golfwear and accessories.
-
-  Open Mon-Sat 10am-4pm and Sun 10am-3pm
 image: /uploads/pasted-image-1793060839725.webp
 address:
   street: 7 Wood Street
@@ -26,7 +24,7 @@ categories:
   - retail
 tags:
   - Women's Fashion
-hours: []
+hours: Mon–Sat 10am–4pm, Sun 10am–3pm
 nzbn: ''
 last_verified: 2026-10-19
 status: active

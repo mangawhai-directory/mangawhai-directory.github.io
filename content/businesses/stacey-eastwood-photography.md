@@ -27,7 +27,6 @@ tags:
   - Wedding Photography
   - Empowerment Shoots
   - Events & Branding
-hours: []
 nzbn: ''
 last_verified: 2026-10-22
 status: active

@@ -24,7 +24,6 @@ categories:
   - food-producers
 tags:
   - Local Produce Delivery
-hours: []
 nzbn: ''
 last_verified: 2026-10-06
 status: active

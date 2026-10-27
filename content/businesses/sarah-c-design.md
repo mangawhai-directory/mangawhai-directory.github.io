@@ -26,7 +26,6 @@ tags:
   - Indoor & Outdoor Art
   - Custom Art
   - NZ Landscapes
-hours: []
 nzbn: ''
 last_verified: 2026-06-24
 status: active

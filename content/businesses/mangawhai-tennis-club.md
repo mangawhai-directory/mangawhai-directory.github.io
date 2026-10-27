@@ -23,7 +23,6 @@ categories:
   - community-clubs-churches
 tags:
   - Tennis Club
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: active

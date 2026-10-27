@@ -25,7 +25,6 @@ tags:
   - Lawn Care
   - Mowing
   - Garden Maintenance
-hours: []
 nzbn: ''
 last_verified: 2026-10-20
 status: active

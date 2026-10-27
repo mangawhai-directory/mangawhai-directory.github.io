@@ -25,7 +25,6 @@ tags:
   - Electrical
   - Solar
   - Air Conditioning
-hours: []
 nzbn: ''
 last_verified: 2026-06-11
 status: active

@@ -23,7 +23,6 @@ categories:
   - weddings
 tags:
   - Wedding Packages
-hours: []
 nzbn: ''
 last_verified: 2026-08-20
 status: active

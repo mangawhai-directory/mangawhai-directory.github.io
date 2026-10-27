@@ -24,7 +24,6 @@ tags:
   - Personal Training
   - Hyrox
   - Boxfit
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-12

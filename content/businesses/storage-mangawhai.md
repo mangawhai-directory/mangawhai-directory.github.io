@@ -23,7 +23,6 @@ categories:
   - storage
 tags:
   - Storage
-hours: []
 nzbn: ''
 last_verified: 2026-09-24
 status: active

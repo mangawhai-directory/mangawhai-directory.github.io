@@ -24,7 +24,6 @@ categories:
   - medical-dental
 tags:
   - Vet
-hours: []
 nzbn: ''
 last_verified: 2026-09-28
 status: active

@@ -22,7 +22,6 @@ categories:
   - pregnancy-birth-postpartum-care
 tags:
   - Postpartum Care
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-12

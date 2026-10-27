@@ -23,7 +23,6 @@ categories:
   - property-management
 tags:
   - Holiday Home Property Management
-hours: []
 nzbn: ''
 last_verified: 2026-10-09
 status: active

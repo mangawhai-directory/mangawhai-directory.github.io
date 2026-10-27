@@ -24,7 +24,6 @@ categories:
 tags:
   - Audiology
   - Hearing Clinic
-hours: []
 nzbn: ''
 last_verified: 2026-06-08
 status: active

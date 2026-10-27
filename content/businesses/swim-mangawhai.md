@@ -25,7 +25,6 @@ categories:
 tags:
   - Swimming Lessons
   - AquaFit
-hours: []
 nzbn: ''
 last_verified: 2026-10-20
 status: active

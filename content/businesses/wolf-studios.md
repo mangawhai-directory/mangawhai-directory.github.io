@@ -26,7 +26,6 @@ tags:
   - Pilates
   - Yoga
   - Infrared Sauna
-hours: []
 nzbn: ''
 last_verified: 2026-08-11
 status: active

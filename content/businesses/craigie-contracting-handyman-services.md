@@ -24,7 +24,6 @@ categories:
 tags:
   - Handyman
   - Building & Repairs
-hours: []
 nzbn: ''
 last_verified: 2026-10-17
 status: active

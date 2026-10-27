@@ -23,7 +23,6 @@ categories:
   - takeaways-food-trucks
 tags:
   - Takeaway Coffee Caravan
-hours: []
 nzbn: ''
 last_verified: 2026-10-06
 status: active

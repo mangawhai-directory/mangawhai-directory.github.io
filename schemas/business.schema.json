@@ -90,26 +90,7 @@
       "uniqueItems": true,
       "items": { "type": "string", "minLength": 1 }
     },
-    "hours": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "description": "Schema.org OpeningHoursSpecification shape (subset).",
-        "additionalProperties": false,
-        "properties": {
-          "dayOfWeek": {
-            "oneOf": [
-              { "type": "string" },
-              { "type": "array", "items": { "type": "string" } }
-            ]
-          },
-          "opens":  { "type": "string", "anyOf": [{ "pattern": "^\\d{2}:\\d{2}$" }, { "const": "closed" }] },
-          "closes": { "type": "string", "anyOf": [{ "pattern": "^\\d{2}:\\d{2}$" }, { "const": "" }] },
-          "validFrom":   { "type": "string", "format": "date" },
-          "validThrough": { "type": "string", "format": "date" }
-        }
-      }
-    },
+    "hours": { "type": "string" },
     "nzbn": {
       "type": "string",
       "anyOf": [

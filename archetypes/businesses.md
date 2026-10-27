@@ -22,7 +22,6 @@ socials:
   youtube: ""
 categories: []
 tags: []
-hours: []
 nzbn: ""
 logo: ""
 featured: false

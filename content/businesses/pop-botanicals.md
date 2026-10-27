@@ -24,7 +24,6 @@ categories:
 tags:
   - Naturopath
   - Herbalist
-hours: []
 nzbn: ''
 last_verified: 2026-09-20
 status: active

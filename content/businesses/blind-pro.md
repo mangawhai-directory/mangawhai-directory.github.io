@@ -27,7 +27,6 @@ tags:
   - Awnings
   - Louvre Roofs
   - Outdoor Screens & Insect Screens
-hours: []
 nzbn: ''
 last_verified: 2026-10-26
 status: active

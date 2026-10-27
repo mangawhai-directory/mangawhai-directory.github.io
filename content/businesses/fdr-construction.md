@@ -25,7 +25,6 @@ tags:
   - Decking
   - Fencing
   - Retaining Walls
-hours: []
 nzbn: ''
 last_verified: 2026-05-10
 status: active

@@ -24,7 +24,6 @@ tags:
   - Reformer Pilates
   - Personal Training
   - Pelvic Floor
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-12

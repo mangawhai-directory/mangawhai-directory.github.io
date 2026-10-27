@@ -24,7 +24,6 @@ categories:
   - retail
 tags:
   - Electrical Products Wholesaler
-hours: []
 nzbn: ''
 last_verified: 2026-06-23
 status: active

@@ -23,7 +23,6 @@ categories:
 tags:
   - mangawhai-heads
   - Deli
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-04

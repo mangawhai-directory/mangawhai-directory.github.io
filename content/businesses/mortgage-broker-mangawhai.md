@@ -23,7 +23,6 @@ categories:
   - professional-services
 tags:
   - Mortgage Broker
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: closed

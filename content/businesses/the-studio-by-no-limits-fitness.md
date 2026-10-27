@@ -23,7 +23,6 @@ categories:
   - fitness-pilates-yoga
 tags:
   - Gym
-hours: []
 nzbn: ''
 last_verified: 2026-05-11
 status: closed

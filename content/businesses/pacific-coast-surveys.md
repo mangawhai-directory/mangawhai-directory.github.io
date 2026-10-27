@@ -23,7 +23,6 @@ tags:
   - Land Surveyor
   - Subdivision
 
-hours: []
 nzbn: '9429032890204'
 tier: free
 last_verified: '2026-05-10'

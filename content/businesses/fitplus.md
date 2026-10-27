@@ -24,7 +24,6 @@ categories:
 tags:
   - Personal Trainer
   - Private Gym
-hours: []
 nzbn: ''
 last_verified: 2026-10-20
 status: active

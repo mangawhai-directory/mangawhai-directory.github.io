@@ -21,7 +21,6 @@ categories:
   - medical-dental
 tags:
   - GP
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-04

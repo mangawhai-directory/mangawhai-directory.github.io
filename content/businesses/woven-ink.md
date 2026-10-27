@@ -24,7 +24,6 @@ categories:
 tags:
   - Cosmetic Tattooing
   - Beauty
-hours: []
 nzbn: ''
 last_verified: 2026-05-08
 status: active

@@ -24,7 +24,6 @@ categories:
 tags:
   - Podiatrist
   - Comprehensive Foot Care
-hours: []
 nzbn: ''
 last_verified: 2026-10-26
 status: active

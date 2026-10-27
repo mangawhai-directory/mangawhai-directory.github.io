@@ -25,7 +25,6 @@ categories:
 tags:
   - Modular Homes
   - Transportable Homes
-hours: []
 nzbn: ''
 last_verified: 2026-10-19
 status: active

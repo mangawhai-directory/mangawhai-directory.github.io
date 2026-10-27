@@ -25,7 +25,6 @@ tags:
   - Plumber
   - UV Servicing
   - Water Filters
-hours: []
 nzbn: ''
 last_verified: 2026-07-19
 status: active

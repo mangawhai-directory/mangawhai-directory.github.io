@@ -22,7 +22,6 @@ categories:
   - medical-dental
 tags:
   - Medical Centre
-hours: []
 nzbn: ''
 last_verified: 2026-05-04
 status: active

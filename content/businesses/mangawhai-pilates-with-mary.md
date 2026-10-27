@@ -24,7 +24,6 @@ categories:
 tags:
   - Pilates
   - Beginner Pilates
-hours: []
 nzbn: ''
 last_verified: 2026-05-12
 status: active

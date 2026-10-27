@@ -23,7 +23,6 @@ categories:
   - health-practitioners
 tags:
   - Hypnotherapy
-hours: []
 nzbn: ''
 last_verified: 2026-05-19
 status: active

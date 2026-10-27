@@ -23,27 +23,7 @@ categories:
 tags:
   - Indian Takeaways
   - Indian Restaurant
-hours:
-  - dayOfWeek:
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-      - Saturday
-      - Sunday
-    opens: 11:00
-    closes: 14:00
-  - dayOfWeek:
-      - Monday
-      - Tuesday
-      - Wednesday
-      - Thursday
-      - Friday
-      - Saturday
-      - Sunday
-    opens: 16:30
-    closes: 21:00
+hours: Daily 11am–2pm & 4:30–9pm
 nzbn: ''
 tier: free
 last_verified: 2026-05-04

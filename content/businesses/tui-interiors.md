@@ -26,7 +26,6 @@ tags:
   - Plastering
   - Gib Stopping & Fixing
   - Painting
-hours: []
 nzbn: ''
 last_verified: 2026-10-21
 status: active

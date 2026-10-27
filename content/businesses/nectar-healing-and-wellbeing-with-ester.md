@@ -25,7 +25,6 @@ tags:
   - Mobile Reiki
   - Inner Alchemy Healing
   - Flower Essences
-hours: []
 nzbn: ''
 last_verified: 2026-10-27
 status: active

@@ -25,7 +25,6 @@ categories:
 tags:
   - Photography
   - Wedsite Design
-hours: []
 nzbn: ''
 last_verified: 2026-06-24
 status: active

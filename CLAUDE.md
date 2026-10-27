@@ -88,6 +88,8 @@ new one. `status: closed` keeps a listing in the repository but out of category 
 search index and `llms.txt`. `tier: paid` with an `image` shows the image. `categories` needs at
 least one entry, each the name of a directory under `content/categories/`; the CMS allows at most
 three, the schema sets no maximum.
+`hours` is one optional line of free text ("Mon–Sat 10am–4pm, Sun 10am–3pm"), shown as "Open"
+between the blurb and the buttons on paid cards only.
 
 **Categories** are `content/categories/<slug>/_index.md` and are also Hugo's `categories`
 taxonomy, so the directory name is the term. `layouts/categories/term.html` renders the page from

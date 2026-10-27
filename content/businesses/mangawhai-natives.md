@@ -20,7 +20,6 @@ tags:
   - Native Plants
   - Nursery
 
-hours: []
 tier: "free"
 last_verified: "2026-05-04"
 status: "active"

@@ -23,7 +23,6 @@ categories:
   - cleaning-services
 tags:
   - House-cleaning Booking App
-hours: []
 nzbn: ''
 last_verified: 2026-09-08
 status: active

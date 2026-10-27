@@ -25,7 +25,6 @@ tags:
   - Motion Photography
   - Dance & Performance Photography
   - Sport Photography
-hours: []
 nzbn: ''
 last_verified: 2026-10-23
 status: active

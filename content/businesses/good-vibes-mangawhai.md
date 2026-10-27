@@ -26,7 +26,6 @@ tags:
   - Paddleboard Hire
   - Kayak Hire
   - Boogie Board Hire
-hours: []
 nzbn: ''
 last_verified: 2026-10-19
 status: active

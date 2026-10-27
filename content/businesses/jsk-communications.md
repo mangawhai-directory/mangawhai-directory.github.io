@@ -24,7 +24,6 @@ categories:
   - creative-services
 tags:
   - Public Relations
-hours: []
 nzbn: ''
 last_verified: 2026-10-27
 status: active

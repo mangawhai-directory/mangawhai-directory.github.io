@@ -28,7 +28,6 @@ tags:
   - Senior Fitness
   - Naturopathy
   - Massage
-hours: []
 nzbn: ''
 last_verified: 2026-05-22
 status: active

@@ -24,7 +24,6 @@ categories:
 tags:
   - House Washing
   - Roof Washing
-hours: []
 last_verified: 2026-05-04
 status: active
 ---

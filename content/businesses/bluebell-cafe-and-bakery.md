@@ -23,7 +23,6 @@ categories:
   - bakeries-cake-makers
 tags:
   - Bakery
-hours: []
 nzbn: ''
 last_verified: 2026-05-09
 status: active

@@ -24,7 +24,6 @@ categories:
 tags:
   - Yoga
   - Pilates
-hours: []
 nzbn: ''
 last_verified: 2026-06-11
 status: active

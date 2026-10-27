@@ -26,7 +26,6 @@ tags:
   - Videography
   - Photography
   - Content Creation
-hours: []
 nzbn: ''
 last_verified: 2026-09-30
 status: active

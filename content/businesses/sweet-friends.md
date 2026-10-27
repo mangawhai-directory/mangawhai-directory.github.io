@@ -23,7 +23,6 @@ categories:
   - bakeries-cake-makers
 tags:
   - Treat Boxes
-hours: []
 nzbn: ''
 last_verified: 2026-10-18
 status: active

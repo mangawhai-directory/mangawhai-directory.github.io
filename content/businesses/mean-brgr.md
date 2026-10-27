@@ -22,31 +22,7 @@ categories:
 tags:
   - Burgers
   - Takeaways
-hours:
-  - dayOfWeek:
-      - Monday
-      - Tuesday
-      - Wednesday
-    opens: 17:00
-    closes: 20:00
-  - dayOfWeek:
-      - Thursday
-      - Friday
-    opens: 12:00
-    closes: 14:00
-  - dayOfWeek:
-      - Thursday
-      - Friday
-    opens: 17:00
-    closes: 20:00
-  - dayOfWeek:
-      - Saturday
-    opens: 16:00
-    closes: 20:00
-  - dayOfWeek:
-      - Sunday
-    opens: 16:00
-    closes: 19:30
+hours: Mon–Wed 5–8pm, Thu–Fri 12–2pm & 5–8pm, Sat 4–8pm, Sun 4–7:30pm
 nzbn: ''
 tier: free
 last_verified: 2026-05-09

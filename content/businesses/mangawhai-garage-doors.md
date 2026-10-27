@@ -24,7 +24,6 @@ categories:
 tags:
   - Garage Door Sales
   - Garage Door Service & Repairs
-hours: []
 nzbn: ''
 last_verified: 2026-10-22
 status: active

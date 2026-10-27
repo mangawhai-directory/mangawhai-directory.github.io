@@ -26,7 +26,6 @@ tags:
   - Design & Marketing
   - Web Design
   - Signage & Printing
-hours: []
 nzbn: ''
 last_verified: 2026-06-24
 status: active

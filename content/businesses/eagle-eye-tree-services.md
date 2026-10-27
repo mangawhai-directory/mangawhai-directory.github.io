@@ -24,7 +24,6 @@ categories:
 tags:
   - Tree Specialists
   - Arborists
-hours: []
 nzbn: ''
 last_verified: 2026-08-19
 status: active

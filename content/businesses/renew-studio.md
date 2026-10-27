@@ -24,7 +24,6 @@ categories:
   - sauna-spa
 tags:
   - Red Light Therapy
-hours: []
 nzbn: ''
 last_verified: 2026-05-16
 status: active

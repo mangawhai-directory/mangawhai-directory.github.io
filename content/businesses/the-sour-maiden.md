@@ -24,7 +24,6 @@ categories:
 tags:
   - Sauerkraut
   - Kimchi
-hours: []
 nzbn: ''
 last_verified: 2026-06-16
 status: active

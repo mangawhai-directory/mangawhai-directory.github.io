@@ -21,7 +21,6 @@ categories:
   - cafes-restaurants-bars
 tags:
   - Bistro
-hours: []
 nzbn: ''
 tier: free
 last_verified: 2026-05-04

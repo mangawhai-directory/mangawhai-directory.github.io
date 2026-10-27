@@ -25,7 +25,6 @@ tags:
   - Land clearing
   - Mulching
   - Arborist
-hours: []
 nzbn: ''
 last_verified: 2026-08-19
 status: active

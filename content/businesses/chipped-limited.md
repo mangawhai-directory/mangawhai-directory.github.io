@@ -23,7 +23,6 @@ categories:
   - automotive-marine
 tags:
   - Mobile windscreen repair
-hours: []
 nzbn: ''
 last_verified: 2026-08-18
 status: active

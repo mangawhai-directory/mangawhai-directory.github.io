@@ -25,7 +25,6 @@ tags:
   - Sandwiches
   - Pies
   - Catering
-hours: []
 nzbn: ''
 last_verified: 2026-05-16
 status: active

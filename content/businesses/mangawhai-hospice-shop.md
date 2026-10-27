@@ -23,7 +23,6 @@ categories:
   - retail
 tags:
   - Op Shop
-hours: []
 nzbn: ''
 last_verified: 2026-07-19
 status: active
