@@ -3,8 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{- /* Icons and the installable-app ("PWA") bits.
+         The SVG favicon is what desktop and Android browsers show in the tab.
+         The apple-touch-icon used to point at the same SVG, but iOS ignores
+         SVG here and falls back to a screenshot of the page when someone adds
+         the site to their Home Screen, so it is now a 180px PNG of the dolphin
+         on the sand accent, full-bleed because iOS rounds the corners itself.
+         It sits at /apple-touch-icon.png, the path iOS also tries on its own.
+         The manifest (static/manifest.webmanifest) names the app, its start
+         URL and its 192/512 and maskable icons; with it and the service worker
+         registered at the end of <body>, Chrome and Android offer "Install
+         app". theme-color tints the browser bar and the installed app's title
+         bar; it is --color-primary from assets/css/main.css, written out
+         because static files and this tag cannot read the CSS tokens — change
+         both, and the manifest, if the accent ever changes. The icons are PNGs
+         rendered from static/favicon.svg's dolphin; re-render them if the
+         logo changes. */ -}}
   <link rel="icon" type="image/svg+xml" href="{{ "/favicon.svg" | relURL }}">
-  <link rel="apple-touch-icon" href="{{ "/favicon.svg" | relURL }}">
+  <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | relURL }}">
+  <link rel="manifest" href="{{ "/manifest.webmanifest" | relURL }}">
+  <meta name="theme-color" content="#F2C078">
   <title>{{ block "title" . }}{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}{{ end }}</title>
 
   <meta name="description" content="{{ partial "seo-description.html" . }}">
@@ -161,6 +179,25 @@
         }
       });
     })();
+  </script>
+  {{- /* Service worker: static/sw.js, served from the root so its scope is
+         the whole site. It keeps pages people have visited readable with no
+         signal (patchy coverage is normal out at Te Arai and on the water) and
+         shows /offline/ for pages they have not; the caching rules and the
+         cache version are explained at the top of sw.js. It is registered
+         after load so it never competes with the page's own requests, and
+         only where the API exists (and on https or localhost, which the
+         browser enforces). It registers in every environment, including
+         `make serve`: the worker fetches HTML and unfingerprinted CSS from the
+         network first, so local edits still show on reload. /admin/ (the CMS)
+         loads its own index.html, not this template, and sw.js leaves it
+         alone. */ -}}
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('{{ "/sw.js" | relURL }}');
+      });
+    }
   </script>
 </body>
 </html>
