@@ -1,9 +1,9 @@
 ---
-tier: free
+tier: paid
 title: The Wardrobe On Wood St
 slug: the-wardrobe-on-wood-st
-blurb: ''
-image: ''
+blurb: A beautiful women’s boutique, offering casual wear, resort wear, special occasion outfits, golfwear and accessories.
+image: /uploads/pasted-image-1793059603806.webp
 address:
   street: 7 Wood Street
   suburb: Mangawhai Heads
@@ -23,7 +23,15 @@ categories:
   - retail
 tags:
   - Women's Fashion
-hours: []
+hours:
+  - dayOfWeek:
+      - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+    opens: '10:00'
+    closes: '16:00'
+  - dayOfWeek:
+      - Sunday
+    opens: '10:00'
+    closes: '15:00'
 nzbn: ''
 last_verified: 2026-10-19
 status: active
