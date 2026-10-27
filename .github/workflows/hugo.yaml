@@ -3,6 +3,14 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: [main]
+  # Ad bookings (data/ads.yaml) are chosen by the month the build runs in, so
+  # the site is rebuilt at the start of every month to put the new month's
+  # ads up and take the old ones down. 12:00 UTC on the 1st is 00:00 NZST or
+  # 01:00 NZDT. GitHub runs cron on the default branch only, may start it a
+  # few minutes late, and switches it off after 60 days without a commit
+  # (CMS saves keep this repository active).
+  schedule:
+    - cron: '0 12 1 * *'
   workflow_dispatch:
 
 permissions:
@@ -24,6 +32,8 @@ jobs:
     env:
       HUGO_VERSION: 0.168.0
       HUGO_ENVIRONMENT: production
+      # The month that picks ad bookings is read from the clock in this zone.
+      TZ: Pacific/Auckland
     steps:
       - name: Install Hugo CLI
         run: |

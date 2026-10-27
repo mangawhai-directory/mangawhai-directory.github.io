@@ -9,8 +9,10 @@
 #
 #   make serve      run the site at http://localhost:1313/ with live reload
 #                   (make serve PORT=1314 if 1313 is taken)
-#   make test       validate the listings, build, and check the built site
+#   make test       validate the listings and ad bookings, build, and check
+#                   the built site
 #   make build      build the site into public/, as the deploy does
+#   make ads        the next twelve months of ad bookings, slot by slot
 #   make status     what is installed, running and checked out
 #
 # Everything runs on this machine: Hugo plus Node for Tailwind. No container,
@@ -20,7 +22,11 @@
 SHELL := bash
 .DEFAULT_GOAL := help
 PORT ?= 1313
-.PHONY: setup check build serve test status worker-reset help
+# Ad bookings are chosen by the month a build runs in, in New Zealand time;
+# the deploy workflow sets the same zone, so a local build and the deploy
+# agree on which ads are up.
+export TZ ?= Pacific/Auckland
+.PHONY: setup check build serve test ads status worker-reset help
 
 # ── setup ───────────────────────────────────────────────────────────────────
 
@@ -42,8 +48,11 @@ build: ## Build the site into public/, as the deploy does
 	@scripts/setup.sh --check >/dev/null || { echo "not set up — run: make check"; exit 1; }
 	@npm run --silent build
 
-test: ## Validate listings, build, check the output (BASE=origin/main: new findings only)
+test: ## Validate listings and ad bookings, build, check the output (BASE=origin/main: new findings only)
 	@scripts/test.sh $(if $(BASE),--base $(BASE))
+
+ads: ## The next twelve months of ad bookings per slot (make ads FROM=2027-01 to start later)
+	@node scripts/ads-calendar.mjs $(FROM)
 
 status: ## What is installed, running and checked out
 	@printf '  setup      '; scripts/setup.sh --check >/dev/null 2>&1 \

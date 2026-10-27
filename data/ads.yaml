@@ -1,43 +1,86 @@
-# Mangawhai Directory — ad slot config
+# Mangawhai Directory — ad bookings
 #
-# Slot keys:
-#   home             → Homepage tile,        1152×400 desktop / 500×500 mobile
-#   category.<slug>  → Category page header, 500×250 desktop / 500×500 mobile
+# Slots:
+#   home              → Homepage tile,        1152×400 desktop / 500×500 mobile
+#   category.<slug>   → Category page header,  500×250 desktop / 500×500 mobile
 #
-# Each slot accepts:
-#   id           — stable reporting key sent to GA4 as `ad_id`. Keep it the same
-#                  across creative swaps so click/impression history stays
-#                  attached to the advertiser. Defaults to the slot path.
+# Ads are sold by whole calendar month, so each slot holds a list of
+# `bookings` and the build shows whichever booking covers the month it runs
+# in (New Zealand time). A slot with no booking for the current month shows
+# the "Your ad here" placeholder. The site is rebuilt on every push and at
+# the start of every month (.github/workflows/hugo.yaml), so a booking goes
+# up and comes down on the 1st by itself. `make ads` prints the next twelve
+# months; `make test` checks this file (scripts/validate-ads.mjs).
+#
+# A booking:
+#   from         — first month, YYYY-MM, quoted. Required.
+#   to           — last month, YYYY-MM, quoted, inclusive. Omit for open-ended
+#                  (runs until the booking is removed).
+#   id           — stable reporting key sent to GA4 as `ad_id`. Keep it the
+#                  same across creative swaps and rebookings so click and
+#                  impression history stays attached to the advertiser.
 #   advertiser   — display name used in ad performance reports
 #   image        — site-rooted path or full https URL (desktop creative)
 #   imageMobile  — optional mobile creative (used below the lg breakpoint).
-#                  If omitted, the desktop creative scales to fit.
+#                  If omitted, the one creative is shown at its own aspect
+#                  ratio at every width (a square stays square on desktop, a
+#                  banner scales down on phones), capped at 400px tall.
 #   alt          — descriptive alt text
 #   href         — click-through URL
 #
-# Leave `image` empty (or omit the slot) to show the "Your ad here" placeholder.
+# Bookings in one slot must not overlap. Preview another month locally with
+#   HUGO_PARAMS_ADSMONTH=2027-01 make serve
 
 home:
-  id: jens-pastries
-  advertiser: "Jen's Pastries"
-  image: "/img/ads/jens-pastries-1152x400.webp"
-  imageMobile: "/img/ads/jens-pastries-500x500.webp"
-  alt: "Jen's Pastries — handcrafted croissants and designer pastries in Mangawhai"
-  href: "https://www.jenspastries.co.nz/"
+  bookings:
+    - from: "2026-08"
+      id: jens-pastries
+      advertiser: "Jen's Pastries"
+      image: "/img/ads/jens-pastries-1152x400.webp"
+      imageMobile: "/img/ads/jens-pastries-500x500.webp"
+      alt: "Jen's Pastries — handcrafted croissants and designer pastries in Mangawhai"
+      href: "https://www.jenspastries.co.nz/"
 
 category:
   architects:
-    id: constructive-architecture
-    advertiser: "Constructive Architecture"
-    image: "/img/ads/constructive-architecture-500x250.svg"
-    imageMobile: "/img/ads/constructive-architecture-500x500.svg"
-    alt: "Constructive Architecture — residential architecture in Mangawhai: new homes, alterations and interiors"
-    href: "https://www.constructivearchitecture.co.nz/"
+    bookings:
+      - from: "2026-09"
+        id: constructive-architecture
+        advertiser: "Constructive Architecture"
+        image: "/img/ads/constructive-architecture-500x250.svg"
+        imageMobile: "/img/ads/constructive-architecture-500x500.svg"
+        alt: "Constructive Architecture — residential architecture in Mangawhai: new homes, alterations and interiors"
+        href: "https://www.constructivearchitecture.co.nz/"
 
+  electrical:
+    bookings:
+      - from: "2026-11"
+        to: "2027-01"
+        id: mangawhai-electrical-rescue
+        advertiser: "Mangawhai Electrical Rescue"
+        image: "/img/ads/mangawhai-electrical-rescue-500x500.png"
+        alt: "Mangawhai Electrical Rescue — Patrick Kneller, registered electrician in Mangawhai: LED lighting, switches, power points, hot water, heating and stoves"
+        href: "https://www.electricalrescue.co.nz/"
+
+  water-delivery:
+    bookings:
+      - from: "2026-11"
+        to: "2027-01"
+        id: artesian-solway-water
+        advertiser: "Artesian & Solway Water"
+        image: "/img/ads/artesian-solway-water-500x250.jpg"
+        alt: "Artesian & Solway Water — household and commercial water delivery, water tank sensors and bulk cartage in Mangawhai"
+        href: "https://artesianwater.net.nz/"
+
+  # A second booking in the same slot, for a later period:
+  #
   # cafes-restaurants-bars:
-  #   id: allpress-espresso
-  #   advertiser: "Allpress Espresso"
-  #   image: "/img/ads/example-cafes-500x250.jpg"
-  #   imageMobile: "/img/ads/example-cafes-500x500.jpg"
-  #   alt: "Allpress Espresso — now open"
-  #   href: "https://example.com"
+  #   bookings:
+  #     - from: "2027-03"
+  #       to: "2027-05"
+  #       id: allpress-espresso
+  #       advertiser: "Allpress Espresso"
+  #       image: "/img/ads/allpress-500x250.jpg"
+  #       imageMobile: "/img/ads/allpress-500x500.jpg"
+  #       alt: "Allpress Espresso — now open"
+  #       href: "https://example.com"

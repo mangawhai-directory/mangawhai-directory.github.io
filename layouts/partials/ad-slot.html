@@ -18,11 +18,28 @@
 
   Both the ad and the placeholder carry data-ad-* attributes; ad-tracking.html
   reads them to emit GA4 ad_engagement / ad_view events. See data/ads.yaml for
-  the `id` and `advertiser` fields behind them.
+  the `id` and `advertiser` fields behind them, and for how a slot's bookings
+  are laid out by month.
 
   Aspect ratio is applied responsively: aspect-[wm/hm] below `lg`,
   aspect-[w/h] from `lg` and up. If the wrapper has explicit lg:h-[Hpx], that
   height takes precedence over the aspect-ratio at desktop.
+
+  An ad with no mobile creative is shown at its own ratio at every width: the
+  wrapper gets an inline aspect-ratio read from the image file (falling back
+  to w/h when the file cannot be measured, e.g. an SVG or a remote URL) and
+  height:auto. Inline beats the caller's aspect-square and its fixed desktop
+  height, so a lone banner scales down on phones and a lone square stays
+  square on desktop, instead of object-cover cropping either. An inline style
+  rather than a class because the ratio is built at render time and Tailwind
+  would never emit it. images.Config reads the static path, so the ratio can
+  never drift from the file; fileExists guards it because a missing path
+  would fail the build. A lone creative is also capped at $soloMaxH tall so a
+  square does not tower over the page header on desktop: because the width is
+  what the caller sets, the cap is applied as a max-width of maxH × ratio
+  (a max-height alone would break the ratio), so the box gets narrower than
+  the slot and keeps its shape. A 2:1 banner at 500 wide is 250 tall and is
+  never affected.
 */ -}}
 {{- $slot := .slot -}}
 {{- $w := .w -}}
@@ -33,10 +50,27 @@
 {{- $price := .price | default "" -}}
 {{- $extra := .class | default "" -}}
 
-{{- /* Walk dotted slot path through hugo.Data.ads */ -}}
-{{- $cfg := hugo.Data.ads -}}
+{{- /* Walk the dotted slot path through hugo.Data.ads to the slot, then pick
+     the booking that covers the month this build runs in. Months are YYYY-MM
+     strings, so plain string comparison orders them; a booking with no `to`
+     runs until it is removed. The month is NZ time: the deploy workflow and
+     the Makefile set TZ=Pacific/Auckland, and the site is rebuilt at the
+     start of every month so the switch happens by itself. To preview another
+     month: HUGO_PARAMS_ADSMONTH=2027-01 (Hugo maps that env var to
+     site.Params.adsmonth, which needs no security.funcs allow-list entry). */ -}}
+{{- $slotCfg := hugo.Data.ads -}}
 {{- range split $slot "." -}}
-  {{- if $cfg }}{{ $cfg = index $cfg . }}{{ end -}}
+  {{- if $slotCfg }}{{ $slotCfg = index $slotCfg . }}{{ end -}}
+{{- end -}}
+{{- $month := now.Format "2006-01" -}}
+{{- with site.Params.adsmonth }}{{ $month = string . }}{{ end -}}
+{{- $cfg := dict -}}
+{{- with $slotCfg -}}
+  {{- range (index . "bookings" | default slice) -}}
+    {{- $from := string (index . "from" | default "") -}}
+    {{- $to := string (index . "to" | default "9999-12") -}}
+    {{- if and (le $from $month) (ge $to $month) }}{{ $cfg = . }}{{ end -}}
+  {{- end -}}
 {{- end -}}
 
 {{- $hasAd := and $cfg (and (isset $cfg "image") $cfg.image) -}}
@@ -48,8 +82,17 @@
 {{- end -}}
 {{- $hasMobileAd := and $hasAd (and (isset $cfg "imageMobile") $cfg.imageMobile) -}}
 {{- $aspect := printf "aspect-[%d/%d] lg:aspect-[%d/%d]" $wm $hm $w $h -}}
+{{- $soloW := $w -}}
+{{- $soloH := $h -}}
+{{- $soloMaxH := 400 -}}
+{{- if and $hasAd (not $hasMobileAd) -}}
+  {{- $ipath := printf "static%s" $cfg.image -}}
+  {{- if and (hasPrefix $cfg.image "/") (in (slice ".png" ".jpg" ".jpeg" ".webp" ".gif") (path.Ext $cfg.image | lower)) (fileExists $ipath) -}}
+    {{- with images.Config $ipath }}{{ $soloW = .Width }}{{ $soloH = .Height }}{{ end -}}
+  {{- end -}}
+{{- end -}}
 
-<aside{{ with .id }} id="{{ . }}"{{ end }} class="ad-slot {{ $extra }}" aria-label="Advertisement" data-print-hide>
+<aside{{ with .id }} id="{{ . }}"{{ end }} class="ad-slot {{ $extra }}"{{ if and $hasAd (not $hasMobileAd) }} style="aspect-ratio:{{ $soloW }}/{{ $soloH }};height:auto;max-width:{{ printf "%.0f" (mul $soloMaxH (div (float $soloW) (float $soloH))) }}px"{{ end }} aria-label="Advertisement" data-print-hide>
   {{- if $hasAd }}
   <a href="{{ $cfg.href | default "#" }}" class="block h-full w-full overflow-hidden rounded-lg border border-border" data-ad-type="ad" data-ad-id="{{ $adID }}" data-ad-slot="{{ $slot }}" data-ad-advertiser="{{ $advertiser }}" {{ if hasPrefix ($cfg.href | default "") "http" }}rel="sponsored noopener" target="_blank"{{ end }}>
     <picture>
@@ -57,7 +100,7 @@
       <source media="(min-width: 744px)" srcset="{{ $cfg.image }}" width="{{ $w }}" height="{{ $h }}">
       <img src="{{ $cfg.imageMobile }}" alt="{{ $cfg.alt | default "" }}" width="{{ $wm }}" height="{{ $hm }}" loading="lazy" decoding="async" class="block h-full w-full {{ $aspect }} object-cover">
       {{- else }}
-      <img src="{{ $cfg.image }}" alt="{{ $cfg.alt | default "" }}" width="{{ $w }}" height="{{ $h }}" loading="lazy" decoding="async" class="block h-full w-full {{ $aspect }} object-cover">
+      <img src="{{ $cfg.image }}" alt="{{ $cfg.alt | default "" }}" width="{{ $soloW }}" height="{{ $soloH }}" loading="lazy" decoding="async" class="block h-full w-full object-cover">
       {{- end }}
     </picture>
   </a>
