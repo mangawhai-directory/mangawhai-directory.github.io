@@ -1,0 +1,20 @@
+{{- /* /offline/ — what the service worker (static/sw.js) shows when someone
+       opens a page with no connection and that page is not in their cache.
+       The worker fetches and caches this page when it installs, together
+       with its stylesheet, so it has to work with nothing else: no images,
+       no search, nothing that needs the network. It is kept out of the
+       sitemap (front matter) and out of llms.txt (which lists its pages by
+       hand), as /thanks/ is, because it is not a page anyone should land on
+       from a search. Change the wording here or in content/offline.md and
+       bump VERSION in sw.js, or installed copies keep the old one. */ -}}
+{{ define "main" }}
+<article class="mx-auto max-w-2xl px-4 py-24 text-center">
+  <p class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">No connection</p>
+  <h1 class="mt-2 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">You're offline</h1>
+  <p class="mt-4 text-lg text-muted-foreground">This page hasn't been saved on your phone yet, and there's no signal to fetch it. Pages you've already opened on Mangawhai Directory still work offline — try one of those, or have another go once you're back in coverage.</p>
+  <div class="mt-8 flex flex-wrap justify-center gap-3">
+    <button type="button" onclick="location.reload()" class="inline-flex h-10 items-center rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90">Try again</button>
+    <a class="inline-flex h-10 items-center rounded-md border border-input bg-background px-5 text-sm font-medium text-foreground no-underline transition-colors hover:bg-accent hover:text-accent-foreground" href="{{ "/" | relURL }}">Go home</a>
+  </div>
+</article>
+{{ end }}

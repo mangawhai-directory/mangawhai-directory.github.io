@@ -99,9 +99,9 @@ generated from the name and the listing count (`layouts/partials/seo-description
 `description` is set.
 
 **Pages**: `content/_index.md` (home heading and tagline), `advertise.md`, `contact.md`,
-`privacy.md`, `terms.md`, `thanks.md`. **Data**: `data/ads.yaml` (ad bookings, below) and
-`data/rates.yaml` (read by the `pricing-cards` and `rate-steps` shortcodes on the advertise
-page), both read with `hugo.Data`.
+`privacy.md`, `terms.md`, `thanks.md`, `offline.md` (the service worker's fallback, below).
+**Data**: `data/ads.yaml` (ad bookings, below) and `data/rates.yaml` (read by the `pricing-cards`
+and `rate-steps` shortcodes on the advertise page), both read with `hugo.Data`.
 
 ### Ad bookings
 
@@ -163,6 +163,37 @@ CSS is `assets/css/main.css`, a Tailwind v4 entry (`@import "tailwindcss"`, `@so
 Tailwind CLI from `node_modules/.bin` — hence `npm ci` before any build. Tailwind emits only classes
 it finds written out in those files: a class assembled at render time is never generated (the
 listing image uses an inline style for this reason). Production builds fingerprint the CSS.
+
+## Installable app and offline (PWA)
+
+The site is installable ("Install app" on Chrome and Android, Add to Home Screen on iOS) and keeps
+pages people have opened readable with no signal.
+
+- `static/manifest.webmanifest` — name, `start_url` `/`, `standalone`, `theme_color` `#F2C078`
+  (`--color-primary`) and `background_color` `#ffffff`, written out by hand: static files cannot
+  read the CSS tokens, so change them with the palette, along with the `theme-color` meta in
+  `baseof.html`. The description repeats `hugo.toml`'s.
+- `static/icons/icon-192.png`, `icon-512.png` (rounded, `any`), `icon-maskable-512.png` (full bleed,
+  dolphin inside the 80% safe zone) and `static/apple-touch-icon.png` (180px, full bleed; iOS
+  rounds it). Rendered from `static/favicon.svg`'s dolphin on the sand accent. Re-render them if
+  the logo changes; they are not built.
+- `layouts/_default/baseof.html` links the manifest and icons in `<head>` and registers the worker
+  at the end of `<body>`, in every environment (including `make serve`).
+- `static/sw.js` — the service worker, root scope, plain JS copied as-is (no minify). Network first
+  for page navigations and `/index.json`, falling back to the cached copy and then to `/offline/`;
+  stale-while-revalidate for same-origin images, fonts and fingerprinted CSS (unfingerprinted CSS
+  under `make serve` is network first, so local edits show on reload); images trimmed to the newest
+  150. It never touches non-GET requests, other origins (analytics, advertisers' sites, unpkg) or
+  **`/admin/`**, so the CMS always talks to GitHub live. Install caches only `/offline/`, its
+  stylesheet, `/`, the favicon, the manifest and one icon; category pages are cached as visited.
+- `content/offline.md` + `layouts/_default/offline.html` — `/offline/`, out of the sitemap
+  (`sitemap: {disable: true}`, like `/thanks/`) and out of `llms.txt` (whose page list is by hand).
+- **Bump `VERSION` in `sw.js`** whenever the offline page or the caching rules change. Activate
+  deletes every `md-*` cache that is not the current version, and `skipWaiting` + `clients.claim`
+  make the new worker take over on the next load. A content edit needs no bump: pages are network
+  first.
+- To clear it locally: DevTools, Application, Storage, "Clear site data". A worker only registers
+  on https or localhost (127.0.0.1 counts).
 
 ## Traps that do not announce themselves
 
