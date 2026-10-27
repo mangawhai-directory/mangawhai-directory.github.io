@@ -4,7 +4,7 @@ hidden: false
 related:
   - architects
   - builders
-  - building-trades-supplies
+  - construction-services
   - surveyors-planners
 keywords:
   - civil engineering mangawhai
