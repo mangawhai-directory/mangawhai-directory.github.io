@@ -14,7 +14,7 @@ email: esterj.bassett@gmail.com
 website: ''
 socials:
   facebook: ''
-  instagram: ''
+  instagram: https://www.instagram.com/nectar_nurture/
   x: ''
   linkedin: ''
   tiktok: ''
