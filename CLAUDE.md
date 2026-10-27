@@ -176,7 +176,8 @@ pages people have opened readable with no signal.
 - `static/icons/icon-192.png`, `icon-512.png` (rounded, `any`), `icon-maskable-512.png` (full bleed,
   dolphin inside the 80% safe zone) and `static/apple-touch-icon.png` (180px, full bleed; iOS
   rounds it). Rendered from `static/favicon.svg`'s dolphin on the sand accent. Re-render them if
-  the logo changes; they are not built.
+  the logo changes; they are not built. The favicon, the header mark and these icons all use the
+  one solid path from `static/logo.svg`; keep them identical rather than reintroducing variants.
 - `layouts/_default/baseof.html` links the manifest and icons in `<head>` and registers the worker
   at the end of `<body>`, in every environment (including `make serve`).
 - `static/sw.js` — the service worker, root scope, plain JS copied as-is (no minify). Network first
