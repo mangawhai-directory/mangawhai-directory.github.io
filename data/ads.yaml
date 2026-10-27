@@ -58,7 +58,8 @@ category:
         to: "2027-01"
         id: mangawhai-electrical-rescue
         advertiser: "Mangawhai Electrical Rescue"
-        image: "/img/ads/mangawhai-electrical-rescue-500x500.png"
+        image: "/img/ads/mangawhai-electrical-rescue-500x250.png"
+        imageMobile: "/img/ads/mangawhai-electrical-rescue-500x500.png"
         alt: "Mangawhai Electrical Rescue — Patrick Kneller, registered electrician in Mangawhai: LED lighting, switches, power points, hot water, heating and stoves"
         href: "https://www.electricalrescue.co.nz/"
 
