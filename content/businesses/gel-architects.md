@@ -1,9 +1,9 @@
 ---
-tier: free
+tier: paid
 title: Gel Architects
 slug: gel-architects
-blurb: ''
-image: ''
+blurb: We’ll help you transform and future-proof your home, creating spaces to relax, gather and enjoy for generations. Unlock the full potential of your property and lifestyle with Gel.
+image: /uploads/GEL Logo (Red) - Small.webp
 address:
   street: Wintle Street
   suburb: Mangawhai
@@ -23,6 +23,7 @@ categories:
   - architects
 tags:
   - Architect
+hours: []
 nzbn: ''
 last_verified: 2026-10-21
 status: active
