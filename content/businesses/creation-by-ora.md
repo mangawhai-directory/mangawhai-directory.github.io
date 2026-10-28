@@ -3,7 +3,7 @@ tier: paid
 title: Creation by Ora
 slug: creation-by-ora
 blurb: From fresh cuts and beautiful colour to styling and beauty treatments, we’re here to help you look and feel your best. Discover locally made products, including those inspired by rongoā Māori. Come in for a transformation, stay for the kōrero and leave feeling refreshed. Everyone is welcome!
-image: /uploads/pasted-image-1793148146361.webp
+image: /uploads/Creation by Ora Botanical Emblem.webp
 address:
   street: Shop 4 / 10 Kaiwaka Mangawhai Road
   suburb: Kaiwaka
