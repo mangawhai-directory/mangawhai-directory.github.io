@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: '+64021431402'
+phone: '+6421431402'
 email: hello@lumbercraft.co.nz
 website: https://www.lumbercraft.co.nz/
 socials:
@@ -23,6 +23,7 @@ categories:
   - builders
 tags:
   - Builder
+hours: ''
 nzbn: ''
 last_verified: 2026-10-20
 status: active
