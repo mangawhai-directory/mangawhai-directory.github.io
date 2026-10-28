@@ -11,7 +11,7 @@ address:
   country: NZ
 phone: '+64275030210'
 email: creationbyora@gmail.com
-website: ''
+website: https://bookings.gettimely.com/creationbyora/bb/book
 socials:
   facebook: https://www.facebook.com/p/Creation-by-Ora-61593898416044/
   instagram: https://www.instagram.com/creationbyora
@@ -23,7 +23,7 @@ categories:
   - hairdressers-barbers
 tags:
   - Hair Salon
-hours: []
+hours: ''
 nzbn: ''
 last_verified: 2026-10-23
 status: active
