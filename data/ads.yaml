@@ -34,6 +34,22 @@
 home:
   bookings:
     - from: "2026-08"
+      to: "2026-10"
+      id: jens-pastries
+      advertiser: "Jen's Pastries"
+      image: "/img/ads/jens-pastries-1152x400.webp"
+      imageMobile: "/img/ads/jens-pastries-500x500.webp"
+      alt: "Jen's Pastries — handcrafted croissants and designer pastries in Mangawhai"
+      href: "https://www.jenspastries.co.nz/"
+    - from: "2026-11"
+      to: "2027-01"
+      id: go-gas-and-plumbing
+      advertiser: "Go Gas & Plumbing"
+      image: "/img/ads/go-gas-and-plumbing-1152x400.png"
+      imageMobile: "/img/ads/go-gas-and-plumbing-500x500.png"
+      alt: "Go Gas & Plumbing — certified gasfitter and plumber in Mangawhai, Master Plumbers member, 021 245 5431"
+      href: "https://www.gogasandplumbing.co.nz/"
+    - from: "2027-02"
       id: jens-pastries
       advertiser: "Jen's Pastries"
       image: "/img/ads/jens-pastries-1152x400.webp"
@@ -62,6 +78,17 @@ category:
         imageMobile: "/img/ads/mangawhai-electrical-rescue-500x500.png"
         alt: "Mangawhai Electrical Rescue — Patrick Kneller, registered electrician in Mangawhai: LED lighting, switches, power points, hot water, heating and stoves"
         href: "https://www.electricalrescue.co.nz/"
+
+  plumbing-gasfitting:
+    bookings:
+      - from: "2027-02"
+        to: "2027-04"
+        id: go-gas-and-plumbing
+        advertiser: "Go Gas & Plumbing"
+        image: "/img/ads/go-gas-and-plumbing-500x250.png"
+        imageMobile: "/img/ads/go-gas-and-plumbing-500x500.png"
+        alt: "Go Gas & Plumbing — certified gasfitter and plumber in Mangawhai, Master Plumbers member, 021 245 5431"
+        href: "https://www.gogasandplumbing.co.nz/"
 
   water-delivery:
     bookings:
