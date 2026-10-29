@@ -30,7 +30,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.168.0
+      HUGO_VERSION: 0.169.0
       HUGO_ENVIRONMENT: production
       # The month that picks ad bookings is read from the clock in this zone.
       TZ: Pacific/Auckland
