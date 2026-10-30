@@ -90,6 +90,17 @@ category:
         alt: "Go Gas & Plumbing — certified gasfitter and plumber in Mangawhai, Master Plumbers member, 021 245 5431"
         href: "https://www.gogasandplumbing.co.nz/"
 
+  real-estate-services:
+    bookings:
+      - from: "2026-11"
+        to: "2027-01"
+        id: bayleys-mangawhai
+        advertiser: "Bayleys Mangawhai"
+        image: "/img/ads/bayleys-mangawhai-500x250.webp"
+        imageMobile: "/img/ads/bayleys-mangawhai-500x500.webp"
+        alt: "Bayleys Mangawhai — All over Mangawhai: a local real estate team with deep roots and a proven track record. Thinking of selling? Call 09 431 5415"
+        href: "https://www.bayleys.co.nz/mangawhai"
+
   water-delivery:
     bookings:
       - from: "2026-11"
