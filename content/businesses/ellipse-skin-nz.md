@@ -5,11 +5,11 @@ slug: ellipse-skin-nz
 blurb: ''
 image: ''
 address:
-  street: Mangawhai Pharmacy, 12 Wood Street
-  suburb: Mangawhai Heads
+  street: 1 Pearson Street
+  suburb: Mangawhai Village
   postcode: '0505'
   country: NZ
-phone: "+6498714041"
+phone: '+6498714041'
 email: admin@ellipseskinnz.com
 website: https://www.ellipseskinnz.com/
 socials:
@@ -23,6 +23,7 @@ categories:
   - medical-dental
 tags:
   - Skin Checks
+hours: ''
 nzbn: ''
 last_verified: 2026-06-18
 status: active
