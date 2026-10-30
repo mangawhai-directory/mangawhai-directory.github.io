@@ -79,6 +79,17 @@ category:
         alt: "Mangawhai Electrical Rescue — Patrick Kneller, registered electrician in Mangawhai: LED lighting, switches, power points, hot water, heating and stoves"
         href: "https://www.electricalrescue.co.nz/"
 
+  beauty-therapy:
+    bookings:
+      - from: "2026-11"
+        to: "2027-04"
+        id: shine-aesthetics
+        advertiser: "Shine Aesthetics"
+        image: "/img/ads/shine-aesthetics-500x250.webp"
+        imageMobile: "/img/ads/shine-aesthetics-500x500.webp"
+        alt: "Shine Aesthetics — laser hair removal, cosmetic injectables and advanced skin treatments. Shop 6, 2 Leslie Street, Mangawhai Village"
+        href: "https://www.shineaesthetics.co.nz/"
+
   plumbing-gasfitting:
     bookings:
       - from: "2027-02"
