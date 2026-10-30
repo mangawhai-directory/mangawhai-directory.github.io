@@ -15,6 +15,8 @@
     id     — optional fragment id for the wrapper, so the slot can be deep-linked
              (the advertise page's "What is this?" examples scroll to it). Keep
              it stable: data/rates.yaml names it.
+    heading — optional; true renders the small "Advertisement" label above
+             the slot (the home page uses it). See the note on the label below.
 
   Both the ad and the placeholder carry data-ad-* attributes; ad-tracking.html
   reads them to emit GA4 ad_engagement / ad_view events. See data/ads.yaml for
@@ -38,8 +40,32 @@
   square does not tower over the page header on desktop: because the width is
   what the caller sets, the cap is applied as a max-width of maxH × ratio
   (a max-height alone would break the ratio), so the box gets narrower than
-  the slot and keeps its shape. A 2:1 banner at 500 wide is 250 tall and is
-  never affected.
+  the slot and keeps its shape.
+
+  A lone creative is never drawn wider than its own width either, so a
+  500x250 category-size banner booked into the 1152-wide home slot shows at
+  500x250 instead of being stretched to fill the slot (the 400px cap alone
+  would let a 2:1 banner reach 800 wide). Its own width is the booking's
+  `width` when set, else the file's pixel width. `width` exists because
+  creatives are often supplied at 2x for sharp screens (go-gas's 500x250 is a
+  1000x500 file), and the file cannot say which it is; capping at 1000 would
+  defeat the point. The cap is the smaller of the two figures, and the box is
+  centred (mx-auto) in whatever room is left. In the category slot a lone
+  500x250 banner fills the 500-wide header slot at xl as before; between lg
+  and xl, where the header stacks, the old 800px cap overrode the caller's
+  max-w-[500px] and stretched it, and now it stays at 500 like the slot it
+  was made for. A lone square is still held by the 400px cap. The caller's
+  mx-auto is not repeated, and its xl:mx-0 still wins at xl because the
+  variant comes later in the stylesheet.
+
+  The "Advertisement" label (heading) is rendered here rather than by the
+  caller because it has to sit on the creative's left edge, and only this
+  partial knows how wide a lone creative ends up. For a lone creative the
+  label and the aside share a frame that carries the same max-width and
+  mx-auto, so the label moves in with the creative; otherwise (a desktop and
+  mobile pair, or the placeholder) there is no frame and the label is
+  rendered exactly where the caller's wrapper used to put it, so the
+  caller's wrapper keeps doing the sizing.
 */ -}}
 {{- $slot := .slot -}}
 {{- $w := .w -}}
@@ -85,14 +111,24 @@
 {{- $soloW := $w -}}
 {{- $soloH := $h -}}
 {{- $soloMaxH := 400 -}}
-{{- if and $hasAd (not $hasMobileAd) -}}
+{{- $solo := and $hasAd (not $hasMobileAd) -}}
+{{- $soloMaxW := 0 -}}
+{{- if $solo -}}
   {{- $ipath := printf "static%s" $cfg.image -}}
   {{- if and (hasPrefix $cfg.image "/") (in (slice ".png" ".jpg" ".jpeg" ".webp" ".gif") (path.Ext $cfg.image | lower)) (fileExists $ipath) -}}
     {{- with images.Config $ipath }}{{ $soloW = .Width }}{{ $soloH = .Height }}{{ end -}}
   {{- end -}}
+  {{- $soloMaxW = math.Min (mul $soloMaxH (div (float $soloW) (float $soloH))) (float ($cfg.width | default $soloW)) -}}
 {{- end -}}
+{{- $heading := .heading | default false -}}
+{{- if and $heading $solo }}
+<div class="mx-auto w-full" style="max-width:{{ printf "%.0f" $soloMaxW }}px">
+{{- end -}}
+{{- if $heading }}
+<p class="m-0 mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">Advertisement</p>
+{{ end -}}
 
-<aside{{ with .id }} id="{{ . }}"{{ end }} class="ad-slot {{ $extra }}"{{ if and $hasAd (not $hasMobileAd) }} style="aspect-ratio:{{ $soloW }}/{{ $soloH }};height:auto;max-width:{{ printf "%.0f" (mul $soloMaxH (div (float $soloW) (float $soloH))) }}px"{{ end }} aria-label="Advertisement" data-print-hide>
+<aside{{ with .id }} id="{{ . }}"{{ end }} class="ad-slot {{ $extra }}{{ if and $solo (not (in (split $extra " ") "mx-auto")) }} mx-auto{{ end }}"{{ if $solo }} style="aspect-ratio:{{ $soloW }}/{{ $soloH }};height:auto;max-width:{{ printf "%.0f" $soloMaxW }}px"{{ end }} aria-label="Advertisement" data-print-hide>
   {{- if $hasAd }}
   <a href="{{ $cfg.href | default "#" }}" class="block h-full w-full overflow-hidden rounded-lg border border-border" data-ad-type="ad" data-ad-id="{{ $adID }}" data-ad-slot="{{ $slot }}" data-ad-advertiser="{{ $advertiser }}" {{ if hasPrefix ($cfg.href | default "") "http" }}rel="sponsored noopener" target="_blank"{{ end }}>
     <picture>
@@ -120,3 +156,6 @@
   </a>
   {{- end }}
 </aside>
+{{- if and $heading $solo }}
+</div>
+{{- end }}
