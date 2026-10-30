@@ -99,12 +99,17 @@
 
 <div class="mx-auto max-w-6xl px-4 pt-10 sm:pt-12 min-[1184px]:px-0">
   {{/* The width constraints move to this wrapper so the label lines up with the
-       creative's left edge at both sizes. */}}
+       creative's left edge at both sizes: 500 wide on phones and tablets, the
+       full 1152 from lg. The partial renders the label ("heading") because a
+       lone creative (no mobile companion) is drawn at its own width and
+       centred, e.g. a 500x250 banner in the middle of the 1152 slot, and only
+       the partial knows that width; it then frames the label with the
+       creative so the two stay lined up. */}}
   <div class="mx-auto w-full max-w-[500px] lg:max-w-none" data-print-hide>
-    <p class="m-0 mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">Advertisement</p>
     {{ partial "ad-slot.html" (dict
       "slot" "home"
       "id" "ad-home"
+      "heading" true
       "w" 1152
       "h" 400
       "wm" 500

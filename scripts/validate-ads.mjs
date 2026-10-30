@@ -20,7 +20,7 @@ const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
 const file = path.join(root, 'data', 'ads.yaml');
 const MONTH = /^\d{4}-(0[1-9]|1[0-2])$/;
 const REQUIRED = ['id', 'advertiser', 'image', 'alt', 'href'];
-const OPTIONAL = ['from', 'to', 'imageMobile'];
+const OPTIONAL = ['from', 'to', 'imageMobile', 'width'];
 const errors = [];
 const warnings = [];
 const err = (m) => errors.push(m);
@@ -63,6 +63,8 @@ function checkSlot(slot, cfg) {
     if (typeof b.href === 'string' && !/^(https?:\/\/|tel:|mailto:)/.test(b.href)) err(`${slot} booking ${i}: href "${b.href}" must be http(s), tel: or mailto:`);
     if (typeof b.image === 'string') checkImage(slot, i, 'image', b.image);
     if (b.imageMobile !== undefined) checkImage(slot, i, 'imageMobile', b.imageMobile);
+    if (b.width !== undefined && !(Number.isInteger(b.width) && b.width > 0)) err(`${slot} booking ${i}: width must be a whole number of px, unquoted, like 500`);
+    if (b.width !== undefined && b.imageMobile !== undefined) warn(`${slot} booking ${i}: width only applies to a booking with no imageMobile, so it is ignored`);
     const from = b.from, to = b.to;
     if (typeof from !== 'string' || !MONTH.test(from)) { err(`${slot} booking ${i}: from must be a quoted month like "2026-11"${from instanceof Date ? ' (unquoted, YAML read it as a date)' : ''}`); return; }
     if (to !== undefined && (typeof to !== 'string' || !MONTH.test(to))) { err(`${slot} booking ${i}: to must be a quoted month like "2027-01"`); return; }
