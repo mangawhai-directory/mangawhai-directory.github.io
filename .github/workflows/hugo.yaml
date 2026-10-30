@@ -3,14 +3,19 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: [main]
-  # Ad bookings (data/ads.yaml) are chosen by the month the build runs in, so
-  # the site is rebuilt at the start of every month to put the new month's
-  # ads up and take the old ones down. 12:00 UTC on the 1st is 00:00 NZST or
-  # 01:00 NZDT. GitHub runs cron on the default branch only, may start it a
-  # few minutes late, and switches it off after 60 days without a commit
-  # (CMS saves keep this repository active).
+  # Ad bookings (data/ads.yaml) are chosen by the month the build runs in (NZ
+  # time, see TZ below), so the site is rebuilt to put a new month's ads up
+  # and take the old ones down. The rebuild runs every day at 12:00 UTC,
+  # which is 00:00 NZST / 01:00 NZDT the following NZ day: the run at 12:00
+  # UTC on the last day of a month is the first hour of the 1st in NZ, so the
+  # switch lands on the 1st. (A monthly cron on the 1st at 12:00 UTC would be
+  # the 2nd in NZ.) The other days rebuild an unchanged site, about a minute
+  # each on a public repository, where Actions minutes are free. GitHub runs
+  # cron on the default branch only, may start it a few minutes late, and
+  # switches it off after 60 days without a commit (CMS saves keep this
+  # repository active).
   schedule:
-    - cron: '0 12 1 * *'
+    - cron: '0 12 * * *'
   workflow_dispatch:
 
 permissions:
