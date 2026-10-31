@@ -1,9 +1,9 @@
 ---
-tier: free
+tier: paid
 title: Magnolia Lane Concierge
 slug: magnolia-lane-concierge
-blurb: ''
-image: ''
+blurb: Magnolia Lane Concierge provides private house management services to property owners in the Mangawhai and Te Arai areas. Our services include housekeeping and cleaning, lawns and gardens, windows, pools, laundry, personal chefs, and a full range of owner and guest Concierge services as well.
+image: /uploads/Magnolia Lane logo white background.webp
 address:
   street: Mangawhai
   suburb: Mangawhai
@@ -24,6 +24,7 @@ categories:
 tags:
   - Private House Management
   - Concierge Services
+hours: ''
 nzbn: ''
 last_verified: 2026-09-08
 status: active
