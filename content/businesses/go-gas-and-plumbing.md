@@ -1,5 +1,5 @@
 ---
-tier: free
+tier: paid
 title: Go Gas & Plumbing
 slug: go-gas-and-plumbing
 blurb: Honest, reliable and local - we're Go Gas and Plumbing, your certified gasfitters and plumbers. Offering honest advice, quality workmanship and a bloody good service.
