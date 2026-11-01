@@ -44,7 +44,7 @@ We design ads for advertisers who'd rather not do it themselves — a one-off co
 
 **Payment.** We invoice for the full booked period on confirmation. Your ad goes live on the first day of the first booked month, provided we've cleared payment and approved creative by then.
 
-**Included with every booking.** One free creative swap per month, a performance report at the end of each booked month, and a plain invoice.
+**Included with every booking.** One free creative swap per month, a performance report on request, and a plain invoice.
 
 ### Cancellations and refunds
 
