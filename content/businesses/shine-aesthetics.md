@@ -13,8 +13,8 @@ phone: '+64274569464'
 email: mangawhai@shineaethetics.co.nz
 website: https://www.shineaesthetics.co.nz/
 socials:
-  facebook: ''
-  instagram: ''
+  facebook: https://www.facebook.com/shineaestheticclinic/
+  instagram: https://www.instagram.com/shineaestheticsnz/
   x: ''
   linkedin: ''
   tiktok: ''
