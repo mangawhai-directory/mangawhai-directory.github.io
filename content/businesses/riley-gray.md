@@ -23,7 +23,7 @@ categories:
   - retail
 tags:
   - Wooden Busy Boards
-  - Learning Toys
+  - Educational Toys
   - Custom Orders
 hours: ''
 nzbn: ''
