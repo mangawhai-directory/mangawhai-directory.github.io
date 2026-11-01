@@ -10,7 +10,7 @@ address:
   postcode: '0505'
   country: NZ
 phone: ''
-email: ''
+email: hello@thegroundwork.co.nz
 website: https://thegroundwork.co.nz/
 socials:
   facebook: ''
