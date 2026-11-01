@@ -1,7 +1,7 @@
 ---
 tier: free
-title: Clare Seagrave Clinic
-slug: clare-seagrave-clinic
+title: Intuitive Nutrition Clinic
+slug: intuitive-nutrition-clinic
 blurb: ''
 image: ''
 address:
@@ -24,6 +24,7 @@ categories:
 tags:
   - Nutritionist
   - Hypnotherapist
+hours: ''
 nzbn: ''
 last_verified: 2026-10-12
 status: active
