@@ -1,20 +1,20 @@
 ---
-tier: paid
-title: Body & Beauty by Zoe
-slug: body-beauty-by-zoe
+tier: free
+title: Body & Being by Zoe
+slug: body-and-being-by-zoe
 blurb: Zoë is a qualified massage therapist working from her beautiful home studio in Mangawhai Village. She provides holistic bodywork sessions, specialising in face massage & head and abdominal therapies to tend the emotional body, the nervous system & the rivers of wairua within.
 image: ''
 address:
-  street: 8 Fantail Way
-  suburb: Mangawhai Village
+  street: Mangawhai
+  suburb: Mangawhai
   postcode: '0505'
   country: NZ
 phone: '+64220196200'
-email: contact@bodyandbeautybyzoe.co.nz
-website: https://bodyandbeautybyzoe.nz/
+email: contact@beingbyzoe.nz
+website: https://beingbyzoe.nz/
 socials:
-  facebook: https://www.facebook.com/p/Body-Beauty-by-Zo%C3%AB-61557879925142/
-  instagram: https://www.instagram.com/bodyandbeautybyzoe/
+  facebook: https://www.facebook.com/profile.php?id=61557879925142&locale=nb_NO#
+  instagram: https://www.instagram.com/bodyandbeingbyzoe?srtk=MTk2emRvbXhkdXA5Mg%3D%3D
   x: ''
   linkedin: ''
   tiktok: ''
@@ -23,7 +23,9 @@ categories:
   - massage-therapy
 tags:
   - Face Massage
-  - Massage
+  - Head & Abdominal Therapies
+  - Holistic & Healing Bodywork
+hours: ''
 nzbn: ''
 last_verified: 2026-05-10
 status: active
