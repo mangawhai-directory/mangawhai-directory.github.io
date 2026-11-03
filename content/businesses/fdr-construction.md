@@ -3,12 +3,13 @@ tier: free
 title: FDR Construction
 slug: fdr-construction
 blurb: ''
+image: ''
 address:
   street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+64272671117"
+phone: '+64272671117'
 email: sam@fdrconstruction.co.nz
 website: https://about.me/fdrconstruction
 socials:
@@ -19,12 +20,13 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - property-maintenance
   - construction-services
+  - landscape-tree-services
 tags:
   - Decking
   - Fencing
   - Retaining Walls
+hours: ''
 nzbn: ''
 last_verified: 2026-05-10
 status: active
