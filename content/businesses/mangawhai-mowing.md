@@ -10,7 +10,7 @@ address:
   postcode: '0505'
   country: NZ
 phone: '+64226859055'
-email: mangawhaimowing@gmail.com
+email: mangasmowing@gmail.com
 website: ''
 socials:
   facebook: https://facebook.com/p/Mangawhai-Mowing-100092470269843
