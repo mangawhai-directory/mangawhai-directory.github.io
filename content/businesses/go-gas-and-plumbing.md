@@ -3,7 +3,7 @@ tier: paid
 title: Go Gas & Plumbing
 slug: go-gas-and-plumbing
 blurb: Honest, reliable and local - we're Go Gas and Plumbing, your certified gasfitters and plumbers. Offering honest advice, quality workmanship and bloody good service.
-image: /uploads/Screenshot 2026-10-29 at 5.21.55 PM.webp
+image: /uploads/Go-gas-and-plumbing.webp
 address:
   street: Mangawhai
   suburb: Mangawhai
