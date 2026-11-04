@@ -9,11 +9,11 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: ''
+phone: '+64275045407'
 email: tiffany@adminsavvy.co.nz
 website: ''
 socials:
-  facebook: ''
+  facebook: https://www.facebook.com/share/1Bwn8qfhQL/
   instagram: ''
   x: ''
   linkedin: ''
@@ -23,6 +23,7 @@ categories:
   - professional-services
 tags:
   - Administration Services
+  - Bookkeeping
 hours: ''
 nzbn: ''
 last_verified: 2026-11-04
