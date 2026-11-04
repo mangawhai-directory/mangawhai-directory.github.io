@@ -1,27 +1,33 @@
 ---
-title: "Coast 2 Coast"
-slug: "coast-2-coast"
-blurb: ""
+tier: free
+title: Coast 2 Coast Catering and Events
+slug: coast-2-coast-catering-and-events
+blurb: ''
+image: ''
 address:
-  street: "14 Wood Street"
-  suburb: "Mangawhai"
-  postcode: "0505"
-  country: "NZ"
-website: "https://coast2coastevents.co.nz"
+  street: Mangawhai
+  suburb: Mangawhai
+  postcode: '0505'
+  country: NZ
+phone: '+64272785656'
+email: vanessa@coast2coastevents.co.nz
+website: https://coast2coastevents.co.nz
 socials:
-  facebook: ""
-  instagram: ""
-  x: ""
-  linkedin: ""
-  tiktok: ""
-  youtube: ""
-categories: ["takeaways-food-trucks", "weddings"]
+  facebook: https://www.facebook.com/coast2coastcateringandevents
+  instagram: https://www.instagram.com/coastcoastkitchen/
+  x: ''
+  linkedin: ''
+  tiktok: ''
+  youtube: ''
+categories:
+  - takeaways-food-trucks
+  - weddings
 tags:
   - Catering
   - Wedding Catering
   - Event Hire
-
-tier: "free"
-last_verified: "2026-05-04"
-status: "active"
+hours: ''
+nzbn: ''
+last_verified: 2026-05-04
+status: active
 ---
