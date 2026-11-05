@@ -119,6 +119,17 @@ category:
         alt: "Mangawhai Mowing — lawn mowing, hedge trimming and spraying. Steve Olsen, 022 685 9055"
         href: "https://www.facebook.com/mangawhai.mowing"
 
+  real-estate-services:
+    bookings:
+      - from: "2026-11"
+        to: "2027-01"
+        id: bayleys-mangawhai
+        advertiser: "Bayleys Mangawhai"
+        image: "/img/ads/bayleys-mangawhai-500x250.webp"
+        imageMobile: "/img/ads/bayleys-mangawhai-500x500.webp"
+        alt: "Bayleys Mangawhai — All over Mangawhai: the Bayleys Mangawhai team, local real estate with deep local roots and a proven track record. Request an appraisal"
+        href: "https://inthenorth.bayleys.co.nz/offices/mangawhai-115#request-appraisal"
+
   water-delivery:
     bookings:
       - from: "2026-11"
