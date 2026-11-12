@@ -5,12 +5,12 @@ slug: roger-bull-osteopath
 blurb: ''
 image: ''
 address:
-  street: 21 Moir Point Road
-  suburb: Mangawhai Heads
+  street: Mangawhai
+  suburb: Mangawhai
   postcode: '0505'
   country: NZ
 phone: '+64212340226'
-email: ''
+email: rogerbullosteopath@gmail.com
 website: ''
 socials:
   facebook: https://www.facebook.com/p/Roger-Bull-Osteopath-100047733266295/
