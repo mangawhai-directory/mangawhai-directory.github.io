@@ -1,13 +1,15 @@
 ---
+tier: free
 title: Four Little Birds
 slug: four-little-birds
-blurb: Patisserie and custom cakes
+blurb: ''
+image: ''
 address:
-  street: Mangawhai Central
+  street: Mangawhai
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+642102446825"
+phone: '+642102446825'
 email: fourlittlebirdscakes@hotmail.com
 website: ''
 socials:
@@ -20,10 +22,10 @@ socials:
 categories:
   - bakeries-cake-makers
 tags:
-  - Cafe
   - Custom Cakes
+  - Boutique Catering
+hours: ''
 nzbn: ''
-tier: free
 last_verified: 2026-05-07
 status: active
 ---
