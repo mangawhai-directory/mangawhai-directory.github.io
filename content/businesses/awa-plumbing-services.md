@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: "+6421758613"
+phone: '+6421758613'
 email: hello@awaplumbing.co.nz
 website: ''
 socials:
@@ -25,7 +25,8 @@ tags:
   - Plumbing
   - Gas Fitting
   - Drainage
+hours: ''
 nzbn: ''
 last_verified: 2026-06-23
-status: active
+status: closed
 ---
