@@ -9,7 +9,7 @@ address:
   suburb: Mangawhai
   postcode: '0505'
   country: NZ
-phone: ''
+phone: '+6421804767'
 email: morganmowingandmaintenance@gmail.com
 website: ''
 socials:
