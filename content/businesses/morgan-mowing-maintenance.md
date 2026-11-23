@@ -1,9 +1,9 @@
 ---
-tier: free
+tier: paid
 title: Morgan Mowing & Maintenance
 slug: morgan-mowing-and-maintenance
-blurb: ''
-image: ''
+blurb: Reliable, scheduled lawn care servicing Mangawhai & Hakaru. Commercial 54" zero-turn mowing, sharp edging, and clean paths. NZBN registered & fully insured. Text a lawn photo to 021 804 767 for a fast quote.
+image: /uploads/morgan mowing.webp
 address:
   street: Mangawhai
   suburb: Mangawhai
