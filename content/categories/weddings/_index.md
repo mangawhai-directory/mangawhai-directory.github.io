@@ -1,5 +1,6 @@
 ---
-title: Weddings
+title: Weddings & Events
+hidden: false
 related:
   - bakeries-cake-makers
   - wineries-vineyards
@@ -11,4 +12,6 @@ keywords:
   - wedding planner mangawhai heads
   - wedding services mangawhai
   - wedding photographer mangawhai
+aliases: []
+description: ''
 ---
