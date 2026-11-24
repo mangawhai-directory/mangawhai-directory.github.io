@@ -20,7 +20,6 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - takeaways-food-trucks
   - weddings
 tags:
   - Catering
