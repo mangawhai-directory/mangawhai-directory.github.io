@@ -14,7 +14,7 @@ email: info@oconnor.nz
 website: https://www.oconnor.nz/
 socials:
   facebook: https://www.facebook.com/oconnornz
-  instagram: ''
+  instagram: https://www.instagram.com/sean_oconnor_nz/
   x: ''
   linkedin: ''
   tiktok: ''
@@ -23,6 +23,8 @@ categories:
   - creative-services
 tags:
   - Video Content Creation
+  - Videography
+  - Photography
 hours: ''
 nzbn: ''
 last_verified: 2026-11-19
