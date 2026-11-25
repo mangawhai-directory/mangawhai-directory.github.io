@@ -21,6 +21,7 @@ socials:
   youtube: ''
 categories:
   - creative-services
+  - photography-videography
 tags:
   - Video Content Creation
   - Videography
