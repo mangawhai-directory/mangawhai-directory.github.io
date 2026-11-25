@@ -20,8 +20,8 @@ socials:
   tiktok: ''
   youtube: ''
 categories:
-  - creative-services
   - photography-videography
+  - creative-services
 tags:
   - Video Content Creation
   - Videography
