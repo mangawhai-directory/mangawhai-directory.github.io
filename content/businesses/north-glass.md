@@ -1,15 +1,15 @@
 ---
 tier: free
-title: North Glass
-slug: north-glass
+title: North Glass Ltd
+slug: north-glass-ltd
 blurb: ''
 image: ''
 address:
-  street: Unit 2, 194 Molesworth Drive
+  street: 2/194 Molesworth Drive
   suburb: Mangawhai Heads
   postcode: '0505'
   country: NZ
-phone: '+64800704010'
+phone: '+6494314999'
 email: info@northglass.co.nz
 website: https://northglass.co.nz/
 socials:
@@ -26,6 +26,7 @@ tags:
   - Glass for Home
   - Glazing
   - Auto Glass
+hours: ''
 nzbn: ''
 last_verified: 2026-10-20
 status: active
